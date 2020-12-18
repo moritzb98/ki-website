@@ -51,9 +51,9 @@ img {
 }
 .icon{
   background: #eef1f6;
-    border-radius: 100%;
-    padding: 30px;
-    width: 50%;
-    margin: 0 auto;
+  border-radius: 100%;
+  padding: 30px;
+  width: 50%;
+  margin: 0 auto;
 }
 </style>
