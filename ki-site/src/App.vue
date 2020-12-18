@@ -12,7 +12,7 @@
           <startSection></startSection>
         </div>
         <div class="section">
-          Second section ...
+          <introduction></introduction>
         </div>
         <div class="section">
           3 section ...
@@ -31,12 +31,14 @@
 <script>
 import startSection from './components/startSection.vue'
 import impressum from './components/impressum.vue'
+import introduction from './components/introduction.vue'
 
 export default {
   name: 'App',
   components: {
     startSection,
-    impressum
+    impressum,
+    introduction
   },
   data() {
     return {
