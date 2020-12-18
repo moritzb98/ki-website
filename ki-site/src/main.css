@@ -10,6 +10,11 @@ body {
     background-color: #0f1012;
   }
 
+  a {
+      color: #eef1f6;
+      text-decoration: none;
+  }
+
   #fp-nav ul li a span,
   .fp-slidesNav ul li a span {
       background: #eef1f6;

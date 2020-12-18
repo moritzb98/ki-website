@@ -24,7 +24,6 @@
            </div>
             <h3>Anzahl teilnehmende Unternehmen</h3>
             <p>xyz</p>
-
           </div>
         </div>
     </div>
@@ -54,7 +53,7 @@ img {
   background: #eef1f6;
     border-radius: 100%;
     padding: 30px;
-    width: 100px;
+    width: 50%;
     margin: 0 auto;
 }
 </style>

@@ -23,10 +23,10 @@
           4 section ...
         </div>
         <div class="section">
-          <impressum></impressum>
+          <iktdetail> </iktdetail>
         </div>
         <div class="section">
-          <iktdetail> </iktdetail>
+          <impressum></impressum>
         </div>
       </full-page>
     </div>
