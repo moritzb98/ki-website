@@ -41,7 +41,7 @@ export default {
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         menu: '#myMenu',
         navigation: true,
-        scrollBar: true,
+        //scrollBar: true,
       }
     }
   },
