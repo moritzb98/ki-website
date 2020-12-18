@@ -7,6 +7,8 @@
           <li data-menuanchor="secondPage"><a href="#secondPage">Second</a></li>
           <li data-menuanchor="thirdPage"><a href="#thirdPage">Third</a></li>
           <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth</a></li>
+          <li data-menuanchor="fourthPage"><a href="#fifthPage">Fifth</a></li>
+
         </ul>
         <div class="section">
           <startSection></startSection>
@@ -23,6 +25,9 @@
         <div class="section">
           <impressum></impressum>
         </div>
+        <div class="section">
+          <iktdetail> </iktdetail>
+        </div>
       </full-page>
     </div>
   </div>
@@ -32,18 +37,20 @@
 import startSection from './components/startSection.vue'
 import impressum from './components/impressum.vue'
 import introduction from './components/introduction.vue'
+import iktdetail from './components/iktdetail.vue'
 
 export default {
   name: 'App',
   components: {
     startSection,
     impressum,
-    introduction
+    introduction,
+    iktdetail
   },
   data() {
     return {
       options: {
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
         menu: '#myMenu',
         navigation: true,
         //scrollBar: true,
