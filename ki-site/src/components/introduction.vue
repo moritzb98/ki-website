@@ -4,18 +4,18 @@
         <p>Hier wird die Studie vorgestellt und die Strategie, auf der die Studie aufbaut.</p>
         <br>
         <div class="flex-container">
-          <div class="icon-container">
+          <div>
             <img src="../assets/artificial-intelligence.svg">
+            <p>Bildunterschrift</p>
           </div>
-
-          <div class="icon-container">
+          <div>
             <img src="../assets/artificial-intelligence.svg">
+            <p>Bildunterschrift</p>
           </div>
-
-          <div class="icon-container">
+          <div>
             <img src="../assets/artificial-intelligence.svg">
+            <p>Bildunterschrift</p>
           </div>
-
         </div>
     </div>
 </template>
