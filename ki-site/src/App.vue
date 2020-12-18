@@ -9,7 +9,7 @@
           <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth</a></li>
         </ul>
         <div class="section">
-          First section ...
+          <startSection></startSection>
         </div>
         <div class="section">
           Second section ...
@@ -18,7 +18,7 @@
           3 section ...
         </div>
         <div class="section">
-          4 section ...
+          <impressum></impressum>
         </div>
       </full-page>
     </div>
@@ -26,12 +26,14 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+import startSection from './components/startSection.vue'
+import impressum from './components/impressum.vue'
 
 export default {
   name: 'App',
   components: {
-    //HelloWorld
+    startSection,
+    impressum
   },
   data() {
     return {
@@ -39,6 +41,7 @@ export default {
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         menu: '#myMenu',
         navigation: true,
+        scrollBar: true,
       }
     }
   },
@@ -46,12 +49,6 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import './main.css';
 </style>
