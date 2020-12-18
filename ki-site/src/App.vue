@@ -17,7 +17,7 @@
           <introduction></introduction>
         </div>
         <div class="section">
-          3 section ...
+          <kiincompany></kiincompany>
         </div>
         <div class="section">
           4 section ...
@@ -46,6 +46,7 @@ import iktdetail from './components/iktdetail.vue'
 import iktdetailtwo from './components/iktdetailtwo.vue'
 import iktdetailthree from './components/iktdetailthree.vue'
 import impressum from './components/impressum.vue'
+import kiincompany from './components/kiInCompany.vue'
 
 
 export default {
@@ -56,7 +57,8 @@ export default {
     introduction,
     iktdetail,
     iktdetailtwo,
-    iktdetailthree
+    iktdetailthree,
+    kiincompany
   },
   data() {
     return {
@@ -64,10 +66,16 @@ export default {
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthpage', 'seventhpage', 'lastPage'],
         menu: '#myMenu',
         navigation: true,
-        //scrollBar: true,
-      }
+        afterLoad: this.afterLoad,
+      },
     }
   },
+  methods: {
+    afterLoad: function(origin, destination) {
+      console.log(destination);
+    }
+    
+  }
 }
 </script>
 
