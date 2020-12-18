@@ -23,9 +23,6 @@
           4 section ...
         </div>
         <div class="section">
-          <impressum></impressum>
-        </div>
-        <div class="section">
           <iktdetail> </iktdetail>
         </div>
         <div class="section">
@@ -34,6 +31,9 @@
          <div class="section">
           <iktdetailthree> </iktdetailthree>
         </div>
+        <div class="section">
+          <impressum></impressum>
+        </div>
       </full-page>
     </div>
   </div>
@@ -41,11 +41,12 @@
 
 <script>
 import startSection from './components/startSection.vue'
-import impressum from './components/impressum.vue'
 import introduction from './components/introduction.vue'
 import iktdetail from './components/iktdetail.vue'
 import iktdetailtwo from './components/iktdetailtwo.vue'
 import iktdetailthree from './components/iktdetailthree.vue'
+import impressum from './components/impressum.vue'
+
 
 export default {
   name: 'App',

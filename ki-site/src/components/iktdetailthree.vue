@@ -8,15 +8,7 @@
     
 </template>
 
-<script>
-import {BAR} from 'vue-chartsjs'
-export default {
-    extends: Bar,
-    mounted (){
-        this.renderChart(data, options)
-    }
-}
-</script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

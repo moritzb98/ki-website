@@ -9,16 +9,16 @@
         
     </div>
 
-    
 </template>
 
 <script>
-import {BAR} from 'vue-chartsjs'
 export default {
-    extends: Bar,
-    mounted (){
-        this.renderChart(data, options)
+  name: 'ikt',
+  data() {
+    return {
+      
     }
+  },
 }
 </script>
 
