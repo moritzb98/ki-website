@@ -1,26 +1,12 @@
 <template>
     <div class="site-container">
-      <h2>Funktionsbereiche, die KI-Verfahren einsetzen</h2>
+      <h2>Anwendungsgebiete von KI-Verfahren in der dt. Wirtschaft</h2>
         <div class="flex-container">
          </div>
-         <div class="icon">
-              <img src="../assets/company.svg">
-            </div>
-        
     </div>
 
     
 </template>
-
-<script>
-import {BAR} from 'vue-chartsjs'
-export default {
-    extends: Bar,
-    mounted (){
-        this.renderChart(data, options)
-    }
-}
-</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -35,4 +21,3 @@ export default {
   font-weight: 100;
 }
 </style>
-

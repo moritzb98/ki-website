@@ -28,6 +28,12 @@
         <div class="section">
           <iktdetail> </iktdetail>
         </div>
+        <div class="section">
+          <iktdetailtwo> </iktdetailtwo>
+        </div>
+         <div class="section">
+          <iktdetailthree> </iktdetailthree>
+        </div>
       </full-page>
     </div>
   </div>
@@ -38,6 +44,8 @@ import startSection from './components/startSection.vue'
 import impressum from './components/impressum.vue'
 import introduction from './components/introduction.vue'
 import iktdetail from './components/iktdetail.vue'
+import iktdetailtwo from './components/iktdetailtwo.vue'
+import iktdetailthree from './components/iktdetailthree.vue'
 
 export default {
   name: 'App',
@@ -45,12 +53,14 @@ export default {
     startSection,
     impressum,
     introduction,
-    iktdetail
+    iktdetail,
+    iktdetailtwo,
+    iktdetailthree
   },
   data() {
     return {
       options: {
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthpage', 'seventhpage', 'lastPage'],
         menu: '#myMenu',
         navigation: true,
         //scrollBar: true,
