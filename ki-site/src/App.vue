@@ -72,7 +72,14 @@ export default {
   },
   methods: {
     afterLoad: function(origin, destination) {
-      console.log(destination);
+      if(destination.anchor == "thirdPage"){
+        this.startBar();
+      }
+    },
+
+    startBar() {
+      console.log("Animieren...");
+      document.getElementById("verticalbar").classList.add("vertical-bar-animate");
     }
     
   }
