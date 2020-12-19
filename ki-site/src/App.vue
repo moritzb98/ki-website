@@ -26,12 +26,6 @@
           <iktdetail> </iktdetail>
         </div>
         <div class="section">
-          <iktdetailtwo> </iktdetailtwo>
-        </div>
-         <div class="section">
-          <iktdetailthree> </iktdetailthree>
-        </div>
-        <div class="section">
           <impressum></impressum>
         </div>
       </full-page>
@@ -43,8 +37,6 @@
 import startSection from './components/startSection.vue'
 import introduction from './components/introduction.vue'
 import iktdetail from './components/iktdetail.vue'
-import iktdetailtwo from './components/iktdetailtwo.vue'
-import iktdetailthree from './components/iktdetailthree.vue'
 import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
 import kiincompany2 from './components/kiInCompany2.vue'
@@ -57,8 +49,6 @@ export default {
     impressum,
     introduction,
     iktdetail,
-    iktdetailtwo,
-    iktdetailthree,
     kiincompany,
     kiincompany2
   },
