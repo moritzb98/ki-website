@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-        <h2>Betrachtung der KI einsetzenden Unternehmen</h2>
+        <h2>Erstmaliger Einsatz von KI</h2>
         <div class="flex-container flex-container--space-between">
             <div class="flex-item-20">
                 <div class="circle"></div>

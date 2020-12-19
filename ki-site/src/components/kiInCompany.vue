@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-        <h2>Betrachtung der KI einsetzenden Unternehmen</h2>
+        <h2>Bedeutung von KI</h2>
         <div class="flex-container flex-container--space-between">
             <div class="flex-item">
                 <div class="flex-container flex-container-100">
@@ -34,10 +34,6 @@ export default {
 <style scoped>
 .flex-item {
     width: 40%;
-}
-
-.flex-container--space-between {
-    justify-content: space-between;
 }
 
 .platzhalter {

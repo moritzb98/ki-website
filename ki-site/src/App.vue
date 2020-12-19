@@ -23,6 +23,9 @@
           <kiincompany2></kiincompany2>
         </div>
         <div class="section">
+          <kiincompany3></kiincompany3>
+        </div>
+        <div class="section">
           <iktdetail> </iktdetail>
         </div>
         <div class="section">
@@ -40,6 +43,7 @@ import iktdetail from './components/iktdetail.vue'
 import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
 import kiincompany2 from './components/kiInCompany2.vue'
+import kiincompany3 from './components/kiInCompany3.vue'
 
 
 export default {
@@ -50,7 +54,8 @@ export default {
     introduction,
     iktdetail,
     kiincompany,
-    kiincompany2
+    kiincompany2,
+    kiincompany3
   },
   data() {
     return {
@@ -59,6 +64,7 @@ export default {
         menu: '#myMenu',
         navigation: true,
         fadingEffect: true,
+        navigationTooltips: ['Home', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthpage', 'Impressum'],
         afterLoad: this.afterLoad,
       },
     }

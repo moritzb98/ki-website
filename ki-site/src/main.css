@@ -10,6 +10,27 @@ body {
     background-color: #0f1012;
   }
 
+  .start-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+  }
+
+  .impressum-img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    opacity: 0.5;
+  }
+
+  #impressum {
+    background-image: url('assets/5_transparent.png');
+    background-size: cover;
+  }
+
   a {
       color: #eef1f6;
       text-decoration: none;
@@ -24,6 +45,13 @@ body {
     width: 70%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .site-container-larger {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1px;
   }
   
   .fp-tableCell {
@@ -46,6 +74,19 @@ body {
     display: flex;
   }
 
+  .flex-container--space-between {
+      justify-content: space-between;
+  }
+
   .subtitle {
     margin-bottom: 120px;
   }
+
+  .fp-controlArrow.fp-prev {
+    left: 100px;
+    top: 500px;
+}
+.fp-controlArrow.fp-next {
+    right: 100px;
+    top: 500px;
+}
