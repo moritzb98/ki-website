@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
         <img src="../assets/dhbw.svg" class="logo">
-        <img class="start-img" src="../assets/1_transparent.png">
+        <img class="left-img" src="../assets/1_transparent.png">
         <br><br>
         <h1>Einsatz von künstlicher Intelligenz in der deutschen Wirtschaft</h1>
         <h2 class="subtitle">Stand der KI-Nutzung im Jahr 2019</h2>

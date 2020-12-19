@@ -1,5 +1,6 @@
 <template>
     <div class="site-container site-container-larger">
+      <img class="right-img" src="../assets/3_transparent.png">
       <h2>Funktionsbereiche, die KI-Verfahren einsetzen</h2>
         <div class="flex-container flex-container--space-between">
           <div class="icon-container">

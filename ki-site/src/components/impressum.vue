@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <img class="impressum-img" src="../assets/5_transparent.png">
+      <img class="right-img" src="../assets/5_transparent.png">
       <h1 class="site-header">Impressum</h1>
         <div class="flex-container impressum-site-container">
           <div class="impressum-flex-item">
