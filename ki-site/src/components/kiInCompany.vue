@@ -68,10 +68,10 @@ export default {
     transition: all 3s;
 }
 
-.vertical-bar:before {
+.vertical-bar-animate:before {
     color: white;
     content: counter(count) '%';
-    animation: counter 5s linear;
+    animation: counter 4s linear;
     animation-fill-mode: forwards;
     position: relative;
     bottom: 25px;

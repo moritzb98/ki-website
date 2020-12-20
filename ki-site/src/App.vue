@@ -81,7 +81,7 @@ export default {
   },
   methods: {
     afterLoad: function(origin, destination) {
-      if(destination.anchor == "thirdPage"){
+      if(destination.anchor == "BedeutungVonKI"){
         this.startBar();
       }
     },
