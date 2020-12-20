@@ -17,6 +17,12 @@
           <introduction></introduction>
         </div>
         <div class="section">
+          <grundlagenki></grundlagenki>
+        </div>
+        <div class="section">
+          <allgemeineBetrachtung></allgemeineBetrachtung>
+        </div>
+        <div class="section">
           <kiincompany></kiincompany>
         </div>
         <div class="section">
@@ -44,6 +50,8 @@ import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
 import kiincompany2 from './components/kiInCompany2.vue'
 import kiincompany3 from './components/kiInCompany3.vue'
+import grundlagenki from './components/grundlagenki.vue'
+import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
 
 
 export default {
@@ -55,16 +63,18 @@ export default {
     iktdetail,
     kiincompany,
     kiincompany2,
-    kiincompany3
+    kiincompany3,
+    grundlagenki,
+    allgemeineBetrachtung
   },
   data() {
     return {
       options: {
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthpage', 'seventhpage', 'lastPage'],
+        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'BedeutungVonKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
         menu: '#myMenu',
         navigation: true,
         fadingEffect: true,
-        navigationTooltips: ['Home', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthpage', 'Impressum'],
+        navigationTooltips: ['Home', 'Informationen zur Studie', 'Grundlagen zu KI', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
         afterLoad: this.afterLoad,
       },
     }
