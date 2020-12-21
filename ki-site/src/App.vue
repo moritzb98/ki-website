@@ -23,6 +23,9 @@
           <allgemeineBetrachtung></allgemeineBetrachtung>
         </div>
         <div class="section">
+          <allgemeineBetrachtung2></allgemeineBetrachtung2>
+        </div>
+        <div class="section">
           <kiincompany></kiincompany>
         </div>
         <div class="section">
@@ -52,7 +55,7 @@ import kiincompany2 from './components/kiInCompany2.vue'
 import kiincompany3 from './components/kiInCompany3.vue'
 import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
-
+import allgemeineBetrachtung2 from './components/allgemeineBetrachtung2.vue'
 
 export default {
   name: 'App',
@@ -65,16 +68,17 @@ export default {
     kiincompany2,
     kiincompany3,
     grundlagenki,
-    allgemeineBetrachtung
+    allgemeineBetrachtung,
+    allgemeineBetrachtung2
   },
   data() {
     return {
       options: {
-        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'BedeutungVonKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
+        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtung', 'BedeutungVonKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
         menu: '#myMenu',
         navigation: true,
         fadingEffect: true,
-        navigationTooltips: ['Home', 'Informationen zur Studie', 'Grundlagen zu KI', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
+        navigationTooltips: ['Home', 'Informationen zur Studie', 'Grundlagen zu KI', 'Allgemeine Betrachtung', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
         afterLoad: this.afterLoad,
       },
     }
