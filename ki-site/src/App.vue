@@ -87,7 +87,6 @@ export default {
     },
 
     startBar() {
-      console.log("Animieren...");
       document.getElementById("verticalbar").classList.add("vertical-bar-animate");
     }
     

@@ -55,9 +55,7 @@ export default {
   name: 'ikt',
   data() {
     return {
-      options2: {
-        
-      },
+
     }
   },
 }
