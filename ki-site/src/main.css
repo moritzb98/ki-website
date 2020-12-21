@@ -42,15 +42,12 @@ body {
   }
   
   .site-container {
-    width: 70%;
+    width: 1250px;
     margin: 0 auto;
     text-align: center;
   }
 
   .site-container-larger {
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
     padding-top: 1px;
   }
   
@@ -66,7 +63,13 @@ body {
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
   }
 
   .flex-container {
