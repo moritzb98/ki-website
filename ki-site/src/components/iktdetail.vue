@@ -34,17 +34,17 @@
          </div>
          <div class="slide">
             <div class="slide-container">
-              <img class="icon-company" src="../assets/company.svg">
+              <img class="icon-company" src="../assets/company.jpeg">
             </div>
          </div>
          <div class="slide">
             <div class="slide-container">
-              <p>Slide 2</p>
+              <img class="icon-company" src="../assets/slide2.jpeg">
             </div>
          </div>
          <div class="slide">
             <div class="slide-container">
-              <p>Slide 3</p>
+              <img class="icon-company" src="../assets/slide3.jpeg">
             </div>
          </div>
     </div>

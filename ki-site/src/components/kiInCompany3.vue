@@ -7,8 +7,12 @@
             </div>
             <div class="flex-item-60">
                 <div class="flex-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                    <div class="platzhalter">
+                        <img src="../assets/Kreisdiagramm.png" class="img">
+                    </div>
+                    <div class="platzhalter">
+                        <img src="../assets/Kreisdiagramm.png" class="img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,11 +41,13 @@ export default {
     margin: auto;
 }
 
-.circle {
-    background: #eef1f6;
-    border-radius: 100%;
+.platzhalter {
     width: 260px;
     height: 260px;
+}
+
+.img {
+    width: 100%;
 }
 
 </style>

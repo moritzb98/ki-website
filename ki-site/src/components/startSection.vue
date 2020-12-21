@@ -34,5 +34,6 @@ export default {
 .subtitle {
   text-transform: uppercase;
   font-weight: 100;
+  font-size: 1.7em;
 }
 </style>

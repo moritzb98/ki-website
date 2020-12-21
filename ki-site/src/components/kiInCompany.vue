@@ -38,7 +38,8 @@ export default {
 
 .platzhalter {
     height: 450px; 
-    background: red;
+    background: url('../assets/kim.png');
+    background-size: cover;
 }
 
 .flex-container-100 {
