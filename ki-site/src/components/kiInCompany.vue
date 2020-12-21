@@ -63,7 +63,7 @@ export default {
     margin: 0 auto;
     width: 50%;
     height: 0;
-    background: red;
+    background: #ea5321;
     visibility: hidden;
     position: absolute;
     transition: all 3s;
@@ -82,7 +82,7 @@ export default {
     margin-top: 0;
     visibility: visible;
     height: 77%;
-    box-shadow: 1px 0px 5px 1px red;
+    box-shadow: 1px 0px 5px 1px #ea5321;
 }
 
 .bar-text {
