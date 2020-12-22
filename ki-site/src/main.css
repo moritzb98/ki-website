@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+  }
+  
+  #app {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #eef1f6;
+    background-color: #0f1012;
+  }
+
+  .left-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+  }
+
+  .right-img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    opacity: 0.5;
+  }
+
+  #impressum {
+    background-image: url('assets/5_transparent.png');
+    background-size: cover;
+  }
+
+  a {
+      color: #eef1f6;
+      text-decoration: none;
+  }
+
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+      background: #eef1f6;
+  }
+  
+  .site-container {
+    width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .site-container-larger {
+    padding-top: 1px;
+  }
+  
+  .fp-tableCell {
+    display: flex;
+    vertical-align: unset;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .flex-container {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .flex-container--space-between {
+      justify-content: space-between;
+  }
+
+  .subtitle {
+    margin-bottom: 120px;
+  }
+
+  .fp-controlArrow.fp-prev {
+    left: 100px;
+    top: 500px;
+}
+.fp-controlArrow.fp-next {
+    right: 100px;
+    top: 500px;
+}
