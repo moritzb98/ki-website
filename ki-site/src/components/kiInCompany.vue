@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
         <h2>Bedeutung von KI</h2>
-        <div class="flex-container flex-container--space-between">
+        <div class="flex-container margin-top">
             <div class="flex-item">
                 <div class="flex-container flex-container-100">
                     <div class="flex-item-20">
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-item platzhalter">
+            <div class="flex-item">
                 <highcharts :options="chartOptions"></highcharts>
             </div>
         </div>
@@ -39,20 +39,30 @@ export default {
                 text: ''
             },
             xAxis: {
-                categories: ['Sonstige Dienstleistungen', 'Großhandel', 'IKT', 'Sonst. Verarb. Gew.', 'Elektrot./Maschinenb.', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorg., Bg.b.', 'Unter.nahe Dienstl.', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanzdienstleisut.', 'Gesamtwirtschaft']
+                categories: ['Sonstige Dienstleistungen', 'Großhandel', 'IKT', 'Sonst. Verarb. Gew.', 'Elektrot./Maschinenb.', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorg., Bg.b.', 'Unter.nahe Dienstl.', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanzdienstleisut.', 'Gesamtwirtschaft'],
+                itemStyle: {
+                    color: '#eef1f6',
+                }
             },
             yAxis: {
                 min: 0,
+                max: 100,
                 title: {
                     text: 'in % aller KI einsetzenden Unternehmen'
                 }
             },
             legend: {
-                reversed: false
+                reversed: true,
+                itemStyle: {
+                    color: '#eef1f6',
+                },
+                itemHoverStyle: {
+                    color: '#ea5321'
+                }
             },
             plotOptions: {
                 series: {
-                    stacking: 'normal'
+                    stacking: 'normal',
                 }
             },
             series: [{
@@ -77,8 +87,8 @@ export default {
     width: 40%;
 }
 
-.platzhalter {
-    height: 450px; 
+.margin-top {
+    margin-top: 100px;
 }
 
 .flex-container-100 {
