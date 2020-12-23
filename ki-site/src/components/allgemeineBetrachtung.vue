@@ -5,7 +5,7 @@
         <p>Verglich von Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) und Anteil der Ausgaben für KI in % des Umsatzes aller Unternehmen.</p>
         <div class="container">
             <div class="mittig">
-                <highcharts :options="chartOptions"></highcharts>
+                <highcharts options: chartOptions></highcharts>
             </div>
             <div class="mittig">
                 <img src="../assets/money-bag.svg" class="bild">
