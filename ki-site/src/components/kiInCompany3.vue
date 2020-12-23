@@ -1,6 +1,7 @@
 <template>
     <div class="site-container">
         <h2>Vergleich der Beschäftigten und des Umsatzes</h2>
+        <p> In diesem Abschnitt werden folgende Diagramme miteinander verglichen, um schlussendlich zu dem Ergebnis XYZ zu kommen. Bavaria ipsum dolor sit amet kimmt Fünferl Musi nimmds, Weibaleid wiavui Leonhardifahrt a Maß und no a Maß. Bittschön Spuiratz dahoam af guad Schdarmbeaga See gor Watschnbaam so, zünftig! Do schoo i sog ja nix, i red ja bloß, san kumm geh. </p>
         <div class="flex-container">
             <div class="container">
                 <div class= "mittig">
@@ -12,7 +13,7 @@
                 <div class="container">
                     <div class= "mittig">
                         <div id="chart-B" class="chart"> </div>
-                        <highcharts :options="test123"> </highcharts>
+                        <highcharts :options="abbildung217"> </highcharts>
                     </div>
                  </div>
             </div>
@@ -49,7 +50,7 @@ export default {
             },
             title: {
                 // Überschrift
-                text: ''
+                text: 'Verteilung der im Bereich KI tätigen Beschäftigten in der deutschen Wirtschaft 2019 nach Branchengruppen (in 1.000 Personen)'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -65,7 +66,7 @@ export default {
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
+                        format: '<b>{point.name}</b>: {point.y:.1f}'
                     },
                     borderWidth: 0,
                 }
@@ -86,45 +87,45 @@ export default {
                 },
                 data: [{
                     name: 'IKT',
-                    y: 1.50,
+                    y: 47.4,
                     sliced: true,
                     selected: true,
                     color: '#ff0000',
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
-                    y: 0.68
+                    y: 13.3
                 }, {
                     name: 'Fahrzeugbau',
-                    y: 0.84
+                    y: 3.9
                 }, {
                     name: 'Unternehmensnahe Dienstleistungen',
-                    y: 0.65
+                    y: 44.9,
                 }, {
-                    name: 'sonstiges verarbeitendes Gewerbe',
-                    y: 0.26
+                    name: 'Sonstiges verarbeitendes Gewerbe',
+                    y: 8.8
                 }, {
                     name: 'Finanzdiensleistungen',
-                    y: 0.24
+                    y: 6.0
                 }, {
-                    name: 'sonstige Dienstleistungen',
-                    y: 0.19
+                    name: 'Sonstige Dienstleistungen',
+                    y: 5.5
                 }, {
                     name: 'Verkehr- und Logistik',
-                    y: 0.16
+                    y: 3.2
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
-                    y: 0.14
+                    y: 3.0
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
-                    y: 0.07
+                    y: 1.4
                 }, {
                     name: 'Großhandel',
-                    y: 0.07
+                    y: 2.1
                 }]
             }]
         },
 
-            test123: {
+            abbildung217: {
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -140,7 +141,7 @@ export default {
             },
             title: {
                 // Überschrift
-                text: ''
+                text: 'Verteilung des Umsatzes von Produkten und Dienstleistungen mit KI-Einsatz in der deutschen Wirtschaft nach Branchengruppen 2019 (in Mrd. €)'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -177,37 +178,37 @@ export default {
                 },
                 data: [{
                     name: 'IKT',
-                    y: 1.50,
+                    y: 9.0,
                     sliced: true,
                     selected: true,
                     color: '#ff0000',
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
-                    y: 0.68
+                    y: 4.9
                 }, {
                     name: 'Fahrzeugbau',
-                    y: 0.84
+                    y: 3.3
                 }, {
                     name: 'Unternehmensnahe Dienstleistungen',
-                    y: 0.65
+                    y: 4.8
                 }, {
-                    name: 'sonstiges verarbeitendes Gewerbe',
-                    y: 0.26
+                    name: 'Sonstiges verarbeitendes Gewerbe',
+                    y: 6.0
                 }, {
                     name: 'Finanzdiensleistungen',
-                    y: 0.24
+                    y: 17.3
                 }, {
-                    name: 'sonstige Dienstleistungen',
-                    y: 0.19
+                    name: 'Sonstige Dienstleistungen',
+                    y: 0.8
                 }, {
                     name: 'Verkehr- und Logistik',
-                    y: 0.16
+                    y: 1.5
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
-                    y: 0.14
+                    y: 0.0
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
-                    y: 0.07
+                    y: 4.5
                 }, {
                     name: 'Großhandel',
                     y: 0.07
@@ -244,6 +245,6 @@ export default {
 }
 
 .spacer {
-    height: 20px;
+    height: 0px;
 }
 </style>
