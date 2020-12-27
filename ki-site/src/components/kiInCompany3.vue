@@ -6,7 +6,7 @@
                 <div class= "mittig">
                     <div id="chart-A" class="chart"> </div>
                     <div class="spacer"> </div>
-                <highcharts :options="chart1"> </highcharts>
+                    <highcharts :options="chart1"> </highcharts>
                 </div>
             </div>
                 <div class="container">
