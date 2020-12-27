@@ -31,33 +31,55 @@ export default {
     // Variable von html Element
       chartOptions: {
             chart: {
-                styledMode: false
+                type: 'column',
+                styledMode: false,
+                // Hintergrundfarbe
+                backgroundColor: "none", 
+                width:800
+    },
+            credits: {
+                enabled: false
             },
 
-            title: {
-                text: 'Pie point CSS'
-            },
+    title: {
+        text: ''
+    },
 
-            xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            },
+    xAxis: [{
+        labels:{
+            format: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
+            rotation: 45,
+            step: 0
+            }
+    }],
 
-            series: [{
-                type: 'pie',
-                allowPointSelect: true,
-                keys: ['name', 'y', 'selected', 'sliced'],
-                data: [
-                    ['Apples', 29.9, false],
-                    ['Pears', 71.5, false],
-                    ['Oranges', 106.4, false],
-                    ['Plums', 129.2, false],
-                    ['Bananas', 144.0, false],
-                    ['Peaches', 176.0, false],
-                    ['Prunes', 135.6, true, true],
-                    ['Avocados', 148.5, false]
-                ],
-                showInLegend: true
-            }]
+    yAxis: [{
+        className: 'highcharts-color-0',
+        title: {
+            text: 'Anteil Unternehmen mit KI-Einsatz in % aller Unternehmen'
+        }
+    }, {
+        className: 'highcharts-color-1',
+        opposite: true,
+        title: {
+            text: 'Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen'
+        }
+    }],
+
+    plotOptions: {
+        column: {
+            borderRadius: 5
+        }
+    },
+
+    series: [{
+        name: 'Unternehmen mit KI-Einsatz',
+        data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8]
+    }, {
+        name: 'Hauptsächlich zu KI tätige Personen',
+        data: [1.51, 0.28, 0.88, 0.35, 0.10, 0.08, 0.08, 0.12, 0.10, 0.05, 0.05, 0.31 ],
+        yAxis: 1
+    }]
         },
     }
   },
