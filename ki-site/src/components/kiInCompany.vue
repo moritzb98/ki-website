@@ -1,19 +1,19 @@
 <template>
     <div class="site-container">
         <h2>Bedeutung von KI</h2>
-        <div class="flex-container flex-container--space-between">
+        <div class="flex-container margin-top">
             <div class="flex-item">
                 <div class="flex-container flex-container-100">
                     <div class="flex-item-20">
                         <div id="verticalbar" class="vertical-bar"></div>
                     </div>
                     <div class="flex-item-80">
-                        <p class="bar-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor</p>
+                        <p class="bar-text"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor</p>
                     </div>
                 </div>
             </div>
-            <div class="flex-item platzhalter">
-                
+            <div class="flex-item">
+                <highcharts :options="chartOptions"></highcharts>
             </div>
         </div>
     </div>
@@ -24,7 +24,58 @@ export default {
   name: 'kiincompany',
   data() {
     return {
-      
+        // Variable von html Element
+        chartOptions: {
+            chart: {
+                type: 'bar',
+                // Hintergrundfarbe
+                backgroundColor: "none", 
+            },
+            // Wasserzeichen entfernen
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['Sonstige Dienstleistungen', 'Großhandel', 'IKT', 'Sonst. Verarb. Gew.', 'Elektrot./Maschinenb.', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorg., Bg.b.', 'Unter.nahe Dienstl.', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanzdienstleisut.', 'Gesamtwirtschaft'],
+                itemStyle: {
+                    color: '#eef1f6',
+                }
+            },
+            yAxis: {
+                min: 0,
+                max: 100,
+                title: {
+                    text: 'in % aller KI einsetzenden Unternehmen'
+                }
+            },
+            legend: {
+                reversed: true,
+                itemStyle: {
+                    color: '#eef1f6',
+                },
+                itemHoverStyle: {
+                    color: '#ea5321'
+                }
+            },
+            plotOptions: {
+                series: {
+                    stacking: 'normal',
+                }
+            },
+            series: [{
+                name: 'essenziell',
+                data: [20, 17, 17, 13, 12, 11, 10, 10, 10, 4, 0, 12]
+            }, {
+                name: 'wichtig',
+                data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 65]
+            }, {
+                name: 'weniger wichtig',
+                data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 23]
+            }]
+        },
     }
   }
 }
@@ -36,10 +87,8 @@ export default {
     width: 40%;
 }
 
-.platzhalter {
-    height: 450px; 
-    background: url('../assets/kim.png');
-    background-size: cover;
+.margin-top {
+    margin-top: 100px;
 }
 
 .flex-container-100 {

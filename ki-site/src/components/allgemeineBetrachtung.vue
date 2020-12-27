@@ -37,7 +37,6 @@ export default {
                 // Hintergrundfarbe
                 backgroundColor: "none", 
             },
-            
             // Wasserzeichen entfernen
             credits: {
                 enabled: false

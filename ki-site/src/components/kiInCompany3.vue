@@ -7,13 +7,17 @@
                 <div class= "mittig">
                     <div id="chart-A" class="chart"> </div>
                     <div class="spacer"> </div>
-                <highcharts :options="chart2"> </highcharts>
+                <highcharts :options="chart1"> </highcharts>
                 </div>
             </div>
                 <div class="container">
                     <div class= "mittig">
                         <div id="chart-B" class="chart"> </div>
+<<<<<<< HEAD
                         <highcharts :options="abbildung217"> </highcharts>
+=======
+                        <highcharts :options="chart2"> </highcharts>
+>>>>>>> main
                     </div>
                  </div>
             </div>
@@ -34,7 +38,7 @@ export default {
   data() {
     return {
     // Variable von html Element
-      chart2: {
+      chart1: {
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -125,7 +129,11 @@ export default {
             }]
         },
 
+<<<<<<< HEAD
             abbildung217: {
+=======
+        chart2: {
+>>>>>>> main
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
