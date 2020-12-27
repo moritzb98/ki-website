@@ -23,7 +23,7 @@
           <allgemeineBetrachtung></allgemeineBetrachtung>
         </div>
         <div class="section">
-          <allgemeineBetrachtung2></allgemeineBetrachtung2>
+          <allgemeinebetrachtung2></allgemeinebetrachtung2>
         </div>
         <div class="section">
           <kiincompany></kiincompany>
@@ -55,7 +55,7 @@ import kiincompany2 from './components/kiInCompany2.vue'
 import kiincompany3 from './components/kiInCompany3.vue'
 import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
-import allgemeineBetrachtung2 from './components/allgemeineBetrachtung2.vue'
+import allgemeinebetrachtung2 from './components/allgemeineBetrachtung2.vue'
 
 export default {
   name: 'App',
@@ -69,7 +69,7 @@ export default {
     kiincompany3,
     grundlagenki,
     allgemeineBetrachtung,
-    allgemeineBetrachtung2
+    allgemeinebetrachtung2
   },
   data() {
     return {

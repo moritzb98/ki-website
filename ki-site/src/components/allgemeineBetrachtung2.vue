@@ -7,26 +7,60 @@
             </div>
             <div class="flex-item-60">
                 <div class="flex-container">
-                    <div class="platzhalter">
-                        <img src="../assets/balken.png" class="img">
-                    </div>
-                    <div class="platzhalter">
-                        <img src="../assets/balken.png" class="img">
-                    </div>
+                    <highcharts :options="chartOptions"></highcharts>
                 </div>
             </div>
         </div>
     </div>
 </template>
 
+
+
 <script>
+import {Chart} from 'highcharts-vue'
+
+// https://api.highcharts.com/highcharts/chart.backgroundColor
+
 export default {
-  name: 'kiincompany3',
+  name: 'allgemeinebetrachtung2',
+  components: {
+    highcharts: Chart 
+  },
   data() {
     return {
-      
+    // Variable von html Element
+      chartOptions: {
+chart: {
+        styledMode: true
+    },
+
+    title: {
+        text: 'Pie point CSS'
+    },
+
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+
+    series: [{
+        type: 'pie',
+        allowPointSelect: true,
+        keys: ['name', 'y', 'selected', 'sliced'],
+        data: [
+            ['Apples', 29.9, false],
+            ['Pears', 71.5, false],
+            ['Oranges', 106.4, false],
+            ['Plums', 129.2, false],
+            ['Bananas', 144.0, false],
+            ['Peaches', 176.0, false],
+            ['Prunes', 135.6, true, true],
+            ['Avocados', 148.5, false]
+        ],
+        showInLegend: true
+    }]
+        },
     }
-  }
+  },
 }
 </script>
 
