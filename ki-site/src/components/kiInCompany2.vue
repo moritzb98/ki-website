@@ -35,19 +35,30 @@ export default {
         yAxis: {
           title: {
             text: 'in % aller KI einsetzenden Unternehmen'
-          }
+          },
+          style: {
+              // Umrandung Text
+              textOutline: false,
+              // Farbe Text
+              color: 'white',
+              fill: 'white',
+              cursor:'white',
+              fontSize: '12px',
+          },
         },
 
         xAxis: {
           accessibility:{
-            categories:['vor 2010','zwischen 2010 und 2015','2016/17','2018/19*']
+          categories:['vor 2010','zwischen 2010 und 2015','2016/17','2018/19*']
           }
         },
 
         legend: {
           layout: 'vertical',
           align: 'right',
-          verticalAlign: 'middle'
+          verticalAlign: 'middle',
+          cursor: 'white',
+          color: 'white'
         },
 
       plotOptions: {
@@ -61,7 +72,7 @@ export default {
 
       series: [{
           name: 'Finanzdienstleistungen',
-          data: [6, 19, 38, 37]
+          data: [6, 19, 38, 37],
       }, {
           name: 'Chemie',
           data: [11, 14, 51, 23]
@@ -155,6 +166,10 @@ width: 100%;
       display: flex;
       flex-direction: column;
       position: relative;
+  }
+
+  .highcharts-axis-labels{
+    color: 'white';
   }
 
 </style>
