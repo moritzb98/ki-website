@@ -3,16 +3,13 @@
         <h2>Vergleich der Beschäftigten und des Umsatzes</h2>
         <div class="flex-container">
             <div class="container">
-                <div class= "mittig">
-                    <div id="chart-A" class="chart"> </div>
-                    <div class="spacer"> </div>
-                    <highcharts :options="chart1"> </highcharts>
+                <div class="mittig">
+                    <highcharts :options="chart1"></highcharts>
                 </div>
             </div>
                 <div class="container">
                     <div class= "mittig">
-                        <div id="chart-B" class="chart"> </div>
-                        <highcharts :options="chart2"> </highcharts>
+                        <highcharts :options="chart2"></highcharts>
                     </div>
                  </div>
             </div>
