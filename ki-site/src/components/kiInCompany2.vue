@@ -24,6 +24,7 @@ export default {
         chart: {
           backgroundColor: null,
           width: 1250,
+          height: 550
         },
         // Wasserzeichen entfernen
         credits: {
@@ -53,11 +54,13 @@ export default {
         },
 
         legend: {
-          layout: 'vertical',
-          align: 'right',
-          verticalAlign: 'middle',
-          cursor: 'white',
-          color: 'white'
+          
+          itemHoverStyle: {
+              color: '#ea5321'
+          },
+          itemStyle: {
+            color: 'white'
+          }
         },
 
       plotOptions: {
