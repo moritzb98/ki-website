@@ -23,7 +23,7 @@ export default {
       chartOptions: {
         chart: {
           backgroundColor: null,
-          width: 1100,
+          width: 1250,
         },
         // Wasserzeichen entfernen
         credits: {
@@ -49,7 +49,7 @@ export default {
         },
 
         xAxis: {
-          categories:['vor 2010','zwischen 2010 und 2015','2016/17','2018/19*'],
+          categories:['2010','zwischen 2010 und 2015','2016/17','2018/19*'],
         },
 
         legend: {
@@ -65,8 +65,8 @@ export default {
               label: {
                   connectorAllowed: false
               },
-              //pointStart: ,
-          }
+              pointPlacement: 'on',
+          },
       },
 
       series: [{
@@ -123,6 +123,10 @@ export default {
       }
       }
     }
+  },
+
+  methods: {
+    
   }
 }
 </script>
