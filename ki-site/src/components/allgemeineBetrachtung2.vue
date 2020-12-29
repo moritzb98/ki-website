@@ -46,26 +46,25 @@ export default {
     },
 
     xAxis: [{
+        tickInterval: 1,
+        categories: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
         labels:{
-            format: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
             rotation: 45,
-            step: 0
-            }
+        }
     }],
 
     yAxis: [{
         className: 'highcharts-color-0',
         title: {
             text: 'Anteil Unternehmen mit KI-Einsatz in % aller Unternehmen'
-        }
-    }, {
+        },
+    },{
         className: 'highcharts-color-1',
         opposite: true,
         title: {
             text: 'Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen'
-        }
+        },
     }],
-
     plotOptions: {
         column: {
             borderRadius: 5
