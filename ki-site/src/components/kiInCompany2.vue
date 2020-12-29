@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
         <h2>Erstmaliger Einsatz von KI</h2>
-        <div class="flex-container flex-container--space-between">
+        <div class="flex-container">
 
             <highcharts :options="chartOptions"></highcharts>
 
@@ -22,7 +22,8 @@ export default {
       // Variable von html Element
       chartOptions: {
         chart: {
-        backgroundColor: null,
+          backgroundColor: null,
+          width: 1100,
         },
         // Wasserzeichen entfernen
         credits: {
@@ -48,9 +49,7 @@ export default {
         },
 
         xAxis: {
-          accessibility:{
-          categories:['vor 2010','zwischen 2010 und 2015','2016/17','2018/19*']
-          }
+          categories:['vor 2010','zwischen 2010 und 2015','2016/17','2018/19*'],
         },
 
         legend: {
@@ -66,7 +65,7 @@ export default {
               label: {
                   connectorAllowed: false
               },
-              pointStart: 2010
+              //pointStart: ,
           }
       },
 
@@ -142,6 +141,10 @@ export default {
 }
  .highcharts-root{
  width: 100% !important;
+ }
+
+ .highcharts-container {
+   margin: 0 auto !important;
  }
 
 #fullpage > div.section.fp-section.fp-table.active.fp-completely > div > div > div > div{
