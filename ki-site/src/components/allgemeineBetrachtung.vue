@@ -58,10 +58,11 @@ export default {
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
-                        enabled: true,
-                        format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
+                        enabled: false,
+                        //format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
                     },
                     borderWidth: 0,
+                    showInLegend: true
                 }
             },
             series: [{
