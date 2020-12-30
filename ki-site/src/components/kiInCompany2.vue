@@ -24,7 +24,8 @@ export default {
         chart: {
           backgroundColor: null,
           width: 1250,
-          height: 550
+          height: 550,
+          
         },
         // Wasserzeichen entfernen
         credits: {
