@@ -1,15 +1,30 @@
 <template>
   <div id="app">
     <div>
+      <nav id="nav">
+          <ul id="myMenu">
+            <li data-menuanchor="Home" class="active"><a href="#Home">Start</a></li>
+            <li data-menuanchor="InformationenZurStudie"><a href="#InformationenZurStudie">01</a></li>
+            <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">02</a>
+              <ul class="nav2 firstnav">
+                <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung"><div class="dot"></div></a></li>
+                <li class="no-connection" data-menuanchor="AllgemeineBetrachtungB"><a href="#AllgemeineBetrachtungB"><div class="dot"></div></a></li>
+              </ul>
+            </li>
+            <li data-menuanchor="BedeutungVonKI"><a href="#BedeutungVonKI">03</a></li>
+            <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">04</a></li>
+            <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">05</a></li>
+            <li data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">06</a>
+            <ul class="nav2 secondnav">
+              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
+              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
+              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/2"><div class="dot"></div></a></li>
+            </ul>
+            </li>
+            <li class="no-connection" data-menuanchor="Impressum"><a href="#Impressum">I</a></li>
+          </ul>
+        </nav>
       <full-page ref="fullpage" :options="options" id="fullpage">
-        <ul id="myMenu">
-          <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First</a></li>
-          <li data-menuanchor="secondPage"><a href="#secondPage">Second</a></li>
-          <li data-menuanchor="thirdPage"><a href="#thirdPage">Third</a></li>
-          <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth</a></li>
-          <li data-menuanchor="fourthPage"><a href="#fifthPage">Fifth</a></li>
-
-        </ul>
         <div class="section">
           <startSection></startSection>
         </div>
@@ -74,10 +89,10 @@ export default {
   data() {
     return {
       options: {
-        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtung', 'BedeutungVonKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
-        menu: '#myMenu',
-        navigation: true,
+        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
         fadingEffect: true,
+        menu: '#myMenu',
+        //navigation: true,
         navigationTooltips: ['Home', 'Informationen zur Studie', 'Grundlagen zu KI', 'Allgemeine Betrachtung', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
         afterLoad: this.afterLoad,
       },
@@ -101,4 +116,90 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import './main.css';
+
+#nav {
+  position: fixed;
+  z-index: 9999;
+  right: 1%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#nav ul li {
+    list-style: none;
+    width: 100%;
+}
+
+#nav ul li:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background: #eef1f6;
+    margin: 6px 0 6px 16px;
+}
+
+#nav a{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.nav2 {
+  padding: 0;
+}
+
+.nav2 li {
+  width: 27px;
+  height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.no-connection:after {
+  display: none !important;
+}
+
+.dot {
+  background-color: #eef1f6;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.dot:hover {
+  width: 8px;
+  height: 8px;
+}
+
+#nav .active a{
+  color: red;
+}
+
+.fp-viewing-Funktionsbereich-2 #nav .secondnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .secondnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .secondnav li:nth-child(1) .dot{
+  width: 8px;
+  height: 8px;
+}
+
+.fp-viewing-AllgemeineBetrachtung #nav .firstnav li:nth-child(1) .dot, .fp-viewing-AllgemeineBetrachtungB #nav .firstnav li:nth-child(2) .dot{
+  width: 8px;
+  height: 8px;
+}
+
+.fp-viewing-AllgemeineBetrachtungB #nav li:nth-child(3) a{
+  color: red;
+}
 </style>
