@@ -12,9 +12,10 @@
               </ul>
             </li>
             <li data-menuanchor="BedeutungVonKI"><a href="#BedeutungVonKI">03</a></li>
+            <li data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">04</a></li>
             <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">04</a></li>
-            <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">05</a></li>
-            <li data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">06</a>
+            <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">06</a></li>
+            <li data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">07</a>
             <ul class="nav2 secondnav">
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
@@ -33,6 +34,9 @@
         </div>
         <div class="section">
           <grundlagenki></grundlagenki>
+        </div>
+        <div class="section">
+          <UmsatzanteilKI></UmsatzanteilKI>
         </div>
         <div class="section">
           <allgemeineBetrachtung></allgemeineBetrachtung>
@@ -64,6 +68,7 @@
 import startSection from './components/startSection.vue'
 import introduction from './components/introduction.vue'
 import iktdetail from './components/iktdetail.vue'
+import UmsatzanteilKI from './components/UmsatzanteilKI.vue'
 import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
 import kiincompany2 from './components/kiInCompany2.vue'
@@ -79,6 +84,7 @@ export default {
     impressum,
     introduction,
     iktdetail,
+    UmsatzanteilKI,
     kiincompany,
     kiincompany2,
     kiincompany3,
@@ -89,7 +95,7 @@ export default {
   data() {
     return {
       options: {
-        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
+        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'UmsatzanteilKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
         fadingEffect: true,
         menu: '#myMenu',
         //navigation: true,

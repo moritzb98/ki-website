@@ -125,10 +125,6 @@ export default {
                 }]
             }]
         },
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
         chart2: {
             chart: {
                 plotBackgroundColor: null,
