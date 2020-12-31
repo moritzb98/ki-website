@@ -9,7 +9,12 @@
             </div>
                 <div class="container">
                     <div class= "mittig">
+<<<<<<< Updated upstream
                         <highcharts :options="chart2"></highcharts>
+=======
+                        <div id="chart-B" class="chart"> </div>
+                        <highcharts :options="chart2"> </highcharts>
+>>>>>>> Stashed changes
                     </div>
                  </div>
             </div>
@@ -120,7 +125,10 @@ export default {
                 }]
             }]
         },
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         chart2: {
             chart: {
                 plotBackgroundColor: null,
