@@ -53,6 +53,15 @@ export default {
                     valueSuffix: '%'
                 }
             },
+            legend: {
+                reversed: true,
+                itemStyle: {
+                    color: '#eef1f6',
+                },
+                itemHoverStyle: {
+                    color: '#ea5321'
+                }
+            },
             plotOptions: {
                 pie: {
                     allowPointSelect: true,
@@ -82,39 +91,48 @@ export default {
                 data: [{
                     name: 'IKT',
                     y: 1.50,
-                    sliced: true,
-                    selected: true,
-                    color: '#ff0000',
+                    //sliced: true,
+                    //selected: true,
+                    color: '#F7932D',
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
-                    y: 0.68
+                    y: 0.68,
+                    color: '#66A2B9'
                 }, {
                     name: 'Fahrzeugbau',
-                    y: 0.84
+                    y: 0.84,
+                    color: '#B35F00'
                 }, {
                     name: 'Unternehmensnahe Dienstleistungen',
                     y: 0.65
                 }, {
                     name: 'sonstiges verarbeitendes Gewerbe',
-                    y: 0.26
+                    y: 0.26,
+                    color: '#806E59'
                 }, {
                     name: 'Finanzdiensleistungen',
-                    y: 0.24
+                    y: 0.24,
+                    color: '#608DBF'
                 }, {
                     name: 'sonstige Dienstleistungen',
-                    y: 0.19
+                    y: 0.19,
+                    color: '#C4935C'
                 }, {
                     name: 'Verkehr- und Logistik',
-                    y: 0.16
+                    y: 0.16,
+                    color: '#003E82'
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
-                    y: 0.14
+                    y: 0.14,
+                    color: '#CCAF8F'
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
-                    y: 0.07
+                    y: 0.07,
+                    color: '#323E65'
                 }, {
                     name: 'Großhandel',
-                    y: 0.07
+                    y: 0.07,
+                    color: '#CFD9E6'
                 }]
             }]
         },

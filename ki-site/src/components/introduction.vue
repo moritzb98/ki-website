@@ -6,14 +6,14 @@
         <div class="flex-container">
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/artificial-intelligence.svg">
+              <img src="../assets/BRAIN SIMULATION.svg">
             </div>
             <h3>Zeitraum der Datenerhebung</h3>
             <p>xyz</p>
           </div>
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/artificial-intelligence.svg">
+              <img src="../assets/BIG DATA.svg">
             </div>
             <h3>Form der Datenerhebung</h3>
             <p>xyz</p>

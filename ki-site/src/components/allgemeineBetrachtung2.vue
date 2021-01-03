@@ -65,6 +65,15 @@ export default {
             text: 'Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen'
         },
     }],
+        legend: {
+                reversed: true,
+                itemStyle: {
+                    color: '#eef1f6',
+                },
+                itemHoverStyle: {
+                    color: '#ea5321'
+                }
+            },
     plotOptions: {
         column: {
             borderRadius: 5

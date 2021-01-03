@@ -4,11 +4,12 @@
         <div class="flex-container margin-top">
             <div class="flex-item">
                 <div class="flex-container flex-container-100">
-                    <div class="flex-item-20">
-                        <div id="verticalbar" class="vertical-bar"></div>
-                    </div>
+                    
                     <div class="flex-item-80">
                         <p class="bar-text"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor</p>
+                    </div>
+                    <div class="flex-item-20">
+                        <div id="verticalbar" class="vertical-bar"></div>
                     </div>
                 </div>
             </div>
@@ -105,6 +106,7 @@ export default {
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: flex-end;
 }
 
 .vertical-bar {
