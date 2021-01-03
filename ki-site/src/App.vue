@@ -106,7 +106,7 @@ export default {
   },
   methods: {
     afterLoad: function(origin, destination) {
-      if(destination.anchor == "BedeutungVonKI"){
+      if(destination.anchor == "UmsatzanteilKI"){
         this.startBar();
       }
     },
