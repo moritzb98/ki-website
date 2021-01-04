@@ -15,7 +15,8 @@
             <li data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">04</a></li>
             <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">04</a></li>
             <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">06</a></li>
-            <li data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">07</a>
+            <li data-menuanchor="KIAusgabenUndBeschaeftigte"><a href="#KIAusgabenUndBeschaeftigte">07</a></li>
+            <li data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">08</a>
             <ul class="nav2 secondnav">
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
@@ -54,6 +55,9 @@
           <kiincompany3></kiincompany3>
         </div>
         <div class="section">
+          <KIAusgabenUndBeschaeftigte></KIAusgabenUndBeschaeftigte>
+        </div>
+        <div class="section">
           <iktdetail> </iktdetail>
         </div>
         <div class="section">
@@ -73,6 +77,7 @@ import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
 import kiincompany2 from './components/kiInCompany2.vue'
 import kiincompany3 from './components/kiInCompany3.vue'
+import KIAusgabenUndBeschaeftigte from './components/KIAusgabenUndBeschaeftigte'
 import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
 import allgemeinebetrachtung2 from './components/allgemeineBetrachtung2.vue'
@@ -88,6 +93,7 @@ export default {
     kiincompany,
     kiincompany2,
     kiincompany3,
+    KIAusgabenUndBeschaeftigte,
     grundlagenki,
     allgemeineBetrachtung,
     allgemeinebetrachtung2
