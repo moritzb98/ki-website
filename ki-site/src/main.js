@@ -7,12 +7,16 @@ import VueFullPage from 'vue-fullpage.js'
 
 // Import Highcharts
 import HighchartsVue from 'highcharts-vue'
+import More from 'highcharts/highcharts-more'
+import Highcharts from 'highcharts'
+
 
 
 Vue.config.productionTip = false
 
 Vue.use(VueFullPage);
 Vue.use(HighchartsVue);
+More(Highcharts);
 
 new Vue({
   el: '#app',

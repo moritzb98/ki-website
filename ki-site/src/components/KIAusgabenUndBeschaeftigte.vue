@@ -3,15 +3,11 @@
       <h2>Allgemeine Betrachtung</h2>
       <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) </h3>
         <p>Verglich von Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) und Anteil der Ausgaben für KI in % des Umsatzes aller Unternehmen.</p>
-        <div class="container">
-            <div class="mittig">
+        <div class="container-bubble">
+            <div>
                 <highcharts :options="chartOptions"></highcharts>
             </div>
-            <div class="mittig">
-                <img src="../assets/money-bag.svg" class="bild">
-            </div>
         </div>
-    
     </div>
 </template>
 
@@ -23,110 +19,110 @@ import {Chart} from 'highcharts-vue'
 export default {
   name: 'KIAusgabenUndBeschaeftigte',
     components: {
-    highcharts: Chart 
-  },
+        highcharts: Chart 
+    },
   data() {
     return {
       chartOptions: { 
           chart: {
-        type: 'packedbubble',
-        height: '100%',
-        styledMode: false,
-        // Hintergrundfarbe
-        backgroundColor: "none", 
-    },
-      credits: {
-        enabled: false
-      },
-    title: {
-        text: ''
-    },
-    tooltip: {
-        useHTML: true,
-        pointFormat: '<b>{point.name}:</b> {point.value}m CO<sub>2</sub>'
-    },
-    plotOptions: {
-        packedbubble: {
-            minSize: '30%',
-            maxSize: '120%',
-            zMin: 0,
-            zMax: 1000,
-            layoutAlgorithm: {
-                splitSeries: false,
-                gravitationalConstant: 0.02
-            },
-            dataLabels: {
-                enabled: true,
-                format: '{point.name}',
-                filter: {
-                    property: 'y',
-                    operator: '>',
-                    value: 250
+            type: 'packedbubble',
+            height: '500px',
+            styledMode: false,
+            // Hintergrundfarbe
+            backgroundColor: "none", 
+        },
+        credits: {
+            enabled: false
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            useHTML: true,
+            pointFormat: '<b>{point.name}:</b> {point.value}€'
+        },
+        plotOptions: {
+            packedbubble: {
+                minSize: '0%',
+                maxSize: '100%',
+                zMin: 0,
+                zMax: 1000,
+                layoutAlgorithm: {
+                    splitSeries: false,
+                    gravitationalConstant: 0.02
                 },
-                style: {
-                    color: 'white',
-                    textOutline: 'none',
-                    fontWeight: 'normal'
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}',
+                    filter: {
+                        property: 'y',
+                        operator: '>',
+                        value: 250
+                    },
+                    style: {
+                        color: 'white',
+                        textOutline: 'none',
+                        fontWeight: 'normal'
+                    }
                 }
             }
-        }
-    },
-    series: [{
-        name: 'IKT',
-        data: [{
+        },
+        series: [{
             name: 'IKT',
-            value: 382
-        }]
-    }, {
-        name: 'Fahrzeugbau',
-        data: [{
-            name: "Fahrzeugbau",
-            value: 7056
-        }]
-    }, {
-        name: 'Elektrot./Maschinen.b.',
-        data: [{
-            name: "Elektrot./Maschinen.b.",
-            value: 409.4
-        }]
-    }, {
-        name: 'Verkehr, Logistik',
-        data: [{
-            name: "Verkehr, Logistik",
-            value: 7.6
-        }]
-    }, {
-        name: 'Finanzdienstleist.',
-        data: [{
-            name: "Finanzdienstleist.",
-            value: 7.2
-        }]
-    }, {
-        name: 'Chemie/Ph.',
-        data: [{
-            name: "Chemie/Ph.",
-            value: 6.5
-        }]
+            data: [{
+                name: 'IKT',
+                value: 382
+            }]
         }, {
-        name: 'Chemie/Ph.',
-        data: [{
-            name: "Chemie/Ph.",
-            value: 6.5
-        }]
+            name: 'Fahrzeugbau',
+            data: [{
+                name: "Fahrzeugbau",
+                value: 7056
+            }]
         }, {
-        name: 'Chemie/Ph.',
-        data: [{
-            name: "Chemie/Ph.",
-            value: 6.5
-        }]
+            name: 'Elektrot./Maschinen.b.',
+            data: [{
+                name: "Elektrot./Maschinen.b.",
+                value: 718
+            }]
         }, {
-        name: 'Chemie/Ph.',
-        data: [{
-            name: "Chemie/Ph.",
-            value: 6.5
-        }]
+            name: 'Verkehr, Logistik',
+            data: [{
+                name: "Verkehr, Logistik",
+                value: 7.6
+            }]
+        }, {
+            name: 'Finanzdienstleist.',
+            data: [{
+                name: "Finanzdienstleist.",
+                value: 7.2
+            }]
+        }, {
+            name: 'Chemie/Ph.',
+            data: [{
+                name: "Chemie/Ph.",
+                value: 6.5
+            }]
+            }, {
+            name: 'Chemie/Ph.',
+            data: [{
+                name: "Chemie/Ph.",
+                value: 6.5
+            }]
+            }, {
+            name: 'Chemie/Ph.',
+            data: [{
+                name: "Chemie/Ph.",
+                value: 6.5
+            }]
+            }, {
+            name: 'Chemie/Ph.',
+            data: [{
+                name: "Chemie/Ph.",
+                value: 6.5
+            }]
 
-    }]
+        }]
       }
     }
   },
