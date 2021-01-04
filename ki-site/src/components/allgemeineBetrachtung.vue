@@ -93,46 +93,47 @@ export default {
                     y: 1.50,
                     //sliced: true,
                     //selected: true,
-                    color: '#F7932D',
+                    color: '#323E65',
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
                     y: 0.68,
-                    color: '#66A2B9'
+                    color: '#003E82'
                 }, {
                     name: 'Fahrzeugbau',
                     y: 0.84,
-                    color: '#B35F00'
+                    color: '#608DBF'
                 }, {
                     name: 'Unternehmensnahe Dienstleistungen',
-                    y: 0.65
+                    y: 0.65,
+                    color: '#7EB3BB'
                 }, {
                     name: 'sonstiges verarbeitendes Gewerbe',
                     y: 0.26,
-                    color: '#806E59'
+                    color: '#66A2B9'
                 }, {
                     name: 'Finanzdiensleistungen',
                     y: 0.24,
-                    color: '#608DBF'
+                    color: '#D3EAEF'
                 }, {
                     name: 'sonstige Dienstleistungen',
                     y: 0.19,
-                    color: '#C4935C'
+                    color: '#CFD9E6'
                 }, {
                     name: 'Verkehr- und Logistik',
                     y: 0.16,
-                    color: '#003E82'
+                    color: '#CCAF8F'
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
                     y: 0.14,
-                    color: '#CCAF8F'
+                    color: '#C4935C'
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
                     y: 0.07,
-                    color: '#323E65'
+                    color: '#B35F00'
                 }, {
                     name: 'Großhandel',
                     y: 0.07,
-                    color: '#CFD9E6'
+                    color: '#F7932D'
                 }]
             }]
         },

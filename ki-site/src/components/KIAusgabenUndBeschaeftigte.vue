@@ -39,12 +39,12 @@ export default {
         },
         tooltip: {
             useHTML: true,
-            pointFormat: '<b>{point.name}:</b> {point.value}€'
+            pointFormat: '<b>{point.name}:</b> {point.value}000€'
         },
         plotOptions: {
             packedbubble: {
-                minSize: '0%',
-                maxSize: '100%',
+                minSize: '30%',
+                maxSize: '130%',
                 zMin: 0,
                 zMax: 1000,
                 layoutAlgorithm: {
@@ -67,59 +67,98 @@ export default {
                 }
             }
         },
+                legend: {
+                reversed: true,
+                itemStyle: {
+                    color: '#eef1f6',
+                },
+                itemHoverStyle: {
+                    color: '#ea5321'
+                }
+            },
         series: [{
             name: 'IKT',
             data: [{
                 name: 'IKT',
-                value: 382
+                value: 382,
+                color: '#323E65'
             }]
         }, {
             name: 'Fahrzeugbau',
             data: [{
                 name: "Fahrzeugbau",
-                value: 7056
+                value: 7056,
+                color: '#608DBF'
             }]
         }, {
             name: 'Elektrot./Maschinen.b.',
             data: [{
                 name: "Elektrot./Maschinen.b.",
-                value: 718
+                value: 718,
+                color: '#003E82'
             }]
         }, {
             name: 'Verkehr, Logistik',
             data: [{
                 name: "Verkehr, Logistik",
-                value: 7.6
+                value: 321,
+                color: '#CCAF8F'
             }]
         }, {
             name: 'Finanzdienstleist.',
             data: [{
                 name: "Finanzdienstleist.",
-                value: 7.2
+                value: 286,
+                color: '#D3EAEF'
             }]
         }, {
             name: 'Chemie/Ph.',
             data: [{
                 name: "Chemie/Ph.",
-                value: 6.5
+                value: 282,
+                color: '#C4935C'
             }]
             }, {
-            name: 'Chemie/Ph.',
+            name: 'Ver-/Entsorgung.',
             data: [{
-                name: "Chemie/Ph.",
-                value: 6.5
+                name: "Ver-/Entsorgung.",
+                value: 245,
+                color: '#B35F00'
             }]
             }, {
-            name: 'Chemie/Ph.',
+            name: 'Sonst. Dienstleist.',
             data: [{
-                name: "Chemie/Ph.",
-                value: 6.5
+                name: "Sonst. Dienstleist.",
+                value: 210,
+                color: '#CFD9E6'
             }]
             }, {
-            name: 'Chemie/Ph.',
+            name: 'Großhandel',
             data: [{
-                name: "Chemie/Ph.",
-                value: 6.5
+                name: "Großhandel",
+                value: 171,
+                color: '#F7932D'
+            }]
+              }, {
+            name: 'Sonst. Verarb. Gewerbe',
+            data: [{
+                name: "Sonst. Verarb. Gewerbe",
+                value: 130,
+                color: '#66A2B9'
+            }]
+              }, {
+            name: 'Untern.nahe Dienstleist.',
+            data: [{
+                name: "Untern.nahe Dienstleist.",
+                value: 93,
+                color: '#7EB3BB'
+            }]
+              }, {
+            name: 'Gesamtwirtschaft',
+            data: [{
+                name: "Gesamtwirtschaft",
+                value: 276,
+                color: '#806E59'
             }]
 
         }]
