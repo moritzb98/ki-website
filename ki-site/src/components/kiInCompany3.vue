@@ -11,7 +11,6 @@
                     <div class= "mittig">
                         <div id="chart-B" class="chart"> </div>
                         <highcharts :options="chart2"> </highcharts>
->>>>>>> Stashed changes
                     </div>
                  </div>
             </div>

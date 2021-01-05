@@ -165,7 +165,7 @@ export default {
     content: "";
     display: block;
     width: 2px;
-    height: 45px;
+    height: 35px;
     background: #eef1f6;
     margin: 6px 0 6px 16px;
 }
