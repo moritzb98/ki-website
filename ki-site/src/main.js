@@ -10,8 +10,6 @@ import HighchartsVue from 'highcharts-vue'
 import More from 'highcharts/highcharts-more'
 import Highcharts from 'highcharts'
 
-
-
 Vue.config.productionTip = false
 
 Vue.use(VueFullPage);

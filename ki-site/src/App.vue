@@ -46,6 +46,9 @@
           <allgemeinebetrachtung2></allgemeinebetrachtung2>
         </div>
         <div class="section">
+          <anzahlBeschaeftigteKi></anzahlBeschaeftigteKi>
+        </div>
+        <div class="section">
           <kiincompany></kiincompany>
         </div>
         <div class="section">
@@ -81,6 +84,7 @@ import KIAusgabenUndBeschaeftigte from './components/KIAusgabenUndBeschaeftigte'
 import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
 import allgemeinebetrachtung2 from './components/allgemeineBetrachtung2.vue'
+import anzahlBeschaeftigteKi from './components/anzahlBeschaeftigteKi.vue'
 
 export default {
   name: 'App',
@@ -96,7 +100,8 @@ export default {
     KIAusgabenUndBeschaeftigte,
     grundlagenki,
     allgemeineBetrachtung,
-    allgemeinebetrachtung2
+    allgemeinebetrachtung2,
+    anzahlBeschaeftigteKi
   },
   data() {
     return {

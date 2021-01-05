@@ -37,21 +37,25 @@ export default {
         },
         yAxis: {
           title: {
-            text: 'in % aller KI einsetzenden Unternehmen'
+            text: 'in % aller KI einsetzenden Unternehmen',
+            style:{
+                color: 'white',
+            } 
           },
-          style: {
-              // Umrandung Text
-              textOutline: false,
-              // Farbe Text
-              color: 'white',
-              fill: 'white',
-              cursor:'white',
-              fontSize: '12px',
-          },
+          labels:{
+            style:{
+                color: 'white',
+            } 
+          }
         },
 
         xAxis: {
           categories:['2010','zwischen 2010 und 2015','2016/17','2018/19*'],
+          labels:{
+            style:{
+                color: 'white',
+            } 
+          }
         },
 
         legend: {

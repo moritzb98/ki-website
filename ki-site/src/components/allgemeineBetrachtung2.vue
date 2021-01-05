@@ -5,7 +5,7 @@
             <div class="flex-item-30">
                 <p>Anteil der Unternehmen mit KI-Einsatz in % aller Unternehmen  verglichen mit Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="flex-item-60">
+            <div class="flex-item-70">
                 <div class="flex-container">
                     <highcharts :options="chartOptions"></highcharts>
                 </div>
@@ -50,20 +50,43 @@ export default {
         categories: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
         labels:{
             rotation: 45,
+            style:{
+                color: 'white',
+            } 
         }
     }],
 
     yAxis: [{
         className: 'highcharts-color-0',
         title: {
-            text: 'Anteil Unternehmen mit KI-Einsatz in % aller Unternehmen'
+            text: 'Anteil Unternehmen mit KI-Einsatz in % aller Unternehmen',
+            style:{
+                // Color Text left
+                color: 'white',
+            } 
         },
+        labels:{
+            style:{
+                // Color Data left
+                color: 'white',
+            } 
+        }
     },{
         className: 'highcharts-color-1',
         opposite: true,
         title: {
-            text: 'Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen'
+            text: 'Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen',
+            style:{
+                // Color Text right
+                color: 'white',
+            } 
         },
+        labels:{
+            style:{
+                // Color Data right
+                color: 'white',
+            } 
+        }
     }],
         legend: {
                 reversed: true,
@@ -100,8 +123,8 @@ export default {
     width: 30%;
 }
 
-.flex-item-60 {
-    width: 60%;
+.flex-item-70 {
+    width: 70%;
     margin: auto;
 }
 
