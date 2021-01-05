@@ -1,6 +1,11 @@
 <template>
   <div id="app">
     <div>
+      <a id="glossar-buttonID" class="glossar-button glossar-button-show" href="#" v-on:click="toggleGlossar">Glossar</a>
+      <a id="glossar-buttonX" class="glossar-button" href="#" v-on:click="toggleGlossar">X</a>
+      <div id="glossarID" class="glossar">
+        <grundlagenki></grundlagenki>
+      </div>
       <nav id="nav">
           <ul id="myMenu">
             <li data-menuanchor="Home" class="active"><a href="#Home">Start</a></li>
@@ -32,9 +37,6 @@
         </div>
         <div class="section">
           <introduction></introduction>
-        </div>
-        <div class="section">
-          <grundlagenki></grundlagenki>
         </div>
         <div class="section">
           <UmsatzanteilKI></UmsatzanteilKI>
@@ -116,6 +118,13 @@ export default {
     }
   },
   methods: {
+    toggleGlossar: function() {
+      document.getElementById('glossarID').classList.toggle("glossar-show");
+      document.getElementById('glossar-buttonID').classList.toggle("glossar-button-show");
+      document.getElementById('glossar-buttonX').classList.toggle("glossar-button-show");
+      document.getElementById('glossar-contentID').classList.toggle("glossar-content-show");
+    },
+
     afterLoad: function(origin, destination) {
       if(destination.anchor == "UmsatzanteilKI"){
         this.startBar();
@@ -219,4 +228,14 @@ export default {
 .fp-viewing-AllgemeineBetrachtungB #nav li:nth-child(3) a{
   color: red;
 }
+
+.glossar-show {
+  height: 100% !important;
+  visibility: visible !important;
+}
+
+.glossar-content-show {
+  opacity: 1 !important;
+}
+
 </style>

@@ -10,6 +10,30 @@ body {
     background-color: #0f1012;
   }
 
+  .glossar {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    background: grey;
+    visibility: hidden;
+    z-index: 10;
+    transition: all 1s;
+  }
+
+  .glossar-button {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .glossar-button-show {
+    display: block;
+  }
+
+  .glossar h2{
+    margin-top: 0;
+  }
+
   .left-img {
     position: absolute;
     height: 100%;

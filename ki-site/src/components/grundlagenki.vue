@@ -1,5 +1,5 @@
 <template>
-    <div class="site-container">
+    <div id="glossar-contentID" class="site-container glossar-content">
       <h2>Grundlagen zu KI</h2>
         <p>kurze Erläuterung zu wichtigen Begriffen (z.B. KI allgemein) </p>
         <br>
@@ -65,9 +65,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.tbl{
-    
-}
+
 .fett{
     font-weight: bold;   
 }
@@ -86,5 +84,10 @@
   padding: 15px;
   width: 50%;
   margin: 0 auto;
+}
+
+.glossar-content {
+  opacity: 0;
+  transition: all 1.5s;
 }
 </style>
