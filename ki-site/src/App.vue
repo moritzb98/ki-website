@@ -231,7 +231,7 @@ export default {
 
 .glossar-show {
   height: 100% !important;
-  visibility: visible !important;
+  
 }
 
 .glossar-content-show {
