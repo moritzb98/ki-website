@@ -1,9 +1,11 @@
 <template>
     <div class="site-container">
-        <h2>Indikatoren zur Verbreitung des Einsatzes von KI in der deutschen Wirtschaft 2019 im Branchenvergleich </h2>
+        <h2> Anzahl der Beschäftigten mit KI-Tätigkeit und Unternehmen mit KI-Einsatz </h2>
         <div class="flex-container">
             <div class="flex-item-30">
-                <p>Anteil der Unternehmen mit KI-Einsatz in % aller Unternehmen  verglichen mit Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p> Diese Grafik stellt dar, wie viele Unternehmen (bezogen auf alle in der Umfrage befragten Unternehmen) bereits KI einsetzen. Dieser Wert wird hier mit der Farbe blau gekennzeichnet.
+                    Zudem wird gezeigt wie viele Personen, in den mit KI-Einsatz bestehenden Unternehmen, bereits hauptsächlich Tätigkeiten mit KI-Bezug ausüben. Dieser Wert wird mit der Farbe grau dargestellt.
+                    </p>
             </div>
             <div class="flex-item-70">
                 <div class="flex-container">
