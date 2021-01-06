@@ -29,28 +29,59 @@ export default {
     chart.hiddenState.properties.opacity = 0; // this makes initial fade in effect
 
     chart.data = [{
-        "name": "The first",
-        "value": 354,
-        "color": am4core.color("red")
+        "name": "IKT",
+        "value": 12.1,
+        "color": am4core.color('#323E65')
     }, {
-        "name": "The second",
-        "value": 245
+        "name": "Elektrotechnik, Maschinenbau",
+        "value": 14,
+        "color": am4core.color('#003E82')
     }, {
-        "name": "The third",
-        "value": 187
+        "name": "Fahrzeugbau",
+        "value": 32.3,
+         "color": am4core.color('#608DBF')
+    }, 
+     {
+        "name": "Unternehmensnahe Dienstleistungen",
+        "value": 6.4,
+         "color": am4core.color('#7EB3BB')
     }, {
-        "name": "The fourth",
-        "value": 123
-    }, {
-        "name": "The fifth",
-        "value": 87
-    }, {
-        "name": "The sixth",
-        "value": 45
-    }, {
-        "name": "The seventh",
-        "value": 23
-    }];
+        "name": "Sonst. Veerarb. Gewerbe",
+        "value": 4.3,
+        "color": am4core.color('#66A2B9')
+
+}, {
+        "name": "Finanzdienstleistungen",
+        "value": 7.1,
+         "color": am4core.color('#D3EAEF')
+    },
+    {
+        "name": "Sonstige Dienstleistungen",
+        "value": 6,
+         "color": am4core.color('#CFD9E6')
+    },
+
+    {
+        "name": "Verkehr und Logistik",
+        "value": 6.3,
+         "color": am4core.color('#CCAF8F')
+    },
+    {
+        "name": "Chemie/Pharma, Grundstoffe",
+        "value": 5.9,
+         "color": am4core.color('#C4935C')
+    },
+    {
+        "name": "Ver- und Entsorgung, Bergbau",
+        "value": 5.2,
+         "color": am4core.color('#B35F00')
+    },
+     {
+        "name": "Großhandel",
+        "value": 5.2,
+         "color": am4core.color('#F7932D') }
+    
+    ];
 
     let series = chart.series.push(new am4charts.PictorialStackedSeries());
     series.dataFields.value = "value";
