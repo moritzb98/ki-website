@@ -47,6 +47,7 @@
               <img class="icon-company" src="../assets/slide3.jpeg">
             </div>
          </div>
+         
     </div>
 </template>
 

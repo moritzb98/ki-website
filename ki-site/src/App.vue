@@ -18,7 +18,7 @@
             </li>
             <li data-menuanchor="BedeutungVonKI"><a href="#BedeutungVonKI">03</a></li>
             <li data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">04</a></li>
-            <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">04</a></li>
+            <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">05</a></li>
             <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">06</a></li>
             <li data-menuanchor="KIAusgabenUndBeschaeftigte"><a href="#KIAusgabenUndBeschaeftigte">07</a></li>
             <li data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">08</a>
