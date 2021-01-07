@@ -63,7 +63,8 @@
           <KIAusgabenUndBeschaeftigte></KIAusgabenUndBeschaeftigte>
         </div>
         <div class="section">
-          <iktdetail> </iktdetail>
+         <!-- <iktdetail> </iktdetail>-->
+         <animatedvideo></animatedvideo>
         </div>
         <div class="section">
           <impressum></impressum>
@@ -76,7 +77,7 @@
 <script>
 import startSection from './components/startSection.vue'
 import introduction from './components/introduction.vue'
-import iktdetail from './components/iktdetail.vue'
+//import iktdetail from './components/iktdetail.vue'
 import UmsatzanteilKI from './components/UmsatzanteilKI.vue'
 import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
@@ -87,6 +88,8 @@ import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
 import allgemeinebetrachtung2 from './components/allgemeineBetrachtung2.vue'
 import anzahlBeschaeftigteKi from './components/anzahlBeschaeftigteKi.vue'
+import animatedvideo from './components/animatedvideo.vue'
+
 
 export default {
   name: 'App',
@@ -94,7 +97,7 @@ export default {
     startSection,
     impressum,
     introduction,
-    iktdetail,
+    //iktdetail,
     UmsatzanteilKI,
     kiincompany,
     kiincompany2,
@@ -103,7 +106,8 @@ export default {
     grundlagenki,
     allgemeineBetrachtung,
     allgemeinebetrachtung2,
-    anzahlBeschaeftigteKi
+    anzahlBeschaeftigteKi,
+    animatedvideo
   },
   data() {
     return {

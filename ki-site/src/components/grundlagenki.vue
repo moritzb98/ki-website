@@ -71,7 +71,13 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+h3{
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+p {
+  font-size: 17px;
+}
 .fett{
     font-weight: bold;   
 }
@@ -96,4 +102,6 @@
   opacity: 0;
   transition: all 1.5s;
 }
+  
+
 </style>
