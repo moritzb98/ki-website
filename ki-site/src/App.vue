@@ -118,6 +118,8 @@ export default {
         //navigation: true,
         navigationTooltips: ['Home', 'Informationen zur Studie', 'Grundlagen zu KI', 'Allgemeine Betrachtung', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
         afterLoad: this.afterLoad,
+        scrollOverflow: true,
+		scrollOverflowReset: true,
       },
     }
   },

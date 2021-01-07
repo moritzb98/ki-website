@@ -83,7 +83,6 @@ body {
   h1 {
     text-transform: uppercase;
     font-size: 3em;
-
   }
 
   h2 {
@@ -119,4 +118,7 @@ body {
     top: 500px;
 }
 
+.fp-scrollable {
+  width: 100%;
+}
 
