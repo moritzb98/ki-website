@@ -4,7 +4,7 @@
         <div class="flex-container margin-top">
             <div class="flex-item">
                 <div class="flex-container flex-container-100">
-                    
+
                     <div class="flex-item-80">
                         <p class="bar-text"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor</p>
                     </div>
@@ -30,7 +30,7 @@ export default {
             chart: {
                 type: 'bar',
                 // Hintergrundfarbe
-                backgroundColor: "none", 
+                backgroundColor: "none",
             },
             // Wasserzeichen entfernen
             credits: {
@@ -41,15 +41,26 @@ export default {
             },
             xAxis: {
                 categories: ['Sonstige Dienstleistungen', 'Großhandel', 'IKT', 'Sonst. Verarb. Gew.', 'Elektrot./Maschinenb.', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorg., Bg.b.', 'Unter.nahe Dienstl.', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanzdienstleisut.', 'Gesamtwirtschaft'],
-                itemStyle: {
-                    color: '#eef1f6',
+                labels:{
+                    style:{
+                        color: 'white',
+                    }
                 }
             },
             yAxis: {
                 min: 0,
                 max: 100,
                 title: {
-                    text: 'in % aller KI einsetzenden Unternehmen'
+                    text: 'in % aller KI einsetzenden Unternehmen',
+                    style:{
+                        color: 'white',
+                    },
+
+                },
+                labels:{
+                    style:{
+                        color: 'white',
+                    }
                 }
             },
             legend: {
@@ -60,6 +71,7 @@ export default {
                 itemHoverStyle: {
                     color: '#ea5321'
                 }
+
             },
             plotOptions: {
                 series: {
@@ -156,7 +168,7 @@ export default {
   7% {counter-increment: count 7;}
   8% {counter-increment: count 8;}
   9% {counter-increment: count 9;}
-  10% {counter-increment: count 10;} 
+  10% {counter-increment: count 10;}
   11% {counter-increment: count 11;}
   12% {counter-increment: count 12;}
   13% {counter-increment: count 13;}
