@@ -148,6 +148,7 @@ export default {
     width: 100%;
     margin: 0 auto;
     display:flex;
+    margin-top: 20px;
 }
 .bild{
     width:300px;

@@ -9,7 +9,6 @@
             </div>
                 <div class="container">
                     <div class= "mittig">
-                        <div id="chart-B" class="chart"> </div>
                         <highcharts :options="chart2"> </highcharts>
                     </div>
                  </div>

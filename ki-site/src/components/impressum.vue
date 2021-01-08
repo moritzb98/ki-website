@@ -54,6 +54,10 @@ export default {
   width: 50%;
 }
 
+.impressum-flex-item h3 {
+  text-align: center;
+}
+
 .impressum-text {
   font-weight: 100;
 }

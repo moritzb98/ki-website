@@ -1,15 +1,17 @@
 <template>
     <div class="site-container">
-        <h2> Anzahl der Beschäftigten mit KI-Tätigkeit und Unternehmen mit KI-Einsatz </h2>
-        <div class="flex-container">
-            <div class="flex-item-30">
-                <p> Diese Grafik stellt dar, wie viele Unternehmen (bezogen auf alle in der Umfrage befragten Unternehmen) bereits KI einsetzen. Dieser Wert wird hier mit der Farbe blau gekennzeichnet.
-                    Zudem wird gezeigt wie viele Personen, in den mit KI-Einsatz bestehenden Unternehmen, bereits hauptsächlich Tätigkeiten mit KI-Bezug ausüben. Dieser Wert wird mit der Farbe grau dargestellt.
-                    </p>
-            </div>
-            <div class="flex-item-70">
-                <div class="flex-container">
-                    <highcharts :options="chartOptions"></highcharts>
+        <div class="site-container-width">
+            <h2 class="title-allg">Beschäftigte mit KI-Tätigkeit in Unternehmen</h2>
+            <div class="flex-container">
+                <div class="flex-item-30">
+                    <p> Diese Grafik stellt dar, wie viele Unternehmen (bezogen auf alle in der Umfrage befragten Unternehmen) bereits KI einsetzen. Dieser Wert wird hier mit der Farbe blau gekennzeichnet.
+                        Zudem wird gezeigt wie viele Personen, in den mit KI-Einsatz bestehenden Unternehmen, bereits hauptsächlich Tätigkeiten mit KI-Bezug ausüben. Dieser Wert wird mit der Farbe grau dargestellt.
+                        </p>
+                </div>
+                <div class="flex-item-70">
+                    <div class="flex-container">
+                        <highcharts :options="chartOptions"></highcharts>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,4 +141,7 @@ export default {
     width: 100%;
 }
 
+.title-allg{
+    width: 100%;
+}
 </style>

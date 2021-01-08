@@ -3,27 +3,27 @@
       <h2>Informationen zur Studie</h2>
         <p class="subtitle">Hier wird die Studie vorgestellt und die Strategie, auf der die Studie aufbaut. sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
         <br>
-        <div class="flex-container">
+        <div class="flex-container icon-flex">
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BRAIN SIMULATION.svg">
             </div>
-            <h3>Zeitraum der Datenerhebung</h3>
-            <p>xyz</p>
+            <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
+            <p class="icon-text">xyz</p>
           </div>
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BIG DATA.svg">
             </div>
-            <h3>Form der Datenerhebung</h3>
-            <p>xyz</p>
+            <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
+            <p class="icon-text">xyz</p>
           </div>
           <div class="icon-container">
             <div class="icon">
-             <img src="../assets/artificial-intelligence.svg">
+             <img src="../assets/MULTI-AGENT SYSTEM.svg">
            </div>
-            <h3>Anzahl teilnehmende Unternehmen</h3>
-            <p>xyz</p>
+            <h3 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h3>
+            <p class="icon-text">xyz</p>
           </div>
         </div>
     </div>
@@ -55,5 +55,18 @@ img {
   padding: 30px;
   width: 50%;
   margin: 0 auto;
+}
+
+.icon-flex {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.icon-text{
+  text-align: center;
+}
+
+.icon-header{
+  margin-top: 20px;
 }
 </style>
