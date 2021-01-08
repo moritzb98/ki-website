@@ -1,6 +1,9 @@
 <template>
     <div class="site-container">
         <h2>Vergleich der Beschäftigten und des Umsatzes</h2>
+        <p>
+            Insgesamt arbeiten im Jahr 2019 rund 139.000 Personen in der deutschen Wirtschaft hauptsächlich oder in geringem Umfang im Bereich der KI. Währenddessen erzielten die Unternehmen der deutschen Wirtschaft im Jahr 2019 mit Produkten und Dienstleistungen mit direktem KI-Einsatz einen Umsatz von annähernd 60 Mrd. €. Die beiden Kreisdiagramme zeigen zum einen die Verteilung der im Bereich KI tätigen Beschäftigten in der deutschen Wirtschaft und zum anderen die Umsatzverteilung von Produkten und Dienstleistungen mit KI-Einsatz. Sie sollen die Relationen dieser Verteilungen im Vergleich zeigen.
+        </p>
         <div class="flex-container">
             <div class="container">
                 <div class="mittig">
@@ -25,7 +28,7 @@ import {Chart} from 'highcharts-vue'
 export default {
   name: 'kiInCompany3',
   components: {
-    highcharts: Chart 
+    highcharts: Chart
   },
   data() {
     return {
@@ -37,9 +40,9 @@ export default {
                 plotShadow: false,
                 type: 'pie',
                 // Hintergrundfarbe
-                backgroundColor: "none", 
+                backgroundColor: "none",
             },
-            
+
             // Wasserzeichen entfernen
             credits: {
                 enabled: false
@@ -127,9 +130,9 @@ export default {
                 plotShadow: false,
                 type: 'pie',
                 // Hintergrundfarbe
-                backgroundColor: "none", 
+                backgroundColor: "none",
             },
-            
+
             // Wasserzeichen entfernen
             credits: {
                 enabled: false
