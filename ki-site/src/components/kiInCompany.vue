@@ -1,10 +1,11 @@
 <template>
     <div class="site-container">
-        <h2>Bedeutung von KI</h2>
-        <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor</p>
+        <h2>Bedeutung des Einsatzes von KI</h2>
+        <h3>für die Geschäftstätigkeit der Unternehmen der deutschen Wirtschaft 2019</h3>
+        <p>77% der KI nutzenden Unternehmen geben an, dass der Einsatz von KIs für ihre Geschäftsfähigkeit essentiell oder wichtig sei. Indem sie Prozesse oder Produktionsaktivitäten beschleunigen, präzisieren, flexibilisieren und zuverlässiger werden lassen, sorgen KIs in den Unternehmen für deutliche Verbesserungen. Das folgende Diagramm zeigt die Wichtigkeitseinstufungen von KI Nutzung in unterschiedlichen Branchen. Dabei ist KI  im Besonderen für die Geschäftsfähigkeit der  Branchen “sonstigen Dienstleistung”, “Großhandel” und “IKT” wichtig. Hierhat sich ein relativ hoher Anteil dieser Unternehmen auf KI-basierte Geschäftsmodelle spezialisiert.</p>
         <div class="flex-container margin-top">
             <div class="flex-item">
-            
+
                 <div class="flex-container flex-container-100">
                     <div class="flex-item-20">
                         <div id="verticalbar" class="vertical-bar"></div>
@@ -29,7 +30,7 @@ export default {
                 type: 'bar',
                 // Hintergrundfarbe
                 backgroundColor: "none",
-                width: 700
+                width: 800
             },
             // Wasserzeichen entfernen
             credits: {
@@ -64,11 +65,12 @@ export default {
             },
             legend: {
                 reversed: true,
+
                 itemStyle: {
                     color: '#eef1f6',
                 },
                 itemHoverStyle: {
-                    color: '#ea5321'
+                    color: '#8bb8c1'
                 }
 
             },
@@ -79,14 +81,19 @@ export default {
             },
             series: [{
                 name: 'essenziell',
-                data: [20, 17, 17, 13, 12, 11, 10, 10, 10, 4, 0, 12]
+                data: [20, 17, 17, 13, 12, 11, 10, 10, 10, 4, 0, 12],
+                color: '#343d64'
             }, {
                 name: 'wichtig',
-                data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 65]
+                data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 65],
+                color: '#eef1f6'
             }, {
                 name: 'weniger wichtig',
-                data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 23]
+                data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 23],
+                color: '#f5c07a'
             }]
+
+
         },
     }
   }
@@ -96,11 +103,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .flex-item {
-    width: 40%;
+    width: 30%;
 }
 
 .chartdiv {
-    width: 60%;
+    width: 70%;
 }
 
 .margin-top {
@@ -127,9 +134,10 @@ export default {
 .vertical-bar {
     bottom: 0;
     margin: 0 auto;
+    margin-bottom: 85px;
     width: 50%;
     height: 0;
-    background: #ea5321;
+    background: #e28260;
     visibility: hidden;
     position: absolute;
     transition: all 3s;
@@ -148,7 +156,7 @@ export default {
     margin-top: 0;
     visibility: visible;
     height: 77%;
-    box-shadow: 1px 0px 5px 1px #ea5321;
+    box-shadow: 1px 0px 5px 1px #e28260;
 }
 
 .bar-text {
