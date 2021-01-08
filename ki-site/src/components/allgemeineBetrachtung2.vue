@@ -109,11 +109,13 @@ export default {
 
     series: [{
         name: 'Unternehmen mit KI-Einsatz',
-        data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8]
+        data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8],
+        color: '#343e62'
     }, {
         name: 'Hauptsächlich zu KI tätige Personen',
         data: [1.51, 0.28, 0.88, 0.35, 0.10, 0.08, 0.08, 0.12, 0.10, 0.05, 0.05, 0.31 ],
-        yAxis: 1
+        yAxis: 1,
+        color: '#a9c9d4'
     }]
         },
     }
