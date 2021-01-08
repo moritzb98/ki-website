@@ -1,13 +1,8 @@
 <template>
     <div class="site-container">
-<<<<<<< HEAD
+
         <h2>Bedeutung von KI</h2>
-        <p>Die Bedeutung von KI wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.  </p>
-=======
-        <h2>Bedeutung des Einsatzes von KI</h2>
-        <h3>für die Geschäftstätigkeit der Unternehmen der deutschen Wirtschaft 2019</h3>
-        <p>77% der KI nutzenden Unternehmen geben an, dass der Einsatz von KIs für ihre Geschäftsfähigkeit essentiell oder wichtig sei. Indem sie Prozesse oder Produktionsaktivitäten beschleunigen, präzisieren, flexibilisieren und zuverlässiger werden lassen, sorgen KIs in den Unternehmen für deutliche Verbesserungen. Das folgende Diagramm zeigt die Wichtigkeitseinstufungen von KI Nutzung in unterschiedlichen Branchen. Dabei ist KI  im Besonderen für die Geschäftsfähigkeit der  Branchen “sonstigen Dienstleistung”, “Großhandel” und “IKT” wichtig. Hierhat sich ein relativ hoher Anteil dieser Unternehmen auf KI-basierte Geschäftsmodelle spezialisiert.</p>
->>>>>>> main
+        <p>Die Bedeutung von KI wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.</p>
         <div class="flex-container margin-top">
             <div class="flex-item">
 

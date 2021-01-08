@@ -11,34 +11,14 @@
             <div class="icon">
               <img src="../assets/BRAIN SIMULATION.svg">
             </div>
-<<<<<<< HEAD
             <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
             <p class="icon-text">xyz</p>
-=======
-            <h3>Zeitraum der Datenerhebung</h3>
-            <p class="p-center">
-              dt. Innovationserhebung: <br>
-              2019 <br>
-              Zusatzumfrage: <br>
-              November 2019 - Januar 2020
-            </p>
->>>>>>> main
           </div>
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BIG DATA.svg">
             </div>
-<<<<<<< HEAD
-            <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
-            <p class="icon-text">xyz</p>
-          </div>
-          <div class="icon-container">
-            <div class="icon">
-             <img src="../assets/MULTI-AGENT SYSTEM.svg">
-           </div>
-            <h3 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h3>
-            <p class="icon-text">xyz</p>
-=======
+
             <h3>Form der Datenerhebung</h3>
             <p class="p-center">
               Repräsentative Sonderauswertung der dt. Innovationserhebung <br>
@@ -57,7 +37,6 @@
               Teilnahmen bei der Zusatzbefragung: <br>
               368
             </p>
->>>>>>> main
           </div>
         </div>
     </div>
@@ -90,7 +69,6 @@ img {
   width: 50%;
   margin: 0 auto;
 }
-<<<<<<< HEAD
 
 .icon-flex {
   margin: 0 auto;
@@ -104,10 +82,9 @@ img {
 .icon-header{
   margin-top: 20px;
 }
-</style>
-=======
+
 .p-center {
   text-align:center;
 }
 </style>
->>>>>>> main
+
