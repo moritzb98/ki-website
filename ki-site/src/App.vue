@@ -224,13 +224,13 @@ export default {
 .fp-viewing-Funktionsbereich-2 #nav .secondnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .secondnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .secondnav li:nth-child(1) .dot{
   width: 8px;
   height: 8px;
-  color: red;
+  background: red;
 }
 
 .fp-viewing-AllgemeineBetrachtung #nav .firstnav li:nth-child(1) .dot, .fp-viewing-AllgemeineBetrachtungB #nav .firstnav li:nth-child(2) .dot{
   width: 8px;
   height: 8px;
-  color: red;
+  background: red;
 }
 
 .fp-viewing-AllgemeineBetrachtungB #nav li:nth-child(3) a{
