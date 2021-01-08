@@ -10,6 +10,16 @@ import HighchartsVue from 'highcharts-vue'
 import More from 'highcharts/highcharts-more'
 import Highcharts from 'highcharts'
 
+// Scrollmagic
+import VueScrollmagic from 'vue-scrollmagic'
+
+Vue.use(VueScrollmagic, {
+  verical: true,
+  globalSceneOptions: {},
+  loglevel: 2,
+  refreshInterval: 100
+})
+
 Vue.config.productionTip = false
 
 Vue.use(VueFullPage);

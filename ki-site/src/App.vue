@@ -62,7 +62,7 @@
         <div class="section">
           <KIAusgabenUndBeschaeftigte></KIAusgabenUndBeschaeftigte>
         </div>
-        <div class="section">
+        <div class="section videosection">
          <!-- <iktdetail> </iktdetail>-->
          <animatedvideo></animatedvideo>
         </div>
