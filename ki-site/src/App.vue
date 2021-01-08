@@ -62,12 +62,12 @@
         <div class="section">
           <KIAusgabenUndBeschaeftigte></KIAusgabenUndBeschaeftigte>
         </div>
-        <div class="section videosection">
-         <!-- <iktdetail> </iktdetail>-->
-         <animatedvideo></animatedvideo>
-        </div>
         <div class="section">
           <impressum></impressum>
+        </div>
+        <div class="section videosection">
+          <!-- <iktdetail> </iktdetail>-->
+          <animatedvideo></animatedvideo>
         </div>
       </full-page>
     </div>
