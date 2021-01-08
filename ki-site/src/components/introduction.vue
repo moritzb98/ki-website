@@ -1,20 +1,34 @@
 <template>
     <div class="site-container">
       <h2>Informationen zur Studie</h2>
-        <p class="subtitle">Hier wird die Studie vorgestellt und die Strategie, auf der die Studie aufbaut. sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        <p class="subtitle">
+        Künstliche Intelligenz (KI) gilt heute als eine der entscheidenden Schlüsseltechnologien. Dynamisches, effizientes und effektives Aufgreifen ihrer Einsatzmöglichkeiten ist ein entscheidender Faktor, um die Innovationskraft und Wettbewerbsfähigkeit der deutschen Wirtschaft zu erhalten und zu stärken. Mit der im November 2018 verabschiedeten Strategie “Künstliche Intelligenz” setzt die Bundesregierung einen Rahmen für eine ganzheitliche politische Gestaltung der weiteren Entwicklung und Anwendung Künstlicher Intelligenz in Deutschland. <br>
+        Die Studie “Intelligenz in der Deutschen Wirtschaft - Stand der KI-Nutzung im Jahr 2019” dient dazu über einen ersten Überblick über die Durchdringung von KI in Deutschland zu gewinnen. Auf den nachfolgenden Seiten werden die wichtigsten Indikatoren dargestellt.
+        </p>
         <br>
         <div class="flex-container icon-flex">
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BRAIN SIMULATION.svg">
             </div>
+<<<<<<< HEAD
             <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
             <p class="icon-text">xyz</p>
+=======
+            <h3>Zeitraum der Datenerhebung</h3>
+            <p class="p-center">
+              dt. Innovationserhebung: <br>
+              2019 <br>
+              Zusatzumfrage: <br>
+              November 2019 - Januar 2020
+            </p>
+>>>>>>> main
           </div>
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BIG DATA.svg">
             </div>
+<<<<<<< HEAD
             <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
             <p class="icon-text">xyz</p>
           </div>
@@ -24,6 +38,26 @@
            </div>
             <h3 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h3>
             <p class="icon-text">xyz</p>
+=======
+            <h3>Form der Datenerhebung</h3>
+            <p class="p-center">
+              Repräsentative Sonderauswertung der dt. Innovationserhebung <br>
+              &  <br>
+              Zusatzbefragung von KI einsetzenden Unternehmen
+            </p>
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/BRAIN MACHINE INTERFACE.svg">
+           </div>
+            <h3>Anzahl teilnehmende Unternehmen</h3>
+            <p class="p-center">
+              Teilnahmen bei der dt. Innovationserhebung: <br>
+              567 <br>
+              Teilnahmen bei der Zusatzbefragung: <br>
+              368
+            </p>
+>>>>>>> main
           </div>
         </div>
     </div>
@@ -34,7 +68,7 @@ export default {
   name: 'introduction',
   data() {
     return {
-      
+
     }
   },
 }
@@ -56,6 +90,7 @@ img {
   width: 50%;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 
 .icon-flex {
   margin: 0 auto;
@@ -70,3 +105,9 @@ img {
   margin-top: 20px;
 }
 </style>
+=======
+.p-center {
+  text-align:center;
+}
+</style>
+>>>>>>> main
