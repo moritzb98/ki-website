@@ -2,7 +2,7 @@
     <div class="site-container">
       <h2>Allgemeine Betrachtung</h2>
       <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) </h3>
-        <p>Verglich von Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) und Anteil der Ausgaben für KI in % des Umsatzes aller Unternehmen.</p>
+        <p>Auf der linken Seite kann man die Verteilung der KI-Ausgaben nach Branchengruppen in Mrd. € sehen. Im Vergleich dazu steht rechts der Anteil der Ausgaben für KI in % des Umsatzes aller Unternehmen. Hierbei ist auffallend, dass die IKT-Branche sowohl die höchsten Augaben in Mrd. € und auch im Verhältnis zum Umsatz hat. </p>
         <div class="container">
             <div class="mittig">
                 <highcharts :options="chartOptions"></highcharts>

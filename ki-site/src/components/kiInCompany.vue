@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
         <h2>Bedeutung von KI</h2>
-        <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor</p>
+        <p>Die Bedeutung von KI wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.  </p>
         <div class="flex-container margin-top">
             <div class="flex-item">
             
