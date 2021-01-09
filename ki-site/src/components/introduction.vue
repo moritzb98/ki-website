@@ -12,17 +12,21 @@
               <img src="../assets/BRAIN SIMULATION.svg">
             </div>
             <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
-            <p class="icon-text">xyz</p>
+            <p class="icon-text">
+              dt. Innovationserhebung: <br>
+              2019 <br>
+              Zusatzumfrage: <br>
+              November 2019 - Januar 2020
+            </p>
           </div>
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BIG DATA.svg">
             </div>
 
-            <h3>Form der Datenerhebung</h3>
-            <p class="p-center">
-              Repräsentative Sonderauswertung der dt. Innovationserhebung <br>
-              &  <br>
+            <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
+            <p class="icon-text">
+              Repräsentative Sonderauswertung der dt. Innovationserhebung &<br>
               Zusatzbefragung von KI einsetzenden Unternehmen
             </p>
           </div>
@@ -30,8 +34,8 @@
             <div class="icon">
              <img src="../assets/BRAIN MACHINE INTERFACE.svg">
            </div>
-            <h3>Anzahl teilnehmende Unternehmen</h3>
-            <p class="p-center">
+            <h3 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h3>
+            <p class="icon-text">
               Teilnahmen bei der dt. Innovationserhebung: <br>
               567 <br>
               Teilnahmen bei der Zusatzbefragung: <br>
@@ -87,4 +91,3 @@ img {
   text-align:center;
 }
 </style>
-

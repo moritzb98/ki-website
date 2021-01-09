@@ -13,8 +13,8 @@
                 <p> Künstliche Intelligenz (KI) zählt heutzutage zu den entscheidendsten Schlüsseltechnologien. KI ermöglicht die Simulation von menschlicher Intelligenz, dazu gehört neben dem Lernen der Erfassung von Informationen die Schlussfolgerung, also wie wird mit Informationen umgegangen, um Rückschlüsse zu ziehen, sowie die Selbstkorrektur als abschließender Prozesspunkt.  <br>
                     <br> Beispiele für den KI-Einsatz in Unternehmen:
                     <br>Im Gesundheitswesen: Für Patienten ist es möglich, Fragen an einen Chatbot zu stellen. Dieser hat Zugriff auf Patientendaten und kann auf große Datenmengen zugreifen, damit Patienten auch von zu Hause aus beraten werden können.
-                    <br>Im Finanzwesen: Auch finanzielle Beratung kann via Chatbots von Kunden eingeholt werden. 
-                    <br>In der Bildung: Benotungen können automatisiert von einer KI übernommen werden, damit den Lehrkräften mehr Zeit für die Betreuung der Schüler bleibt. 
+                    <br>Im Finanzwesen: Auch finanzielle Beratung kann via Chatbots von Kunden eingeholt werden.
+                    <br>In der Bildung: Benotungen können automatisiert von einer KI übernommen werden, damit den Lehrkräften mehr Zeit für die Betreuung der Schüler bleibt.
                     <br>In der Fertigung: Der Einsatz von Robotern kann den Workflow vieler Prozesse verschnellern.
                 </p>
 
@@ -26,7 +26,7 @@
                     </td>
                     <td class="tabellentext">
                         Informations- und Kommunikationstechnik
-                    </td>               
+                    </td>
                 </tr>
                 <tr>
                     <td class="fett tabellentext">
@@ -34,7 +34,7 @@
                     </td>
                     <td class="tabellentext">
                         Forschung und Entwicklung
-                    </td>               
+                    </td>
                 </tr>
             </table>
         </div>
@@ -44,24 +44,24 @@
             <div class="flex-container">
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/artificial-intelligence.svg">
+              <img src="../assets/BRAIN SIMULATION.svg">
             </div>
             <p>Zeitraum der Datenerhebung</p>
-            
+
           </div>
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/artificial-intelligence.svg">
+              <img src="../assets/BIG DATA.svg">
             </div>
             <p>Form der Datenerhebung</p>
-            
+
           </div>
           <div class="icon-container">
             <div class="icon">
-             <img src="../assets/artificial-intelligence.svg">
+             <img src="../assets/MULTI-AGENT SYSTEM.svg">
            </div>
             <p>KI Unternehmen</p>
-            
+
           </div>
         </div>
         </div>
@@ -85,7 +85,7 @@ h5{
   font-size: 18px;
 }
 .fett{
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 .tabellentext{

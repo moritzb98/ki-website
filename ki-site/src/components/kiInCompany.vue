@@ -2,7 +2,8 @@
     <div class="site-container">
 
         <h2>Bedeutung von KI</h2>
-        <p>Die Bedeutung von KI wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.</p>
+        <h3> für die Geschäftstätigkeit der Unternehmen der deutschen Wirtschaft 2019</h3>
+        <p>Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.</p>
         <div class="flex-container margin-top">
             <div class="flex-item">
 
@@ -111,8 +112,9 @@ export default {
 }
 
 .margin-top {
-    margin-top: 100px;
+    margin-top: 60px;
 }
+
 
 .flex-container-100 {
     height: 100%;

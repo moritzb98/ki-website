@@ -1,6 +1,9 @@
 <template>
     <div class="site-container">
-        <h2>Erstmaliger Einsatz von KI</h2>
+        <h2>Erstmaliger Einsatz von KI  in Unternehmen der deutschen Wirtschaft</h2>
+        <p class="margin-bott">
+          Die Nutzung von KI in den Unternehmen der deutschen Wirtschaft hat bereits vor 2010 begonnen. Bereits 20% der KI einsetzenden Unternehmen nutzen zu dieser Zeit Künstliche Intelligenz. Das folgende Diagramm zeigt die Entwicklung der KI Nutzung in den verschiedenen Branchen der deutschen Wirtschaft im Vergleich zu der Gesamtwirtschaft.
+        </p>
         <div class="flex-container">
 
             <highcharts :options="chartOptions"></highcharts>
@@ -23,9 +26,9 @@ export default {
       chartOptions: {
         chart: {
           backgroundColor: null,
-          width: 1250,
-          height: 550,
-          
+          width: 1050,
+          height: 450,
+
         },
         // Wasserzeichen entfernen
         credits: {
@@ -40,12 +43,12 @@ export default {
             text: 'in % aller KI einsetzenden Unternehmen',
             style:{
                 color: 'white',
-            } 
+            }
           },
           labels:{
             style:{
                 color: 'white',
-            } 
+            }
           }
         },
 
@@ -54,12 +57,12 @@ export default {
           labels:{
             style:{
                 color: 'white',
-            } 
+            }
           }
         },
 
         legend: {
-          
+
           itemHoverStyle: {
               color: '#ea5321'
           },
@@ -134,7 +137,7 @@ export default {
   },
 
   methods: {
-    
+
   }
 }
 </script>
@@ -148,11 +151,17 @@ export default {
     display:flex;
 }
 
+.margin-bott{
+  margin-bottom: 20px;
+}
+
 .flex-container{
   width: 100%;
+  height:500px;
 }
  .highcharts-root{
  width: 100% !important;
+
  }
 
  .highcharts-container {
