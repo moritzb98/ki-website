@@ -13,6 +13,11 @@ import Highcharts from 'highcharts'
 // Scrollmagic
 import VueScrollmagic from 'vue-scrollmagic'
 
+// Particles.js
+import Particles from "particles.vue";
+ 
+Vue.use(Particles);
+
 Vue.use(VueScrollmagic, {
   verical: true,
   globalSceneOptions: {},
