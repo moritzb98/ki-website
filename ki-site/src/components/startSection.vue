@@ -74,10 +74,6 @@
             interactivity: {
               detect_on: 'canvas',
               events: {
-                onhover: {
-                  enable: true,
-                  mode: 'grab'
-                },
                 onclick: {
                   enable: true,
                   mode: 'push'
@@ -154,7 +150,7 @@ export default {
 
 #tsparticles{
   position: absolute;
-  z-index: -50;
+  z-index: 500;
   width: 100%;
 }
 </style>
