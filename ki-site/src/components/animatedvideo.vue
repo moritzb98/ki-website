@@ -40,8 +40,8 @@ export default {
     // Declaration of animation and attaching to element
     .setTween()
     // pins the element for the the scene's duration
-    .setPin(document.getElementById('video'))
-    .addIndicators({ name: '2 (duration: 300)' });
+    .setPin(document.getElementById('video'));
+    //.addIndicators({ name: '2 (duration: 300)' });
 
     // Add Scene to controller
     this.$scrollmagic.addScene(scene2)
