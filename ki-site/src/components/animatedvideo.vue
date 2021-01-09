@@ -1,5 +1,6 @@
 <template>
     <div id="videocontainer" class="site-container-video">
+        <div id="trigger"></div>
         <video ref="videoRef" src="../assets/testvideo.mp4" id="video" height="400px" controls></video>
         <div class="site-container">
             <h3 class="videocontent">Testvideo</h3>
@@ -20,24 +21,27 @@ export default {
   },
   mounted() {
     //this.$refs.videoRef.play();
+    console.log(document.getElementById('videocontainer'));
 
    // Declare Scene
     const scene2 = this.$scrollmagic.scene({
-    // ID of element where animation starts
-    triggerElement: '#videocontainer',
+        // ID of element where animation starts
+        triggerElement: '#trigger',
 
-    // {0,0.5,1} - animations starts from {top,center,end} of window
-    triggerHook: 0,
+        // {0,0.5,1} - animations starts from {top,center,end} of window
+        triggerHook: 0,
 
-    // Duration of animation
-    duration: 500
-})
+        // Duration of animation in px
+        duration: 500
+    })
+    
+    
+    
     // Declaration of animation and attaching to element
-    .setTween('#video', { 
-        css: { 
-            scale: 0.7 // the tween durtion can be omitted and defaults to 1
-        }
-    }).setPin(document.getElementById('video'));
+    .setTween()
+    // pins the element for the the scene's duration
+    .setPin(document.getElementById('video'))
+    .addIndicators({ name: '2 (duration: 300)' });
 
     // Add Scene to controller
     this.$scrollmagic.addScene(scene2)
@@ -67,4 +71,5 @@ export default {
     z-index: -5;
     top: 100px;
 }
+
 </style>
