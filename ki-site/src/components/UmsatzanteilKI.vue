@@ -1,6 +1,17 @@
 <template>
     <div class="site-container">
-      <h2>Umsatzanteil von KI (Grafik 2.14)</h2>
+      <h2>Gewichtung der Bedeutung von KI Nutzung anhand des Umsatzanteils(Grafik 2.14)</h2>
+      <h3>
+        Umsatzanteil von Produkten oder Dienstleistungen mit KI-Einsatz in Unternehmen der deutschen Wirtschaft 2019
+      </h3>
+      <p>
+          lorem ipsum dolor
+      </p>
+      <div class="flex-container">
+        <div class="mittig">
+          <img src="../assets/IdeeAbb214.png" class="bild">
+        </div>
+      </div>
     </div>
 </template>
 
@@ -9,7 +20,7 @@ export default {
   name: 'UmsatzanteilKI',
   data() {
     return {
-      
+
     }
   },
 }
@@ -30,5 +41,19 @@ img {
   padding: 30px;
   width: 50%;
   margin: 0 auto;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    margin-top: 20px;
+}
+.bild{
+    margin-top: 20px;
+    width:800px;
+}
+.mittig{
+    margin: 0 auto;
+    text-align:center;
 }
 </style>
