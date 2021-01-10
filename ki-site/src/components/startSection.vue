@@ -1,5 +1,5 @@
 <template>
-    <div class=site-container>
+    <div class="site-container">
         <Particles
           id="tsparticles"
           :options="{
@@ -58,7 +58,7 @@
               },
               move: {
                 enable: true,
-                speed: 3,
+                speed: 2,
                 direction: 'none',
                 random: true,
                 straight: false,

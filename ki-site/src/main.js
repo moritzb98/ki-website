@@ -19,10 +19,9 @@ import Particles from "particles.vue";
 Vue.use(Particles);
 
 Vue.use(VueScrollmagic, {
-  verical: true,
-  globalSceneOptions: {},
-  loglevel: 2,
-  refreshInterval: 100
+  globalSceneOptions: {
+    triggerHook : 'onLeave'
+  },
 })
 
 Vue.config.productionTip = false

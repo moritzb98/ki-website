@@ -1,17 +1,27 @@
 <template>
-    <div id="videocontainer" class="site-container-video">
-        <div id="trigger"></div>
-        <video ref="videoRef" src="../assets/testvideo.mp4" id="video" height="400px" controls></video>
-        <div class="site-container">
-            <h3 class="videocontent">Testvideo</h3>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p id="end"></p>
+   <div>
+        <video id="video" width="998" height="560" playsinline poster="https://lqez.github.io/js/airpodsvf/video.jpg">
+            <source src="https://lqez.github.io/js/airpodsvf/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="scroll-dummy">
+            <h1>AirPods Pro page is TOO BIG</h1>
+            <p>
+            <a href="https://www.apple.com/kr/airpods-pro/">https://www.apple.com/kr/airpods-pro/</a> contains 1,500+ images and their size is over 60MiB.
+            </p>
+            <p>
+            I encoded the first 148ea, 4.8MiB of AirPods Pro images into a single 1.1MiB x264 video file and put it as a background.
+            The video file has total 148 i-frame frames by ffmpeg's <code>-intra</code> option. It makes much smoother frame changes.
+            </p>
+            <p>
+            Image countesy of Apple, Inc.
+            </p>
         </div>
-
     </div>
 </template>
 
 <script>
-
+      
 export default {
   name: 'animatedvideo',
   data() {
@@ -20,56 +30,84 @@ export default {
     }
   },
   mounted() {
-    //this.$refs.videoRef.play();
-    console.log(document.getElementById('videocontainer'));
-
-   // Declare Scene
-    const scene2 = this.$scrollmagic.scene({
-        // ID of element where animation starts
-        triggerElement: '#trigger',
-
-        // {0,0.5,1} - animations starts from {top,center,end} of window
-        triggerHook: 0,
-
-        // Duration of animation in px
-        duration: 500
-    })
-    
-    
-    
-    // Declaration of animation and attaching to element
-    .setTween()
-    // pins the element for the the scene's duration
-    .setPin(document.getElementById('video'));
-    //.addIndicators({ name: '2 (duration: 300)' });
-
-    // Add Scene to controller
-    this.$scrollmagic.addScene(scene2)
-    
-    // Attaching scrollmagic controller to element
-    this.$scrollmagic.attachTo(this.$refs.scrollBox)
-
-
-
+      
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+    console.log('created');
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    console.log('destroyed');
+  },
+  methods: {
+    handleScroll () {
+        console.log("handleScroll");
+        var FRAMES = 148;
+        var FPS = 30;
+        var video = document.getElementById('video');
+        console.log("hallo");
+        
+        console.log("Hiiii");
+        var time = (window.scrollY / 1000) * FRAMES / FPS;
+        video.currentTime = time;
+        console.log(time);
+        // alert('Hizo scroll')
+       
+        
+       
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.site-container-video{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
+html {
+  scroll-behavior: smooth;
 }
-.site-container-video video {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -5;
-    top: 100px;
+body {
+  margin: 0;
+  background: #000;
+  touch-action: pan-y;
+  height: 100vh;
+  overflow: auto;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+video {
+  position: fixed;
+  z-index: 0;
+  max-width: 100%;
+}
+.scroll-dummy {
+  height: 2000px;
+  max-width: 998px;
+  padding: 20px;
+  z-index: 1;
+  font-family: sans-serif;
 }
 
+.scroll-dummy h1 {
+  font-size: 80px;
+  font-weight: 700;
+  padding: 200px 0;
+  color: white;
+}
+
+.scroll-dummy p, .scroll-dummy a {
+  font-size: 20px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+code {
+  font-family: monospace;
+  background: #333;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
 </style>
