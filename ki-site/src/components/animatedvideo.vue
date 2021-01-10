@@ -21,40 +21,20 @@
 </template>
 
 <script>
-      
 export default {
   name: 'animatedvideo',
   data() {
     return {
-        
     }
   },
   mounted() {
       
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
-    console.log('created');
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-    console.log('destroyed');
+  created(){
+      
   },
   methods: {
     handleScroll () {
-        console.log("handleScroll");
-        var FRAMES = 148;
-        var FPS = 30;
-        var video = document.getElementById('video');
-        console.log("hallo");
-        
-        console.log("Hiiii");
-        var time = (window.scrollY / 1000) * FRAMES / FPS;
-        video.currentTime = time;
-        console.log(time);
-        // alert('Hizo scroll')
-       
-        
        
     }
   }

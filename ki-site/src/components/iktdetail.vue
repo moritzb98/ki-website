@@ -2,7 +2,7 @@
     <div class="site-container site-container-larger">
       <img class="right-img" src="../assets/3_transparent.png">
       <h2>Funktionsbereiche, die KI-Verfahren einsetzen</h2>
-        <div class="flex-container flex-container--space-between">
+        <div class="flex-container flex-container--space-between flex-slider">
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/artificial-intelligence.svg">
@@ -34,7 +34,10 @@
          </div>
          <div class="slide">
             <div class="slide-container">
-              <img class="icon-company" src="../assets/company.jpeg">
+              <video id="video" width="998" height="560" playsinline poster="https://lqez.github.io/js/airpodsvf/video.jpg">
+                  <source src="https://lqez.github.io/js/airpodsvf/video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
             </div>
          </div>
          <div class="slide">
@@ -75,6 +78,10 @@ export default {
   width: 10%;
 }
 
+.icon-container p{
+  text-align: center;
+}
+
 .active {
   width: 20%;
 }
@@ -111,6 +118,13 @@ export default {
 
 .icon-company {
   height: 400px;
+}
+video{
+  height: 350px;
+}
+.flex-slider{
+  width: 80%;
+  margin: 0 auto;
 }
 </style>
 

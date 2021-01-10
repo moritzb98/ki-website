@@ -62,13 +62,13 @@
         <div class="section">
           <KIAusgabenUndBeschaeftigte></KIAusgabenUndBeschaeftigte>
         </div>
+        <div class="section videosection">
+          <iktdetail> </iktdetail>
+        </div>
         <div class="section">
           <impressum></impressum>
         </div>
-        <div class="section videosection">
-          <!-- <iktdetail> </iktdetail>-->
-          <animatedvideo></animatedvideo>
-        </div>
+        
       </full-page>
     </div>
   </div>
@@ -77,7 +77,7 @@
 <script>
 import startSection from './components/startSection.vue'
 import introduction from './components/introduction.vue'
-//import iktdetail from './components/iktdetail.vue'
+import iktdetail from './components/iktdetail.vue'
 import UmsatzanteilKI from './components/UmsatzanteilKI.vue'
 import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
@@ -88,7 +88,7 @@ import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
 import allgemeinebetrachtung2 from './components/allgemeineBetrachtung2.vue'
 import anzahlBeschaeftigteKi from './components/anzahlBeschaeftigteKi.vue'
-import animatedvideo from './components/animatedvideo.vue'
+//import animatedvideo from './components/animatedvideo.vue'
 
 
 export default {
@@ -97,7 +97,7 @@ export default {
     startSection,
     impressum,
     introduction,
-    //iktdetail,
+    iktdetail,
     UmsatzanteilKI,
     kiincompany,
     kiincompany2,
@@ -107,19 +107,20 @@ export default {
     allgemeineBetrachtung,
     allgemeinebetrachtung2,
     anzahlBeschaeftigteKi,
-    animatedvideo
+    //animatedvideo
   },
   data() {
     return {
       options: {
-        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'UmsatzanteilKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum'],
+        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'UmsatzanteilKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum', 'Test'],
         fadingEffect: true,
         menu: '#myMenu',
         //navigation: true,
         navigationTooltips: ['Home', 'Informationen zur Studie', 'Grundlagen zu KI', 'Allgemeine Betrachtung', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
         afterLoad: this.afterLoad,
         scrollOverflow: true,
-		scrollOverflowReset: true,
+        scrollOverflowReset: true,
+        scrollBar: true,
       },
     }
   },
@@ -135,12 +136,17 @@ export default {
       if(destination.anchor == "UmsatzanteilKI"){
         this.startBar();
       }
+      if(destination.anchor == "Impressum"){
+        var video = document.getElementById('video');
+        console.log('iiiiii');
+        console.log(video);
+        video.play();
+      }
     },
 
     startBar() {
       document.getElementById("verticalbar").classList.add("vertical-bar-animate");
-    }
-    
+    },
   }
 }
 </script>
