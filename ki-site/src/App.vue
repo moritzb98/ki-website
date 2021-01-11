@@ -120,7 +120,6 @@ export default {
         afterLoad: this.afterLoad,
         scrollOverflow: true,
         scrollOverflowReset: true,
-        scrollBar: true,
       },
     }
   },
