@@ -11,7 +11,7 @@ body {
     font-size: 45px;
     margin: 60px auto;
     width: 80%;
-    text-align: left;
+    text-align: center;
   }
 
   p {
@@ -22,10 +22,10 @@ body {
   h2:after {
     content: "";
     height: 5px;
-    width: 150px;
-    background-color: #a9c9d4;
+    width: 250px;
+    background-color: #f3931f;
     display: block;
-    margin-top: 5px;
+    margin: 5px auto;
 }
 
   h1 {
