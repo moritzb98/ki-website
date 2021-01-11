@@ -21,9 +21,6 @@ export default {
   name: 'UmsatzanteilKI',
   data() {
     return {
-      categories: ['IKT', 'Finanzdienstleistung', 'Unternehmensnahe Dienstl.', 'Elektrotechnik/Maschinenbau',
-                  'Sonst. Verarbeitende  Gewerke', 'Ver-/Entsorg., Bg.b.', 'Chemie/Ph., Gr.st.', 'Fahrzeugbau', 'Verkehr, Logistik',
-                  'Sonst. Dienstleist.', 'Großhandel', 'Gesamtwirtschaft'],
       chart1: {
             chart: {
                 type: 'bar',
@@ -41,13 +38,16 @@ export default {
             },
             accessibility: {
                 point: {
-                    valueDescriptionFormat: '{index}.{xDescription}, {value}%.'
+                    valueDescriptionFormat: '{value}%.'
                 }
             },
             xAxis: [{
-                categories: this.categories,
+                categories: ['IKT', 'Finanzdienstleistung', 'Unternehmensnahe Dienstl.', 'Elektrotechnik/Maschinenbau',
+                  'Sonst. Verarbeitende  Gewerke', 'Ver-/Entsorg., Bg.b.', 'Chemie/Ph., Gr.st.', 'Fahrzeugbau', 'Verkehr, Logistik',
+                  'Sonst. Dienstleist.', 'Großhandel', 'Gesamtwirtschaft'],
                 reversed: false,
                 labels: {
+                  useHTML: true,
                     step: 1
                 },
                 accessibility: {
@@ -56,7 +56,9 @@ export default {
             }, { // mirror axis on right side
                 opposite: true,
                 reversed: false,
-                categories: this.categories,
+                categories: ['IKT', 'Finanzdienstleistung', 'Unternehmensnahe Dienstl.', 'Elektrotechnik/Maschinenbau',
+                  'Sonst. Verarbeitende  Gewerke', 'Ver-/Entsorg., Bg.b.', 'Chemie/Ph., Gr.st.', 'Fahrzeugbau', 'Verkehr, Logistik',
+                  'Sonst. Dienstleist.', 'Großhandel', 'Gesamtwirtschaft'],
                 linkedTo: 0,
                 labels: {
                     step: 1
@@ -87,9 +89,10 @@ export default {
             },
 
             tooltip: {
+                style: { opacity: 1, zindex: 500},
                 formatter: function () {
-                    return '<b>' + this.series.name + this.category + '</b><br/>' +
-                        'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 1) + '%';
+                    return '<b>' + this.series.name + ' - ' + this.point.category + '</b><br/>' +
+                      'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 1) + '%';
                 }
             },
 
