@@ -89,37 +89,47 @@ export default {
                     y: 1.50,
                     sliced: true,
                     selected: true,
-                    color: '#ff0000',
+                    color: '#323E65',
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
-                    y: 0.68
+                    y: 0.68,
+                    color: '#003E82',
                 }, {
                     name: 'Fahrzeugbau',
-                    y: 0.84
+                    y: 0.84,
+                    color: '#608DBF',
                 }, {
                     name: 'Unternehmensnahe Dienstleistungen',
-                    y: 0.65
+                    y: 0.65,
+                    color: '#7EB3BB',
                 }, {
                     name: 'sonstiges verarbeitendes Gewerbe',
-                    y: 0.26
+                    y: 0.26,
+                    color: '#66A2B9',
                 }, {
                     name: 'Finanzdiensleistungen',
-                    y: 0.24
+                    y: 0.24,
+                    color: '#D3EAEF',
                 }, {
                     name: 'sonstige Dienstleistungen',
-                    y: 0.19
+                    y: 0.19,
+                    color: '#CFD9E6',
                 }, {
                     name: 'Verkehr- und Logistik',
-                    y: 0.16
+                    y: 0.16,
+                    color: '#CCAF8F',
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
-                    y: 0.14
+                    y: 0.14,
+                    color: '#C4935C',
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
-                    y: 0.07
+                    y: 0.07,
+                    color: '#B35F00',
                 }, {
                     name: 'Großhandel',
-                    y: 0.07
+                    y: 0.07,
+                    color: '#F7932D', 
                 }]
             }]
         },
@@ -155,7 +165,7 @@ export default {
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
+                        format: '<b>{point.name}</b>: {point.y:.1f} in 1.000 Personen'
                     },
                     borderWidth: 0,
                 }
@@ -176,40 +186,47 @@ export default {
                 },
                 data: [{
                     name: 'IKT',
-                    y: 1.50,
+                    y: 47.4,
                     sliced: true,
                     selected: true,
-                    color: '#ff0000',
+                    color: '#323E65',
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
-                    y: 0.68
+                    y: 13.3,
+                    color: '#003E82',
                 }, {
                     name: 'Fahrzeugbau',
-                    y: 0.84
-                }, {
-                    name: 'Unternehmensnahe Dienstleistungen',
-                    y: 0.65
-                }, {
+                    y: 3.9,
+                    color: '#608DBF',
+                }, 
+                 {
                     name: 'sonstiges verarbeitendes Gewerbe',
-                    y: 0.26
+                    y: 8.8,
+                    color: '#66A2B9',
                 }, {
                     name: 'Finanzdiensleistungen',
-                    y: 0.24
+                    y: 6.0,
+                    color: '#D3EAEF',
                 }, {
                     name: 'sonstige Dienstleistungen',
-                    y: 0.19
+                    y: 5.5,
+                    color: '#CFD9E6',
                 }, {
                     name: 'Verkehr- und Logistik',
-                    y: 0.16
+                    y: 3.2,
+                    color: '#CCAF8F',
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
-                    y: 0.14
+                    y: 3.0,
+                    color: '#C4935C',
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
-                    y: 0.07
+                    y: 1.4,
+                    color: '#B35F00',
                 }, {
                     name: 'Großhandel',
-                    y: 0.07
+                    y: 2.1,
+                    color: '#F7932D', 
                 }]
             }]
         },
