@@ -21,24 +21,27 @@ export default {
   name: 'UmsatzanteilKI',
   data() {
     return {
-      categories: ['0-4', '5-9', '10-14', '15-19',
-    '20-24', '25-29', '30-34', '35-39', '40-44',
-    '45-49', '50-54', '55-59', '60-64', '65-69',
-    '70-74', '75-79', '80-84', '85-89', '90-94',
-    '95-99', '100 + '],
+      categories: ['IKT', 'Finanzdienstleistung', 'Unternehmensnahe Dienstl.', 'Elektrotechnik/Maschinenbau',
+                  'Sonst. Verarbeitende  Gewerke', 'Ver-/Entsorg., Bg.b.', 'Chemie/Ph., Gr.st.', 'Fahrzeugbau', 'Verkehr, Logistik',
+                  'Sonst. Dienstleist.', 'Großhandel', 'Gesamtwirtschaft'],
       chart1: {
             chart: {
-                type: 'bar'
+                type: 'bar',
+                backgroundColor: "none"
+            },
+            // Wasserzeichen entfernen
+            credits: {
+                enabled: false
             },
             title: {
-                text: 'Population pyramid for Germany, 2018'
+                text: ''
             },
             subtitle: {
-                text: 'Source: <a href="http://populationpyramid.net/germany/2018/">Population Pyramids of the World from 1950 to 2100</a>'
+                text: ''
             },
             accessibility: {
                 point: {
-                    valueDescriptionFormat: '{index}. Age {xDescription}, {value}%.'
+                    valueDescriptionFormat: '{index}.{xDescription}, {value}%.'
                 }
             },
             xAxis: [{
@@ -48,7 +51,7 @@ export default {
                     step: 1
                 },
                 accessibility: {
-                    description: 'Age (male)'
+                    description: 'in % des Umsatzes  aller Unternehmen'
                 }
             }, { // mirror axis on right side
                 opposite: true,
@@ -59,7 +62,7 @@ export default {
                     step: 1
                 },
                 accessibility: {
-                    description: 'Age (female)'
+                    description: 'in % des Umsatzes der Unternehmen mit KI-Einsatz in Produkten/Dienstleistungen'
                 }
             }],
             yAxis: {
@@ -85,29 +88,20 @@ export default {
 
             tooltip: {
                 formatter: function () {
-                    return '<b>' + this.series.name + ', age ' + this.point.category + '</b><br/>' +
+                    return '<b>' + this.series.name + this.category + '</b><br/>' +
                         'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 1) + '%';
                 }
             },
 
             series: [{
-                name: 'Male',
+                name: 'in % des Umsatzes  aller Unternehmen',
                 data: [
-                    -2.2, -2.1, -2.2, -2.4,
-                    -2.7, -3.0, -3.3, -3.2,
-                    -2.9, -3.5, -4.4, -4.1,
-                    -3.4, -2.7, -2.3, -2.2,
-                    -1.6, -0.6, -0.3, -0.0,
-                    -0.0
+                    -3.3, -3.0, -2.1, -1.3, -0.9, -0.8, -0.7, -0.6, -0.5, -0.5, -0.4, -1.1
                 ]
             }, {
-                name: 'Female',
+                name: 'in % des Umsatzes der Unternehmen mit KI-Einsatz in Produkten/Dienstleistungen',
                 data: [
-                    2.1, 2.0, 2.1, 2.3, 2.6,
-                    2.9, 3.2, 3.1, 2.9, 3.4,
-                    4.3, 4.0, 3.5, 2.9, 2.5,
-                    2.7, 2.2, 1.1, 0.6, 0.2,
-                    0.0
+                    11.7, 8.4, 14.0, 6.9, 11.6, 6.4, 4.8, 3.0, 6.3, 5.9, 8.1, 7.7
                 ]
             }]
         },
