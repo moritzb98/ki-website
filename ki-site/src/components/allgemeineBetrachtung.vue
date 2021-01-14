@@ -1,14 +1,14 @@
 <template>
     <div class="site-container">
       <h2>Allgemeine Betrachtung</h2>
-      <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) </h3>
+      <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €)</h3>
         <p>Auf der linken Seite kann man die Verteilung der KI-Ausgaben nach Branchengruppen in Mrd. € sehen. Im Vergleich dazu steht rechts der Anteil der Ausgaben für KI in % des Umsatzes aller Unternehmen. Hierbei ist auffallend, dass die IKT-Branche sowohl die höchsten Augaben in Mrd. € und auch im Verhältnis zum Umsatz hat. </p>
         <div class="container">
             <div class="mittig">
                 <highcharts :options="chartOptions"></highcharts>
             </div>
             <div class="mittig">
-                <img src="../assets/money-bag.svg" class="bild">
+                <img id="moneybag" src="../assets/money-bag.svg" class="bild">
             </div>
         </div>
     
@@ -71,8 +71,8 @@ export default {
                         //format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
                     },
                     borderWidth: 0,
-                    showInLegend: true
-                }
+                    showInLegend: true,
+                },
             },
             series: [{
                 name: 'Branchen',
@@ -94,51 +94,115 @@ export default {
                     //sliced: true,
                     //selected: true,
                     color: '#323E65',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
                     y: 0.68,
-                    color: '#003E82'
+                    color: '#003E82',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Fahrzeugbau',
                     y: 0.84,
-                    color: '#608DBF'
+                    color: '#608DBF',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Unternehmensnahe Dienstleistungen',
                     y: 0.65,
-                    color: '#7EB3BB'
+                    color: '#7EB3BB',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'sonstiges verarbeitendes Gewerbe',
                     y: 0.26,
-                    color: '#66A2B9'
+                    color: '#66A2B9',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Finanzdiensleistungen',
                     y: 0.24,
-                    color: '#D3EAEF'
+                    color: '#D3EAEF',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'sonstige Dienstleistungen',
                     y: 0.19,
-                    color: '#CFD9E6'
+                    color: '#CFD9E6',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Verkehr- und Logistik',
                     y: 0.16,
-                    color: '#CCAF8F'
+                    color: '#CCAF8F',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
                     y: 0.14,
-                    color: '#C4935C'
+                    color: '#C4935C',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
                     y: 0.07,
-                    color: '#B35F00'
+                    color: '#B35F00',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }, {
                     name: 'Großhandel',
                     y: 0.07,
-                    color: '#F7932D'
+                    color: '#F7932D',
+                    events: {
+                        click: (el) => {
+                            this.changeMoneybag(el.point);
+                        }
+                    }
                 }]
             }]
         },
     }
   },
+  methods: {
+        changeMoneybag: function(el) {
+            let moneybag = document.getElementById('moneybag');
+            moneybag.width = 'auto';
+            moneybag.height = el.y * 300;
+            moneybag.style.background = el.color;
+            console.log(el);
+        }
+  }
 }
 </script>
 
@@ -146,15 +210,16 @@ export default {
 <style scoped>
 .container{
     width: 100%;
-    margin: 0 auto;
     display:flex;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 .bild{
-    width:300px;
+    width: 300px;
 }
 .mittig{
-    margin: 0 auto;
-    text-align:center;
+    text-align: center;
+    margin: 20px;
 }
 </style>
