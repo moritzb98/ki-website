@@ -223,27 +223,27 @@ export default {
 }
 
 #nav .active a{
-  color: red;
+  color:  #f3931f;
 }
 
 #nav .active a svg {
-    fill: red;
+    fill:  #f3931f;
 }
 
 .fp-viewing-Funktionsbereich-2 #nav .secondnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .secondnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .secondnav li:nth-child(1) .dot{
   width: 8px;
   height: 8px;
-  background: red;
+  background:  #f3931f;
 }
 
 .fp-viewing-AllgemeineBetrachtung #nav .firstnav li:nth-child(1) .dot, .fp-viewing-AllgemeineBetrachtungB #nav .firstnav li:nth-child(2) .dot{
   width: 8px;
   height: 8px;
-  background: red;
+  background:  #f3931f;
 }
 
 .fp-viewing-AllgemeineBetrachtungB #nav li:nth-child(3) a{
-  color: red;
+  color:  #f3931f;
 }
 
 .glossar-show {
