@@ -110,15 +110,20 @@
           }"
         />
         <div class="site-container-width">
-          <img src="../assets/dhbw.svg" class="logo">
+          
           <!--<img class="left-img" src="../assets/1_transparent.png">-->
-          <br><br>
+          <br><br><br><br><br><br><br><br>
           <h1>Einsatz von künstlicher Intelligenz in der deutschen Wirtschaft</h1>
           <h4 class="subtitle">Stand der KI-Nutzung im Jahr 2019</h4>
+          <div>
+          <img src="../assets/dhbw.svg" class="logo">
+          </div>
+          <div class="textblock">
           <span>Ein Projekt des Studiengangs "Onlinemedien" der DHBW Mosbach, des Moduls Web Design 3 <br>
           von Moritz Banhardt, Theresa Brenner, Fabienne Burgert, Berivan Saricicek und Kim Wehnes.</span><br>
           <span>Die abgebildeten Daten basieren auf dem Bericht xxxx und geben eine statistisch repräsentativen Überblick zum aktuellen Stand des Einsatzes von
           Künstlicher Intelligenz (KI) in den Unternehmen in Deutschland im Jahr 2019.</span>
+          </div>
         </div>
     </div>
 </template>
@@ -137,15 +142,30 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .logo { 
-  width: 150px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  width: 130px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+  h1:after {
+    content: "";
+    height: 3px;
+    width: 350px;
+    background-color: #f3931f;
+    display: block;
+    margin: 10px auto;
 }
 
 .subtitle {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 1.7em;
+  margin-bottom: 30px;
+}
+
+.textblock{
+  width: 800px;
+  margin: 0 auto;
 }
 
 #tsparticles{
