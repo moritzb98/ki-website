@@ -69,6 +69,9 @@ export default {
             color: 'white'
           }
         },
+        tooltip: {
+            shared: true,
+        },
 
       plotOptions: {
           series: {
