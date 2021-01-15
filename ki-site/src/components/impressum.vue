@@ -1,6 +1,114 @@
 <template>
     <div class="site-container">
-      <img class="right-img" src="../assets/5_transparent.png">
+      <Particles
+          id="tsparticlesImpressum"
+          :options="{
+            particles: {
+              number: {
+                value: 50,
+                density: {
+                  enable: true,
+                  value_area: 800
+                }
+              },
+              color: {
+                value: '#ffffff'
+              },
+              shape: {
+                type: 'circle',
+                stroke: {
+                  width: 0,
+                  color: '#000000'
+                },
+                polygon: {
+                  nb_sides: 10
+                },
+                image: {
+                  src: 'img/github.svg',
+                  width: 400,
+                  height: 400
+                }
+              },
+              opacity: {
+                value: 0.2762016745712954,
+                random: false,
+                anim: {
+                  enable: false,
+                  speed: 1,
+                  opacity_min: 0.1,
+                  sync: false
+                }
+              },
+              size: {
+                value: 3,
+                random: true,
+                anim: {
+                  enable: false,
+                  speed: 40,
+                  size_min: 0.1,
+                  sync: false
+                }
+              },
+              line_linked: {
+                enable: true,
+                distance: 300,
+                color: '#ffffff',
+                opacity: 0.26456299004281125,
+                width: 1
+              },
+              move: {
+                enable: true,
+                speed: 2,
+                direction: 'none',
+                random: true,
+                straight: false,
+                out_mode: 'out',
+                bounce: false,
+                attract: {
+                  enable: false,
+                  rotateX: 600,
+                  rotateY: 1200
+                }
+              }
+            },
+            interactivity: {
+              detect_on: 'canvas',
+              events: {
+                onclick: {
+                  enable: true,
+                  mode: 'push'
+                },
+                resize: true
+              },
+              modes: {
+                grab: {
+                  distance: 400,
+                  line_linked: {
+                    opacity: 1
+                  }
+                },
+                bubble: {
+                  distance: 400,
+                  size: 40,
+                  duration: 2,
+                  opacity: 8,
+                  speed: 3
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4
+                },
+                push: {
+                  particles_nb: 4
+                },
+                remove: {
+                  particles_nb: 2
+                }
+              }
+            },
+            retina_detect: true
+          }"
+        />
       <h1 class="site-header">Impressum</h1>
         <div class="flex-container impressum-site-container">
           <div class="impressum-flex-item">
@@ -60,5 +168,11 @@ export default {
 
 .impressum-text {
   font-weight: 100;
+}
+
+#tsparticlesImpressum{
+  position: absolute;
+  z-index: 500;
+  width: 100%;
 }
 </style>
