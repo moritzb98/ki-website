@@ -52,7 +52,7 @@ export default {
                 text: ''
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b><br>Beschäftigte: <b>{point.beschaeftigte}</b> pro 1.000 Personen'
             },
             accessibility: {
                 point: {
@@ -65,13 +65,13 @@ export default {
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
+                        format: '<br>{point.name}</br>: {point.y:.1f} Mrd. Euro'
                     },
                     borderWidth: 0,
                 }
             },
             series: [{
-                name: 'Branchen',
+                name: 'Umsatz',
                 colorByPoint: true,
                 dataLabels: {
                     borderWidth: 0,
@@ -90,46 +90,57 @@ export default {
                     sliced: true,
                     selected: true,
                     color: '#323E65',
+                    beschaeftigte: 47.4,
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
                     y: 0.68,
                     color: '#003E82',
+                    beschaeftigte: 13.3,
                 }, {
                     name: 'Fahrzeugbau',
                     y: 0.84,
                     color: '#608DBF',
+                    beschaeftigte: 3.9,
                 }, {
                     name: 'Unternehmensnahe Dienstleistungen',
                     y: 0.65,
                     color: '#7EB3BB',
+                    beschaeftigte: '-',
                 }, {
                     name: 'sonstiges verarbeitendes Gewerbe',
                     y: 0.26,
                     color: '#66A2B9',
+                    beschaeftigte: 8.8,
                 }, {
                     name: 'Finanzdiensleistungen',
                     y: 0.24,
                     color: '#D3EAEF',
+                    beschaeftigte: 6,
                 }, {
                     name: 'sonstige Dienstleistungen',
                     y: 0.19,
                     color: '#CFD9E6',
+                    beschaeftigte: 5.5,
                 }, {
                     name: 'Verkehr- und Logistik',
                     y: 0.16,
                     color: '#CCAF8F',
+                    beschaeftigte: 3.2,
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
                     y: 0.14,
                     color: '#C4935C',
+                    beschaeftigte: 3,
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
                     y: 0.07,
                     color: '#B35F00',
+                    beschaeftigte: 1.4,
                 }, {
                     name: 'Großhandel',
                     y: 0.07,
-                    color: '#F7932D', 
+                    color: '#F7932D',
+                    beschaeftigte: 2.1,
                 }]
             }]
         },
@@ -152,7 +163,7 @@ export default {
                 text: ''
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b><br>Beschäftigte: <b>{point.umsatz}</b> Mrd. Euro'
             },
             accessibility: {
                 point: {
@@ -171,7 +182,7 @@ export default {
                 }
             },
             series: [{
-                name: 'Branchen',
+                name: 'Beschäftigte',
                 colorByPoint: true,
                 dataLabels: {
                     borderWidth: 0,
@@ -190,43 +201,53 @@ export default {
                     sliced: true,
                     selected: true,
                     color: '#323E65',
+                    umsatz: 1.5,
                 }, {
                     name: 'Elektrotechnik, Maschinenbau',
                     y: 13.3,
                     color: '#003E82',
+                    umsatz: 0.7,
                 }, {
                     name: 'Fahrzeugbau',
                     y: 3.9,
                     color: '#608DBF',
+                    umsatz: 0.8,
                 }, 
                  {
                     name: 'sonstiges verarbeitendes Gewerbe',
                     y: 8.8,
                     color: '#66A2B9',
+                    umsatz: 0.3,
                 }, {
                     name: 'Finanzdiensleistungen',
                     y: 6.0,
                     color: '#D3EAEF',
+                    umsatz: 0.2,
                 }, {
                     name: 'sonstige Dienstleistungen',
                     y: 5.5,
                     color: '#CFD9E6',
+                    umsatz: 0.2,
                 }, {
                     name: 'Verkehr- und Logistik',
                     y: 3.2,
                     color: '#CCAF8F',
+                    umsatz: 0.2,
                 }, {
                     name: 'Chemie/Pharma, Grundstoffe',
                     y: 3.0,
                     color: '#C4935C',
+                    umsatz: 0.1,
                 }, {
                     name: 'Ver- und Entsorgung, Bergbau',
                     y: 1.4,
                     color: '#B35F00',
+                    umsatz: 0.07,
                 }, {
                     name: 'Großhandel',
                     y: 2.1,
                     color: '#F7932D', 
+                    umsatz: 0.07,
                 }]
             }]
         },
