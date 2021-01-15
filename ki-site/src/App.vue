@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <div>
-      <a id="glossar-buttonID" class="glossar-button glossar-button-show" href="#" v-on:click="toggleGlossar">Glossar</a>
-      <a id="glossar-buttonX" class="glossar-button" href="#" v-on:click="toggleGlossar">X</a>
+      <a id="glossar-buttonID" class="glossar-button glossar-button-show" href="#" v-on:click="toggleGlossar">GLOSSAR  <img src="./assets/pfeil-nach-unten-nav.svg"></a>
+      <a id="glossar-buttonX" class="glossar-button" href="#" v-on:click="toggleGlossar">GLOSSAR  <img id="arrowRotate" src="./assets/pfeil-nach-unten-nav.svg"></a>
       <div id="glossarID" class="glossar">
         <grundlagenki></grundlagenki>
       </div>
       <nav id="nav">
           <ul id="myMenu">
-            <li data-menuanchor="Home" class="active"><a href="#Home">Start</a></li>
+            <li data-menuanchor="Home" class="active"><a href="#Home"><svg fill="white" height="20px" viewBox="0 0 512 512" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg></a></li>
             <li data-menuanchor="InformationenZurStudie"><a href="#InformationenZurStudie">01</a></li>
             <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">02</a>
               <ul class="nav2 firstnav">
@@ -21,14 +21,14 @@
             <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">05</a></li>
             <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">06</a></li>
             <li data-menuanchor="KIAusgabenUndBeschaeftigte"><a href="#KIAusgabenUndBeschaeftigte">07</a></li>
-            <li data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">08</a>
+            <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">08</a>
             <ul class="nav2 secondnav">
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/2"><div class="dot"></div></a></li>
             </ul>
             </li>
-            <li class="no-connection" data-menuanchor="Impressum"><a href="#Impressum">I</a></li>
+            <li class="no-connection" data-menuanchor="Impressum"><a id="impreesum-link" href="#Impressum">IMPRESSUM</a></li>
           </ul>
         </nav>
       <full-page ref="fullpage" :options="options" id="fullpage">
@@ -176,9 +176,9 @@ export default {
     content: "";
     display: block;
     width: 2px;
-    height: 35px;
+    height: 25px;
     background: #eef1f6;
-    margin: 6px 0 6px 16px;
+    margin: 6px 0 6px 27px;
 }
 
 #nav a{
@@ -193,7 +193,7 @@ export default {
 
 .nav2 li {
   width: 27px;
-  height: 17px;
+  height: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,6 +226,10 @@ export default {
   color: red;
 }
 
+#nav .active a svg {
+    fill: red;
+}
+
 .fp-viewing-Funktionsbereich-2 #nav .secondnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .secondnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .secondnav li:nth-child(1) .dot{
   width: 8px;
   height: 8px;
@@ -249,6 +253,14 @@ export default {
 
 .glossar-content-show {
   opacity: 1 !important;
+}
+
+.glossar-button img {
+  width: 8px;
+}
+
+#arrowRotate{
+  transform: rotate(180deg);
 }
 
 </style>
