@@ -76,6 +76,7 @@ body {
     border: 1px solid #f3931f;
     font-size: 13px;
     cursor: pointer;
+    border-radius: 3px;
   }
 
   .glossar-button-show {
