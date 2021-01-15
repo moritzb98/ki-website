@@ -7,7 +7,7 @@
             <div class="mittig">
                 <highcharts :options="chartOptions"></highcharts>
             </div>
-            <div class="mittig">
+            <div class="mittig mittig-vertikal">
                 <img id="moneybag" src="../assets/money-bag.svg" class="bild">
             </div>
         </div>
@@ -221,5 +221,10 @@ export default {
 .mittig{
     text-align: center;
     margin: 20px;
+    max-height: 380px;
+}
+
+.mittig-vertikal{
+    margin: auto 20px;
 }
 </style>
