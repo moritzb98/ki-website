@@ -5,9 +5,7 @@
           Die Nutzung von KI in den Unternehmen der deutschen Wirtschaft hat bereits vor 2010 begonnen. Bereits 20% der KI einsetzenden Unternehmen nutzen zu dieser Zeit Künstliche Intelligenz. Das folgende Diagramm zeigt die Entwicklung der KI Nutzung in den verschiedenen Branchen der deutschen Wirtschaft im Vergleich zu der Gesamtwirtschaft.
         </p>
         <div class="flex-container">
-
             <highcharts :options="chartOptions"></highcharts>
-
         </div>
     </div>
 </template>
@@ -49,7 +47,8 @@ export default {
             style:{
                 color: 'white',
             }
-          }
+          },
+          gridLineColor: '#313131'
         },
 
         xAxis: {
@@ -83,39 +82,52 @@ export default {
       series: [{
           name: 'Finanzdienstleistungen',
           data: [6, 19, 38, 37],
+          visible: false,
       }, {
           name: 'Chemie',
-          data: [11, 14, 51, 23]
+          data: [11, 14, 51, 23],
+          visible: false,
       }, {
           name: 'Elektrotechnik',
-          data: [17, 15, 41, 27]
+          data: [17, 15, 41, 27],
+          visible: false,
       }, {
           name: 'IKT',
-          data: [9, 26, 39, 27]
+          data: [9, 26, 39, 27],
+          visible: true,
       }, {
           name: 'Großhandel',
-          data: [8, 30, 41, 22]
+          data: [8, 30, 41, 22],
+          visible: false,
       }, {
           name: 'Verkehr, Logistik',
-          data: [20, 19, 16, 45]
+          data: [20, 19, 16, 45],
+          visible: false,
       }, {
           name: 'Ver-/Entsorgung',
-          data: [12, 31, 31, 26]
+          data: [12, 31, 31, 26],
+          visible: false,
       }, {
           name: 'sonstige verarbeitendes Gewerbe',
-          data: [35, 9, 35, 21]
+          data: [35, 9, 35, 21],
+          visible: false,
       }, {
           name: 'Unternehmensnahe Dienstleistungen',
-          data: [24, 20, 29, 27]
+          data: [24, 20, 29, 27],
+          visible: false,
       }, {
           name: 'sonstige Dienstleistungen',
-          data: [43, 11, 14, 32]
+          data: [43, 11, 14, 32],
+          visible: false,
       }, {
           name: 'Fahrzeugbau',
-          data: [17, 39, 26, 18]
+          data: [17, 39, 26, 18],
+          visible: false,
       }, {
           name: 'Gesamtwirtschaft',
-          data: [20, 20, 33, 27]
+          data: [20, 20, 33, 27],
+          visible: true,
+          color: 'red',
       }],
 
       responsive: {
@@ -158,18 +170,7 @@ export default {
 .flex-container{
   width: 100%;
   height:500px;
-}
- .highcharts-root{
- width: 100% !important;
-
- }
-
- .highcharts-container {
-   margin: 0 auto !important;
- }
-
-#fullpage > div.section.fp-section.fp-table.active.fp-completely > div > div > div > div{
-width: 100%;
+  margin: 0 auto;
 }
 
 .flex-item-80 {
