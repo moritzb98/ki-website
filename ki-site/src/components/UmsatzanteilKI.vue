@@ -114,33 +114,49 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-img {
-  width: 100px;
+#container {
+  min-width: 310px;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto
 }
-.icon-container {
-  text-align:center;
-  max-width: 200px;
+
+.buttons {
+  min-width: 310px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0;
 }
-.icon{
-  background: #eef1f6;
-  border-radius: 100%;
-  padding: 30px;
-  width: 50%;
-  margin: 0 auto;
+
+.buttons button {
+  cursor: pointer;
+  border: 1px solid silver;
+  border-right-width: 0;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  transition-duration: 0.3s;
 }
-.container{
-    width: 100%;
-    margin: 0 auto;
-    display:flex;
-    margin-top: 20px;
+
+.buttons button:first-child {
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
 }
-.bild{
-    margin-top: 20px;
-    width:800px;
+
+.buttons button:last-child {
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border-right-width: 1px;
 }
-.mittig{
-    margin: 0 auto;
-    text-align:center;
+
+.buttons button:hover {
+  color: white;
+  background-color: rgb(158, 159, 163);
+  outline: none;
 }
-</style>
+
+.buttons button.active {
+  background-color: #0051B4;
+  color: white;
+}

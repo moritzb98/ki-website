@@ -135,9 +135,13 @@ export default {
       if(destination.anchor == "UmsatzanteilKI"){
         this.startBar();
       }
+      if(destination.anchor == "InformationenZurStudie"){
+           this.$alert("Um die Studie zu verstehen, lesen Sie bitte das Glossar. Dieses befindet sich rechts oben auf dem Bildschirm!");
+      
+      }
       if(destination.anchor == "Impressum"){
         var video = document.getElementById('video');
-        console.log('iiiiii');
+
         console.log(video);
         video.play();
       }
