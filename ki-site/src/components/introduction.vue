@@ -1,15 +1,19 @@
 <template>
     <div class="site-container">
       <h2>Informationen zur Studie</h2>
+        <div class="zweispaltig">
         <p class="subtitle">
         Künstliche Intelligenz (KI) gilt heute als eine der entscheidenden Schlüsseltechnologien. Dynamisches, effizientes und effektives Aufgreifen ihrer Einsatzmöglichkeiten ist ein entscheidender Faktor, um die Innovationskraft und Wettbewerbsfähigkeit der deutschen Wirtschaft zu erhalten und zu stärken. Mit der im November 2018 verabschiedeten Strategie “Künstliche Intelligenz” setzt die Bundesregierung einen Rahmen für eine ganzheitliche politische Gestaltung der weiteren Entwicklung und Anwendung Künstlicher Intelligenz in Deutschland. <br>
         Die Studie “Intelligenz in der Deutschen Wirtschaft - Stand der KI-Nutzung im Jahr 2019” dient dazu über einen ersten Überblick über die Durchdringung von KI in Deutschland zu gewinnen. Auf den nachfolgenden Seiten werden die wichtigsten Indikatoren dargestellt.
         </p>
+        </div>
         <br>
         <div class="flex-container icon-flex">
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/BRAIN SIMULATION.svg">
+              <div class="kreisOrange">
+                <img src="../assets/BRAIN SIMULATION.svg">
+              </div>
             </div>
             <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
             <p class="icon-text">
@@ -26,7 +30,7 @@
 
             <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
             <p class="icon-text">
-              Repräsentative Sonderauswertung der dt. Innovationserhebung &<br>
+              Repräsentative Sonderauswertung der dt. Innovationserhebung <br>
               Zusatzbefragung von KI einsetzenden Unternehmen
             </p>
           </div>
@@ -66,12 +70,34 @@ img {
   text-align:center;
   max-width: 200px;
 }
+
+.zweispaltig{
+  width: 1200px;
+  column-count:2;
+  margin: 0 auto;
+  column-gap: 10px;
+  }
+
 .icon{
   background: #eef1f6;
   border-radius: 100%;
-  padding: 30px;
+  padding: 35px;
   width: 50%;
   margin: 0 auto;
+  border-style: solid;
+  border-color: #8BB8C1;
+  border-width: 6px;
+}
+
+.kreisOrange{
+  background: #eef1f6;
+  border-radius: 100%;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #F4C07A;
+  border-width: 3px;
 }
 
 .icon-flex {
