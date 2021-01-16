@@ -185,3 +185,7 @@ fp-slidesContainer{
 .swal2-styled.swal2-confirm {
   background: black !important;
 }
+
+.swal2-container.swal2-shown {
+  background-color: rgba(0,0,0,.7) !important;
+}
