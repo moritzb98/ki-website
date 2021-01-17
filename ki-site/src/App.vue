@@ -121,6 +121,7 @@ export default {
         //scrollOverflow: true,
         //scrollOverflowReset: true,
       },
+      glossarOpen: false,
     }
   },
   methods: {
@@ -129,16 +130,19 @@ export default {
       document.getElementById('glossar-buttonID').classList.toggle("glossar-button-show");
       document.getElementById('glossar-buttonX').classList.toggle("glossar-button-show");
       document.getElementById('glossar-contentID').classList.toggle("glossar-content-show");
+      this.glossarOpen = !this.glossarOpen;
+      this.disableScrolling();
     },
 
     afterLoad: function(origin, destination) {
       if(destination.anchor == "UmsatzanteilKI"){
         this.startBar();
       }
+      if(destination.anchor == "InformationenZurStudie"){
+           this.$alert("Um die Studie zu verstehen, lesen Sie bitte das Glossar. Dieses befindet sich rechts oben auf dem Bildschirm!");
+      }
       if(destination.anchor == "Impressum"){
         var video = document.getElementById('video');
-        console.log('iiiiii');
-        console.log(video);
         video.play();
       }
     },
@@ -146,6 +150,11 @@ export default {
     startBar() {
       document.getElementById("verticalbar").classList.add("vertical-bar-animate");
     },
+
+    disableScrolling(){
+      this.$refs.fullpage.api.setMouseWheelScrolling(!this.glossarOpen);
+      this.$refs.fullpage.api.setAllowScrolling(!this.glossarOpen);
+    }
   }
 }
 </script>

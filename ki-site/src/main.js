@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
+// Import Pop-Up
+import VueSimpleAlert from "vue-simple-alert";
+
+Vue.use(VueSimpleAlert);
+
 // Import Fullpage
 import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
 import VueFullPage from 'vue-fullpage.js'
