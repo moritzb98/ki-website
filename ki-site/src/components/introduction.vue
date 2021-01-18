@@ -10,9 +10,11 @@
         <br>
         <div class="flex-container icon-flex">
           <div class="icon-container">
+          <div class="circle-container">
             <div class="icon">
               <div class="kreisOrange">
-                <img src="../assets/BRAIN SIMULATION.svg">
+                <img class="BildIcon" src="../assets/BRAIN SIMULATION.svg">
+              </div>
               </div>
             </div>
             <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
@@ -24,10 +26,13 @@
             </p>
           </div>
           <div class="icon-container">
+          <div class="circle-container">
             <div class="icon">
-              <img src="../assets/BIG DATA.svg">
+            <div class="kreisOrange">
+              <img class="BildIcon" src="../assets/BIG DATA.svg">
+              </div>
             </div>
-
+            </div>
             <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
             <p class="icon-text">
               Repräsentative Sonderauswertung der dt. Innovationserhebung <br>
@@ -35,8 +40,12 @@
             </p>
           </div>
           <div class="icon-container">
+          <div class="circle-container">
             <div class="icon">
-             <img src="../assets/BRAIN MACHINE INTERFACE.svg">
+            <div class="kreisOrange">
+             <img class="BildIcon" src="../assets/BRAIN MACHINE INTERFACE.svg">
+           </div>
+           </div>
            </div>
             <h3 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h3>
             <p class="icon-text">
@@ -68,7 +77,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 img {
-  width: 100px;
+  width: 85px;
 }
 .icon-container {
   text-align:center;
@@ -82,26 +91,42 @@ img {
   column-gap: 10px;
   }
 
+.BildIcon{
+  position: absolute;
+    left: 50%;
+    margin-left: -42.5px;
+    top: 50%;
+    margin-top: -42.5px;
+}
+
+.circle-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
 .icon{
   background: #eef1f6;
   border-radius: 100%;
-  padding: 35px;
-  width: 50%;
-  margin: 0 auto;
   border-style: solid;
   border-color: #8BB8C1;
   border-width: 6px;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
 }
 
 .kreisOrange{
-  background: #eef1f6;
-  border-radius: 100%;
-  padding: 20px;
+
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  position: absolute;
   width: 90%;
-  margin: 0 auto;
+  height: 90%;
+  border-radius: 50%;  
+  border-color: #F4C07A;  
   border-style: solid;
-  border-color: #F4C07A;
-  border-width: 3px;
 }
 
 .icon-flex {
