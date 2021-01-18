@@ -4,11 +4,18 @@
       <h3>
         Umsatzanteil von Produkten oder Dienstleistungen mit KI-Einsatz in Unternehmen der deutschen Wirtschaft 2019
       </h3>
-      <p>
-          lorem ipsum dolor
-      </p>
+
       <div class="flex-container">
-        <div class="mittig">
+        <div class="flex-item-40">
+            <p>
+                Lediglich 1,1 % des gesamten Umsatzes der deutschen Wirtschaft erzielten 2019 die Produkte und Dienstleistungen mit KI-Anwendung der Unternehmen. Damit wird deutlich, welchen geringen Anteil KI Nutzung in deutschen Unternehmen aktuell noch einnimmt. Mit 3,3% nimmt die  IKT den größten Umsatzanteil ein.
+                <br>
+                Hierbei ist es wichtig zu beachten, dass hierbei nur die Produkte und Dienstleistungen betrachtet werden, die direkt in der Anwendung oder Nutzung des Produkts KI-Verfahren verwenden.
+                <br>
+                Betrachtet man die Umsatzverteilung der Produkte und Dienstleistungen nur auf den Umsatz der Unternehmen mit KI-Einsatz in ihren Produkten ergeben sich selbstverständlich wesentlich höhere Werte. Hier tragen Produkte mit KI-Anwendung jedoch immer noch nur zu 7,7% des Umsatzes dieser Unternehmensgruppe bei. Den größten Umsatzanteil hat unter dieser Betrachtung die Finanzdienstleistungsbranche mit 14%.
+            </p>
+        </div>
+        <div lass="flex-item-60">
             <highcharts :options="chart1"></highcharts>
         </div>
       </div>
@@ -37,8 +44,13 @@ export default {
                 point: {
                     valueDescriptionFormat: '{value}%.'
                 }
-            }, 
+            },
              xAxis: {
+             labels:{
+                 style:{
+                     color: 'white',
+                 }
+             },
                 categories: [
                 'IKT',
                 'Finanzdienstleist.',
@@ -53,12 +65,17 @@ export default {
                 'Großhandel',
                 'Gesamtwirtschaft'
               ],
+
                   crosshair: true
+
                 },
               yAxis: {
                 min: 0,
                 title: {
-                  text: 'In %'
+                  text: 'In %',
+                  style:{
+                      color: 'white',
+                  },
                 }
               },
 
@@ -99,6 +116,19 @@ export default {
   max-width: 1500px;
   height: 700px;
   margin: 0 auto
+}
+
+.flex-item-60 {
+    width: 60%;
+    position: relative;
+}
+
+.flex-item-40 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
 }
 
 .buttons {
