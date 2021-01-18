@@ -54,7 +54,7 @@ export default {
                 }
             },
             legend: {
-                reversed: true,
+                reversed: false,
                 itemStyle: {
                     color: '#eef1f6',
                 },
@@ -67,11 +67,11 @@ export default {
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
-                        enabled: false,
-                        //format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.y:.1f} Mrd. Euro'
                     },
                     borderWidth: 0,
-                    showInLegend: true,
+                    showInLegend: false,
                 },
             },
             series: [{
@@ -85,7 +85,7 @@ export default {
                         textOutline: false,
                         // Farbe Text
                         color: 'white',
-                        fontSize: '12px',
+                        fontSize: '10px',
                     }
                 },
                 data: [{

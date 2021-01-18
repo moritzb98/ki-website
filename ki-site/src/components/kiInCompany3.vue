@@ -41,6 +41,7 @@ export default {
                 type: 'pie',
                 // Hintergrundfarbe
                 backgroundColor: "none",
+                width: 650,
             },
 
             // Wasserzeichen entfernen
@@ -81,7 +82,7 @@ export default {
                         textOutline: false,
                         // Farbe Text
                         color: 'white',
-                        fontSize: '12px',
+                        fontSize: '10px',
                     }
                 },
                 data: [{
@@ -152,6 +153,7 @@ export default {
                 type: 'pie',
                 // Hintergrundfarbe
                 backgroundColor: "none",
+                width: 650,
             },
 
             // Wasserzeichen entfernen
@@ -192,7 +194,7 @@ export default {
                         textOutline: false,
                         // Farbe Text
                         color: 'white',
-                        fontSize: '12px',
+                        fontSize: '10px',
                     }
                 },
                 data: [{
