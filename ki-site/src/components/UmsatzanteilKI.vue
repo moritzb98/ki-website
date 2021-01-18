@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Gewichtung der Bedeutung von KI Nutzung anhand des Umsatzanteils(Grafik 2.14)</h2>
+      <h2>Gewichtung der Bedeutung von KI Nutzung anhand des Umsatzanteils</h2>
       <h3>
         Umsatzanteil von Produkten oder Dienstleistungen mit KI-Einsatz in Unternehmen der deutschen Wirtschaft 2019
       </h3>

@@ -49,6 +49,7 @@ export default {
                 }
             },
             yAxis: {
+                gridLineColor: '#545454',
                 min: 0,
                 max: 100,
                 title: {

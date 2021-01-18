@@ -38,14 +38,15 @@ export default {
                 styledMode: false,
                 // Hintergrundfarbe
                 backgroundColor: "none", 
-                width:800
+                width:800,
+                height:600
             },
             title: {
                 text: ''
             },
 
             xAxis: {
-                categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+                categories: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
                 title: {
                     text: null
                 }
@@ -53,10 +54,14 @@ export default {
              yAxis: [{
             min: 0,
             title: {
-                text: 'Total fruit consumption'
+                text: 'Anteil der hauptsächlich zu KI tätigen Personen in %'
             }
         },{
             linkedTo: 0,
+            title: {
+                text: 'Anteil Unternehmen mit KI-Einsatz in %'
+            },
+                      gridLineColor: '#313131',
             opposite: true
         }],
             tooltip: {
@@ -64,8 +69,10 @@ export default {
             },
             plotOptions: {
                 bar: {
+                    borderWidth:1,
+                    borderRadius: 3.5,
                     dataLabels: {
-                        enabled: true
+                        enabled: false,
                     }
                 }
             },
@@ -73,17 +80,13 @@ export default {
                 enabled: false
             },
             series: [{
-                name: 'Year 1800',
-                data: [107, 31, 635, 203, 2]
+                name: 'Unternehmen mit KI-Einsatz',
+                data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8],
+                color: '#343e62'
             }, {
-                name: 'Year 1900',
-                data: [133, 156, 947, 408, 6]
-            }, {
-                name: 'Year 2000',
-                data: [814, 841, 3714, 727, 31]
-            }, {
-                name: 'Year 2016',
-                data: [1216, 1001, 4436, 738, 40]
+                name: 'Hauptsächlich zu KI tätige Personen',
+                data: [1.51, 0.28, 0.88, 0.35, 0.10, 0.08, 0.08, 0.12, 0.10, 0.05, 0.05, 0.31 ],
+                color: '#a9c9d4'
             }]
         },
     // Variable von html Element

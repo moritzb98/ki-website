@@ -9,7 +9,7 @@
         </div>
         <br>
         <div class="flex-container icon-flex">
-          <div class="icon-container">
+          <div v-on:click="toggle(0)" class="icon-container dunkel shit">
           <div class="circle-container">
             <div class="icon">
               <div class="kreisOrange">
@@ -18,14 +18,14 @@
               </div>
             </div>
             <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
-            <p class="icon-text">
+            <p class="icon-text-small ohneText">
               dt. Innovationserhebung: <br>
               2019 <br>
               Zusatzumfrage: <br>
               November 2019 - Januar 2020
             </p>
           </div>
-          <div class="icon-container">
+          <div v-on:click="toggle(1)" class="icon-container dunkel shit">
           <div class="circle-container">
             <div class="icon">
             <div class="kreisOrange">
@@ -34,12 +34,12 @@
             </div>
             </div>
             <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
-            <p class="icon-text">
+            <p class="icon-text-small ohneText">
               Repräsentative Sonderauswertung der dt. Innovationserhebung <br>
               Zusatzbefragung von KI einsetzenden Unternehmen
             </p>
           </div>
-          <div class="icon-container">
+          <div v-on:click="toggle(2)" class="icon-container dunkel shit">
           <div class="circle-container">
             <div class="icon">
             <div class="kreisOrange">
@@ -48,7 +48,7 @@
            </div>
            </div>
             <h3 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h3>
-            <p class="icon-text">
+            <p class="icon-text-small ohneText">
               Teilnahmen bei der dt. Innovationserhebung: <br>
               567 <br>
               Teilnahmen bei der Zusatzbefragung: <br>
@@ -64,12 +64,23 @@ export default {
   name: 'introduction',
   data() {
     return {
-
+        show:true
     }
   },
   mounted() {
+  }, 
+  methods:{
+    toggle:function(index){
+      let containers = document.getElementsByClassName("shit");
+      let text = document.getElementsByClassName("icon-text-small");
+      
+      containers[index].classList.toggle("dunkel");
+      text[index].classList.toggle("ohneText");
+
+    }
   }
 }
+
 
 
 </script>
@@ -85,10 +96,10 @@ img {
 }
 
 .zweispaltig{
-  width: 1200px;
+  width: 1100px;
   column-count:2;
   margin: 0 auto;
-  column-gap: 10px;
+  column-gap: 0px;
   }
 
 .BildIcon{
@@ -115,6 +126,8 @@ img {
   width: 70%;
   height: 70%;
   border-radius: 50%;
+  top:10%;
+  left:24px;
 }
 
 .kreisOrange{
@@ -136,6 +149,15 @@ img {
 
 .icon-text{
   text-align: center;
+  font-size: 17px;
+}
+
+.icon-text-small{
+  text-align: center;
+  font-size: 14px;
+  visibility:visible;
+  opacity:100%;
+  transition:all 0.4s;
 }
 
 .icon-header{
@@ -145,4 +167,32 @@ img {
 .p-center {
   text-align:center;
 }
+
+  .icon-header:after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: #f3931f;
+    display: block;
+    margin: 8px auto 5px auto;
+  }
+
+.dunkel{
+  opacity:25%;
+  transition:all 0.5s;
+}
+
+.ohneText{
+  visibility:hidden;
+  transition:all 0.4s;
+  opacity:0%;
+
+}
+
+.dunkel:hover{
+  opacity:100%;
+  cursor:pointer;
+}
+
+
 </style>
