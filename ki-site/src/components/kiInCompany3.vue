@@ -2,7 +2,9 @@
     <div class="site-container">
         <h2>Vergleich der Beschäftigten und des Umsatzes</h2>
         <p>
-            Insgesamt arbeiten im Jahr 2019 rund 139.000 Personen in der deutschen Wirtschaft hauptsächlich oder in geringem Umfang im Bereich der KI. Währenddessen erzielten die Unternehmen der deutschen Wirtschaft im Jahr 2019 mit Produkten und Dienstleistungen mit direktem KI-Einsatz einen Umsatz von annähernd 60 Mrd. €. Die beiden Kreisdiagramme zeigen zum einen die Verteilung der im Bereich KI tätigen Beschäftigten in der deutschen Wirtschaft und zum anderen die Umsatzverteilung von Produkten und Dienstleistungen mit KI-Einsatz. Sie sollen die Relationen dieser Verteilungen im Vergleich zeigen.
+            Insgesamt arbeiten im Jahr 2019 rund 139.000 Personen in der deutschen Wirtschaft hauptsächlich oder in geringem Umfang im Bereich der KI. Währenddessen erzielten die Unternehmen der deutschen Wirtschaft im Jahr 2019 mit Produkten und Dienstleistungen mit direktem KI-Einsatz einen Umsatz von annähernd 60 Mrd. €. 
+            Bei dieser Gegenüberstellung ist auffällig, dass die Branche der Unternehmensnahen Dienstleistungen im Jahr 2019 bereits 44.900 Angestellte, die im Bereich KI arbeiten, verzeichnet. Allerdings werden nur rund 4,8 Mrd. € des Umsatzes durch Produkte und Dienstleistungen mit KI-Einsatz erzielt. Bei den Finanzdienstleistungen kann eine umgekehrte Analogie beobachtet werden. Während nur rund 6.000 Personen sich mit dem Thema KI auseinandersetzen, wurden 2019 bereits 17,3 Mrd. € Umsatz mit Produkten und Dienstleistungen mit Einsatz dieser Technologie erzielt. 
+        
         </p>
         <div class="flex-container">
             <div class="container">

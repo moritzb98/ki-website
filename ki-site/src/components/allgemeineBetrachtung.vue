@@ -2,7 +2,9 @@
     <div class="site-container">
       <h2>Allgemeine Betrachtung</h2>
       <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €)</h3>
-        <p>Auf der linken Seite kann man die Verteilung der KI-Ausgaben nach Branchengruppen in Mrd. € sehen. Im Vergleich dazu steht rechts der Anteil der Ausgaben für KI in % des Umsatzes aller Unternehmen. Hierbei ist auffallend, dass die IKT-Branche sowohl die höchsten Augaben in Mrd. € und auch im Verhältnis zum Umsatz hat. </p>
+<p> Das Kreisdiagramm beschreibt die Verteilung der für KI aufgewendeten Ausgaben je Branche in Mrd. €. Dabei sticht die Branche der IKT besonders hervor, da diese mit 1,5 Mrd. € die größten Ausgaben verzeichnet. Weitere, zu großem Anteil in KI investierende Branchen sind der Fahrzeugbau (0,8 Mrd. €) sowie die Elektrotechnik und der Maschinenbau (0,7 Mrd. €). Branchen wie der Großhandel (0,1 Mrd. €) oder die Chemie-/Pharma-Branche (0,1Mrd. €) gaben bislang eher geringere Summen für KI aus. 
+Im Vergleich dazu steht der Anteil der Ausgaben für KI, ebenfalls nach Branche sortiert und angegeben in % des Gesamtumsatzes. Dabei lässt sich erkennen, dass die IKT Branche ebenfalls den größten Anteil der Ausgaben (0,56%) in KI investiert. Weitere viel investierende Branchen sind die unternehmensnahen Dienstleistungen (0,29%). Der Großhandel gibt auch hier wenig Ausgaben aus (0,01% des Gesamtumsatzes) und teilt sich mit der Versorge/Entsorge und der Bergbau Branche (ebenfalls 0,01%) den Platz der am wenigsten investierenden Branchen.
+</p>
         <div class="container">
             <div class="mittig">
                 <highcharts :options="chartOptions"></highcharts>

@@ -1,6 +1,10 @@
 <template>
     <div class="site-container">
         <h2>Anzahl Beschäftigte KI</h2>
+        <p> Bei Betrachtung dieser Grafik fällt ebenfalls klar auf, welche Branchen bereits auf KI setzen und dementsprechend mehr Personen einstellen, deren Hauptaufgabengebiet die KI ist.
+Der Fahrzeugbar gehört mit durchschnittlich 32,3 Beschäftigten pro Unternehmen zu den am besten aufgestellten Unternehmen. Dicht gefolgt von der Elektrotechnik (14,0) sowie der IKT Branche (12,1). Weniger in Form von Mitarbeitern auf KI konzentrierende Unternehmen sind die Sonstigen Verarbeitenden Unternehmen (4,3) sowie der Großhandel (5,2) und der Versorge/Entsorge und Bergbau (ebenfalls 5,2). 
+Branchen die weniger in KI investieren stellen analog dazu also weniger in diesem Bereich tätige Mitarbeiter ein. Bei hauptsächlich in KI investierenden Unternehmen lässt sich das Gegenteil dazu beobachten.
+</p> 
         <div id="chartdiv">
            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 963.3 800" style="enable-background:new 0 0 963.3 800;" xml:space="preserve">
