@@ -42,7 +42,7 @@
           <UmsatzanteilKI></UmsatzanteilKI>
         </div>
         <div class="section">
-          <allgemeineBetrachtung></allgemeineBetrachtung>
+          <allgemeineBetrachtung ref="allgemeineBetrachtung"></allgemeineBetrachtung>
         </div>
         <div class="section">
           <allgemeinebetrachtung2></allgemeinebetrachtung2>
@@ -158,6 +158,9 @@ export default {
       if(destination.anchor == "Impressum"){
         var video = document.getElementById('video');
         video.play();
+      }
+      if(destination.anchor == "AllgemeineBetrachtung"){
+        this.$refs.allgemeineBetrachtung.pushSeries();
       }
     },
 
