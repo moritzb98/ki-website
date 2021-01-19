@@ -122,6 +122,7 @@ export default {
         //scrollOverflowReset: true,
       },
       glossarOpen: false,
+      infoPopup: true,
     }
   },
   methods: {
@@ -139,7 +140,20 @@ export default {
         this.startBar();
       }
       if(destination.anchor == "InformationenZurStudie"){
-           this.$alert("Um die Studie zu verstehen, lesen Sie bitte das Glossar. Dieses befindet sich rechts oben auf dem Bildschirm!");
+        if(this.infoPopup){
+          this.$refs.fullpage.api.setMouseWheelScrolling(!this.infoPopup);
+          this.$refs.fullpage.api.setAllowScrolling(!this.infoPopup);
+          //this.$alert("Um die Studie zu verstehen, lesen Sie bitte das Glossar. Dieses befindet sich rechts oben auf dem Bildschirm!");
+          this.$fire({
+            title: "Wichtig!",
+            text: "Um die Studie zu verstehen, lesen Sie bitte das Glossar. Dieses befindet sich rechts oben auf dem Bildschirm!",
+            type: "warning"
+          }).then(r => {
+            this.$refs.fullpage.api.setMouseWheelScrolling(r);
+            this.$refs.fullpage.api.setAllowScrolling(r);
+          });
+        }
+        this.infoPopup = false;  
       }
       if(destination.anchor == "Impressum"){
         var video = document.getElementById('video');
@@ -165,7 +179,7 @@ export default {
 
 #nav {
   position: fixed;
-  z-index: 9999;
+  z-index: 200;
   right: 1%;
   height: 100vh;
   display: -webkit-box;

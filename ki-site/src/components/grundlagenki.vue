@@ -46,21 +46,21 @@
             <div class="icon">
               <img src="../assets/BRAIN SIMULATION.svg">
             </div>
-            <p>Zeitraum der Datenerhebung</p>
+            <p class="icontext">Zeitraum der Datenerhebung</p>
 
           </div>
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BIG DATA.svg">
             </div>
-            <p>Form der Datenerhebung</p>
+            <p class="icontext">Form der Datenerhebung</p>
 
           </div>
           <div class="icon-container">
             <div class="icon">
              <img src="../assets/MULTI-AGENT SYSTEM.svg">
            </div>
-            <p>KI Unternehmen</p>
+            <p class="icontext">KI Unternehmen</p>
 
           </div>
         </div>
@@ -89,7 +89,7 @@ h5{
 }
 
 .tabellentext{
-    text-align: left
+    text-align: left;
 }
 
 .icon-container {
@@ -115,6 +115,13 @@ h5{
 
 table{
   margin: 0 auto;
+}
+
+.icontext{
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 </style>

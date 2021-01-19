@@ -176,6 +176,12 @@ fp-slidesContainer{
   margin-top: 3px;
 }
 
+/**************************************************
+
+  Popup Styles
+
+**************************************************/
+
 .swal2-popup{
   background: #f3931f !important;
   font-family: 'Aldrich', sans-serif;
@@ -188,4 +194,13 @@ fp-slidesContainer{
 
 .swal2-container.swal2-shown {
   background-color: rgba(0,0,0,.7) !important;
+}
+
+.swal2-icon.swal2-info {
+  border-color: #4e5051 !important;
+  color: #4e5051 !important;
+}
+
+.swal2-title {
+  display: block !important;
 }
