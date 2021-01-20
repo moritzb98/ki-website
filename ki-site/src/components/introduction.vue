@@ -59,6 +59,7 @@
               368
             </p>
           </div>
+          <img class="klick" src="../assets/tap.svg">
         </div>
     </div>
 </template>
@@ -97,6 +98,13 @@ img {
 .icon-container {
   text-align:center;
   width: 270px;
+}
+
+.klick{
+  width: 50px;
+  height: auto;
+  z-index:1;
+  position:absolute;top:680px;left:1280px;
 }
 
 .zweispaltig{

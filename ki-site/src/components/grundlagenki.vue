@@ -88,12 +88,14 @@ h3{
 }
 p {
   font-size: 17px;
+  text-align:left;
 }
 h4{
   font-size: 30px;
 }
 h5{
   font-size: 18px;
+  text-align:left;
 }
 .fett{
     font-weight: bold;
@@ -121,7 +123,7 @@ h5{
 }
 
 .glossar-content p, h3{
-  text-align: center;
+  text-align: left;
 }
 
 table{

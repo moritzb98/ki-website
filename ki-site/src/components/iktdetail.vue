@@ -33,13 +33,13 @@
          </div>
          <div class="slide">
             <div class="slide-container">
-              <img class="bild" src="../assets/Firma_trans.svg">
+              <img class="bild" src="../assets/Firma.svg">
               <img class="klick" src="../assets/tap.svg">
             </div>
          </div>
          <div class="slide">
             <div class="slide-container">
-              <img class="icon-company" src="../assets/Firma innen_Zeichenfläche 1 Kopie 2.svg">
+              <img class="bild" src="../assets/Firma_alle_Daten.svg">
             </div>
          </div>
          <div class="slide">
@@ -74,13 +74,14 @@ export default {
   width: 800px;
   height: auto;
   z-index:0;
+  margin-top:-40px;
 }
 
 .klick{
   width: 50px;
   height: auto;
   z-index:1;
-  position:absolute;top:320px;left:1050px;
+  position:absolute;top:400px;left:1050px;
 }
 
 .icon-container {

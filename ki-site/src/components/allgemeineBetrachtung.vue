@@ -6,6 +6,7 @@
         Im Vergleich dazu steht der Anteil der Ausgaben für KI, ebenfalls nach Branche sortiert und angegeben in % des Gesamtumsatzes. Dabei lässt sich erkennen, dass die IKT Branche ebenfalls den größten Anteil der Ausgaben (0,56%) in KI investiert. Weitere viel investierende Branchen sind die unternehmensnahen Dienstleistungen (0,29%). Der Großhandel gibt auch hier wenig Ausgaben aus (0,01% des Gesamtumsatzes) und teilt sich mit der Versorge/Entsorge und der Bergbau Branche (ebenfalls 0,01%) den Platz der am wenigsten investierenden Branchen.
         </p>
         <div class="container">
+            <img class="klick" src="../assets/tap.svg">
             <div class="mittig">
                 <highcharts :options="chartOptions"></highcharts>
             </div>
@@ -269,6 +270,12 @@ export default {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+.klick{
+  width: 50px;
+  height: auto;
+  z-index:1;
+  position:absolute;top:680px;left:230px;
 }
 .bild{
     width: 300px;
