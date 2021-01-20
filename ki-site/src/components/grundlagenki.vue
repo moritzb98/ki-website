@@ -7,7 +7,6 @@
         <br>
         <div>
 
-
             <h4> Definitionen </h4>
               <h5> Künstliche Intelligenz </h5>
                 <p> Künstliche Intelligenz (KI) zählt heutzutage zu den entscheidendsten Schlüsseltechnologien. KI ermöglicht die Simulation von menschlicher Intelligenz, dazu gehört neben dem Lernen der Erfassung von Informationen die Schlussfolgerung, also wie wird mit Informationen umgegangen, um Rückschlüsse zu ziehen, sowie die Selbstkorrektur als abschließender Prozesspunkt.  <br>
@@ -19,24 +18,22 @@
                 </p>
 
             <h4>Abkürzungen</h4>
-            <table cellspacing="20" class="tbl">
-                <tr>
-                    <td class="fett tabellentext">
+            <div class="cssgrid">
+                
+                    <div class="fett tabellentext">
                         IKT
-                    </td>
-                    <td class="tabellentext">
+                    </div>
+                    <div class="tabellentext">
                         Informations- und Kommunikationstechnik
-                    </td>
-                </tr>
-                <tr>
-                    <td class="fett tabellentext">
+                    </div>
+                    <div class="fett tabellentext">
                         FuE
-                    </td>
-                    <td class="tabellentext">
+                    </div>
+                    <div class="tabellentext">
                         Forschung und Entwicklung
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                
+            </div>
         </div>
 
         <div>
@@ -86,6 +83,7 @@ h3{
     text-transform: uppercase;
     font-size: 2.5em;
 }
+
 p {
   font-size: 17px;
   text-align:left;
@@ -96,7 +94,20 @@ h4{
 h5{
   font-size: 18px;
   text-align:left;
+  width: 80%;
+  margin:0 auto;
 }
+
+.cssgrid{
+  display:grid;
+  width: 80%;
+  margin:0 auto;
+  justify-content: space-between;
+  text-align: left; 
+   grid-template-rows: 1fr 1fr; 
+  grid-template-columns: 10% 90%; 
+}
+
 .fett{
     font-weight: bold;
 }
