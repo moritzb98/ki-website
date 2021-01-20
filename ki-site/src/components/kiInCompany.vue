@@ -4,14 +4,10 @@
         <h2>Bedeutung von KI Nutzung</h2>
         <h3> für die Geschäftstätigkeit der Unternehmen der deutschen Wirtschaft 2019</h3>
         <p>Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.</p>
-        <div class="flex-container margin-top">
+        <div class="flex-container margin-top container-new">
             <div class="flex-item">
-
-                <div class="flex-container flex-container-100">
-                    <div class="flex-item-20">
-                        <div id="verticalbar" class="vertical-bar"></div>
-                    </div>
-                </div>
+                <div id="counter" class="counter"></div>
+                <p class="text-animate">der blalalalla blalalalla blalalallablal blalalalla alallablalalalla blalalalla blalalalla blalalalla</p>
             </div>
             <div class="flex-item chartdiv">
                 <highcharts :options="chartOptions"></highcharts>
@@ -134,19 +130,11 @@ export default {
     align-items: flex-end;
 }
 
-.vertical-bar {
-    bottom: 0;
-    margin: 0 auto;
-    margin-bottom: 85px;
-    width: 50%;
+.counter{
     height: 0;
-    background: #e28260;
-    visibility: hidden;
-    position: absolute;
-    transition: all 3s;
 }
 
-.vertical-bar-animate:before {
+.counter-animate:before {
     color: white;
     content: counter(count) '%';
     animation: counter 4s linear;
@@ -155,12 +143,6 @@ export default {
     bottom: 25px;
 }
 
-.vertical-bar-animate {
-    margin-top: 0;
-    visibility: visible;
-    height: 77%;
-    box-shadow: 1px 0px 5px 1px #e28260;
-}
 
 .bar-text {
     position: absolute;
@@ -169,6 +151,15 @@ export default {
     text-align: left;
 }
 
+.container-new{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.text-animate{
+    margin: 0;
+}
 
 
 @keyframes counter {

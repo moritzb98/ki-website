@@ -53,9 +53,6 @@
           <kiincompany2></kiincompany2>
         </div>
         <div class="section">
-          <kiincompany3></kiincompany3>
-        </div>
-        <div class="section">
           <KIAusgabenUndBeschaeftigte></KIAusgabenUndBeschaeftigte>
         </div>
         <div class="section videosection">
@@ -78,7 +75,6 @@ import UmsatzanteilKI from './components/UmsatzanteilKI.vue'
 import impressum from './components/impressum.vue'
 import kiincompany from './components/kiInCompany.vue'
 import kiincompany2 from './components/kiInCompany2.vue'
-import kiincompany3 from './components/kiInCompany3.vue'
 import KIAusgabenUndBeschaeftigte from './components/KIAusgabenUndBeschaeftigte'
 import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
@@ -96,7 +92,6 @@ export default {
     UmsatzanteilKI,
     kiincompany,
     kiincompany2,
-    kiincompany3,
     KIAusgabenUndBeschaeftigte,
     grundlagenki,
     allgemeineBetrachtung,
@@ -106,10 +101,10 @@ export default {
   data() {
     return {
       options: {
-        anchors: ['Home', 'InformationenZurStudie', 'GrundlagenZuKI', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'UmsatzanteilKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum', 'Test'],
+        anchors: ['Home', 'InformationenZurStudie', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'UmsatzanteilKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum', 'Test'],
         menu: '#myMenu',
         //navigation: true,
-        navigationTooltips: ['Home', 'Informationen zur Studie', 'Grundlagen zu KI', 'Allgemeine Betrachtung', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
+        navigationTooltips: ['Home', 'Informationen zur Studie', 'Allgemeine Betrachtung', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
         afterLoad: this.afterLoad,
         //scrollOverflow: true,
         //scrollOverflowReset: true,
@@ -129,7 +124,7 @@ export default {
     },
 
     afterLoad: function(origin, destination) {
-      if(destination.anchor == "UmsatzanteilKI"){
+      if(destination.anchor == "BedeutungVonKI"){
         this.startBar();
       }
       if(destination.anchor == "InformationenZurStudie"){
@@ -158,7 +153,7 @@ export default {
     },
 
     startBar() {
-      document.getElementById("verticalbar").classList.add("vertical-bar-animate");
+      document.getElementById("counter").classList.add("counter-animate");
     },
 
     disableScrolling(){
