@@ -80,7 +80,7 @@ export default {
   width: 50px;
   height: auto;
   z-index:1;
-  position:absolute;top:620px;left:1050px;
+  position:absolute;top:320px;left:1050px;
 
 }
 
