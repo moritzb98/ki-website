@@ -112,7 +112,11 @@ export default {
         changeMoneybag: function(el) {
             let moneybag = document.getElementById('moneybag');
             moneybag.setAttribute("width", "auto");
-            moneybag.setAttribute("height", el.x * 500);
+            if(el.x * 500 >= 30){
+                moneybag.setAttribute("height", el.x * 500);
+            }else{
+                moneybag.setAttribute("height", 30);
+            }
             let objectsChange = document.getElementsByClassName('changeColor');
             for(var i = 0; i<objectsChange.length; i++){
                 objectsChange[i].style.fill = el.color;
@@ -241,7 +245,7 @@ export default {
                     }, {
                         name: 'Großhandel',
                         y: 0.07,
-                        x: 0.1,
+                        x: 0.01,
                         color: '#F7932D',
                         events: {
                             click: (el) => {
