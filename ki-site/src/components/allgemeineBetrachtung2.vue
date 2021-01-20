@@ -183,6 +183,7 @@ export default {
 <style scoped>
 .flex-item-30 {
     width: 30%;
+    margin-top: 30px;
 }
 
 .flex-item-70 {

@@ -81,7 +81,6 @@ export default {
   height: auto;
   z-index:1;
   position:absolute;top:320px;left:1050px;
-
 }
 
 .icon-container {
