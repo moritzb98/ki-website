@@ -117,7 +117,7 @@ export default {
             for(var i = 0; i<objectsChange.length; i++){
                 objectsChange[i].style.fill = el.color;
             }
-            document.getElementById('umsatz').innerHTML = "Ausgaben des Gesamtumsatzes: " + el.x + "Mrd. Euro";
+            document.getElementById('umsatz').innerHTML = "Ausgaben des Gesamtumsatzes: " + el.x + "%";
         },
 
         pushSeries: function() {
