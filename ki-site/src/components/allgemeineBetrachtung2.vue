@@ -64,7 +64,7 @@ export default {
             opposite: true
         }],
             tooltip: {
-                valueSuffix: ' millions'
+                valueSuffix: ' %'
             },
             plotOptions: {
                 bar: {

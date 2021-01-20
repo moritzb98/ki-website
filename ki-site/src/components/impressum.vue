@@ -121,7 +121,7 @@
             <span class="impressum-text">Fachbereich Onlinemedien</span><br>
           </div>
           <div class="impressum-flex-item">
-            <h3>Impressum</h3>
+            <h3>Quelle</h3>
             <span class="impressum-text"><b>Herausgeber:</b> Bundesministerium für <br>Wirtschaft und Energie (BMWi)<br>
               Öffentlichkeitsarbeit<br>
               11019 Berlin<br>
