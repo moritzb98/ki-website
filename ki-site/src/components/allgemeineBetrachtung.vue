@@ -112,12 +112,12 @@ export default {
         changeMoneybag: function(el) {
             let moneybag = document.getElementById('moneybag');
             moneybag.setAttribute("width", "auto");
-            moneybag.setAttribute("height", el.y * 200);
+            moneybag.setAttribute("height", el.x * 500);
             let objectsChange = document.getElementsByClassName('changeColor');
             for(var i = 0; i<objectsChange.length; i++){
                 objectsChange[i].style.fill = el.color;
             }
-            document.getElementById('umsatz').innerHTML = "Umsatz: " + el.y;
+            document.getElementById('umsatz').innerHTML = "Ausgaben des Gesamtumsatzes: " + el.x + "Mrd. Euro";
         },
 
         pushSeries: function() {
@@ -139,6 +139,7 @@ export default {
                     data: [{
                         name: 'IKT',
                         y: 1.50,
+                        x: 0.56,
                         //sliced: true,
                         //selected: true,
                         color: '#323E65',
@@ -150,6 +151,7 @@ export default {
                     }, {
                         name: 'Elektrotechnik, Maschinenbau',
                         y: 0.68,
+                        x: 0,
                         color: '#003E82',
                         events: {
                             click: (el) => {
@@ -159,6 +161,7 @@ export default {
                     }, {
                         name: 'Fahrzeugbau',
                         y: 0.84,
+                        x: 0,
                         color: '#608DBF',
                         events: {
                             click: (el) => {
@@ -168,6 +171,7 @@ export default {
                     }, {
                         name: 'Unternehmensnahe Dienstleistungen',
                         y: 0.65,
+                        x: 0,
                         color: '#7EB3BB',
                         events: {
                             click: (el) => {
@@ -177,6 +181,7 @@ export default {
                     }, {
                         name: 'sonstiges verarbeitendes Gewerbe',
                         y: 0.26,
+                        x: 0, 
                         color: '#66A2B9',
                         events: {
                             click: (el) => {
@@ -186,6 +191,7 @@ export default {
                     }, {
                         name: 'Finanzdiensleistungen',
                         y: 0.24,
+                        x: 0,
                         color: '#D3EAEF',
                         events: {
                             click: (el) => {
@@ -195,6 +201,7 @@ export default {
                     }, {
                         name: 'sonstige Dienstleistungen',
                         y: 0.19,
+                        x: 0,
                         color: '#CFD9E6',
                         events: {
                             click: (el) => {
@@ -204,6 +211,7 @@ export default {
                     }, {
                         name: 'Verkehr- und Logistik',
                         y: 0.16,
+                        x: 0,
                         color: '#CCAF8F',
                         events: {
                             click: (el) => {
@@ -213,6 +221,7 @@ export default {
                     }, {
                         name: 'Chemie/Pharma, Grundstoffe',
                         y: 0.14,
+                        x: 0,
                         color: '#C4935C',
                         events: {
                             click: (el) => {
@@ -222,6 +231,7 @@ export default {
                     }, {
                         name: 'Ver- und Entsorgung, Bergbau',
                         y: 0.07,
+                        x: 0,
                         color: '#B35F00',
                         events: {
                             click: (el) => {
@@ -231,6 +241,7 @@ export default {
                     }, {
                         name: 'Großhandel',
                         y: 0.07,
+                        x: 0.1,
                         color: '#F7932D',
                         events: {
                             click: (el) => {
