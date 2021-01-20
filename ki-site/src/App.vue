@@ -124,7 +124,7 @@ export default {
     },
 
     afterLoad: function(origin, destination) {
-      if(destination.anchor == "BedeutungVonKI"){
+      if(destination.anchor == "UmsatzanteilKI"){
         this.startBar();
       }
       if(destination.anchor == "InformationenZurStudie"){
