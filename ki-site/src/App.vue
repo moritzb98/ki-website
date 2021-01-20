@@ -143,11 +143,7 @@ export default {
         }
         this.infoPopup = false;  
       }
-      if(destination.anchor == "Impressum"){
-        var video = document.getElementById('video');
-        video.play();
-      }
-      if(destination.anchor == "AllgemeineBetrachtung"){
+      if(destination.anchor == "AllgemeineBetrachtungB"){
         this.$refs.allgemeineBetrachtung.pushSeries();
       }
     },
