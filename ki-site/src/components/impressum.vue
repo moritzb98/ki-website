@@ -116,7 +116,7 @@
             <span class="impressum-text"><b>Titel:</b> Einsatz von künstlicher Intelligenz in der Deutschen Wirtschaft<br>Stand der KI Nutzung im Jahr 2019</span><br>
             <span class="impressum-text"><b>Studenten:</b> Moritz Banhardt, Theresa Brenner, Fabienne Burgert, Berivan Saricicek, Kim Wehnes</span><br>
             <span class="impressum-text"><b>Dozent:</b> Dipl.-Des. Lothar B. Blum</span><br>
-            <span class="impressum-text"><b>Abgabe:</b> XX.XX.2021</span><br><br>
+            <span class="impressum-text"><b>Abgabe:</b> 29.01.2021</span><br><br>
             <span class="impressum-text">DHBW Campus Mosbach</span><br>
             <span class="impressum-text">Fachbereich Onlinemedien</span><br>
           </div>
