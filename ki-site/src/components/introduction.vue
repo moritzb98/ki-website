@@ -1,21 +1,21 @@
 <template>
     <div class="site-container">
       <h2>Informationen zur Studie</h2>
-        <div class="zweispaltig">
-        <p class="subtitle">
-        Künstliche Intelligenz (KI) gilt heute als eine der entscheidenden Schlüsseltechnologien. Dynamisches, effizientes und effektives Aufgreifen ihrer Einsatzmöglichkeiten ist ein entscheidender Faktor, um die Innovationskraft und Wettbewerbsfähigkeit der deutschen Wirtschaft zu erhalten und zu stärken. Mit der im November 2018 verabschiedeten Strategie “Künstliche Intelligenz” setzt die Bundesregierung einen Rahmen für eine ganzheitliche politische Gestaltung der weiteren Entwicklung und Anwendung Künstlicher Intelligenz in Deutschland. <br>
-        Die Studie “Intelligenz in der Deutschen Wirtschaft - Stand der KI-Nutzung im Jahr 2019” dient dazu über einen ersten Überblick über die Durchdringung von KI in Deutschland zu gewinnen. Auf den nachfolgenden Seiten werden die wichtigsten Indikatoren dargestellt.
-        </p>
+        <div class="flex-container zweispaltig">
+          <p class="zweispaltig-text">Künstliche Intelligenz (KI) gilt heute als eine der entscheidenden Schlüsseltechnologien. Dynamisches, effizientes und effektives Aufgreifen ihrer Einsatzmöglichkeiten ist ein entscheidender Faktor, um die Innovationskraft und Wettbewerbsfähigkeit der deutschen Wirtschaft zu erhalten und zu stärken. Mit der im November 2018 verabschiedeten Strategie “Künstliche Intelligenz” setzt die Bundesregierung einen Rahmen für eine ganzheitliche politische Gestaltung der weiteren Entwicklung und Anwendung Künstlicher Intelligenz in Deutschland.</p>
+          <p class="zweispaltig-text">Die Studie “Intelligenz in der Deutschen Wirtschaft - Stand der KI-Nutzung im Jahr 2019” dient dazu über einen ersten Überblick über die Durchdringung von KI in Deutschland zu gewinnen. Auf den nachfolgenden Seiten werden die wichtigsten Indikatoren dargestellt.</p>
         </div>
         <br>
         <div class="flex-container icon-flex">
           <div v-on:click="toggle(0)" class="icon-container dunkel shit">
+          <div class="circle-container-big">
           <div class="circle-container">
             <div class="icon">
               <div class="kreisOrange">
                 <img class="BildIcon" src="../assets/BRAIN SIMULATION.svg">
               </div>
               </div>
+            </div>
             </div>
             <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
             <p class="icon-text-small ohneText">
@@ -26,11 +26,13 @@
             </p>
           </div>
           <div v-on:click="toggle(1)" class="icon-container dunkel shit">
+          <div class="circle-container-big">
           <div class="circle-container">
             <div class="icon">
             <div class="kreisOrange">
               <img class="BildIcon" src="../assets/BIG DATA.svg">
               </div>
+            </div>
             </div>
             </div>
             <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
@@ -40,10 +42,12 @@
             </p>
           </div>
           <div v-on:click="toggle(2)" class="icon-container dunkel shit">
+          <div class="circle-container-big">
           <div class="circle-container">
             <div class="icon">
             <div class="kreisOrange">
              <img class="BildIcon" src="../assets/BRAIN MACHINE INTERFACE.svg">
+           </div>
            </div>
            </div>
            </div>
@@ -92,14 +96,18 @@ img {
 }
 .icon-container {
   text-align:center;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .zweispaltig{
-  width: 1100px;
-  column-count:2;
-  margin: 0 auto;
-  column-gap: 0px;
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .zweispaltig-text{
+    margin: 10px;
+    width: 100%;
   }
 
 .BildIcon{
@@ -112,7 +120,6 @@ img {
 
 .circle-container{
   position: relative;
-  width: 100%;
   padding-bottom: 100%;
 }
 
@@ -194,5 +201,9 @@ img {
   cursor:pointer;
 }
 
+.circle-container-big{
+  width: 70%;
+  margin: 0 auto;
+}
 
 </style>
