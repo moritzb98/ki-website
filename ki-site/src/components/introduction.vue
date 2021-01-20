@@ -96,7 +96,7 @@ img {
 }
 .icon-container {
   text-align:center;
-  max-width: 300px;
+  width: 270px;
 }
 
 .zweispaltig{
