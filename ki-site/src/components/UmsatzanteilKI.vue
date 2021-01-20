@@ -97,11 +97,8 @@ export default {
     name: 'In % des Umsatzes aller Unternehmen',
     data: [3.3, 3.0, 2.1, 1.3 , 0.9, 0.8, 0.7, 0.6 , 0.5, 0.5, 0.4, 1.1]
 
-  }, {
-    name: 'In % des Umsatzes der Unternehmen mit Ki-Einsatz in Produkten/Dienstleistungen',
-    data: [11.7, 8.4, 14.0, 6.9, 11.6, 6.4, 4.8, 3.0, 6.3, 5.9, 8.1, 7.7]
-
-  }, ]
+  },
+   ]
         },
     }
   },
