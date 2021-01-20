@@ -20,8 +20,7 @@
             <li data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">04</a></li>
             <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">05</a></li>
             <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">06</a></li>
-            <li data-menuanchor="KIAusgabenUndBeschaeftigte"><a href="#KIAusgabenUndBeschaeftigte">07</a></li>
-            <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">08</a>
+            <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">07</a>
             <ul class="nav2 secondnav">
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
@@ -46,9 +45,6 @@
         </div>
         <div class="section">
           <allgemeinebetrachtung2></allgemeinebetrachtung2>
-        </div>
-        <div class="section">
-          <anzahlBeschaeftigteKi></anzahlBeschaeftigteKi>
         </div>
         <div class="section">
           <kiincompany></kiincompany>
@@ -87,7 +83,6 @@ import KIAusgabenUndBeschaeftigte from './components/KIAusgabenUndBeschaeftigte'
 import grundlagenki from './components/grundlagenki.vue'
 import allgemeineBetrachtung from './components/allgemeineBetrachtung.vue'
 import allgemeinebetrachtung2 from './components/allgemeineBetrachtung2.vue'
-import anzahlBeschaeftigteKi from './components/anzahlBeschaeftigteKi.vue'
 //import animatedvideo from './components/animatedvideo.vue'
 
 
@@ -106,7 +101,6 @@ export default {
     grundlagenki,
     allgemeineBetrachtung,
     allgemeinebetrachtung2,
-    anzahlBeschaeftigteKi,
     //animatedvideo
   },
   data() {
