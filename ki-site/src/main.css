@@ -25,7 +25,7 @@ body {
     width: 250px;
     background-color: #f3931f;
     display: block;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
   h1 {
@@ -36,9 +36,13 @@ body {
 
   h3 {
     margin: auto;
+    margin-top: -50px;
+    margin-bottom: 200px;
     width: 80%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
   
   #app {

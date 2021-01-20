@@ -120,7 +120,7 @@
           </div>
           <div class="textblock">
           <span>Ein Projekt des Studiengangs "Onlinemedien" der DHBW Mosbach, des Moduls Web Design 3 <br>
-          von Moritz Banhardt, Theresa Brenner, Fabienne Burgert, Berivan Saricicek und Kim Wehnes.</span><br>
+          von Moritz Banhardt, Theresa Brenner, Fabienne Burgert, Berivan Saricicek und Kim Wehnes.</span><br><br>
           <span>Die abgebildeten Daten basieren auf dem Bericht xxxx und geben eine statistisch repräsentativen Überblick zum aktuellen Stand des Einsatzes von
           Künstlicher Intelligenz (KI) in den Unternehmen in Deutschland im Jahr 2019.</span>
           </div>
@@ -144,7 +144,7 @@ export default {
 .logo { 
   width: 130px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
   h1:after {

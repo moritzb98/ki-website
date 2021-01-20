@@ -171,4 +171,5 @@ export default {
   background-color: #0051B4;
   color: white;
 }
+
 </style>
