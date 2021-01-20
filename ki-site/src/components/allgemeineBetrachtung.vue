@@ -10,8 +10,8 @@ Im Vergleich dazu steht der Anteil der Ausgaben für KI, ebenfalls nach Branche 
                 <highcharts :options="chartOptions"></highcharts>
             </div>
             <div class="mittig mittig-vertikal">
-                <img id="moneybag" src="../assets/money-bag.svg" class="bild">
                 <img id="moneybag" src="../assets/geldsack.svg" class="bild">
+                
             </div>
         </div>
     </div>
