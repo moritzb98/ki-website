@@ -39,7 +39,7 @@
          </div>
          <div class="slide">
             <div class="slide-container">
-              <img class="icon-company" src="../assets/slide2.jpeg">
+              <img class="icon-company" src="../assets/Firma innen_Zeichenfläche 1 Kopie 2.svg">
             </div>
          </div>
          <div class="slide">
