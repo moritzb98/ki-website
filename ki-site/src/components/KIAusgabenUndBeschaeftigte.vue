@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
-      <h2>Allgemeine Betrachtung - Bubble Chart</h2>
-      <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) </h3>
+      <h2>Auswirkungen des Einsatzes von KI auf Personal und Investitionen innerhalb deutscher Unternehmen</h2>
+      <h3> Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
 <p>
 Der Fahrzeugbau beschäftigt im Durchschnitt 30,8% hauptsächlich zu KI tätige Mitarbeiter und gab einen Betrag von 7056 tsd. € für Investitionen für KI aus. Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen; 6,1% der Beschäftigten befassen sich intensiver mit KI, die Summe der für KI ausgegebenen Investitionen beträgt allerdings nur 93 tsd. €.
 </p>
