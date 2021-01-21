@@ -46,19 +46,19 @@
           <introduction></introduction>
         </div>
         <div class="section">
-          <UmsatzanteilKI></UmsatzanteilKI>
+          <UmsatzanteilKI ref="umsatzki"></UmsatzanteilKI>
         </div>
         <div class="section">
           <allgemeineBetrachtung ref="allgemeineBetrachtung"></allgemeineBetrachtung>
         </div>
         <div class="section">
-          <allgemeinebetrachtung2></allgemeinebetrachtung2>
+          <allgemeinebetrachtung2 ref="bedeutungki"></allgemeinebetrachtung2>
         </div>
         <div class="section">
-          <kiincompany></kiincompany>
+          <kiincompany ></kiincompany>
         </div>
         <div class="section">
-          <kiincompany2></kiincompany2>
+          <kiincompany2 ref="kicompany2"></kiincompany2>
         </div>
         <div class="section">
           <KIAusgabenUndBeschaeftigte></KIAusgabenUndBeschaeftigte>
@@ -156,6 +156,13 @@ export default {
       if(destination.anchor == "AllgemeineBetrachtungB"){
         this.$refs.allgemeineBetrachtung.pushSeries();
       }
+      if(destination.anchor == "AllgemeineBetrachtung"){
+        this.$refs.umsatzki.pushSeries();
+      }
+      if(destination.anchor == "BedeutungVonKI"){
+        this.$refs.bedeutungki.pushSeries();
+      }
+      
       if(destination.anchor == "Funktionsbereich"){
           if(!this.blur){
             this.blureffekt();

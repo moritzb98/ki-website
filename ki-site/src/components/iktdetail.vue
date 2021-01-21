@@ -88,7 +88,7 @@ export default {
 
 .icon-container {
   text-align:center;
-  width: 10%;
+  width: 20%;
 }
 
 .icon-container p{
@@ -102,7 +102,7 @@ export default {
   background: #eef1f6;
   border-radius: 100%;
   padding: 10px;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 .subtitle {
@@ -136,7 +136,7 @@ video{
   height: 350px;
 }
 .flex-slider{
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 .site-container{

@@ -28,7 +28,7 @@ export default {
           backgroundColor: null,
           width: 1050,
           height: 450,
-
+          animation: true,
         },
         // Wasserzeichen entfernen
         credits: {
@@ -78,62 +78,65 @@ export default {
       plotOptions: {
           series: {
               label: {
-                  connectorAllowed: false
+                  connectorAllowed: false,
+              },
+              animation: {
+                  duration: 5000
               },
               pointPlacement: 'on',
           },
       },
 
       series: [{
-          name: 'Finanzdienstleistungen',
-          data: [6, 19, 38, 37],
-          visible: false,
-      }, {
-          name: 'Chemie',
-          data: [11, 14, 51, 23],
-          visible: false,
-      }, {
-          name: 'Elektrotechnik',
-          data: [17, 15, 41, 27],
-          visible: false,
-      }, {
-          name: 'IKT',
-          data: [9, 26, 39, 27],
-          visible: true,
-      }, {
-          name: 'Großhandel',
-          data: [8, 30, 41, 22],
-          visible: false,
-      }, {
-          name: 'Verkehr, Logistik',
-          data: [20, 19, 16, 45],
-          visible: false,
-      }, {
-          name: 'Ver-/Entsorgung',
-          data: [12, 31, 31, 26],
-          visible: false,
-      }, {
-          name: 'sonstige verarbeitendes Gewerbe',
-          data: [35, 9, 35, 21],
-          visible: false,
-      }, {
-          name: 'Unternehmensnahe Dienstleistungen',
-          data: [24, 20, 29, 27],
-          visible: false,
-      }, {
-          name: 'sonstige Dienstleistungen',
-          data: [43, 11, 14, 32],
-          visible: false,
-      }, {
-          name: 'Fahrzeugbau',
-          data: [17, 39, 26, 18],
-          visible: false,
-      }, {
-          name: 'Gesamtwirtschaft',
-          data: [20, 20, 33, 27],
-          visible: true,
-          color: 'red',
-      }],
+              name: 'Finanzdienstleistungen',
+              data: [6, 19, 38, 37],
+              visible: false,
+          }, {
+              name: 'Chemie',
+              data: [11, 14, 51, 23],
+              visible: false,
+          }, {
+              name: 'Elektrotechnik',
+              data: [17, 15, 41, 27],
+              visible: false,
+          }, {
+              name: 'IKT',
+              data: [9, 26, 39, 27],
+              visible: true,
+          }, {
+              name: 'Großhandel',
+              data: [8, 30, 41, 22],
+              visible: false,
+          }, {
+              name: 'Verkehr, Logistik',
+              data: [20, 19, 16, 45],
+              visible: false,
+          }, {
+              name: 'Ver-/Entsorgung',
+              data: [12, 31, 31, 26],
+              visible: false,
+          }, {
+              name: 'sonstige verarbeitendes Gewerbe',
+              data: [35, 9, 35, 21],
+              visible: false,
+          }, {
+              name: 'Unternehmensnahe Dienstleistungen',
+              data: [24, 20, 29, 27],
+              visible: false,
+          }, {
+              name: 'sonstige Dienstleistungen',
+              data: [43, 11, 14, 32],
+              visible: false,
+          }, {
+              name: 'Fahrzeugbau',
+              data: [17, 39, 26, 18],
+              visible: false,
+          }, {
+              name: 'Gesamtwirtschaft',
+              data: [20, 20, 33, 27],
+              visible: true,
+              color: 'red',
+          }],
 
       responsive: {
           rules: [{
@@ -148,13 +151,13 @@ export default {
                   }
               }
           }]
-      }
-      }
+        }
+      },
+      created: false,
     }
   },
 
   methods: {
-
   }
 }
 </script>
