@@ -80,104 +80,29 @@ export default {
             credits: {
                 enabled: false
             },
-            series: [{
-                name: 'Unternehmen mit KI-Einsatz',
-                data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8],
-                color: '#343e62'
-            }, {
-                name: 'Hauptsächlich zu KI tätige Personen',
-                data: [1.51, 0.28, 0.88, 0.35, 0.10, 0.08, 0.08, 0.12, 0.10, 0.05, 0.05, 0.31 ],
-                color: '#a9c9d4'
-            }]
+            series: []
         },
-    // Variable von html Element
-        chartOptions2: {
-            chart: {
-                type: 'column',
-                styledMode: false,
-                // Hintergrundfarbe
-                backgroundColor: "none", 
-                width:800
-    },
-            credits: {
-                enabled: false
-            },
-
-    title: {
-        text: ''
-    },
-
-    xAxis: [{
-        tickInterval: 1,
-        categories: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
-        labels:{
-            rotation: 45,
-            style:{
-                color: 'white',
-            } 
-        }
-    }],
-
-    yAxis: [{
-        className: 'highcharts-color-0',
-        title: {
-            text: 'Anteil Unternehmen mit KI-Einsatz in % aller Unternehmen',
-            style:{
-                // Color Text left
-                color: 'white',
-            } 
-        },
-        labels:{
-            style:{
-                // Color Data left
-                color: 'white',
-            } 
-        }
-    },{
-        className: 'highcharts-color-1',
-        opposite: true,
-        title: {
-            text: 'Anteil der hauptsächlich zu KI tätigen Personen in % der Beschäftigten in allen Unternehmen',
-            style:{
-                // Color Text right
-                color: 'white',
-            } 
-        },
-        labels:{
-            style:{
-                // Color Data right
-                color: 'white',
-            } 
-        }
-    }],
-        legend: {
-                reversed: true,
-                itemStyle: {
-                    color: '#eef1f6',
-                },
-                itemHoverStyle: {
-                    color: '#ea5321'
-                }
-            },
-    plotOptions: {
-        column: {
-            borderRadius: 5
-        }
-    },
-
-    series: [{
-        name: 'Unternehmen mit KI-Einsatz',
-        data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8],
-        color: '#343e62'
-    }, {
-        name: 'Hauptsächlich zu KI tätige Personen',
-        data: [1.51, 0.28, 0.88, 0.35, 0.10, 0.08, 0.08, 0.12, 0.10, 0.05, 0.05, 0.31 ],
-        yAxis: 1,
-        color: '#a9c9d4'
-    }]
-        },
+        created: false,
     }
+    
   },
+  methods:{
+          pushSeries: function() {
+            if(!this.created){
+                this.chartOptions.series.push({
+                    name: 'Unternehmen mit KI-Einsatz',
+                    data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8],
+                    color: '#343e62'
+                });
+                this.chartOptions.series.push({
+                    name: 'Hauptsächlich zu KI tätige Personen',
+                    data: [1.51, 0.28, 0.88, 0.35, 0.10, 0.08, 0.08, 0.12, 0.10, 0.05, 0.05, 0.31 ],
+                    color: '#a9c9d4'
+                })
+                this.created = true;
+            }
+        }  
+    },
 }
 </script>
 

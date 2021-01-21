@@ -44,8 +44,8 @@ export default {
                 text: ''
             },
             subtitle: {
-    text: 'Mit KI erzielter Umsatz in deutschen Unternehmen im Jahr 2019'
-  },
+              text: 'Mit KI erzielter Umsatz in deutschen Unternehmen im Jahr 2019'
+            },
             accessibility: {
                 point: {
                     valueDescriptionFormat: '{value}%.'
@@ -102,15 +102,24 @@ export default {
                 }
             },
 
-            series: [{
-    name: 'Umsatz aller Unternehmen',
-    data: [3.3, 3.0, 2.1, 1.3 , 0.9, 0.8, 0.7, 0.6 , 0.5, 0.5, 0.4, 1.1]
-
-  },
-   ]
-        },
-    }
-  },
+            series: []
+            },
+          created: false,
+      }
+      
+    },
+    methods:{
+          pushSeries: function() {
+            if(!this.created){
+                this.chart1.series.push({
+                    name: 'Umsatz aller Unternehmen',
+                    data: [3.3, 3.0, 2.1, 1.3 , 0.9, 0.8, 0.7, 0.6 , 0.5, 0.5, 0.4, 1.1]
+                })
+                this.created = true;
+            }
+        }  
+    },
+    
 }
 </script>
 
