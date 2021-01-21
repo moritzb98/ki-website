@@ -1,8 +1,10 @@
 <template>
   <div id="app">
   <div id="blurID" class="blurContainer">
-    <p> blaaaa blaaaa</p>
-    <button v-on:click="blureffektaus"> Ich hasse Moritz</button>
+  <div class="containertextblur">
+    <p class="textblur"> Die IKT bildet eine besonders interessante Branche, da KI nutzende Unternhemen hier häufig Dienstleister für andere Branchen sind. Nachfolgend wird gezeigt wo Künstliche Intelligenz in der IKT aufzufinden ist.</p>
+    <button v-on:click="blureffektaus"> Los geht's!</button>
+  </div>
   </div>
     <div id="blurdiv">
     <div>
@@ -219,6 +221,37 @@ export default {
     height: 25px;
     background: #eef1f6;
     margin: 6px 0 6px 27px;
+}
+
+.textblur{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px
+  
+}
+
+button{
+  margin-top: 20px;
+  text-align: center;
+  width: auto;
+    font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #41567E; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.containertextblur{
+    text-align: center;
+    width: 80%;
+    margin:265px auto;
+
 }
 
 #nav a{
