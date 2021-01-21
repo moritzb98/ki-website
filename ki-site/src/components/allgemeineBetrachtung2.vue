@@ -1,11 +1,12 @@
 <template>
     <div class="site-container">
         <div class="site-container-width">
-            <h2 class="title-allg">Beschäftigte mit KI-Tätigkeit in Unternehmen</h2>
+            <h2 class="title-allg"> Der für KI erbrachte Arbeitsaufwand in deutschen Unternehmen </h2>
+            <h3> Gemessen anhand der Beschäftigten mit KI-Tätigkeit je Branche in % </h3>
             <div class="flex-container">
                 <div class="flex-item-30">
-<p>
-Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich Mitarbeiter der Unternehmen dieser Branchen damit auseinandersetzen. Neben der IKT Branche, können Unternehmensnahe Dienstleistungen hier einen ebenfalls hohen Anteil von 0,88% verzeichnen. Zudem wird an dieser Stelle deutlich, dass Branchen wie der Großhandel (0,05% aller Beschäftigten) weniger Beschäftigte, die im Bereich der KI tätig sind, einstellen. 
+                    <p>
+                    Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich Mitarbeiter der Unternehmen dieser Branchen damit auseinandersetzen. Neben der IKT Branche, können Unternehmensnahe Dienstleistungen hier einen ebenfalls hohen Anteil von 0,88% verzeichnen. Zudem wird an dieser Stelle deutlich, dass Branchen wie der Großhandel (0,05% aller Beschäftigten) weniger Beschäftigte, die im Bereich der KI tätig sind, einstellen. 
                     </p>
                 </div>
                 <div class="flex-item-70">

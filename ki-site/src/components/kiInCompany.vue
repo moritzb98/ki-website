@@ -1,8 +1,8 @@
 <template>
     <div class="site-container">
 
-        <h2>Bedeutung von KI Nutzung</h2>
-        <h3> für die Geschäftstätigkeit der Unternehmen der deutschen Wirtschaft 2019</h3>
+        <h2>Einfluss des Einsatzes der KI auf die Geschäftsfähigkeit der deutschen Unternehmen</h2>
+        <h3> Bestimmt anhand der Messung der Relevanz von KI</h3>
         <p>Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.</p>
         <div class="flex-container margin-top container-new">
             <div class="flex-item text-container">

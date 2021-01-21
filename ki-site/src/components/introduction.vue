@@ -1,6 +1,7 @@
 <template>
     <div class="site-container">
       <h2>Informationen zur Studie</h2>
+      <h3> Darstellung der Rahmenbedignungen der betrachteten Studie </h3>
         <div class="flex-container zweispaltig">
           <p class="zweispaltig-text">Künstliche Intelligenz (KI) gilt heute als eine der entscheidenden Schlüsseltechnologien. Dynamisches, effizientes und effektives Aufgreifen ihrer Einsatzmöglichkeiten ist ein entscheidender Faktor, um die Innovationskraft und Wettbewerbsfähigkeit der deutschen Wirtschaft zu erhalten und zu stärken. Mit der im November 2018 verabschiedeten Strategie “Künstliche Intelligenz” setzt die Bundesregierung einen Rahmen für eine ganzheitliche politische Gestaltung der weiteren Entwicklung und Anwendung Künstlicher Intelligenz in Deutschland.</p>
           <p class="zweispaltig-text">Die Studie “Intelligenz in der Deutschen Wirtschaft - Stand der KI-Nutzung im Jahr 2019” dient dazu über einen ersten Überblick über die Durchdringung von KI in Deutschland zu gewinnen. Auf den nachfolgenden Seiten werden die wichtigsten Indikatoren dargestellt.</p>

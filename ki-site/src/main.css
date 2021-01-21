@@ -193,7 +193,10 @@ fp-slidesContainer{
   font-size: 10px;
   margin-top: 3px;
 }
-
+.b {
+  font-weight: bold;
+  font-size: 20px;
+}
 /**************************************************
 
   Popup Styles
