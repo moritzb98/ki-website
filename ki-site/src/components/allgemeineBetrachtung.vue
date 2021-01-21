@@ -109,9 +109,6 @@ export default {
     }
   },
   mounted(){
-        //alert("hallo");
-        console.log(this);
-      //this.pushSeries();
   },
   methods: {
         changeMoneybag: function(el) {

@@ -183,10 +183,10 @@ export default {
     },
 
     blureffektaus(){
-      document.getElementById("blurdiv").classList.remove("blur");
-      this.$refs.fullpage.api.setMouseWheelScrolling(!this.blureffekt);
-      this.$refs.fullpage.api.setAllowScrolling(!this.glossarOpen);
       document.getElementById("blurID").classList.remove("blurContainerShow");
+      document.getElementById("blurdiv").classList.remove("blur");
+      this.$refs.fullpage.api.setMouseWheelScrolling(true);
+      this.$refs.fullpage.api.setAllowScrolling(true);
     },
   }
 }
@@ -228,8 +228,7 @@ export default {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  line-height: 30px
-  
+  line-height: 30px;
 }
 
 button{
@@ -245,6 +244,7 @@ button{
   padding: 10px 25px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .containertextblur{
