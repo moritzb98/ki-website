@@ -4,7 +4,8 @@
             <h2 class="title-allg">Beschäftigte mit KI-Tätigkeit in Unternehmen</h2>
             <div class="flex-container">
                 <div class="flex-item-30">
-                    <p> Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich Mitarbeiter der Unternehmen dieser Branchen damit auseinandersetzen. Einblick darüber gibt diese Grafik. Die IKT Branche ist auch hier weit vorne dabei und beschäftigt 1,51% hauptsächlich zu KI-tätigen Personen. Unternehmensnahe Dienstleistungen können hier einen ebenfalls hohen Anteil von 0,88% verzeichnen. Diese beiden Branchen gehören auch zu den Top-3-Branchen, in denen Stand 2019 bereits viele Unternehmen KI einsetzen. Zudem wird deutlich, dass Branchen wie der Großhandel (0,05% aller Beschäftigten) oder die Versorge/Entsorge und Bergbau Branche (0,12%) weniger Beschäftigte, die im Bereich der KI tätig sind einstellen. Diese Branchen gehören auch zu jenen, in denen in Unternehmen die KI bislang nicht verstärkt eingesetzt wird.
+<p>
+Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich Mitarbeiter der Unternehmen dieser Branchen damit auseinandersetzen. Neben der IKT Branche, können Unternehmensnahe Dienstleistungen hier einen ebenfalls hohen Anteil von 0,88% verzeichnen. Zudem wird an dieser Stelle deutlich, dass Branchen wie der Großhandel (0,05% aller Beschäftigten) weniger Beschäftigte, die im Bereich der KI tätig sind, einstellen. 
                     </p>
                 </div>
                 <div class="flex-item-70">

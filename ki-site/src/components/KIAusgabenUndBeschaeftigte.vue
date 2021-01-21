@@ -2,7 +2,8 @@
     <div class="site-container">
       <h2>Allgemeine Betrachtung - Bubble Chart</h2>
       <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) </h3>
-<p> Anhand dieser Grafik lässt sich leicht erkennen, welche Branchen im Jahr 2019 erhöhte Ausgaben für die KI aufwendeten. Die am stärksten investierende Branche ist der Fahrzeugbau, bei welchem Unternehmen im Schnitt 7056 tsd. € ausgaben. Zu dem Zeitpunkt eher sparsame Branchen sind die Unternehmensnahen Dienstleistungen (93 tsd. €) oder der Großhandel (171 tsd. €).
+<p>
+Der Fahrzeugbau beschäftigt im Durchschnitt 30,8% hauptsächlich zu KI tätige Mitarbeiter und gab einen Betrag von 7056 tsd. € für Investitionen für KI aus. Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen; 6,1% der Beschäftigten befassen sich intensiver mit KI, die Summe der für KI ausgegebenen Investitionen beträgt allerdings nur 93 tsd. €.
 </p>
         <div class="container-bubble">
             <div>
@@ -1087,6 +1088,9 @@ export default {
         title: {
             text: ''
         },
+        subtitle: {
+    text: 'Ausgaben für KI in dt. Unternehmen 2019, in tausend Euro'
+  },
         tooltip: {
             useHTML: true,
             pointFormat: '<b>{point.name}:</b> {point.value}000€'

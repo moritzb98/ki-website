@@ -119,6 +119,8 @@ h5{
 .icon-container {
   text-align:center;
   max-width: 100px;
+  background: #41567E
+;
 }
 .icon{
   background: #eef1f6;
@@ -131,10 +133,13 @@ h5{
 .glossar-content {
   opacity: 0;
   transition: all 1.5s;
+  background: #41567E;
 }
 
 .glossar-content p, h3{
   text-align: left;
+  background: #41567E
+;
 }
 
 table{

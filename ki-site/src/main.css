@@ -207,7 +207,7 @@ fp-slidesContainer{
 }
 
 .swal2-styled.swal2-confirm {
-  background: black !important;
+  background: gray !important;
 }
 
 .swal2-container.swal2-shown {
@@ -215,14 +215,17 @@ fp-slidesContainer{
 }
 
 .swal2-icon.swal2-info {
-  border-color: #4e5051 !important;
-  color: #4e5051 !important;
+  border-color: white !important;
+  color: white !important;
 }
 
 .swal2-title {
   display: block !important;
+  color: white !important
+
 }
 
 .swal2-content{
   font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: white !important
 }

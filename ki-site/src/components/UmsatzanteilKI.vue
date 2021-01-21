@@ -1,18 +1,19 @@
 <template>
     <div class="site-container">
-      <h2>Gewichtung der Bedeutung von KI Nutzung anhand des Umsatzanteils</h2>
+      <h2>Bedeutung der KI Nutzung in deutschen Unternehmen</h2>
       <h3>
-        Umsatzanteil von Produkten oder Dienstleistungen mit KI-Einsatz in Unternehmen der deutschen Wirtschaft 2019
+       Dargestellt in Form des Umsatzanteils von Produkten oder Dienstleistungen mit KI-Einsatz in Unternehmen der deutschen Wirtschaft 2019
       </h3>
       <div class="flex-container-center">
         <div class="flex-item-40">
             <p>
-                Lediglich 1,1 % des gesamten Umsatzes der deutschen Wirtschaft erzielten 2019 die Produkte und Dienstleistungen mit KI-Anwendung der Unternehmen. Damit wird deutlich, welchen geringen Anteil KI Nutzung in deutschen Unternehmen aktuell noch einnimmt. Mit 3,3% nimmt die  IKT den größten Umsatzanteil ein.
+                
+
+Lediglich 1,1 % des gesamten Umsatzes der deutschen Wirtschaft erzielten 2019 die Produkte und Dienstleistungen mit KI-Anwendung der Unternehmen. Damit wird deutlich, welchen geringen Anteil KI Nutzung in deutschen Unternehmen aktuell noch einnimmt. Die IKT Branche nimmt hierbei mit 3,3% den größten Umsatzanteil ein.
                 <br>
                 Hierbei ist es wichtig zu beachten, dass hierbei nur die Produkte und Dienstleistungen betrachtet werden, die direkt in der Anwendung oder Nutzung des Produkts KI-Verfahren verwenden.
                 <br>
-                Betrachtet man die Umsatzverteilung der Produkte und Dienstleistungen nur auf den Umsatz der Unternehmen mit KI-Einsatz in ihren Produkten ergeben sich selbstverständlich wesentlich höhere Werte. Hier tragen Produkte mit KI-Anwendung jedoch immer noch nur zu 7,7% des Umsatzes dieser Unternehmensgruppe bei. Den größten Umsatzanteil hat unter dieser Betrachtung die Finanzdienstleistungsbranche mit 14%.
-            </p>
+</p>
         </div>
         <div lass="flex-item-60">
             <highcharts :options="chart1"></highcharts>
@@ -29,8 +30,11 @@ export default {
     return {
       chart1: {
             chart: {
-                type: 'column',
-                backgroundColor: "none"
+                type: 'bar',
+                styledMode: false,
+                backgroundColor: "none",
+                width:550,
+                height:500
             },
             // Wasserzeichen entfernen
             credits: {
@@ -39,6 +43,9 @@ export default {
             title: {
                 text: ''
             },
+            subtitle: {
+    text: 'Mit KI erzielter Umsatz in deutschen Unternehmen im Jahr 2019'
+  },
             accessibility: {
                 point: {
                     valueDescriptionFormat: '{value}%.'
@@ -70,6 +77,7 @@ export default {
                 },
               yAxis: {
                 min: 0,
+                 gridLineColor: '#313131',
                 title: {
                   text: 'In %',
                   style:{
@@ -79,9 +87,10 @@ export default {
               },
 
             plotOptions: {
-                column: {
+                bar: {
                   pointPadding: 0.2,
-                  borderWidth: 0
+                  borderWidth: 1,
+                  borderRadius: 3.5,
                 }
               },
 
@@ -94,7 +103,7 @@ export default {
             },
 
             series: [{
-    name: 'In % des Umsatzes aller Unternehmen',
+    name: 'Umsatz aller Unternehmen',
     data: [3.3, 3.0, 2.1, 1.3 , 0.9, 0.8, 0.7, 0.6 , 0.5, 0.5, 0.4, 1.1]
 
   },

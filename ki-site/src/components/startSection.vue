@@ -121,8 +121,8 @@
           <div class="textblock">
           <span>Ein Projekt des Studiengangs "Onlinemedien" der DHBW Mosbach, des Moduls Web Design 3 <br>
           von Moritz Banhardt, Theresa Brenner, Fabienne Burgert, Berivan Saricicek und Kim Wehnes.</span><br><br>
-          <span>Die abgebildeten Daten basieren auf dem Bericht xxxx und geben eine statistisch repräsentativen Überblick zum aktuellen Stand des Einsatzes von
-          Künstlicher Intelligenz (KI) in den Unternehmen in Deutschland im Jahr 2019.</span>
+          <span>Die abgebildeten Daten basieren auf dem Bericht "Einsatz von Künstlicher Intelligenz in der deutschen Wirtschaft" des Bundesministerium für Wirtschaft und Energie und präsentieren den Stand des Einsatzes dieser (KI) im Jahr 2019.
+      </span>
           </div>
         </div>
     </div>
