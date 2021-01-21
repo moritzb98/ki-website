@@ -159,7 +159,7 @@ export default {
             this.blureffekt();
           }
           this.blur=true;
-          
+         
         }
 
       },
@@ -171,10 +171,9 @@ export default {
     disableScrolling(){
       this.$refs.fullpage.api.setMouseWheelScrolling(!this.glossarOpen);
       this.$refs.fullpage.api.setAllowScrolling(!this.glossarOpen);
+    },
 
-    
-  },
-      blureffekt(){
+    blureffekt(){
       document.getElementById("blurdiv").classList.add("blur");
       this.$refs.fullpage.api.setMouseWheelScrolling(!this.blureffekt);
       this.$refs.fullpage.api.setAllowScrolling(!this.glossarOpen);
@@ -321,5 +320,4 @@ export default {
 #arrowRotate{
   transform: rotate(180deg);
 }
-
 </style>

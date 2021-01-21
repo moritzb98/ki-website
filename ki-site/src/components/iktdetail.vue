@@ -31,13 +31,13 @@
             <p>KI-Verfahren</p>
           </div>
          </div>
-         <div class="slide">
+         <div class="slide" id="slide1">
             <div class="slide-container">
               <img class="bild" src="../assets/Firma.svg">
               <img class="klick" src="../assets/tap.svg">
             </div>
          </div>
-         <div class="slide">
+         <div class="slide" id="slide2">
             <div class="slide-container">
               <img class="bild" src="../assets/Firma_alle_Daten.svg">
             </div>
@@ -47,7 +47,8 @@
               <img class="icon-company" src="../assets/slide3.jpeg">
             </div>
          </div>
-         
+        
+
     </div>
 </template>
 
@@ -137,6 +138,9 @@ video{
 .flex-slider{
   width: 80%;
   margin: 0 auto;
+}
+.site-container{
+  height: 100%;
 }
 </style>
 
