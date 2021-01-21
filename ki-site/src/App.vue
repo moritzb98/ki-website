@@ -348,6 +348,7 @@ button{
 
 .glossar-button img {
   width: 8px;
+  backgroundColor:blue;
 }
 
 #arrowRotate{

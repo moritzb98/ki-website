@@ -9,10 +9,11 @@ body {
   }
 
   h2 {
-    font-size: 45px;
+    font-size: 40px;
     margin: 60px auto 0px auto;
     width: 80%;
     text-align: center;
+    text-transform: uppercase;
   }
 
   p {
@@ -37,12 +38,13 @@ body {
 
   h3 {
     margin: auto;
-    margin-top: 0px;
+    margin-top: 10px!important;
     margin-bottom: 50px;
     width: 80%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+
   }
 
   h5{
@@ -211,6 +213,14 @@ fp-slidesContainer{
 
 .swal2-styled.swal2-confirm {
   background: gray !important;
+  font-family: 'Roboto', sans-serif!important;
+  font-weight: 400!important;
+  font-size: 16px!important;
+  background-color: #41567E; 
+  border: none!important;
+  color: white;
+  padding: 10px 25px!important;
+  text-decoration: none!important;
 }
 
 .swal2-container.swal2-shown {
@@ -266,7 +276,7 @@ fp-slidesContainer{
 	visibility: hidden;
 	opacity: 0;
 	z-index: 0;
-  transition: all .7s ease-in-out;
+  transition: all 1.2s ease-out;
 }
 
 .fp-slide.active {
