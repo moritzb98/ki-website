@@ -17,7 +17,7 @@
               </div>
             </div>
             </div>
-            <h3 class="icon-text icon-header">Zeitraum der Datenerhebung</h3>
+            <h5 class="icon-text icon-header">Zeitraum der Datenerhebung</h5>
             <p class="icon-text-small ohneText">
               dt. Innovationserhebung: <br>
               2019 <br>
@@ -35,7 +35,7 @@
             </div>
             </div>
             </div>
-            <h3 class="icon-text icon-header">Form der Datenerhebung</h3>
+            <h5 class="icon-text icon-header">Form der Datenerhebung</h5>
             <p class="icon-text-small ohneText">
               Repräsentative Sonderauswertung der dt. Innovationserhebung <br>
               Zusatzbefragung von KI einsetzenden Unternehmen
@@ -51,7 +51,7 @@
            </div>
            </div>
            </div>
-            <h3 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h3>
+            <h5 class="icon-text icon-header">Anzahl teilnehmende Unternehmen</h5>
             <p class="icon-text-small ohneText">
               Teilnahmen bei der dt. Innovationserhebung: <br>
               567 <br>

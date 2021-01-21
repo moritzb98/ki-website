@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 body {
     margin: 0;
+    transition: all 0.5s;
   }
 
   h1, h2, h3, h4 {
@@ -9,7 +10,7 @@ body {
 
   h2 {
     font-size: 45px;
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
     width: 80%;
     text-align: center;
   }
@@ -36,13 +37,21 @@ body {
 
   h3 {
     margin: auto;
-    margin-top: -50px;
-    margin-bottom: 200px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     width: 80%;
     text-align: center;
-    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+  }
+
+  h5{
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
   }
   
   #app {
@@ -137,6 +146,11 @@ body {
     vertical-align: unset;
   }
 
+  .blur{
+    filter: blur(8px)!important;
+    -webkit-filter: blur(8px)!important;
+    visibility: visible!important;
+  }
 
   p {
     font-size: 14px;
@@ -207,4 +221,8 @@ fp-slidesContainer{
 
 .swal2-title {
   display: block !important;
+}
+
+.swal2-content{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }

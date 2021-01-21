@@ -51,7 +51,7 @@
     </div>
 </template>
 
-<script>
+<script>      
 export default {
   name: 'ikt',
   data() {
@@ -59,6 +59,7 @@ export default {
 
     }
   },
+
 }
 </script>
 
