@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Bedeutung der KI für deutsche Unternehmen</h2>
+      <h2>Bedeutung der KI</h2>
       <h3>
        Dargestellt in Form des Umsatzanteils von Produkten oder Dienstleistungen mit KI-Einsatz in Unternehmen der deutschen Wirtschaft 2019
       </h3>

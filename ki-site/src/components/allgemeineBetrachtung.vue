@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Investitionen von deutschen Unternehmen in KI</h2>
+      <h2>Investitionen in KI</h2>
       <h3> Präsentiert anhand der verzeichneten Ausgaben für KI je Branche in Mrd. Euro
       </h3>
 <p> Das Kreisdiagramm beschreibt die Verteilung der für KI aufgewendeten Ausgaben je Branche in Mrd. €. Dabei sticht die Branche der <b> IKT </b> besonders hervor, da diese mit <b> 1,5 Mrd. € die größten Ausgaben </b> verzeichnet. Branchen wie der Großhandel (0,1 Mrd. €) gaben bislang eher geringere Summen für KI aus. 

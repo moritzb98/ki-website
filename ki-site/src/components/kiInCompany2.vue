@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-        <h2>Zunehmende Unverzichtbarkeit der KI in deutschen Unternehmen</h2>
+        <h2>Zunehmende Unverzichtbarkeit der KI</h2>
         <h3> Präsentiert anhand des Zeitraums des erstmaligen Einsatzes von KI</h3>
         <p class="margin-bott">
          Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der erstmalige Einsatz der Technologie stattgefunden hat. 
