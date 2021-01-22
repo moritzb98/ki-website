@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
         <div class="site-container-width">
-            <h2 class="title-allg"> Der für KI erbrachte Arbeitsaufwand in deutschen Unternehmen </h2>
+            <h2 class="title-allg"> Der für KI erbrachte Arbeitsaufwand </h2>
             <h3> Gemessen anhand der Beschäftigten mit KI-Tätigkeit je Branche in % </h3>
             <div class="flex-container">
                 <div class="flex-item-30">
