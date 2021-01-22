@@ -152,7 +152,36 @@
          </div>
          <div class="slide">
             <div class="slide-container">
-              <img class="icon-company" src="../assets/slide3.jpeg">
+                <div class="flex-container-slide">
+                  <div class="flex-item-slide-container">
+                    <div class="flex-item-slide">
+                      <img src="../assets/machine-learning.svg">
+                    </div>
+                    <p class="icon-text icon-text-gesamt">59%</p>
+                    <p class="icon-text icon-text-ikt">55%</p>
+                  </div>
+                  <div class="flex-item-slide-container">
+                    <div class="flex-item-slide">
+                      <img src="../assets/sound-card.svg">
+                    </div>
+                    <p class="icon-text icon-text-gesamt">47%</p>
+                    <p class="icon-text icon-text-ikt">49%</p>
+                  </div>
+                  <div class="flex-item-slide-container">
+                    <div class="flex-item-slide">
+                      <img src="../assets/brain.svg">
+                    </div>
+                    <p class="icon-text icon-text-gesamt">55%</p>
+                    <p class="icon-text icon-text-ikt">46%</p>
+                  </div>
+                  <div class="flex-item-slide-container">
+                    <div class="flex-item-slide">
+                      <img src="../assets/translation.svg">
+                    </div>
+                    <p class="icon-text icon-text-gesamt">23%</p>
+                    <p class="icon-text icon-text-ikt">30%</p>
+                  </div>
+                </div>
             </div>
          </div>
         
@@ -196,6 +225,47 @@ export default {
   margin-bottom: 50px;
 }
 
+.flex-item-slide-container{
+  margin: auto;
+}
+
+.flex-container-slide{
+  width: 1000px;
+  height: 500px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item-slide{
+  margin: auto;
+  background: #eef1f6;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.flex-item-slide img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.flex-container-slide img{
+  width: 100px;
+}
+
+.icon-text-gesamt{
+  color: #41567e;
+}
+
+.icon-text-ikt{
+  color: #f3931f;
+}
+
 .bild{
   width: 800px;
   height: auto;
@@ -208,6 +278,12 @@ export default {
   height: auto;
   z-index:1;
   position:absolute;top:400px;left:1050px;
+}
+
+.icon-text{
+  text-align: center;
+  margin: 40px auto;
+  font-size: 40px;
 }
 
 .icon-container {
