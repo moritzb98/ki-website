@@ -245,7 +245,7 @@ button{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background-color: #41567E; /* Green */
+  background-color: #41567E; 
   border: none;
   color: white;
   padding: 10px 25px;
