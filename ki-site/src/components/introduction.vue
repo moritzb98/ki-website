@@ -8,7 +8,7 @@
         </div>
         <br>
         <div class="flex-container icon-flex">
-          <div v-on:click="toggle(0)" class="icon-container dunkel shit">
+          <div v-on:click="toggle(0)" class="icon-container dark shit">
           <div class="circle-container-big">
           <div class="circle-container">
             <div class="icon">
@@ -26,7 +26,7 @@
               November 2019 - Januar 2020
             </p>
           </div>
-          <div v-on:click="toggle(1)" class="icon-container dunkel shit">
+          <div v-on:click="toggle(1)" class="icon-container dark shit">
           <div class="circle-container-big">
           <div class="circle-container">
             <div class="icon">
@@ -42,7 +42,7 @@
               Zusatzbefragung von KI einsetzenden Unternehmen
             </p>
           </div>
-          <div v-on:click="toggle(2)" class="icon-container dunkel shit">
+          <div v-on:click="toggle(2)" class="icon-container dark shit">
           <div class="circle-container-big">
           <div class="circle-container">
             <div class="icon">
@@ -80,7 +80,7 @@ export default {
       let containers = document.getElementsByClassName("shit");
       let text = document.getElementsByClassName("icon-text-small");
       
-      containers[index].classList.toggle("dunkel");
+      containers[index].classList.toggle("dark");
       text[index].classList.toggle("ohneText");
 
     }
@@ -172,7 +172,7 @@ img {
   text-align: center;
   font-size: 14px;
   visibility:visible;
-  opacity:100%;
+  opacity: 1.0;
   transition:all 0.4s;
 }
 
@@ -193,20 +193,20 @@ img {
     margin: 8px auto 5px auto;
   }
 
-.dunkel{
-  opacity:25%;
+.dark{
+  opacity:0.25;
   transition:all 0.5s;
 }
 
 .ohneText{
   visibility:hidden;
   transition:all 0.4s;
-  opacity:0%;
+  opacity:0;
 
 }
 
-.dunkel:hover{
-  opacity:100%;
+.dark:hover{
+  opacity:1;
   cursor:pointer;
 }
 
