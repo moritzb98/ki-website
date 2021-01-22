@@ -258,7 +258,6 @@ button{
     text-align: center;
     width: 80%;
     margin:265px auto;
-
 }
 
 #nav a{
@@ -272,6 +271,7 @@ button{
   z-index: 10000;
   visibility:hidden;
   transition: all 0.5s;
+  opacity: 0;
 }
 
 #blurdiv{
@@ -283,6 +283,7 @@ button{
 
 .blurContainerShow{
   visibility:visible;
+  opacity: 1;
 }
 
 .nav2 {
