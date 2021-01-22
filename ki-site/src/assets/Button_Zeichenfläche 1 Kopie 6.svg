@@ -1,0 +1,30 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.83 48.37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #969696;
+      }
+
+      .cls-2 {
+        fill: #41567e;
+      }
+
+      .cls-3 {
+        font-size: 6px;
+        fill: #cfcece;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.01em;
+      }
+    </style>
+  </defs>
+  <title>Button</title>
+  <g>
+    <path class="cls-1" d="M33.55,18.37A3.51,3.51,0,0,0,30,21.88v.94a3.52,3.52,0,0,0,3.51,3.52H42v-8Z"/>
+    <path class="cls-2" d="M51.29,18.37H42.85v8h8.44a3.53,3.53,0,0,0,3.52-3.52v-.94A3.52,3.52,0,0,0,51.29,18.37Z"/>
+  </g>
+  <text class="cls-3" transform="translate(15.86 24.47)">IKT</text>
+  <text class="cls-3" transform="translate(59.89 24.47)">Gesamtwi<tspan class="cls-4" x="26.96" y="0">r</tspan><tspan x="29.11" y="0">tschaft</tspan></text>
+</svg>
