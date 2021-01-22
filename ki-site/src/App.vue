@@ -242,7 +242,7 @@ button{
   margin-top: 20px;
   text-align: center;
   width: auto;
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   background-color: #41567E; /* Green */
@@ -252,6 +252,11 @@ button{
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  transition: all 0.1s;
+}
+
+button:hover{
+  background-color: #4a5a77;
 }
 
 .containertextblur{
