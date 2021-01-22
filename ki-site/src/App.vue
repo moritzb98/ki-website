@@ -49,10 +49,10 @@
           <UmsatzanteilKI ref="umsatzki"></UmsatzanteilKI>
         </div>
         <div class="section">
-          <allgemeineBetrachtung ref="allgemeineBetrachtung"></allgemeineBetrachtung>
+          <allgemeinebetrachtung2 ref="bedeutungki"></allgemeinebetrachtung2>
         </div>
         <div class="section">
-          <allgemeinebetrachtung2 ref="bedeutungki"></allgemeinebetrachtung2>
+          <allgemeineBetrachtung ref="allgemeineBetrachtung"></allgemeineBetrachtung>
         </div>
         <div class="section">
           <kiincompany ></kiincompany>
@@ -159,7 +159,7 @@ export default {
       if(destination.anchor == "AllgemeineBetrachtung"){
         this.$refs.umsatzki.pushSeries();
       }
-      if(destination.anchor == "BedeutungVonKI"){
+      if(destination.anchor == "AllgemeineBetrachtungB"){
         this.$refs.bedeutungki.pushSeries();
       }
       
