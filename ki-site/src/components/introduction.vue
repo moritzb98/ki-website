@@ -215,4 +215,8 @@ img {
   margin: 0 auto;
 }
 
+.shit{
+  cursor: pointer;
+}
+
 </style>
