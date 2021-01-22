@@ -33,13 +33,13 @@
          </div>
          <div class="slide" id="slide1">
             <div class="slide-container">
-              <img class="bild" src="../assets/Firma.svg">
+              <img id="click-img" class="bild" src="../assets/Firma.svg">
               <img class="klick" src="../assets/tap.svg">
             </div>
          </div>
          <div class="slide" id="slide2">
             <div class="slide-container">
-            <!-- SVG ALLE DATEN -->
+              <!-- SVG ALLE DATEN -->
               <svg id="firma-svg" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297 210">
               <title>Firma</title>
                 <g>
@@ -146,8 +146,44 @@
                 <text class="cls-28" transform="translate(133.69 186.1)">IKT</text>
                 <text class="cls-28" transform="translate(177.72 186.1)">Gesamtwi<tspan class="cls-23" x="26.96" y="0">r</tspan><tspan x="29.11" y="0">tschaft</tspan></text>
               </svg>
-
-    
+            </div>
+         </div>
+         <div class="slide" id="slide1">
+            <div class="slide-container anwendungsbereiche">
+              <div class="flex-container flex-oben">
+                <div class="flex-item-slide3">
+                  <div class="opacitydiv opacityde opacity80"></div>
+                  <img src="../assets/de-8.png">
+                  <div class="opacitydiv opacityall opacity70"></div>
+                  <img src="../assets/ikt-8.png">
+                </div>
+                <div class="flex-item-slide3">
+                  <div class="opacitydiv opacityde opacity50"></div>
+                  <img src="../assets/de-8.png">
+                  <div class="opacitydiv opacityall opacity70"></div>
+                  <img src="../assets/ikt-8.png">
+                </div>
+                <div class="flex-item-slide3">
+                  <div class="opacitydiv opacityde opacity40"></div>
+                  <img src="../assets/de-8.png">
+                  <div class="opacitydiv opacityall opacity70"></div>
+                  <img src="../assets/ikt-8.png">
+                </div>
+              </div>
+              <div class="flex-container flex-unten">
+                <div class="flex-item-slide3">
+                  <div class="opacitydiv opacityde opacity20"></div>
+                  <img src="../assets/de-8.png">
+                  <div class="opacitydiv opacityall opacity70"></div>
+                  <img src="../assets/ikt-8.png">
+                </div>
+                <div class="flex-item-slide3">
+                  <div class="opacitydiv opacityde opacity70"></div>
+                  <img src="../assets/de-8.png">
+                  <div class="opacitydiv opacityall opacity70"></div>
+                  <img src="../assets/ikt-8.png">
+                </div>
+              </div>
             </div>
          </div>
          <div class="slide">
@@ -184,8 +220,6 @@
                 </div>
             </div>
          </div>
-        
-
     </div>
 </template>
 
@@ -211,7 +245,7 @@ export default {
         el[i].classList.toggle('hide');
       }
       document.getElementsByClassName('cls-26')[0].classList.toggle('disable');
-    }
+    },
   }
 
 }
@@ -219,6 +253,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.flex-item-slide3 img{
+  width: 100px;
+}
+
 .logo { 
   width: 180px;
   margin-top: 20px;
@@ -271,6 +309,10 @@ export default {
   height: auto;
   z-index:0;
   margin-top:-40px;
+}
+
+#click-img{
+  cursor: pointer;
 }
 
 .klick{
@@ -498,5 +540,70 @@ svg{
   fill: #e4eaea;
 }
 
+.anwendungsbereiche{
+  margin-top: 50px;
+}
+
+.anwendungsbereiche .flex-container{
+  margin: 30px;
+}
+
+.flex-oben{
+  justify-content: space-between;
+  width: 900px;
+}
+
+.flex-unten{
+  width: 900px;
+}
+
+.flex-item-slide3 img{
+  margin: 10px;
+}
+
+.opacitydiv{
+  display: block;
+  width: 50%;
+  position: absolute;
+  background: #0f1012;
+  opacity: 0.7;
+}
+
+.opacityall{
+  right: 0;
+  top: 0;
+}
+
+.flex-item-slide3{
+  position: relative;
+}
+
+.opacity80{
+  height: 80%;
+}
+
+.opacity70{
+  height: 70%;
+}
+
+.opacity50{
+  height: 50%;
+}
+
+.opacity70{
+  height: 70%;
+}
+
+.opacity50{
+  height: 50%;
+}
+
+.opacity40{
+  height: 40%;
+}
+
+.opacity20{
+  height: 20%;
+}
 </style>
 

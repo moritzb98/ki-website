@@ -33,6 +33,7 @@
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
               <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/2"><div class="dot"></div></a></li>
+              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/3"><div class="dot"></div></a></li>
             </ul>
             </li>
             <li class="no-connection" data-menuanchor="Impressum"><a id="impreesum-link" href="#Impressum">IMPRESSUM</a></li>
@@ -123,6 +124,9 @@ export default {
       blur: false,
     }
   },
+  mounted(){
+    document.getElementById('click-img').addEventListener('click', this.nextSlide);
+  },
   methods: {
     toggleGlossar: function() {
       document.getElementById('glossarID').classList.toggle("glossar-show");
@@ -131,6 +135,10 @@ export default {
       document.getElementById('glossar-contentID').classList.toggle("glossar-content-show");
       this.glossarOpen = !this.glossarOpen;
       this.disableScrolling();
+    },
+
+    nextSlide(){
+        this.$refs.fullpage.api.moveSlideRight();
     },
 
     afterLoad: function(origin, destination) {
@@ -162,13 +170,11 @@ export default {
       if(destination.anchor == "AllgemeineBetrachtungB"){
         this.$refs.bedeutungki.pushSeries();
       }
-      
       if(destination.anchor == "Funktionsbereich"){
           if(!this.blur){
             this.blureffekt();
           }
           this.blur=true;
-         
         }
 
       },
