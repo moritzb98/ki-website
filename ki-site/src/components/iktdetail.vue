@@ -586,9 +586,10 @@ video{
   height: 350px;
 }
 .flex-slider{
-  width: 100%;
+  width: 800px;
   margin: 0 auto;
   margin-top: 24px;
+  align: center;
 }
 .site-container{
   height: 100%;
@@ -754,7 +755,7 @@ svg{
 }
 
 .anwendungsbereiche{
-  margin-top: 50px;
+
 }
 
 .anwendungsbereiche .flex-container{
