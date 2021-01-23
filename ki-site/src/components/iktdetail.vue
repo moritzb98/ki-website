@@ -6,7 +6,7 @@
           <div class="slide-container">
           <div class="flex-container flex-container--space-between flex-slider">
             <div class="icon-container">
-              <div class="icon kreisOrange">
+              <div id="click-img" class="icon kreisOrange">
                 <img class="img-size" src="../assets/human.svg">
               </div>
               <p>Unternehmens-<br>bereiche</p>
@@ -510,6 +510,7 @@ export default {
 #click-img{
   cursor: pointer;
 }
+
 
 .klick{
   width: 50px;
