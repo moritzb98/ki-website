@@ -182,7 +182,6 @@ export default {
     width: 80%;
     margin: auto;
     margin-top: 40px;
-    margin-left:360px;
 }
 
 .text-animate{

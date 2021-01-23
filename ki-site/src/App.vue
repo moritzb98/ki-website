@@ -340,7 +340,7 @@ button:hover{
     fill:  #f3931f;
 }
 
-.fp-viewing-Funktionsbereich-2 #nav .secondnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .secondnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .secondnav li:nth-child(1) .dot{
+.fp-viewing-Funktionsbereich-3 #nav .secondnav li:nth-child(4) .dot, .fp-viewing-Funktionsbereich-2 #nav .secondnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .secondnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .secondnav li:nth-child(1) .dot{
   width: 8px;
   height: 8px;
   background:  #f3931f;
