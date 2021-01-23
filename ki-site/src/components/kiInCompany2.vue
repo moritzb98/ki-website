@@ -2,10 +2,14 @@
     <div class="site-container">
         <h2>Zunehmende Unverzichtbarkeit der KI</h2>
         <h3> Präsentiert anhand des Zeitraums des erstmaligen Einsatzes von KI</h3>
-        <p class="margin-bott">
-         Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der erstmalige Einsatz der Technologie stattgefunden hat. 
-In Branchen wie den sonstigen Dienstleistungen setzen bereits vor 2010 43% aller Unternehmen KI ein. Im Vergleich dazu verzeichnete die IKT Branche, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur einen Wert von 9%. Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. 37% aller Unternehmen dieser Branche setzten 2018/2019 diese Technologie ein. 
-</p>
+        <div class="flex-container zweispaltig">
+          <p class="margin-bott zweispaltig-text">
+          Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der erstmalige Einsatz der Technologie stattgefunden hat. In Branchen wie den sonstigen Dienstleistungen setzen bereits vor 2010 43% aller Unternehmen KI ein.
+          </p>
+          <p class="margin-bott zweispaltig-text">
+          Im Vergleich dazu verzeichnete die IKT Branche, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur einen Wert von 9%. Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. 37% aller Unternehmen dieser Branche setzten 2018/2019 diese Technologie ein.
+          </p>
+        </div>
         <div class="flex-container">
             <highcharts :options="chartOptions"></highcharts>
         </div>
@@ -91,51 +95,62 @@ export default {
               name: 'Finanzdienstleistungen',
               data: [6, 19, 38, 37],
               visible: false,
+              color: '#F08080',
           }, {
-              name: 'Chemie',
+              name: 'Chemie/Pharma, Grundstoffe',
               data: [11, 14, 51, 23],
               visible: false,
+              color: '#76EEC6',
           }, {
               name: 'Elektrotechnik',
               data: [17, 15, 41, 27],
               visible: false,
+              color: '#6495ED',
           }, {
               name: 'IKT',
               data: [9, 26, 39, 27],
               visible: true,
+              color: '#EE3B3B',
           }, {
               name: 'Großhandel',
               data: [8, 30, 41, 22],
               visible: false,
+              color: '#FFC1C1',
           }, {
               name: 'Verkehr, Logistik',
               data: [20, 19, 16, 45],
               visible: false,
+              color: '#3F44D5',
           }, {
               name: 'Ver-/Entsorgung',
               data: [12, 31, 31, 26],
               visible: false,
+              color: '#FFD700',
           }, {
               name: 'sonstige verarbeitendes Gewerbe',
               data: [35, 9, 35, 21],
               visible: false,
+              color: '#EE00EE',
           }, {
               name: 'Unternehmensnahe Dienstleistungen',
               data: [24, 20, 29, 27],
               visible: false,
+              color: '#3F44D5',
           }, {
               name: 'sonstige Dienstleistungen',
               data: [43, 11, 14, 32],
               visible: false,
+              color: '#B3EE3A',
           }, {
               name: 'Fahrzeugbau',
               data: [17, 39, 26, 18],
               visible: false,
+              color: '#EE7600',
           }, {
               name: 'Gesamtwirtschaft',
               data: [20, 20, 33, 27],
               visible: true,
-              color: 'red',
+              color: '#3F44D5',
           }],
 
       responsive: {
@@ -177,7 +192,7 @@ export default {
 
 .flex-container{
   width: 100%;
-  height:500px;
+  height:auto;
   margin: 0 auto;
 }
 
@@ -193,7 +208,16 @@ export default {
     height: 30px;
     margin: auto;
   }
+  .zweispaltig{
+      width: 1200px;
+      text-align: left;
+      margin: 0 auto;
+    }
 
+    .zweispaltig-text{
+      margin: 10px;
+      width: 100%;
+    }
   .flex-item-20 {
       width: 10%;
       display: flex;

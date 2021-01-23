@@ -19,6 +19,7 @@ body {
   p {
     margin: auto;
     width: 80%;
+    color: #D3D3D3;
   }
 
   h2:after {
@@ -55,7 +56,7 @@ body {
     font-weight: 300;
     font-size: 12px;
   }
-  
+
   #app {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -132,7 +133,7 @@ body {
   .fp-slidesNav ul li a span {
       background: #eef1f6;
   }
-  
+
   .site-container {
     width: 100%;
     margin: 0 auto;
@@ -142,7 +143,7 @@ body {
   .site-container-larger {
     padding-top: 1px;
   }
-  
+
   .fp-tableCell {
     display: flex;
     vertical-align: unset;

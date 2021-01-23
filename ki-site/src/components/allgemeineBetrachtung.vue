@@ -3,9 +3,14 @@
       <h2>Investitionen in KI</h2>
       <h3> Präsentiert anhand der verzeichneten Ausgaben für KI je Branche in Mrd. Euro
       </h3>
-<p> Das Kreisdiagramm beschreibt die Verteilung der für KI aufgewendeten Ausgaben je Branche in Mrd. €. Dabei sticht die Branche der <b> IKT </b> besonders hervor, da diese mit <b> 1,5 Mrd. € die größten Ausgaben </b> verzeichnet. Branchen wie der Großhandel (0,1 Mrd. €) gaben bislang eher geringere Summen für KI aus. 
-<b> Im Vergleich dazu steht der Anteil der Ausgaben </b> für KI, ebenfalls nach Branche sortiert und angegeben in % des Gesamtumsatzes. Dabei lässt sich erkennen, dass <b> die IKT Branche ebenfalls den größten Anteil der Ausgaben </b> (0,56%) in KI investiert. <b> Der Großhandel verzeichnet auch hier wenig Ausgaben </b> (0,01% des Gesamtumsatzes) und landet auf dem letzten Platz der am wenigsten investierenden Branchen.
-        </p>
+      <div class="flex-container zweispaltig">
+          <p class="zweispaltig-text"> Das Kreisdiagramm beschreibt die Verteilung der für KI aufgewendeten Ausgaben je Branche in Mrd. €. Dabei sticht die Branche der <b> IKT </b> besonders hervor, da diese mit <b> 1,5 Mrd. € die größten Ausgaben </b> verzeichnet. Branchen wie der Großhandel (0,1 Mrd. €) gaben bislang eher geringere Summen für KI aus.
+          <b> Im Vergleich dazu steht der Anteil der Ausgaben </b> für KI, ebenfalls nach Branche sortiert und angegeben in % des Gesamtumsatzes.
+          </p>
+          <p class="zweispaltig-text">
+          Dabei lässt sich erkennen, dass <b> die IKT Branche ebenfalls den größten Anteil der Ausgaben </b> (0,56%) in KI investiert. <b> Der Großhandel verzeichnet auch hier wenig Ausgaben </b> (0,01% des Gesamtumsatzes) und landet auf dem letzten Platz der am wenigsten investierenden Branchen.
+          </p>
+        </div>
         <div class="container">
             <img class="klick" src="../assets/tap.svg">
             <div class="mittig">
@@ -138,7 +143,7 @@ export default {
                             // Umrandung Text
                             textOutline: false,
                             // Farbe Text
-                            color: 'white',
+                            color: '#D3D3D3',
                             fontSize: '10px',
                         }
                     },
@@ -148,7 +153,7 @@ export default {
                         x: 0.56,
                         //sliced: true,
                         //selected: true,
-                        color: '#323E65',
+                        color: '#EE3B3B',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -158,7 +163,7 @@ export default {
                         name: 'Elektrotechnik, Maschinenbau',
                         y: 0.68,
                         x: 0.17,
-                        color: '#003E82',
+                        color: '#6495ED',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -168,7 +173,7 @@ export default {
                         name: 'Fahrzeugbau',
                         y: 0.84,
                         x: 0.16,
-                        color: '#608DBF',
+                        color: '#EE7600',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -178,7 +183,7 @@ export default {
                         name: 'Unternehmensnahe Dienstleistungen',
                         y: 0.65,
                         x: 0.29,
-                        color: '#7EB3BB',
+                        color: '#B3EE3A',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -187,8 +192,8 @@ export default {
                     }, {
                         name: 'sonstiges verarbeitendes Gewerbe',
                         y: 0.26,
-                        x: 0.04, 
-                        color: '#66A2B9',
+                        x: 0.04,
+                        color: '#EE00EE',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -198,7 +203,7 @@ export default {
                         name: 'Finanzdiensleistungen',
                         y: 0.24,
                         x: 0.04,
-                        color: '#D3EAEF',
+                        color: '#F08080',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -208,7 +213,7 @@ export default {
                         name: 'sonstige Dienstleistungen',
                         y: 0.19,
                         x: 0.12,
-                        color: '#CFD9E6',
+                        color: '#8A2BE2',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -218,7 +223,7 @@ export default {
                         name: 'Verkehr- und Logistik',
                         y: 0.16,
                         x: 0.06,
-                        color: '#CCAF8F',
+                        color: '#FFD700',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -228,7 +233,7 @@ export default {
                         name: 'Chemie/Pharma, Grundstoffe',
                         y: 0.14,
                         x: 0.03,
-                        color: '#C4935C',
+                        color: '#76EEC6',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -238,7 +243,7 @@ export default {
                         name: 'Ver- und Entsorgung, Bergbau',
                         y: 0.07,
                         x: 0.01,
-                        color: '#B35F00',
+                        color: '#00CED1',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -248,7 +253,7 @@ export default {
                         name: 'Großhandel',
                         y: 0.07,
                         x: 0.01,
-                        color: '#F7932D',
+                        color: '#FFC1C1',
                         events: {
                             click: (el) => {
                                 this.changeMoneybag(el.point);
@@ -278,6 +283,16 @@ export default {
   z-index:1;
   position:absolute;top:680px;left:230px;
 }
+.zweispaltig{
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .zweispaltig-text{
+    margin: 10px;
+    width: 100%;
+  }
 .bild{
     width: 300px;
 }

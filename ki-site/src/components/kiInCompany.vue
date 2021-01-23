@@ -3,11 +3,18 @@
 
         <h2>Einfluss des Einsatzes der KI auf die Geschäftsfähigkeit</h2>
         <h3> Bestimmt anhand der Messung der Relevanz von KI</h3>
-        <p>Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht. 12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.</p>
+        <div class="flex-container zweispaltig">
+          <p class="zweispaltig-text">
+          Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht.
+          </p>
+          <p class="zweispaltig-text">
+          12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.
+          </p>
+        </div>
         <div class="flex-container margin-top container-new">
             <div class="flex-item text-container">
                 <div id="counter" class="counter"></div>
-                <p class="text-animate">der blalalalla blalalalla blalalallablal blalalalla alallablalalalla blalalalla blalalalla blalalalla</p>
+                <p class="text-animate">der Unternehmen, die KI einsetzten, in der deutschen Gesamtwirtschaft bewerten Künstliche Intelligenz als essentiell oder wichtig für ihre Geschäftsfähigkeit.</p>
             </div>
             <div class="flex-item chartdiv">
                 <highcharts :options="chartOptions"></highcharts>
@@ -80,15 +87,15 @@ export default {
             series: [{
                 name: 'essenziell',
                 data: [20, 17, 17, 13, 12, 11, 10, 10, 10, 4, 0, 12],
-                color: '#343d64'
+                color: '#88B279'
             }, {
                 name: 'wichtig',
                 data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 65],
-                color: '#eef1f6'
+                color: '#C18BBF'
             }, {
                 name: 'weniger wichtig',
                 data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 23],
-                color: '#f5c07a'
+                color: '#8BB8C1'
             }]
 
 
@@ -115,6 +122,7 @@ export default {
 
 .flex-container-100 {
     height: 100%;
+    width: 1200px;
 }
 
 .flex-item-80 {
@@ -129,6 +137,17 @@ export default {
     position: relative;
     align-items: flex-end;
 }
+
+.zweispaltig{
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .zweispaltig-text{
+    margin: 10px;
+    width: 100%;
+  }
 
 .counter{
     height: 0;
@@ -158,6 +177,7 @@ export default {
     width: 80%;
     margin: auto;
     margin-top: 40px;
+    margin-left:360px;
 }
 
 .text-animate{

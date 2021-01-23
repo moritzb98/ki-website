@@ -2,9 +2,14 @@
     <div class="site-container">
       <h2>Auswirkungen des KI Einsatzes auf Personal und Investitionen</h2>
       <h3> Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
-<p>
-Der Fahrzeugbau beschäftigt im Durchschnitt 30,8% hauptsächlich zu KI tätige Mitarbeiter und gab einen Betrag von 7056 tsd. € für Investitionen für KI aus. Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen; 6,1% der Beschäftigten befassen sich intensiver mit KI, die Summe der für KI ausgegebenen Investitionen beträgt allerdings nur 93 tsd. €.
-</p>
+      <div class="flex-container zweispaltig">
+        <p class="zweispaltig-text">
+        Der Fahrzeugbau beschäftigt im Durchschnitt 30,8% hauptsächlich zu KI tätige Mitarbeiter und gab einen Betrag von 7056 tsd. € für Investitionen für KI aus.
+        </p>
+        <p class="zweispaltig-text">
+        Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen; 6,1% der Beschäftigten befassen sich intensiver mit KI, die Summe der für KI ausgegebenen Investitionen beträgt allerdings nur 93 tsd. €.
+        </p>
+      </div>
         <div class="container-bubble">
             <div>
                 <div class="flex-container flex-container-small">
@@ -1018,7 +1023,7 @@ Der Fahrzeugbau beschäftigt im Durchschnitt 30,8% hauptsächlich zu KI tätige 
                     <path class="st7" d="M885.5,446.2h56.6c1.1-8,1.1-27.7,1.1-92h-58.8C884.4,417.7,884.4,437.9,885.5,446.2z"/>
                     <path class="st10" d="M633.2,448.6c3.9,11.1,13.4,18.3,25.8,19.3c14.7,1.2,27.6-8,31-21.7h-57.2C632.9,447.5,633,448.1,633.2,448.6
                         z"/>
-                    <polygon class="st10" points="703.3,500.6 781.8,500.6 781.9,466.3 787.8,466.3 793.7,466.3 793.7,500.6 872.4,500.6 872.4,446.2 
+                    <polygon class="st10" points="703.3,500.6 781.8,500.6 781.9,466.3 787.8,466.3 793.7,466.3 793.7,500.6 872.4,500.6 872.4,446.2
                         703.2,446.2 	"/>
                     <path class="st10" d="M888.5,454.3c2.9,4.9,7.2,8.8,12.8,11.3c7.8,3.6,18,3.6,26-0.3c4.6-2.2,9.6-6.9,12-11.4
                         c1.4-2.6,2.2-3.4,2.8-7.7h-56.6C886.1,450.7,887.1,451.7,888.5,454.3z"/>
@@ -1056,7 +1061,7 @@ Der Fahrzeugbau beschäftigt im Durchschnitt 30,8% hauptsächlich zu KI tätige 
                     <highcharts :options="chartOptions"></highcharts>
                 </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -1070,17 +1075,17 @@ import {Chart} from 'highcharts-vue'
 export default {
   name: 'KIAusgabenUndBeschaeftigte',
     components: {
-        highcharts: Chart 
+        highcharts: Chart
     },
   data() {
     return {
-      chartOptions: { 
+      chartOptions: {
           chart: {
             type: 'packedbubble',
             height: '500px',
             styledMode: false,
             // Hintergrundfarbe
-            backgroundColor: "none", 
+            backgroundColor: "none",
         },
         credits: {
             enabled: false
@@ -1140,84 +1145,84 @@ export default {
             data: [{
                 name: 'IKT',
                 value: 382,
-                color: '#323E65'
+                color: '#EE3B3B'
             }]
         }, {
             name: 'Fahrzeugbau',
             data: [{
                 name: "Fahrzeugbau",
                 value: 7056,
-                color: '#608DBF'
+                color: '#EE7600'
             }]
         }, {
             name: 'Elektrot./Maschinen.b.',
             data: [{
                 name: "Elektrot./Maschinen.b.",
                 value: 718,
-                color: '#003E82'
+                color: '#6495ED'
             }]
         }, {
             name: 'Verkehr, Logistik',
             data: [{
                 name: "Verkehr, Logistik",
                 value: 321,
-                color: '#CCAF8F'
+                color: '#FFD700'
             }]
         }, {
             name: 'Finanzdienstleist.',
             data: [{
                 name: "Finanzdienstleist.",
                 value: 286,
-                color: '#D3EAEF'
+                color: '#F08080'
             }]
         }, {
             name: 'Chemie/Ph.',
             data: [{
                 name: "Chemie/Ph.",
                 value: 282,
-                color: '#C4935C'
+                color: '#76EEC6'
             }]
             }, {
             name: 'Ver-/Entsorgung.',
             data: [{
                 name: "Ver-/Entsorgung.",
                 value: 245,
-                color: '#B35F00'
+                color: '#00CED1'
             }]
             }, {
             name: 'Sonst. Dienstleist.',
             data: [{
                 name: "Sonst. Dienstleist.",
                 value: 210,
-                color: '#CFD9E6'
+                color: '#8A2BE2'
             }]
             }, {
             name: 'Großhandel',
             data: [{
                 name: "Großhandel",
                 value: 171,
-                color: '#F7932D'
+                color: '#FFC1C1'
             }]
               }, {
             name: 'Sonst. Verarb. Gewerbe',
             data: [{
                 name: "Sonst. Verarb. Gewerbe",
                 value: 130,
-                color: '#66A2B9'
+                color: '#EE00EE'
             }]
               }, {
             name: 'Untern.nahe Dienstleist.',
             data: [{
                 name: "Untern.nahe Dienstleist.",
                 value: 93,
-                color: '#7EB3BB'
+                color: '#B3EE3A'
             }]
               }, {
             name: 'Gesamtwirtschaft',
             data: [{
                 name: "Gesamtwirtschaft",
                 value: 276,
-                color: '#806E59'
+                color: '#3F44D5'
             }]
 
         }]
@@ -1257,7 +1262,16 @@ img {
     width: 260px;
     height: 260px;
 }
+.zweispaltig{
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+  }
 
+  .zweispaltig-text{
+    margin: 10px;
+    width: 100%;
+  }
 .img {
     width: 100%;
 }
