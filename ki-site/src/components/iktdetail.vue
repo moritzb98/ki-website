@@ -214,82 +214,93 @@
               </div>
               <div class="flex-container flex-oben">
                 <div class="flex-item-slide3">
-                  <div class="icons-con">
+                  <div v-on:click="toggle(0)" class="icons-con">
                       <div class="icons">
                         <div class="opacitydiv opacityde opacity35"></div>
-                        <img src="../assets/de-8.png">
+                        <img class="gesamt" src="../assets/de-8.png">
                         <div class="opacitydiv opacityall opacity50"></div>
-                        <img src="../assets/ikt-8.png">
+                        <img class="ikt" src="../assets/ikt-8.png">
                       </div>
                       <div class="values">
                         <span>66%</span>
                         <span>60%</span>
                       </div>
                   </div>
-                  <p>Produkte und Dienstleistungen</p>
+                  <p class="text">Produkte und Dienstleistungen</p>
                 </div>
                 <div class="flex-item-slide3">
-                  <div class="icons-con">
+                  <div v-on:click="toggle(1)" class="icons-con">
                     <div class="icons">
                       <div class="opacitydiv opacityde opacity40"></div>
-                      <img src="../assets/de-8.png">
+                      <img class="gesamt" src="../assets/de-8.png">
                       <div class="opacitydiv opacityall opacity50"></div>
-                      <img src="../assets/ikt-8.png">
+                      <img class="ikt" src="../assets/ikt-8.png">
                     </div>
                     <div class="values">
                       <span>54%</span>
                       <span>56%</span>
                     </div>
                   </div>
-                  <p>Automatisierung von Prozessen</p>
+                  <p class="text">Automatisierung von Prozessen</p>
                 </div>
                 <div class="flex-item-slide3">
-                <div class="icons-con">
+                <div v-on:click="toggle(2)" class="icons-con">
                   <div class="icons">
                     <div class="opacitydiv opacityde opacity50"></div>
-                    <img src="../assets/de-8.png">
+                    <img class="gesamt" src="../assets/de-8.png">
                     <div class="opacitydiv opacityall opacity60"></div>
-                    <img src="../assets/ikt-8.png">
+                    <img class="ikt" src="../assets/ikt-8.png">
                   </div>
                   <div class="values">
                     <span>35%</span>
                     <span>34%</span>
                   </div>
                   </div>
-                <p>KI-Anwendung für Datenanalyse</p>
+                <p class="text">KI-Anwendung für Datenanalyse</p>
                 </div>
               </div>
               <div class="flex-container flex-unten">
-                <div class="flex-item-slide3">
+                <div v-on:click="toggle(3)" class="flex-item-slide3">
                   <div class="icons-con">
                   <div class="icons">
                     <div class="opacitydiv opacityde opacity65"></div>
-                    <img src="../assets/de-8.png">
+                    <img class="gesamt" src="../assets/de-8.png">
                     <div class="opacitydiv opacityall opacity65"></div>
-                    <img src="../assets/ikt-8.png">
+                    <img class="ikt" src="../assets/ikt-8.png">
                   </div>
                   <div class="values">
                     <span>9%</span>
                     <span>22%</span>
                   </div>
                   </div>
-                  <p>Kundenkommunikation/-interaktion</p>
+                  <p class="text">Kundenkommunikation/-interaktion</p>
                 </div>
                 <div class="flex-item-slide3">
-                  <div class="icons-con">
+                  <div v-on:click="toggle(4)" class="icons-con">
                   <div class="icons">
                     <div class="opacitydiv opacityde opacity65"></div>
-                    <img src="../assets/de-8.png">
-                    <div class="opacitydiv opacityall opacity68"></div>
-                    <img src="../assets/ikt-8.png">
+                    <img class="gesamt" src="../assets/de-8.png">
+                    <div  class="opacitydiv opacityall opacity68"></div>
+                    <img class="ikt" src="../assets/ikt-8.png">
                   </div>
                   <div class="values">
                     <span>11%</span>
                     <span>11%</span>
                   </div>
                   </div>
-                  <p>andere Anwendungsgebiete</p>
+                  <p class="text">andere Anwendungsgebiete</p>
                 </div>
+              </div>
+              <div class="svg-button no-margin">
+                <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.83 48.37">
+                  <title>Button</title>
+                  <g>
+                    <path v-on:click="disableIkt2()" class="cls-1-a" d="M33.55,18.37A3.51,3.51,0,0,0,30,21.88v.94a3.52,3.52,0,0,0,3.51,3.52H42v-8Z"/>
+                    <path v-on:click="disableGesamt2()" class="cls-2-a" d="M51.29,18.37H42.85v8h8.44a3.53,3.53,0,0,0,3.52-3.52v-.94A3.52,3.52,0,0,0,51.29,18.37Z"/>
+                  </g>
+                  <text class="cls-3-a" transform="translate(15.86 24.47)">IKT</text>
+                  <text class="cls-3-a" transform="translate(59.89 24.47)">Gesamtwi<tspan class="cls-4" x="26.96" y="0">r</tspan><tspan x="29.11" y="0">tschaft</tspan></text>
+                </svg>
               </div>
             </div>
          </div>
@@ -412,6 +423,33 @@ export default {
         el[i].classList.toggle('hide');
       }
       document.getElementsByClassName('cls-1-b')[0].classList.toggle('disable');
+    },
+
+    toggle:function(index){
+      let icons = document.getElementsByClassName("icons");
+      let values = document.getElementsByClassName("values");
+      let text = document.getElementsByClassName("text");
+      
+      icons[index].classList.toggle("icons-hide");
+      values[index].classList.toggle("values-show");
+      text[index].classList.toggle("text-bold");
+
+    },
+
+    disableIkt2: function(){
+      var el = document.getElementsByClassName('gesamt');
+      for(var i = 0; i<el.length; i++){
+        el[i].classList.toggle('hide');
+      }
+      document.getElementsByClassName('cls-1-a')[0].classList.toggle('disable');
+    },
+
+    disableGesamt2: function(){
+      var el = document.getElementsByClassName('ikt');
+      for(var i = 0; i<el.length; i++){
+        el[i].classList.toggle('hide');
+      }
+      document.getElementsByClassName('cls-2-a')[0].classList.toggle('disable');
     }
   }
 
@@ -424,11 +462,22 @@ export default {
   opacity: 0;
   visibility: hidden;
   height: 0;
-  transition: all 0.5s;
 }
 .icons-con{
   opacity: 1;
   visibility: visible;
+  cursor: pointer;
+}
+
+.text{
+  text-align: center;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.icons{
   transition: all 0.5s;
 }
 
@@ -438,6 +487,21 @@ export default {
 }
 
 .icons-con:hover .values{
+  opacity: 1;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  visibility: visible;
+  top: 50px;
+}
+
+.icons-hide{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.values-show{
   opacity: 1;
   width: 100%;
   position: absolute;
@@ -755,12 +819,8 @@ svg{
   fill: #e4eaea !important;
 }
 
-.anwendungsbereiche{
-
-}
-
 .anwendungsbereiche .flex-container{
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .flex-oben{
@@ -782,6 +842,7 @@ svg{
   position: absolute;
   background: #0f1012;
   opacity: 0.7;
+  transition: all 0.5s;
 }
 
 .opacityall{
@@ -853,5 +914,39 @@ svg{
 
 .cls-4-b {
   letter-spacing: 0.01em;
+}
+
+.cls-1-a {
+  fill: #f3931f;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.cls-2-a {
+  fill: #41567e;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cls-3-a {
+  font-size: 6px;
+  fill: #cfcece;
+  font-family: Roboto-Regular, Roboto;
+}
+
+.cls-4-a {
+  letter-spacing: 0.01em;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.ikt{
+  transition: all 0.5s;
+}
+
+.gesamt{
+  transition: all 0.5s;
 }
 </style>
