@@ -119,7 +119,8 @@ export default {
             if(!this.created){
                 this.chart1.series.push({
                     name: 'Umsatz aller Unternehmen',
-                    data: [3.3, 3.0, 2.1, 1.3 , 0.9, 0.8, 0.7, 0.6 , 0.5, 0.5, 0.4, 1.1]
+                    data: [3.3, 3.0, 2.1, 1.3 , 0.9, 0.8, 0.7, 0.6 , 0.5, 0.5, 0.4, 1.1],
+                    color: '#41567E'
                 })
                 this.created = true;
             }

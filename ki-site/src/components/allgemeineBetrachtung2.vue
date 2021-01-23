@@ -119,7 +119,7 @@ export default {
                 this.chartOptions.series.push({
                     name: 'Hauptsächlich zu KI tätige Personen',
                     data: [1.51, 0.28, 0.88, 0.35, 0.10, 0.08, 0.08, 0.12, 0.10, 0.05, 0.05, 0.31 ],
-                    color: '#a9c9d4'
+                    color: '#C18BBF'
                 })
                 this.created = true;
             }
