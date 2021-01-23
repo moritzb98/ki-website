@@ -1,41 +1,43 @@
 <template>
     <div class="site-container site-container-larger">
       <h2>Funktionsbereiche, die KI-Verfahren einsetzen</h2>
-        <div class="flex-container flex-container--space-between flex-slider">
-          <div class="icon-container">
-            <div class="icon kreisOrange">
-              <img class="img-size" src="../assets/human.svg">
+        <!--Navi war hier-->
+        <div class="slide" id="slide1">
+
+          <div class="slide-container">
+          <div class="flex-container flex-container--space-between flex-slider">
+            <div class="icon-container">
+              <div class="icon kreisOrange">
+                <img class="img-size" src="../assets/human.svg">
+              </div>
+              <p>Unternehmens-<br>bereiche</p>
             </div>
-            <p>Unternehmens-<br>bereiche</p>
+            <div class="flex-vertical">
+              <span>verwenden in verschiedenen</span>
+              <div class="line">
+              </div>
+            </div>
+            <div class="icon-container">
+              <div class="icon kreisOrange">
+                <img class="img-size" src="../assets/system.svg">
+              </div>
+              <p>Anwendungs-<br>bereichen</p>
+            </div>
+            <div class="flex-vertical">
+              <span>unterschiedliche</span>
+              <div class="line">
+              </div>
+            </div>
+            <div class="icon-container">
+              <div class="icon kreisOrange">
+                <img class="img-size" src="../assets/ki.svg">
+              </div>
+              <p>KI-Verfahren</p>
+            </div>
           </div>
-          <div class="flex-vertical">
-            <span>verwenden in verschiedenen</span>
-            <div class="line">
-            </div>
+            <img id="click-img" class="bild" src="../assets/Firma.svg">
+            <img class="klick" src="../assets/tap.svg">
           </div>
-          <div class="icon-container">
-            <div class="icon kreisOrange">
-              <img class="img-size" src="../assets/system.svg">
-            </div>
-            <p>Anwendungs-<br>bereichen</p>
-          </div>
-          <div class="flex-vertical">
-            <span>unterschiedliche</span>
-            <div class="line">
-            </div>
-          </div>
-          <div class="icon-container">
-            <div class="icon kreisOrange">
-              <img class="img-size" src="../assets/ki.svg">
-            </div>
-            <p>KI-Verfahren</p>
-          </div>
-         </div>
-         <div class="slide" id="slide1">
-            <div class="slide-container">
-              <img id="click-img" class="bild" src="../assets/Firma.svg">
-              <img class="klick" src="../assets/tap.svg">
-            </div>
          </div>
          <div class="slide" id="slide2">
             <div class="slide-container">
@@ -423,7 +425,7 @@ export default {
   width: 50px;
   height: auto;
   z-index:1;
-  position:absolute;top:400px;left:1050px;
+  position:absolute;top:600px;left:950px;
 }
 
 .icon-text{
@@ -488,8 +490,9 @@ video{
   height: 350px;
 }
 .flex-slider{
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 24px;
 }
 .site-container{
   height: 100%;
