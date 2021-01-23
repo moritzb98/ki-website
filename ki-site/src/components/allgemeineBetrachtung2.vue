@@ -6,7 +6,7 @@
             <div class="flex-container">
                 <div class="flex-item-30">
                     <p>
-                    Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich <b> Mitarbeiter der Unternehmen </b> dieser Branchen damit <b> auseinandersetzen. </b> Neben der IKT Branche, können <b> Unternehmensnahe Dienstleistungen </b> hier einen ebenfalls <b> hohen Anteil von 0,88% verzeichnen </b>. Zudem wird an dieser Stelle deutlich, dass Branchen wie <b> der Großhandel </b> (0,05% aller Beschäftigten) <b> weniger Beschäftigte </b>, die <b> im Bereich der KI </b> tätig sind, einstellen. 
+                    Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich <b> Mitarbeiter der Unternehmen </b> dieser Branchen damit <b> auseinandersetzen. </b> Neben der IKT Branche, können <b> Unternehmensnahe Dienstleistungen </b> hier einen ebenfalls <b> hohen Anteil von 0,88% verzeichnen </b>. Zudem wird an dieser Stelle deutlich, dass Branchen wie <b> der Großhandel </b> (0,05% aller Beschäftigten) <b> weniger Beschäftigte </b>, die <b> im Bereich der KI </b> tätig sind, einstellen.
                     </p>
                 </div>
                 <div class="flex-item-70">
@@ -29,7 +29,7 @@ import {Chart} from 'highcharts-vue'
 export default {
   name: 'allgemeinebetrachtung2',
   components: {
-    highcharts: Chart 
+    highcharts: Chart
   },
   data() {
     return {
@@ -38,7 +38,7 @@ export default {
                 type: 'bar',
                 styledMode: false,
                 // Hintergrundfarbe
-                backgroundColor: "none", 
+                backgroundColor: "none",
                 width:800,
                 height:600
             },
@@ -53,13 +53,23 @@ export default {
                 categories: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
                 title: {
                     text: null
+                },
+                labels:{
+                    style:{
+                        color: '#D3D3D3',
+                    }
                 }
             },
              yAxis: [{
             min: 0,
             title: {
                 text: 'Anteil der hauptsächlich zu KI tätigen Personen in %'
-            }
+            },
+            labels:{
+                style:{
+                    color: '#D3D3D3',
+                }
+            },
         },{
             linkedTo: 0,
             title: {
@@ -70,6 +80,15 @@ export default {
         }],
             tooltip: {
                 valueSuffix: ' %'
+            },
+            legend: {
+
+              itemHoverStyle: {
+                  color: '#ffffff'
+              },
+              itemStyle: {
+                color: '#CBC8C8'
+              }
             },
             plotOptions: {
                 bar: {
@@ -87,7 +106,7 @@ export default {
         },
         created: false,
     }
-    
+
   },
   methods:{
           pushSeries: function() {
@@ -104,7 +123,7 @@ export default {
                 })
                 this.created = true;
             }
-        }  
+        }
     },
 }
 </script>

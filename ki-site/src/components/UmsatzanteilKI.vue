@@ -83,7 +83,15 @@ export default {
                   },
                 }
               },
+              legend: {
 
+                itemHoverStyle: {
+                    color: '#ffffff'
+                },
+                itemStyle: {
+                  color: '#CBC8C8'
+                }
+              },
             plotOptions: {
                 bar: {
                   pointPadding: 0.2,
@@ -104,7 +112,7 @@ export default {
             },
           created: false,
       }
-      
+
     },
     methods:{
           pushSeries: function() {
@@ -115,9 +123,9 @@ export default {
                 })
                 this.created = true;
             }
-        }  
+        }
     },
-    
+
 }
 </script>
 

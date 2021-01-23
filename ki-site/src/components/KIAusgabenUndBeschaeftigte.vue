@@ -1134,10 +1134,10 @@ export default {
                 x: 0,
                 y: 100,
                 itemStyle: {
-                    color: '#eef1f6',
+                    color: '#CBC8C8',
                 },
                 itemHoverStyle: {
-                    color: '#ea5321'
+                    color: '#ffffff'
                 }
             },
         series: [{

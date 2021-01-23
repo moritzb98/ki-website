@@ -73,10 +73,10 @@ subtitle: {
         legend: {
 
           itemHoverStyle: {
-              color: '#ea5321'
+              color: '#ffffff'
           },
           itemStyle: {
-            color: 'white'
+            color: '#CBC8C8'
           }
         },
         tooltip: {

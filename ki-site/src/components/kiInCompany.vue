@@ -63,13 +63,13 @@ export default {
                 title: {
                     text: 'in % aller KI einsetzenden Unternehmen',
                     style:{
-                        color: 'white',
+                        color: '#D3D3D3',
                     },
 
                 },
                 labels:{
                     style:{
-                        color: 'white',
+                        color: '#D3D3D3',
                     }
                 }
             },
@@ -77,10 +77,10 @@ export default {
                 reversed: true,
 
                 itemStyle: {
-                    color: '#eef1f6',
+                    color: '#CBC8C8',
                 },
                 itemHoverStyle: {
-                    color: '#8bb8c1'
+                    color: '#ffffff'
                 }
 
             },
