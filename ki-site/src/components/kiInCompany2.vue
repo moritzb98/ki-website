@@ -42,6 +42,10 @@ export default {
             // Überschrift
             text: ''
         },
+subtitle: {
+  text: 'Zeitraum des erstmaligen Einsatzes von KI'
+},
+
         yAxis: {
           title: {
             text: 'in % aller KI einsetzenden Unternehmen',

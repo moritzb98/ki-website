@@ -45,6 +45,9 @@ export default {
             title: {
                 text: ''
             },
+            subtitle: {
+              text: 'Vergleich der Unternehmen mit KI-Einsatz (in %) und den hauptsächlich zu KI tätigen Angstellten (in %)'
+            },
 
             xAxis: {
                 categories: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
