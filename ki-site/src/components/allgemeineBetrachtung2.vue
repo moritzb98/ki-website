@@ -6,7 +6,7 @@
             <div class="flex-container">
                 <div class="flex-item-30">
                     <p>
-                    Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich Mitarbeiter der Unternehmen dieser Branchen damit auseinandersetzen. Neben der IKT Branche, können Unternehmensnahe Dienstleistungen hier einen ebenfalls hohen Anteil von 0,88% verzeichnen. Zudem wird an dieser Stelle deutlich, dass Branchen wie der Großhandel (0,05% aller Beschäftigten) weniger Beschäftigte, die im Bereich der KI tätig sind, einstellen. 
+                    Wirft man einen Blick auf Branchen, die große Anteile ihrer Ausgaben für KI aufwenden, kommt die Frage auf inwiefern sich <b> Mitarbeiter der Unternehmen </b> dieser Branchen damit <b> auseinandersetzen. </b> Neben der IKT Branche, können <b> Unternehmensnahe Dienstleistungen </b> hier einen ebenfalls <b> hohen Anteil von 0,88% verzeichnen </b>. Zudem wird an dieser Stelle deutlich, dass Branchen wie <b> der Großhandel </b> (0,05% aller Beschäftigten) <b> weniger Beschäftigte </b>, die <b> im Bereich der KI </b> tätig sind, einstellen. 
                     </p>
                 </div>
                 <div class="flex-item-70">

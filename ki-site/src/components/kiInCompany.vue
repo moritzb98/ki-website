@@ -5,16 +5,16 @@
         <h3> Bestimmt anhand der Messung der Relevanz von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="zweispaltig-text">
-          Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. Das bedeutet, dass KI für diese Unternehmen deutliche Verbesserungen mit sich bringt, indem KI Geschäftsprozesse oder Produktionsaktivitäten schneller, genauer, flexibler, zuverlässiger oder kostengünstiger macht oder die Kapazitäten erhöht.
+          Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem <b> Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. </b> Das bedeutet, dass <b> KI </b> für diese Unternehmen <b> deutliche Verbesserungen </b> mit sich <b> bringt, </b> indem KI Geschäftsprozesse oder Produktionsaktivitäten <b> schneller, genauer, flexibler, zuverlässiger oder kostengünstiger </b> macht oder die <b> Kapazitäten erhöht. </b>
           </p>
           <p class="zweispaltig-text">
-          12 % der KI einsetzenden Unternehmen geben an, dass KI sogar essenziell für ihre Geschäftstätigkeit ist, d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp ein Viertel stuft KI dagegen als weniger wichtig ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.
+          <b> 12 % der KI einsetzenden Unternehmen</b> geben an, dass KI sogar <b> essenziell für ihre Geschäftstätigkeit ist, </b> d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp <b>ein Viertel </b> stuft KI dagegen als <b>weniger wichtig </b> ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.
           </p>
         </div>
         <div class="flex-container margin-top container-new">
             <div class="flex-item text-container">
                 <div id="counter" class="counter"></div>
-                <p class="text-animate">der Unternehmen, die KI einsetzten, in der deutschen Gesamtwirtschaft bewerten Künstliche Intelligenz als essentiell oder wichtig für ihre Geschäftsfähigkeit.</p>
+                <p class="text-animate">der <b> Unternehmen, die KI einsetzten </b>, in der deutschen Gesamtwirtschaft bewerten <b> Künstliche Intelligenz als essentiell oder wichtig </b> für ihre Geschäftsfähigkeit.</p>
             </div>
             <div class="flex-item chartdiv">
                 <highcharts :options="chartOptions"></highcharts>
