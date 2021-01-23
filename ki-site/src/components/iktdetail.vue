@@ -1,9 +1,8 @@
 <template>
     <div class="site-container site-container-larger">
       <h2>Funktionsbereiche, die KI-Verfahren einsetzen</h2>
-        <!--Navi war hier-->
-        <div class="slide" id="slide1">
 
+        <div class="slide" id="slide1">
           <div class="slide-container">
           <div class="flex-container flex-container--space-between flex-slider">
             <div class="icon-container">
@@ -39,8 +38,39 @@
             <img class="klick" src="../assets/tap.svg">
           </div>
          </div>
+
          <div class="slide" id="slide2">
             <div class="slide-container">
+              <div class="flex-container flex-container--space-between flex-slider">
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/human.svg">
+                  </div>
+                  <p>Unternehmens-<br>bereiche</p>
+                </div>
+                <div class="flex-vertical">
+                  <span>verwenden in verschiedenen</span>
+                  <div class="line">
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/system.svg">
+                  </div>
+                  <p>Anwendungs-<br>bereichen</p>
+                </div>
+                <div class="flex-vertical">
+                  <span>unterschiedliche</span>
+                  <div class="line">
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/ki.svg">
+                  </div>
+                  <p>KI-Verfahren</p>
+                </div>
+              </div>
               <!-- SVG ALLE DATEN -->
               <svg id="firma-svg" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297 210">
               <title>Firma</title>
@@ -152,6 +182,36 @@
          </div>
          <div class="slide" id="slide1">
             <div class="slide-container anwendungsbereiche">
+              <div class="flex-container flex-container--space-between flex-slider">
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/human.svg">
+                  </div>
+                  <p>Unternehmens-<br>bereiche</p>
+                </div>
+                <div class="flex-vertical">
+                  <span>verwenden in verschiedenen</span>
+                  <div class="line">
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/system.svg">
+                  </div>
+                  <p>Anwendungs-<br>bereichen</p>
+                </div>
+                <div class="flex-vertical">
+                  <span>unterschiedliche</span>
+                  <div class="line">
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/ki.svg">
+                  </div>
+                  <p>KI-Verfahren</p>
+                </div>
+              </div>
               <div class="flex-container flex-oben">
                 <div class="flex-item-slide3">
                   <div class="icons-con">
@@ -235,6 +295,36 @@
          </div>
          <div class="slide">
             <div class="slide-container">
+              <div class="flex-container flex-container--space-between flex-slider">
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/human.svg">
+                  </div>
+                  <p>Unternehmens-<br>bereiche</p>
+                </div>
+                <div class="flex-vertical">
+                  <span>verwenden in verschiedenen</span>
+                  <div class="line">
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/system.svg">
+                  </div>
+                  <p>Anwendungs-<br>bereichen</p>
+                </div>
+                <div class="flex-vertical">
+                  <span>unterschiedliche</span>
+                  <div class="line">
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="icon kreisOrange">
+                    <img class="img-size" src="../assets/ki.svg">
+                  </div>
+                  <p>KI-Verfahren</p>
+                </div>
+              </div>
                 <div class="flex-container-slide">
                   <div class="flex-item-slide-container">
                     <div class="flex-item-slide">
