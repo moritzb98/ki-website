@@ -424,12 +424,10 @@ export default {
   opacity: 0;
   visibility: hidden;
   height: 0;
-  transition: all 0.5s;
 }
 .icons-con{
   opacity: 1;
   visibility: visible;
-  transition: all 0.5s;
 }
 
 .icons-con:hover .icons{
@@ -754,12 +752,8 @@ svg{
   fill: #e4eaea !important;
 }
 
-.anwendungsbereiche{
-
-}
-
 .anwendungsbereiche .flex-container{
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .flex-oben{
