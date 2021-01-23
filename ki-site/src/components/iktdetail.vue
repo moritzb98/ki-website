@@ -3,7 +3,7 @@
       <h2>Funktionsbereiche, die KI-Verfahren einsetzen</h2>
         <div class="flex-container flex-container--space-between flex-slider">
           <div class="icon-container">
-            <div class="icon">
+            <div class="icon kreisOrange">
               <img class="img-size" src="../assets/human.svg">
             </div>
             <p>Unternehmens-<br>bereiche</p>
@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="icon-container">
-            <div class="icon">
+            <div class="icon kreisOrange">
               <img class="img-size" src="../assets/system.svg">
             </div>
             <p>Anwendungs-<br>bereichen</p>
@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="icon-container">
-            <div class="icon">
+            <div class="icon kreisOrange">
               <img class="img-size" src="../assets/ki.svg">
             </div>
             <p>KI-Verfahren</p>
@@ -448,8 +448,14 @@ export default {
   background: #eef1f6;
   border-radius: 100%;
   padding: 10px;
-  width: 40%;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
+}
+.kreisOrange{
+  border-radius: 50%;
+  border-color: #F4C07A;
+  border-style: solid;
 }
 .subtitle {
   text-transform: uppercase;
@@ -459,7 +465,7 @@ export default {
 .line {
   display:block;
   width: 100%;
-  background: red;
+  background: #C6C3C3;
   height: 2px;
 }
 
@@ -633,7 +639,7 @@ svg{
 }
 
 .img-size{
-  width: 75px;
+  width: 55px;
 }
 
 .button{
