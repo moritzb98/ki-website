@@ -53,7 +53,7 @@
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container dark">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/system.svg">
                   </div>
@@ -64,7 +64,7 @@
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container dark">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/ki.svg">
                   </div>
@@ -183,7 +183,7 @@
          <div class="slide" id="slide1">
             <div class="slide-container anwendungsbereiche">
               <div class="flex-container flex-container--space-between flex-slider">
-                <div class="icon-container">
+                <div class="icon-container dark">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/human.svg">
                   </div>
@@ -205,7 +205,7 @@
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container dark">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/ki.svg">
                   </div>
@@ -296,7 +296,7 @@
          <div class="slide">
             <div class="slide-container">
               <div class="flex-container flex-container--space-between flex-slider">
-                <div class="icon-container">
+                <div class="icon-container dark">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/human.svg">
                   </div>
@@ -307,7 +307,7 @@
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container dark">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/system.svg">
                   </div>
@@ -549,6 +549,12 @@ export default {
   border-color: #F4C07A;
   border-style: solid;
 }
+
+.dark{
+  opacity:0.25;
+  transition:all 0.5s;
+}
+
 .subtitle {
   text-transform: uppercase;
   font-weight: 100;
