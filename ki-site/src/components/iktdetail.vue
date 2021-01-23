@@ -214,7 +214,7 @@
               </div>
               <div class="flex-container flex-oben">
                 <div class="flex-item-slide3">
-                  <div class="icons-con">
+                  <div v-on:click="toggle(0)" class="icons-con">
                       <div class="icons">
                         <div class="opacitydiv opacityde opacity35"></div>
                         <img src="../assets/de-8.png">
@@ -226,10 +226,10 @@
                         <span>60%</span>
                       </div>
                   </div>
-                  <p>Produkte und Dienstleistungen</p>
+                  <p class="text">Produkte und Dienstleistungen</p>
                 </div>
                 <div class="flex-item-slide3">
-                  <div class="icons-con">
+                  <div v-on:click="toggle(1)" class="icons-con">
                     <div class="icons">
                       <div class="opacitydiv opacityde opacity40"></div>
                       <img src="../assets/de-8.png">
@@ -241,10 +241,10 @@
                       <span>56%</span>
                     </div>
                   </div>
-                  <p>Automatisierung von Prozessen</p>
+                  <p class="text">Automatisierung von Prozessen</p>
                 </div>
                 <div class="flex-item-slide3">
-                <div class="icons-con">
+                <div v-on:click="toggle(2)" class="icons-con">
                   <div class="icons">
                     <div class="opacitydiv opacityde opacity50"></div>
                     <img src="../assets/de-8.png">
@@ -256,11 +256,11 @@
                     <span>34%</span>
                   </div>
                   </div>
-                <p>KI-Anwendung für Datenanalyse</p>
+                <p class="text">KI-Anwendung für Datenanalyse</p>
                 </div>
               </div>
               <div class="flex-container flex-unten">
-                <div class="flex-item-slide3">
+                <div v-on:click="toggle(3)" class="flex-item-slide3">
                   <div class="icons-con">
                   <div class="icons">
                     <div class="opacitydiv opacityde opacity65"></div>
@@ -273,10 +273,10 @@
                     <span>22%</span>
                   </div>
                   </div>
-                  <p>Kundenkommunikation/-interaktion</p>
+                  <p class="text">Kundenkommunikation/-interaktion</p>
                 </div>
                 <div class="flex-item-slide3">
-                  <div class="icons-con">
+                  <div v-on:click="toggle(4)" class="icons-con">
                   <div class="icons">
                     <div class="opacitydiv opacityde opacity65"></div>
                     <img src="../assets/de-8.png">
@@ -288,7 +288,7 @@
                     <span>11%</span>
                   </div>
                   </div>
-                  <p>andere Anwendungsgebiete</p>
+                  <p class="text">andere Anwendungsgebiete</p>
                 </div>
               </div>
             </div>
@@ -412,6 +412,17 @@ export default {
         el[i].classList.toggle('hide');
       }
       document.getElementsByClassName('cls-1-b')[0].classList.toggle('disable');
+    },
+
+    toggle:function(index){
+      let icons = document.getElementsByClassName("icons");
+      let values = document.getElementsByClassName("values");
+      let text = document.getElementsByClassName("text");
+      
+      icons[index].classList.toggle("icons-hide");
+      values[index].classList.toggle("values-show");
+      text[index].classList.toggle("text-bold");
+
     }
   }
 
@@ -428,6 +439,19 @@ export default {
 .icons-con{
   opacity: 1;
   visibility: visible;
+  cursor: pointer;
+}
+
+.text{
+  text-align: center;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.icons{
+  transition: all 0.5s;
 }
 
 .icons-con:hover .icons{
@@ -436,6 +460,21 @@ export default {
 }
 
 .icons-con:hover .values{
+  opacity: 1;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  visibility: visible;
+  top: 50px;
+}
+
+.icons-hide{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.values-show{
   opacity: 1;
   width: 100%;
   position: absolute;
