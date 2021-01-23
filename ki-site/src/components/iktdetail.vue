@@ -184,6 +184,7 @@
                   <img src="../assets/ikt-8.png">
                 </div>
               </div>
+              
             </div>
          </div>
          <div class="slide">
@@ -218,6 +219,17 @@
                     <p class="icon-text icon-text-ikt">30%</p>
                   </div>
                 </div>
+                <div class="svg-button">
+                  <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.83 48.37">
+                    <title>Button</title>
+                    <g>
+                      <path v-on:click="disableIkt3" class="cls-1-b" d="M33.55,18.37A3.51,3.51,0,0,0,30,21.88v.94a3.52,3.52,0,0,0,3.51,3.52H42v-8Z"/>
+                      <path v-on:click="disableGesamt3" class="cls-2-b" d="M51.29,18.37H42.85v8h8.44a3.53,3.53,0,0,0,3.52-3.52v-.94A3.52,3.52,0,0,0,51.29,18.37Z"/>
+                    </g>
+                    <text class="cls-3-b" transform="translate(15.86 24.47)">IKT</text>
+                    <text class="cls-3-b" transform="translate(59.89 24.47)">Gesamtwi<tspan class="cls-4" x="26.96" y="0">r</tspan><tspan x="29.11" y="0">tschaft</tspan></text>
+                  </svg>
+                </div>
             </div>
          </div>
     </div>
@@ -246,6 +258,22 @@ export default {
       }
       document.getElementsByClassName('cls-26')[0].classList.toggle('disable');
     },
+
+    disableGesamt3: function(){
+      var el = document.getElementsByClassName('icon-text-gesamt');
+      for(var i = 0; i<el.length; i++){
+        el[i].classList.toggle('hide');
+      }
+      document.getElementsByClassName('cls-2-b')[0].classList.toggle('disable');
+    },
+
+    disableIkt3: function(){
+      var el = document.getElementsByClassName('icon-text-ikt');
+      for(var i = 0; i<el.length; i++){
+        el[i].classList.toggle('hide');
+      }
+      document.getElementsByClassName('cls-1-b')[0].classList.toggle('disable');
+    }
   }
 
 }
@@ -269,7 +297,7 @@ export default {
 
 .flex-container-slide{
   width: 1000px;
-  height: 500px;
+  height: 470px;
   flex-direction: row;
   display: flex;
   justify-content: space-between;
@@ -298,10 +326,12 @@ export default {
 
 .icon-text-gesamt{
   color: #41567e;
+  transition: all 0.5s;
 }
 
 .icon-text-ikt{
   color: #f3931f;
+  transition: all 0.5s;
 }
 
 .bild{
@@ -537,7 +567,7 @@ svg{
 }
 
 .disable{
-  fill: #e4eaea;
+  fill: #e4eaea !important;
 }
 
 .anwendungsbereiche{
@@ -604,6 +634,36 @@ svg{
 
 .opacity20{
   height: 20%;
+}
+
+.svg-button{
+  margin-top: -50px;
+}
+
+.svg-button svg{
+  width: 350px;
+}
+
+.cls-1-b {
+  fill: #f3931f;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.cls-2-b {
+  fill: #41567e;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cls-3-b {
+  font-size: 6px;
+  fill: #cfcece;
+  font-family: Roboto-Regular, Roboto;
+}
+
+.cls-4-b {
+  letter-spacing: 0.01em;
 }
 </style>
 
