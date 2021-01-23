@@ -125,7 +125,7 @@
             <span class="impressum-text"><b>Herausgeber:</b> Bundesministerium für <br>Wirtschaft und Energie (BMWi)<br>
               Öffentlichkeitsarbeit<br>
               11019 Berlin<br>
-              <a href="www.bmwi.de">www.bmwi.de</a>
+              <a href="https://www.bmwi.de/Redaktion/DE/Publikationen/Wirtschaft/einsatz-von-ki-deutsche-wirtschaft.html"><b>Zur Studie:</b> www.bmwi.de</a>
             </span><br>
             <span class="impressum-text"><b>Stand:</b> März 2020</span><br><br>
             <span class="impressum-text"><b>Icons:</b> Envato Elements</span><br>

@@ -4,10 +4,10 @@
         <h3> Präsentiert anhand des Zeitraums des erstmaligen Einsatzes von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="margin-bott zweispaltig-text">
-          Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der erstmalige Einsatz der Technologie stattgefunden hat. In Branchen wie den sonstigen Dienstleistungen setzen bereits vor 2010 43% aller Unternehmen KI ein.
+          Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der <b> erstmalige Einsatz der Technologie </b>stattgefunden hat. In Branchen wie den <b> sonstigen Dienstleistungen </b> setzen bereits <b> vor 2010 43% aller Unternehmen </b>KI ein.
           </p>
           <p class="margin-bott zweispaltig-text">
-          Im Vergleich dazu verzeichnete die IKT Branche, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur einen Wert von 9%. Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. 37% aller Unternehmen dieser Branche setzten 2018/2019 diese Technologie ein.
+          Im Vergleich dazu verzeichnete die <b> IKT Branche </b>, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur <b> einen Wert von 9%. </b> Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. <b> 37% aller Unternehmen dieser Branche </b> setzten <b> 2018/2019 diese Technologie ein. </b>
           </p>
         </div>
         <div class="flex-container">
@@ -42,6 +42,10 @@ export default {
             // Überschrift
             text: ''
         },
+subtitle: {
+  text: 'Zeitraum des erstmaligen Einsatzes von KI'
+},
+
         yAxis: {
           title: {
             text: 'in % aller KI einsetzenden Unternehmen',
