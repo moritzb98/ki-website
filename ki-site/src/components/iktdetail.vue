@@ -152,39 +152,83 @@
             <div class="slide-container anwendungsbereiche">
               <div class="flex-container flex-oben">
                 <div class="flex-item-slide3">
-                  <div class="opacitydiv opacityde opacity80"></div>
-                  <img src="../assets/de-8.png">
-                  <div class="opacitydiv opacityall opacity70"></div>
-                  <img src="../assets/ikt-8.png">
+                  <div class="icons-con">
+                      <div class="icons">
+                        <div class="opacitydiv opacityde opacity35"></div>
+                        <img src="../assets/de-8.png">
+                        <div class="opacitydiv opacityall opacity50"></div>
+                        <img src="../assets/ikt-8.png"> 
+                      </div>
+                      <div class="values">
+                        <span>66%</span>
+                        <span>60%</span>
+                      </div>
+                  </div>
+                  <p>Produkte und Dienstleistungen</p>
                 </div>
                 <div class="flex-item-slide3">
-                  <div class="opacitydiv opacityde opacity50"></div>
-                  <img src="../assets/de-8.png">
-                  <div class="opacitydiv opacityall opacity70"></div>
-                  <img src="../assets/ikt-8.png">
+                  <div class="icons-con">
+                    <div class="icons">
+                      <div class="opacitydiv opacityde opacity40"></div>
+                      <img src="../assets/de-8.png">
+                      <div class="opacitydiv opacityall opacity50"></div>
+                      <img src="../assets/ikt-8.png">
+                    </div>
+                    <div class="values">
+                      <span>54%</span>
+                      <span>56%</span>
+                    </div>
+                  </div>
+                  <p>Automatisierung von Prozessen</p>
                 </div>
                 <div class="flex-item-slide3">
-                  <div class="opacitydiv opacityde opacity40"></div>
-                  <img src="../assets/de-8.png">
-                  <div class="opacitydiv opacityall opacity70"></div>
-                  <img src="../assets/ikt-8.png">
+                <div class="icons-con">
+                  <div class="icons">
+                    <div class="opacitydiv opacityde opacity50"></div>
+                    <img src="../assets/de-8.png">
+                    <div class="opacitydiv opacityall opacity60"></div>
+                    <img src="../assets/ikt-8.png">
+                  </div>
+                  <div class="values">
+                    <span>35%</span>
+                    <span>34%</span>
+                  </div>
+                  </div>
+                <p>KI-Anwendung für Datenanalyse</p>
                 </div>
               </div>
               <div class="flex-container flex-unten">
                 <div class="flex-item-slide3">
-                  <div class="opacitydiv opacityde opacity20"></div>
-                  <img src="../assets/de-8.png">
-                  <div class="opacitydiv opacityall opacity70"></div>
-                  <img src="../assets/ikt-8.png">
+                  <div class="icons-con">
+                  <div class="icons">
+                    <div class="opacitydiv opacityde opacity65"></div>
+                    <img src="../assets/de-8.png">
+                    <div class="opacitydiv opacityall opacity65"></div>
+                    <img src="../assets/ikt-8.png">
+                  </div>
+                  <div class="values">
+                    <span>9%</span>
+                    <span>22%</span>
+                  </div>
+                  </div>
+                  <p>Kundenkommunikation/-interaktion</p>
                 </div>
                 <div class="flex-item-slide3">
-                  <div class="opacitydiv opacityde opacity70"></div>
-                  <img src="../assets/de-8.png">
-                  <div class="opacitydiv opacityall opacity70"></div>
-                  <img src="../assets/ikt-8.png">
+                  <div class="icons-con">
+                  <div class="icons">
+                    <div class="opacitydiv opacityde opacity65"></div>
+                    <img src="../assets/de-8.png">
+                    <div class="opacitydiv opacityall opacity68"></div>
+                    <img src="../assets/ikt-8.png">
+                  </div>
+                  <div class="values">
+                    <span>11%</span>
+                    <span>11%</span>
+                  </div>
+                  </div>
+                  <p>andere Anwendungsgebiete</p>
                 </div>
               </div>
-              
             </div>
          </div>
          <div class="slide">
@@ -243,6 +287,9 @@ export default {
 
     }
   },
+  mounted(){
+    //var icons document.getElementsByClassName
+  },
   methods:{
     disableGesamt: function(){
       var el = document.getElementsByClassName('cls-19');
@@ -281,6 +328,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.values{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: all 0.5s;
+}
+.icons-con{
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.icons-con:hover .icons{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icons-con:hover .values{
+  opacity: 1;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  visibility: visible;
+  top: 50px;
+}
+
 .flex-item-slide3 img{
   width: 100px;
 }
@@ -608,24 +682,28 @@ svg{
   position: relative;
 }
 
-.opacity80{
-  height: 80%;
-}
-
-.opacity70{
-  height: 70%;
+.opacity35{
+  height: 35%;
 }
 
 .opacity50{
   height: 50%;
 }
 
+.opacity65{
+  height: 65%;
+}
+
+.opacity68{
+  height: 68%;
+}
+
 .opacity70{
   height: 70%;
 }
 
-.opacity50{
-  height: 50%;
+.opacity60{
+  height: 60%;
 }
 
 .opacity40{
