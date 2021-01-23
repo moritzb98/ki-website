@@ -161,7 +161,7 @@ export default {
         }
         this.infoPopup = false;  
       }
-      if(destination.anchor == "AllgemeineBetrachtungB"){
+      if(destination.anchor == "BedeutungVonKI"){
         this.$refs.allgemeineBetrachtung.pushSeries();
       }
       if(destination.anchor == "AllgemeineBetrachtung"){
