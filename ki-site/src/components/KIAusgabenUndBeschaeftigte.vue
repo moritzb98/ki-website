@@ -1129,10 +1129,10 @@ export default {
                 legend: {
                 reversed: true,
                 align: 'right',
-        verticalAlign: 'top',
-        layout: 'vertical',
-        x: 0,
-        y: 100,
+                verticalAlign: 'top',
+                layout: 'vertical',
+                x: 0,
+                y: 100,
                 itemStyle: {
                     color: '#eef1f6',
                 },

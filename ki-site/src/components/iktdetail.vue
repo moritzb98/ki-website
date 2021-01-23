@@ -4,7 +4,7 @@
         <div class="flex-container flex-container--space-between flex-slider">
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/artificial-intelligence.svg">
+              <img class="img-size" src="../assets/human.svg">
             </div>
             <p>Unternehmens-<br>bereiche</p>
           </div>
@@ -15,7 +15,7 @@
           </div>
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/artificial-intelligence.svg">
+              <img class="img-size" src="../assets/system.svg">
             </div>
             <p>Anwendungs-<br>bereichen</p>
           </div>
@@ -26,7 +26,7 @@
           </div>
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/artificial-intelligence.svg">
+              <img class="img-size" src="../assets/ki.svg">
             </div>
             <p>KI-Verfahren</p>
           </div>
@@ -157,7 +157,7 @@
                         <div class="opacitydiv opacityde opacity35"></div>
                         <img src="../assets/de-8.png">
                         <div class="opacitydiv opacityall opacity50"></div>
-                        <img src="../assets/ikt-8.png"> 
+                        <img src="../assets/ikt-8.png">
                       </div>
                       <div class="values">
                         <span>66%</span>
@@ -279,7 +279,7 @@
     </div>
 </template>
 
-<script>      
+<script>
 export default {
   name: 'ikt',
   data() {
@@ -359,7 +359,7 @@ export default {
   width: 100px;
 }
 
-.logo { 
+.logo {
   width: 180px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -632,6 +632,10 @@ svg{
   margin-top: -40px;
 }
 
+.img-size{
+  width: 75px;
+}
+
 .button{
   cursor: pointer;
 }
@@ -744,4 +748,3 @@ svg{
   letter-spacing: 0.01em;
 }
 </style>
-
