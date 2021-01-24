@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Bedeutung der KI</h2>
+      <h2>Bedeutung der Künstlichen Intelligenz</h2>
       <h3>
        Dargestellt in Form des Umsatzanteils von Produkten oder Dienstleistungen mit KI-Einsatz
       </h3>

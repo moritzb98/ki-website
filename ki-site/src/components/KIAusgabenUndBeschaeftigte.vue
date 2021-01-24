@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Auswirkungen des KI Einsatzes auf Personal und Investitionen</h2>
+      <h2>Auswirkungen des Einsatzes von Künstlicher Intelligenz auf Personal und Investitionen</h2>
       <h3> Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
       <div class="flex-container zweispaltig">
         <p class="zweispaltig-text">
