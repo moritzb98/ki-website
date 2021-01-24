@@ -281,7 +281,7 @@ export default {
   width: 50px;
   height: auto;
   z-index:1;
-  position:absolute;top:680px;left:230px;
+  position:absolute;top:730px;left:150px;
 }
 .zweispaltig{
     width: 1200px;
@@ -300,6 +300,8 @@ export default {
     text-align: center;
     margin: 20px;
     max-height: 380px;
+    margin-left: -200px;
+    margin-right: 65px;
 }
 
 .mittig-vertikal{
