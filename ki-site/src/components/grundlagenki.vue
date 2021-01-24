@@ -1,6 +1,6 @@
 <template>
     <div id="glossar-contentID" class="site-container glossar-content">
-      <h4>Grundlagen zu KI</h4>
+      <h4>Grundlagen zur Künstlichen Intelligenz</h4>
           <p>Dieses Glossar beinhaltet sämtliche Definitionen und Hintergrundinformationen zu den Themengebieten Künstliche Intelligenz. Diese Grundlagen sollten verstanden werden, damit die auf dieser Website dargestellten Grafiken nachvollziehbar sind.
           Es ist jederzeit möglich, zurück zu dieser Seite zu springen, damit Infos nachgelesen werden können.
           </p>

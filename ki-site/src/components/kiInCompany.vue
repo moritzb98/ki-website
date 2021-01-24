@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
 
-        <h2>Einfluss des Einsatzes der KI auf die Geschäftsfähigkeit</h2>
+        <h2>Einfluss des Einsatzes der Künstlichen Intelligenz auf die Geschäftsfähigkeit</h2>
         <h3> Bestimmt anhand der Messung der Relevanz von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="zweispaltig-text">

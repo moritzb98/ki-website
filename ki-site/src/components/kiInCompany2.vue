@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-        <h2>Zunehmende Unverzichtbarkeit der KI</h2>
+        <h2>Zunehmende Unverzichtbarkeit der Künstlichen Intelligenz</h2>
         <h3> Präsentiert anhand des Zeitraums des erstmaligen Einsatzes von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="margin-bott zweispaltig-text">

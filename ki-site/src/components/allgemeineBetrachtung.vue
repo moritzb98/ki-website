@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Investitionen in KI</h2>
+      <h2>Investitionen in Künstliche Intelligenz</h2>
       <h3> Präsentiert anhand der verzeichneten Ausgaben für KI je Branches
       </h3>
       <div class="flex-container zweispaltig">
