@@ -128,6 +128,18 @@ export default {
   mounted(){
     document.getElementById('click-img').addEventListener('click', this.nextSlide);
     document.getElementById('click-img2').addEventListener('click', this.nextSlide);
+    var s2 = document.getElementsByClassName('s2');
+    var s1 = document.getElementsByClassName('s1');
+    var s3 = document.getElementsByClassName('s3');
+    for(var i=0; i<s2.length; i++){
+      s2[i].addEventListener('click', this.moveToSlide2);
+    }
+    for(var a=0; a<s1.length; a++){
+      s1[a].addEventListener('click', this.moveToSlide1);
+    }
+    for(var b=0; b<s3.length; b++){
+      s3[b].addEventListener('click', this.moveToSlide3);
+    }
   },
   methods: {
     toggleGlossar: function() {
@@ -177,9 +189,19 @@ export default {
             this.blureffekt();
           }
           this.blur=true;
-        }
+      }
+      
+    },
 
-      },
+    moveToSlide2: function(){
+      this.$refs.fullpage.api.moveTo(9, 2);
+    },
+    moveToSlide3: function(){
+      this.$refs.fullpage.api.moveTo(9, 3);
+    },
+    moveToSlide1: function(){
+      this.$refs.fullpage.api.moveTo(9, 1);
+    },
 
     startBar() {
       document.getElementById("counter").classList.add("counter-animate");
