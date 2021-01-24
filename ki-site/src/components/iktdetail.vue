@@ -341,6 +341,7 @@
                     <div class="flex-item-slide">
                       <img src="../assets/machine-learning.svg">
                     </div>
+                    <p class="icon-text-name">Maschinelles Lernen</p>
                     <p class="icon-text icon-text-gesamt">59%</p>
                     <p class="icon-text icon-text-ikt">55%</p>
                   </div>
@@ -348,6 +349,7 @@
                     <div class="flex-item-slide">
                       <img src="../assets/sound-card.svg">
                     </div>
+                    <p class="icon-text-name">Bild- und Tonerkennung</p>
                     <p class="icon-text icon-text-gesamt">47%</p>
                     <p class="icon-text icon-text-ikt">49%</p>
                   </div>
@@ -355,6 +357,7 @@
                     <div class="flex-item-slide">
                       <img src="../assets/brain.svg">
                     </div>
+                    <p class="icon-text-name">Wissensbasierte Systeme</p>
                     <p class="icon-text icon-text-gesamt">55%</p>
                     <p class="icon-text icon-text-ikt">46%</p>
                   </div>
@@ -362,6 +365,7 @@
                     <div class="flex-item-slide">
                       <img src="../assets/translation.svg">
                     </div>
+                    <p class="icon-text-name">Sprach- oder Textverstehen</p>
                     <p class="icon-text icon-text-gesamt">23%</p>
                     <p class="icon-text icon-text-ikt">30%</p>
                   </div>
@@ -437,20 +441,20 @@ export default {
 
     },
 
-    disableIkt2: function(){
+    disableGesamt2: function(){
       var el = document.getElementsByClassName('gesamt');
       for(var i = 0; i<el.length; i++){
         el[i].classList.toggle('hide');
       }
-      document.getElementsByClassName('cls-1-a')[0].classList.toggle('disable');
+      document.getElementsByClassName('cls-2-a')[0].classList.toggle('disable');
     },
 
-    disableGesamt2: function(){
+    disableIkt2: function(){
       var el = document.getElementsByClassName('ikt');
       for(var i = 0; i<el.length; i++){
         el[i].classList.toggle('hide');
       }
-      document.getElementsByClassName('cls-2-a')[0].classList.toggle('disable');
+      document.getElementsByClassName('cls-1-a')[0].classList.toggle('disable');
     },
 
     
@@ -515,7 +519,7 @@ export default {
 }
 
 .flex-item-slide3 img{
-  width: 100px;
+  width: 80px;
 }
 
 .logo {
@@ -593,6 +597,12 @@ export default {
   text-align: center;
   margin: 40px auto;
   font-size: 40px;
+}
+
+.icon-text-name{
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: -20px;
 }
 
 .icon-container {
@@ -831,7 +841,7 @@ svg{
 }
 
 .anwendungsbereiche .flex-container{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .flex-oben{
