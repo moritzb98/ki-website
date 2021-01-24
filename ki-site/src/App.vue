@@ -150,8 +150,7 @@ export default {
     for(var b=0; b<s3.length; b++){
       s3[b].addEventListener('click', this.moveToSlide3);
     }
-    //var activeSlide = this.$refs.fullpage.api.getActiveSlide();
-    console.log(this.$refs.fullpage.api.getActiveSlide());
+    
   },
   methods: {
     toggleGlossar: function() {
