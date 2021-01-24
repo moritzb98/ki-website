@@ -43,11 +43,6 @@ export default {
             title: {
                 text: ''
             },
-
-            subtitle: {
-                text: 'Von den KI einsetzendne Unternehmen angegebene Bedeutung der Technologie (weniger wichtig/wichtig/essenziell)'
-            },
-
             xAxis: {
                 categories: ['Sonstige Dienstleistungen', 'Großhandel', 'IKT', 'Sonst. Verarb. Gew.', 'Elektrot./Maschinenb.', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorg., Bg.b.', 'Unter.nahe Dienstl.', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanzdienstleisut.', 'Gesamtwirtschaft'],
                 labels:{
