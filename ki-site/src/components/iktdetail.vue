@@ -5,18 +5,18 @@
         <div class="slide" id="slide1">
           <div class="slide-container">
           <div class="flex-container flex-container--space-between flex-slider">
-            <div class="icon-container">
+            <div class="icon-container s1">
               <div id="click-img" class="icon kreisOrange">
                 <img class="img-size" src="../assets/human.svg">
               </div>
               <p>Unternehmens-<br>bereiche</p>
             </div>
-            <div class="flex-vertical">
+            <div class="flex-vertical top">
               <span>verwenden in verschiedenen</span>
               <div class="line">
               </div>
             </div>
-            <div class="icon-container">
+            <div class="icon-container s2">
               <div class="icon kreisOrange">
                 <img class="img-size" src="../assets/system.svg">
               </div>
@@ -27,7 +27,7 @@
               <div class="line">
               </div>
             </div>
-            <div class="icon-container">
+            <div class="icon-container s3">
               <div class="icon kreisOrange">
                 <img class="img-size" src="../assets/ki.svg">
               </div>
@@ -42,18 +42,18 @@
          <div class="slide" id="slide2">
             <div class="slide-container">
               <div class="flex-container flex-container--space-between flex-slider">
-                <div class="icon-container">
+                <div class="icon-container s1">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/human.svg">
                   </div>
                   <p>Unternehmens-<br>bereiche</p>
                 </div>
-                <div class="flex-vertical">
+                <div class="flex-vertical top">
                   <span>verwenden in verschiedenen</span>
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container dark">
+                <div class="icon-container dark s2" >
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/system.svg">
                   </div>
@@ -64,7 +64,7 @@
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container dark">
+                <div class="icon-container dark s3">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/ki.svg">
                   </div>
@@ -183,18 +183,18 @@
          <div class="slide" id="slide1">
             <div class="slide-container anwendungsbereiche">
               <div class="flex-container flex-container--space-between flex-slider">
-                <div class="icon-container dark">
+                <div class="icon-container dark s1">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/human.svg">
                   </div>
                   <p>Unternehmens-<br>bereiche</p>
                 </div>
-                <div class="flex-vertical">
+                <div class="flex-vertical top">
                   <span>verwenden in verschiedenen</span>
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container s2" >
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/system.svg">
                   </div>
@@ -205,7 +205,7 @@
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container dark">
+                <div class="icon-container dark s3">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/ki.svg">
                   </div>
@@ -307,18 +307,18 @@
          <div class="slide">
             <div class="slide-container">
               <div class="flex-container flex-container--space-between flex-slider">
-                <div class="icon-container dark">
+                <div class="icon-container dark s1">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/human.svg">
                   </div>
                   <p>Unternehmens-<br>bereiche</p>
                 </div>
-                <div class="flex-vertical">
+                <div class="flex-vertical top">
                   <span>verwenden in verschiedenen</span>
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container dark">
+                <div class="icon-container dark s2" >
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/system.svg">
                   </div>
@@ -329,7 +329,7 @@
                   <div class="line">
                   </div>
                 </div>
-                <div class="icon-container">
+                <div class="icon-container s3">
                   <div class="icon kreisOrange">
                     <img class="img-size" src="../assets/ki.svg">
                   </div>
@@ -392,6 +392,7 @@ export default {
   },
   mounted(){
     //var icons document.getElementsByClassName
+    
   },
   methods:{
     disableGesamt: function(){
@@ -450,7 +451,9 @@ export default {
         el[i].classList.toggle('hide');
       }
       document.getElementsByClassName('cls-2-a')[0].classList.toggle('disable');
-    }
+    },
+
+    
   }
 
 }
@@ -595,6 +598,7 @@ export default {
 .icon-container {
   text-align:center;
   width: 20%;
+  cursor: pointer;
 }
 
 .icon-container p{
@@ -641,6 +645,10 @@ export default {
   justify-content: center;
   max-height: 100px;
   width: 25%;
+}
+
+.top{
+  margin-top: -8px;
 }
 
 .slide-container {

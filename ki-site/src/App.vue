@@ -17,25 +17,35 @@
       <nav id="nav">
           <ul id="myMenu">
             <li data-menuanchor="Home" class="active"><a href="#Home"><svg fill="white" height="20px" viewBox="0 0 512 512" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg></a></li>
-            <li data-menuanchor="InformationenZurStudie"><a href="#InformationenZurStudie">01</a></li>
-            <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">02</a>
-              <ul class="nav2 firstnav">
-                <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung"><div class="dot"></div></a></li>
-                <li class="no-connection" data-menuanchor="AllgemeineBetrachtungB"><a href="#AllgemeineBetrachtungB"><div class="dot"></div></a></li>
-              </ul>
-            </li>
-            <li data-menuanchor="BedeutungVonKI"><a href="#BedeutungVonKI">03</a></li>
-            <li data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">04</a></li>
-            <li data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI">05</a></li>
-            <li data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz">06</a></li>
-            <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">07</a>
-            <ul class="nav2 secondnav">
-              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
-              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
-              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/2"><div class="dot"></div></a></li>
-              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/3"><div class="dot"></div></a></li>
-            </ul>
-            </li>
+            <li data-menuanchor="Einfuehrung"><a href="#Einfuehrung">01</a></li>
+            <div class="section2">
+              <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">02</a>
+                <ul class="nav2 firstnav">
+                  <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung"><div class="dot"></div></a></li>
+                  <li class="no-connection" data-menuanchor="AllgemeineBetrachtungB"><a href="#AllgemeineBetrachtungB"><div class="dot"></div></a></li>
+                  <li class="no-connection" data-menuanchor="BedeutungVonKI"><a href="#BedeutungVonKI"><div class="dot"></div></a></li>
+                </ul>
+              </li>
+            </div>
+            <div class="section3">
+              <li class="no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">03</a>
+                  <ul class="nav2 secondnav">
+                  <li class="no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI"><div class="dot"></div></a></li>
+                  <li class="no-connection" data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI"><div class="dot"></div></a></li>
+                  <li class="no-connection" data-menuanchor="BeschäftigteUndUmsatz"><a href="#BeschäftigteUndUmsatz"><div class="dot"></div></a></li>
+                </ul>
+              </li>
+            </div>
+            <div class="section4">
+              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">04</a>
+                <ul class="nav2 thirdnav">
+                  <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
+                  <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
+                  <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/2"><div class="dot"></div></a></li>
+                  <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/3"><div class="dot"></div></a></li>
+                </ul>
+              </li>
+            </div>
             <li class="no-connection" data-menuanchor="Impressum"><a id="impreesum-link" href="#Impressum">IMPRESSUM</a></li>
           </ul>
         </nav>
@@ -111,7 +121,7 @@ export default {
   data() {
     return {
       options: {
-        anchors: ['Home', 'InformationenZurStudie', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'UmsatzanteilKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum', 'Test'],
+        anchors: ['Home', 'Einfuehrung', 'AllgemeineBetrachtung', 'AllgemeineBetrachtungB', 'BedeutungVonKI', 'UmsatzanteilKI', 'ErstmaligerEinsatzVonKI', 'BeschäftigteUndUmsatz', 'Funktionsbereich', 'Impressum', 'Test'],
         menu: '#myMenu',
         //navigation: true,
         navigationTooltips: ['Home', 'Informationen zur Studie', 'Allgemeine Betrachtung', 'Allgemeine Betrachtung', 'Bedeutung von KI', 'Erstmaliger Einsatz von KI', 'Vergleich der Beschäftigten und des Umsatzes','Funktionsbereiche', 'Impressum'],
@@ -128,6 +138,19 @@ export default {
   mounted(){
     document.getElementById('click-img').addEventListener('click', this.nextSlide);
     document.getElementById('click-img2').addEventListener('click', this.nextSlide);
+    var s2 = document.getElementsByClassName('s2');
+    var s1 = document.getElementsByClassName('s1');
+    var s3 = document.getElementsByClassName('s3');
+    for(var i=0; i<s2.length; i++){
+      s2[i].addEventListener('click', this.moveToSlide2);
+    }
+    for(var a=0; a<s1.length; a++){
+      s1[a].addEventListener('click', this.moveToSlide1);
+    }
+    for(var b=0; b<s3.length; b++){
+      s3[b].addEventListener('click', this.moveToSlide3);
+    }
+    
   },
   methods: {
     toggleGlossar: function() {
@@ -147,7 +170,7 @@ export default {
       if(destination.anchor == "UmsatzanteilKI"){
         this.startBar();
       }
-      if(destination.anchor == "InformationenZurStudie"){
+      if(destination.anchor == "Einfuehrung"){
         if(this.infoPopup){
           this.$refs.fullpage.api.setMouseWheelScrolling(!this.infoPopup);
           this.$refs.fullpage.api.setAllowScrolling(!this.infoPopup);
@@ -177,9 +200,19 @@ export default {
             this.blureffekt();
           }
           this.blur=true;
-        }
+      }
+      
+    },
 
-      },
+    moveToSlide2: function(){
+      this.$refs.fullpage.api.moveTo(9, 2);
+    },
+    moveToSlide3: function(){
+      this.$refs.fullpage.api.moveTo(9, 3);
+    },
+    moveToSlide1: function(){
+      this.$refs.fullpage.api.moveTo(9, 1);
+    },
 
     startBar() {
       document.getElementById("counter").classList.add("counter-animate");
@@ -342,16 +375,25 @@ button:hover{
     fill:  #f3931f;
 }
 
-.fp-viewing-Funktionsbereich-3 #nav .secondnav li:nth-child(4) .dot, .fp-viewing-Funktionsbereich-2 #nav .secondnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .secondnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .secondnav li:nth-child(1) .dot{
+.fp-viewing-Funktionsbereich-3 #nav .thirdnav li:nth-child(4) .dot, .fp-viewing-Funktionsbereich-2 #nav .thirdnav li:nth-child(3) .dot, .fp-viewing-Funktionsbereich-1 #nav .thirdnav li:nth-child(2) .dot, .fp-viewing-Funktionsbereich-0 #nav .thirdnav li:nth-child(1) .dot{
   width: 8px;
   height: 8px;
-  background:  #f3931f;
+  /* Farbe navi 04 */
+  background: #90ee90;
 }
 
-.fp-viewing-AllgemeineBetrachtung #nav .firstnav li:nth-child(1) .dot, .fp-viewing-AllgemeineBetrachtungB #nav .firstnav li:nth-child(2) .dot{
+.fp-viewing-AllgemeineBetrachtung #nav .firstnav li:nth-child(1) .dot, .fp-viewing-AllgemeineBetrachtungB #nav .firstnav li:nth-child(2) .dot, .fp-viewing-BedeutungVonKI #nav .firstnav li:nth-child(3) .dot{
   width: 8px;
   height: 8px;
-  background:  #f3931f;
+  /* Farbe navi 02 */
+  background: #ff0000;
+}
+
+.fp-viewing-UmsatzanteilKI #nav .secondnav li:nth-child(1) .dot, .fp-viewing-ErstmaligerEinsatzVonKI #nav .secondnav li:nth-child(2) .dot, .fp-viewing-BeschäftigteUndUmsatz #nav .secondnav li:nth-child(3) .dot{
+  width: 8px;
+  height: 8px;
+  /* Farbe navi 03 */
+  background: #0000ff;
 }
 
 .fp-viewing-AllgemeineBetrachtungB #nav li:nth-child(3) a{
@@ -369,10 +411,25 @@ button:hover{
 
 .glossar-button img {
   width: 8px;
-  backgroundColor:blue;
+  backgroundColor: blue;
 }
 
 #arrowRotate{
   transform: rotate(180deg);
+}
+
+#nav .section2 .active a{
+  /* Farbe navi 02 */
+  color: red !important;
+}
+
+#nav .section3 .active a{
+  /* Farbe navi 03 */
+  color: blue !important;
+}
+
+#nav .section4 .active a{
+  /* Farbe navi 04 */
+  color: green !important;
 }
 </style>
