@@ -1127,7 +1127,7 @@ export default {
                 }
             }
         },
-                legend: {
+            legend: {
                 reversed: true,
                 align: 'right',
                 verticalAlign: 'top',
@@ -1143,87 +1143,98 @@ export default {
             },
         series: [{
             name: 'IKT',
+            color: '#EE3B3B',
             data: [{
                 name: 'IKT',
                 value: 382,
-                color: '#EE3B3B'
+                
             }]
         }, {
             name: 'Fahrzeugbau',
+            color: '#EE7600',
             data: [{
                 name: "Fahrzeugbau",
                 value: 7056,
-                color: '#EE7600'
+                
             }]
         }, {
             name: 'Elektrot./Maschinen.b.',
+            color: '#6495ED',
             data: [{
                 name: "Elektrot./Maschinen.b.",
                 value: 718,
-                color: '#6495ED'
+                
             }]
         }, {
             name: 'Verkehr, Logistik',
+            color: '#FFD700',
             data: [{
                 name: "Verkehr, Logistik",
                 value: 321,
-                color: '#FFD700'
+                
             }]
         }, {
             name: 'Finanzdienstleist.',
+            color: '#F08080',
             data: [{
                 name: "Finanzdienstleist.",
                 value: 286,
-                color: '#F08080'
+                
             }]
         }, {
             name: 'Chemie/Ph.',
+            color: '#76EEC6',
             data: [{
                 name: "Chemie/Ph.",
                 value: 282,
-                color: '#76EEC6'
+                
             }]
             }, {
             name: 'Ver-/Entsorgung.',
+            color: '#00CED1',
             data: [{
                 name: "Ver-/Entsorgung.",
                 value: 245,
-                color: '#00CED1'
+                
             }]
             }, {
             name: 'Sonst. Dienstleist.',
+            color: '#8A2BE2',
             data: [{
                 name: "Sonst. Dienstleist.",
                 value: 210,
-                color: '#8A2BE2'
+                
             }]
             }, {
             name: 'Großhandel',
+            color: '#FFC1C1',
             data: [{
                 name: "Großhandel",
                 value: 171,
-                color: '#FFC1C1'
+                
             }]
               }, {
             name: 'Sonst. Verarb. Gewerbe',
+            color: '#EE00EE',
             data: [{
                 name: "Sonst. Verarb. Gewerbe",
                 value: 130,
-                color: '#EE00EE'
+                
             }]
               }, {
             name: 'Untern.nahe Dienstleist.',
+            color: '#B3EE3A',
             data: [{
                 name: "Untern.nahe Dienstleist.",
                 value: 93,
-                color: '#B3EE3A'
+                
             }]
               }, {
             name: 'Gesamtwirtschaft',
+            color: '#3F44D5',
             data: [{
                 name: "Gesamtwirtschaft",
                 value: 276,
-                color: '#3F44D5'
             }]
 
         }]
