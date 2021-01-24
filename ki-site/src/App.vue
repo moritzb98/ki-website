@@ -118,6 +118,7 @@ export default {
         afterLoad: this.afterLoad,
         //scrollOverflow: true,
         //scrollOverflowReset: true,
+        scrollingSpeed: 1000
       },
       glossarOpen: false,
       infoPopup: true,
