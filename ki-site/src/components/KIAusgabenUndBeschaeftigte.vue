@@ -1163,7 +1163,6 @@ export default {
             data: [{
                 name: "Elektrot./Maschinen.b.",
                 value: 718,
-                
             }]
         }, {
             name: 'Verkehr, Logistik',

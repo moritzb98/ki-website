@@ -11,7 +11,7 @@
               </div>
               <p>Unternehmens-<br>bereiche</p>
             </div>
-            <div class="flex-vertical">
+            <div class="flex-vertical top">
               <span>verwenden in verschiedenen</span>
               <div class="line">
               </div>
@@ -48,7 +48,7 @@
                   </div>
                   <p>Unternehmens-<br>bereiche</p>
                 </div>
-                <div class="flex-vertical">
+                <div class="flex-vertical top">
                   <span>verwenden in verschiedenen</span>
                   <div class="line">
                   </div>
@@ -189,7 +189,7 @@
                   </div>
                   <p>Unternehmens-<br>bereiche</p>
                 </div>
-                <div class="flex-vertical">
+                <div class="flex-vertical top">
                   <span>verwenden in verschiedenen</span>
                   <div class="line">
                   </div>
@@ -313,7 +313,7 @@
                   </div>
                   <p>Unternehmens-<br>bereiche</p>
                 </div>
-                <div class="flex-vertical">
+                <div class="flex-vertical top">
                   <span>verwenden in verschiedenen</span>
                   <div class="line">
                   </div>
@@ -645,6 +645,10 @@ export default {
   justify-content: center;
   max-height: 100px;
   width: 25%;
+}
+
+.top{
+  margin-top: -8px;
 }
 
 .slide-container {
