@@ -142,7 +142,7 @@ export default {
 }
 
 .text{
-  margin-top:50px;
+  margin-top:30px;
 }
 
 .flex-item-40 {
