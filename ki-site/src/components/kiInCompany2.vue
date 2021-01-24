@@ -10,7 +10,7 @@
           Im Vergleich dazu verzeichnete die <b> IKT Branche </b>, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur <b> einen Wert von 9%. </b> Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. <b> 37% aller Unternehmen dieser Branche </b> setzten <b> 2018/2019 diese Technologie ein. </b>
           </p>
         </div>
-        <div class="flex-container">
+        <div class="flex-container top">
             <highcharts :options="chartOptions"></highcharts>
         </div>
     </div>
@@ -43,7 +43,7 @@ export default {
             text: ''
         },
 subtitle: {
-  text: 'Zeitraum des erstmaligen Einsatzes von KI'
+  text: ''
 },
 
         yAxis: {
@@ -199,7 +199,9 @@ subtitle: {
   height:auto;
   margin: 0 auto;
 }
-
+.top{
+margin-top: 20px;
+}
 .flex-item-80 {
     width: 90%;
     position: relative;

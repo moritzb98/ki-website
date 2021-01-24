@@ -1,13 +1,13 @@
 <template>
     <div class="site-container">
       <h2>Auswirkungen des Einsatzes von Künstlicher Intelligenz auf Personal und Investitionen</h2>
-      <h3> Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
+      <h3>Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
       <div class="flex-container zweispaltig">
         <p class="zweispaltig-text">
-        Der <b> Fahrzeugbau </b> beschäftigt im Durchschnitt <b> 30,8% hauptsächlich zu KI tätige Mitarbeiter </b> und gab einen Betrag von <b>7056 tsd. € für Investitionen in KI </b> aus.
+        Der <b> Fahrzeugbau </b> beschäftigt im Durchschnitt <b> 30,8% hauptsächlich zu KI tätige Mitarbeiter </b> und gab einen Betrag von <b>7056 tsd. € für Investitionen in KI </b> aus.Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen,
         </p>
         <p class="zweispaltig-text">
-        Konträr dazu verhält sich die Branche der <b> unternehmensnahen Dienstleistungen; 6,1% der Beschäftigten </b> befassen sich intensiver mit KI, die <b> Summe </b> der <b> für KI ausgegebenen Investitionen </b>beträgt allerdings nur <b> 93 tsd. €. </b>
+         6,1% der Beschäftigten befassen sich intensiver mit KI, die <b> Summe </b> der <b> für KI ausgegebenen Investitionen </b>beträgt allerdings nur <b> 93 tsd. €. </b>
         </p>
       </div>
         <div class="container-bubble">
@@ -1000,7 +1000,7 @@
                             <path class="st7" d="M885.5,446.2h56.6c1.1-8,1.1-27.7,1.1-92h-58.8C884.4,417.7,884.4,437.9,885.5,446.2z"/>
                             <path class="st10" d="M633.2,448.6c3.9,11.1,13.4,18.3,25.8,19.3c14.7,1.2,27.6-8,31-21.7h-57.2C632.9,447.5,633,448.1,633.2,448.6
                                 z"/>
-                            <polygon class="st10" points="703.3,500.6 781.8,500.6 781.9,466.3 787.8,466.3 793.7,466.3 793.7,500.6 872.4,500.6 872.4,446.2 
+                            <polygon class="st10" points="703.3,500.6 781.8,500.6 781.9,466.3 787.8,466.3 793.7,466.3 793.7,500.6 872.4,500.6 872.4,446.2
                                 703.2,446.2 	"/>
                             <path class="st10" d="M888.5,454.3c2.9,4.9,7.2,8.8,12.8,11.3c7.8,3.6,18,3.6,26-0.3c4.6-2.2,9.6-6.9,12-11.4
                                 c1.4-2.6,2.2-3.4,2.8-7.7h-56.6C886.1,450.7,887.1,451.7,888.5,454.3z"/>
@@ -1126,7 +1126,7 @@ export default {
             data: [{
                 name: 'IKT',
                 value: 382,
-                
+
             }]
         }, {
             name: 'Fahrzeugbau',
@@ -1134,7 +1134,7 @@ export default {
             data: [{
                 name: "Fahrzeugbau",
                 value: 7056,
-                
+
             }]
         }, {
             name: 'Elektrot./Maschinen.b.',
@@ -1149,7 +1149,7 @@ export default {
             data: [{
                 name: "Verkehr, Logistik",
                 value: 321,
-                
+
             }]
         }, {
             name: 'Finanzdienstleist.',
@@ -1157,7 +1157,7 @@ export default {
             data: [{
                 name: "Finanzdienstleist.",
                 value: 286,
-                
+
             }]
         }, {
             name: 'Chemie/Ph.',
@@ -1165,7 +1165,7 @@ export default {
             data: [{
                 name: "Chemie/Ph.",
                 value: 282,
-                
+
             }]
             }, {
             name: 'Ver-/Entsorgung.',
@@ -1173,7 +1173,7 @@ export default {
             data: [{
                 name: "Ver-/Entsorgung.",
                 value: 245,
-                
+
             }]
             }, {
             name: 'Sonst. Dienstleist.',
@@ -1181,7 +1181,7 @@ export default {
             data: [{
                 name: "Sonst. Dienstleist.",
                 value: 210,
-                
+
             }]
             }, {
             name: 'Großhandel',
@@ -1189,7 +1189,7 @@ export default {
             data: [{
                 name: "Großhandel",
                 value: 171,
-                
+
             }]
               }, {
             name: 'Sonst. Verarb. Gewerbe',
@@ -1197,7 +1197,7 @@ export default {
             data: [{
                 name: "Sonst. Verarb. Gewerbe",
                 value: 130,
-                
+
             }]
               }, {
             name: 'Untern.nahe Dienstleist.',
@@ -1205,7 +1205,7 @@ export default {
             data: [{
                 name: "Untern.nahe Dienstleist.",
                 value: 93,
-                
+
             }]
               }, {
             name: 'Gesamtwirtschaft',

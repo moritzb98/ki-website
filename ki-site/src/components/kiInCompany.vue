@@ -87,7 +87,7 @@ export default {
             series: [{
                 name: 'essenziell',
                 data: [20, 17, 17, 13, 12, 11, 10, 10, 10, 4, 0, 12],
-                color: '#88B279'
+                color: '#F3931F'
             }, {
                 name: 'wichtig',
                 data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 65],
@@ -95,7 +95,7 @@ export default {
             }, {
                 name: 'weniger wichtig',
                 data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 23],
-                color: '#8BB8C1'
+                color: '#343e62'
             }]
 
 
