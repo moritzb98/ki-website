@@ -2,7 +2,8 @@
     <div class="site-container">
         <div class="site-container-width">
             <h2 class="title-allg"> Der für KI erbrachte Arbeitsaufwand </h2>
-            <h3> Gemessen anhand der Beschäftigten mit KI-Tätigkeit je Branche in % </h3>
+            <h3> Gemessen anhand des Vergleichs der Unternehmen mit KI Einsatz und den hauptsächlich zu KI tätigen Personen
+             </h3>
             <div class="flex-container">
                 <div class="flex-item-30">
                     <p>
@@ -45,10 +46,6 @@ export default {
             title: {
                 text: ''
             },
-            subtitle: {
-              text: 'Vergleich der Unternehmen mit KI-Einsatz (in %) und den hauptsächlich zu KI tätigen Angstellten (in %)'
-            },
-
             xAxis: {
                 categories: ['IKT', 'Finanzdienstleist.', 'Untern.nahe Dienstl.', 'Elktrot. Machinen.b.', 'Fahrzeugbau', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorgungs,Bg.b', 'Sonst.Verarb.Gew.', 'Sonst. Dienstleist.', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
                 title: {

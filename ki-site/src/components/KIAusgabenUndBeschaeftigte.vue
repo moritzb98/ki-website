@@ -1094,7 +1094,8 @@ export default {
             text: ''
         },
         subtitle: {
-    text: 'Ausgaben für KI in dt. Unternehmen 2019, in tausend Euro'
+    text: 'Ausgaben für KI in dt. Unternehmen 2019, in tausend Euro',
+    verticalAlign: 'bottom',
   },
         tooltip: {
             useHTML: true,
