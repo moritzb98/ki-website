@@ -66,7 +66,7 @@ export default {
                 animation: {
                     duration: 500,
                     easing: 'easeOutBounce'
-                }
+                },
             },
             // Wasserzeichen entfernen
             credits: {
@@ -77,8 +77,8 @@ export default {
                 text: ''
             },
             subtitle: {
-    text: 'Für KI aufgewendete Ausgaben in dt. Unternehmen in 2019'
-  },
+                text: 'Für KI aufgewendete Ausgaben in dt. Unternehmen in 2019',
+            },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
             },

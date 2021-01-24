@@ -34,7 +34,7 @@
               <p>KI-Verfahren</p>
             </div>
           </div>
-            <img id="click-img" class="bild" src="../assets/Firma.svg">
+            <img id="click-img2" class="bild" src="../assets/Firma.svg">
             <img class="klick" src="../assets/tap.svg">
           </div>
          </div>
@@ -575,6 +575,9 @@ export default {
   cursor: pointer;
 }
 
+#click-img2{
+  cursor: pointer;
+}
 
 .klick{
   width: 50px;

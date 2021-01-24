@@ -127,6 +127,7 @@ export default {
   },
   mounted(){
     document.getElementById('click-img').addEventListener('click', this.nextSlide);
+    document.getElementById('click-img2').addEventListener('click', this.nextSlide);
   },
   methods: {
     toggleGlossar: function() {
