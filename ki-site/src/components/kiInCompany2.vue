@@ -4,10 +4,10 @@
         <h3> Präsentiert anhand des Zeitraums des erstmaligen Einsatzes von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="margin-bott zweispaltig-text">
-          Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der <b> erstmalige Einsatz der Technologie </b>stattgefunden hat. In Branchen wie den <b> sonstigen Dienstleistungen </b> setzen bereits <b> vor 2010 43% aller Unternehmen </b>KI ein.
+          Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der <b> erstmalige Einsatz der Technologie </b>stattgefunden hat. In Branchen wie den <b> sonstigen Dienstleistungen </b> setzen bereits <b> vor 2010 43% aller Unternehmen </b>KI ein. Im Vergleich dazu verzeichnete die <b> IKT </b>
           </p>
           <p class="margin-bott zweispaltig-text">
-          Im Vergleich dazu verzeichnete die <b> IKT Branche </b>, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur <b> einen Wert von 9%. </b> Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. <b> 37% aller Unternehmen dieser Branche </b> setzten <b> 2018/2019 diese Technologie ein. </b>
+          <b> Branche </b>, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur <b> einen Wert von 9%. </b> Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. <b> 37% aller Unternehmen dieser Branche </b> setzten <b> 2018/2019 diese Technologie ein. </b>
           </p>
         </div>
         <div class="flex-container top">
@@ -96,17 +96,17 @@ subtitle: {
       },
 
       series: [{
-              name: 'Finanzdienstleistungen',
+              name: 'Finanz-DL',
               data: [6, 19, 38, 37],
               visible: false,
               color: '#F08080',
           }, {
-              name: 'Chemie/Pharma, Grundstoffe',
+              name: 'Chemie/Pharma, Grundstoff',
               data: [11, 14, 51, 23],
               visible: false,
               color: '#76EEC6',
           }, {
-              name: 'Elektrotechnik',
+              name: 'Elektrotechn., Maschinenbau',
               data: [17, 15, 41, 27],
               visible: false,
               color: '#6495ED',
@@ -126,22 +126,22 @@ subtitle: {
               visible: false,
               color: '#3F44D5',
           }, {
-              name: 'Ver-/Entsorgung',
+              name: 'Ver-/Entsorgung, Bergbau',
               data: [12, 31, 31, 26],
               visible: false,
               color: '#FFD700',
           }, {
-              name: 'sonstige verarbeitendes Gewerbe',
+              name: 'Sonst. verarb. Gewerbe',
               data: [35, 9, 35, 21],
               visible: false,
               color: '#EE00EE',
           }, {
-              name: 'Unternehmensnahe Dienstleistungen',
+              name: 'Unternehmensnahe-DL',
               data: [24, 20, 29, 27],
               visible: false,
               color: '#3F44D5',
           }, {
-              name: 'sonstige Dienstleistungen',
+              name: 'Sonst. DL',
               data: [43, 11, 14, 32],
               visible: false,
               color: '#B3EE3A',
