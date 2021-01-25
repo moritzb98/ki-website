@@ -343,7 +343,7 @@
               </div>
                 <div class="flex-container-slide">
                   <div class="flex-item-slide-container">
-                    <div class="flex-item-slide">
+                    <div class="flex-item-slide kreisGruen">
                       <img src="../assets/machine-learning.svg">
                     </div>
                     <p class="icon-text-name">Maschinelles Lernen</p>
@@ -351,7 +351,7 @@
                     <p class="icon-text icon-text-ikt">55%</p>
                   </div>
                   <div class="flex-item-slide-container">
-                    <div class="flex-item-slide">
+                    <div class="flex-item-slide kreisGruen">
                       <img src="../assets/sound-card.svg">
                     </div>
                     <p class="icon-text-name">Bild- und Tonerkennung</p>
@@ -359,7 +359,7 @@
                     <p class="icon-text icon-text-ikt">49%</p>
                   </div>
                   <div class="flex-item-slide-container">
-                    <div class="flex-item-slide">
+                    <div class="flex-item-slide kreisGruen">
                       <img src="../assets/brain.svg">
                     </div>
                     <p class="icon-text-name">Wissensbasierte Systeme</p>
@@ -367,8 +367,8 @@
                     <p class="icon-text icon-text-ikt">46%</p>
                   </div>
                   <div class="flex-item-slide-container">
-                    <div class="flex-item-slide">
-                      <img src="../assets/translation.svg">
+                    <div class="flex-item-slide kreisGruen">
+                      <img src="../assets/alexa.svg">
                     </div>
                     <p class="icon-text-name">Sprach- oder Textverstehen</p>
                     <p class="icon-text icon-text-gesamt">23%</p>
@@ -472,6 +472,17 @@ export default {
 <style scoped>
   .allgemein:after {
     background-color: #88B279!important;
+}
+
+.kreisGruen{
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border-color: #88B279;
+  border-style: solid;
 }
 
 .values{

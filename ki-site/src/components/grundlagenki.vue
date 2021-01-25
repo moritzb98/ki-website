@@ -39,30 +39,93 @@
             </div>
         </div>
 
-        <div>
-            <h4 class="right">Verwendete Icons</h4>
+        <div calss="mittig">
+            <h4>Verwendete Icons</h4>
             <div class="cssGridIcon">
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/BRAIN SIMULATION.svg">
+              <img src="../assets/system.svg">
             </div>
-            <p class="icontext">Zeitraum der Datenerhebung</p>
+            <p class="icontext">Anwendungs- <br> bereich</p>
 
           </div>
           <div class="icon-container">
             <div class="icon">
-              <img src="../assets/BIG DATA.svg">
+              <img src="../assets/sound-card.svg">
             </div>
-            <p class="icontext">Form der Datenerhebung</p>
+            <p class="icontext">Bild-und Ton- <br>erkennung</p>
 
           </div>
           <div class="icon-container">
             <div class="icon">
-             <img src="../assets/MULTI-AGENT SYSTEM.svg">
+             <img src="../assets/data-collection.svg">
            </div>
-            <p class="icontext">KI Unternehmen</p>
-
+            <p class="icontext">Form der <br> Datener-<br>hebung</p>
           </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/de-8.png">
+           </div>
+            <p class="icontext">Gesamtwirt- <br>schaft</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/ikt-8.png">
+           </div>
+            <p class="icontext">IKT</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/ki.svg">
+           </div>
+            <p class="icontext">KI-Verfahren</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/machine-learning.svg">
+           </div>
+            <p class="icontext">Maschinelles <br> Lernen</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/alexa.svg">
+           </div>
+            <p class="icontext">Sprach-oder <br> Textverstehen</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/group.svg">
+           </div>
+            <p class="icontext">Teilnehmende Unternehmen</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/human.svg">
+           </div>
+            <p class="icontext">Unterneh- <br> mensbereiche</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/brain.svg">
+           </div>
+            <p class="icontext">Wissens-<br>basierte Unter-<br>nehmen</p>
+          </div>
+
+          <div class="icon-container">
+            <div class="icon">
+             <img src="../assets/calendar.svg">
+           </div>
+            <p class="icontext">Zeitraum der <br> Datener-<br>hebung</p>
+          </div>
+
         </div>
         </div>
 
@@ -87,12 +150,25 @@ h3{
     font-size: 2.5em;
 }
 
+.mittig{
+  text-align:center;
+  justify-content:center;
+  margin: 0 auto;
+}
+
+img{
+  width: 75px;
+  height:auto;
+  
+}
+
 p {
   font-size: 17px;
   text-align:left;
 }
 h4{
   font-size: 30px;
+  margin-bottom:40px;
 }
 h5{
   font-size: 18px;
@@ -109,9 +185,11 @@ h5{
   width: 80%;
   margin:0 auto;
   justify-content: space-between;
-  text-align: left;
-   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 10% 90%;
+  text-align: left; 
+   grid-template-rows: 1fr 1fr; 
+  grid-template-columns: 10% 90%; 
+  grid-row-gap: 5px;
+
 }
 
 .fett{
@@ -125,15 +203,19 @@ h5{
 .icon-container {
   text-align:center;
   max-width: 100px;
-  background: #41567E
+  background: #41567E;
+  margin: 0 auto;
 ;
 }
 .icon{
   background: #eef1f6;
   border-radius: 100%;
   padding: 15px;
-  width: 50%;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
+  margin-bottom: 10px;
+  
 }
 
 .glossar-content {
@@ -157,14 +239,18 @@ table{
   font-size: 15px;
   width: 100%;
   margin-bottom: 20px;
+  word-break:break-all;
+
 }
 
 .cssGridIcon{
   display:grid;
   width: 80%;
   margin:0 auto;
-   grid-template-rows: 1fr 1fr;
-  /*grid-template-columns: 10% 90%; */
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 25% 25% 25% 25%; 
+  justify-content:center;
+  text-align: center;
 }
 
 
