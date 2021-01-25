@@ -2,7 +2,7 @@
     <div id="glossar-contentID" class="site-container glossar-content">
 
     <h2>Glossar</h2>
-      <h4>Grundlagen zur Künstlichen Intelligenz</h4>
+      <h4 class="right">Grundlagen zur Künstlichen Intelligenz</h4>
 
           <p>Dieses Glossar beinhaltet sämtliche Definitionen und Hintergrundinformationen zu den Themengebieten Künstliche Intelligenz. Diese Grundlagen sollten verstanden werden, damit die auf dieser Website dargestellten Grafiken nachvollziehbar sind.
           Es ist jederzeit möglich, zurück zu dieser Seite zu springen, damit Infos nachgelesen werden können.
@@ -10,7 +10,7 @@
         <br>
         <div>
 
-            <h4> Definitionen </h4>
+            <h4 class="right"> Definitionen </h4>
               <h5><b> Künstliche Intelligenz </b></h5>
                 <p> Künstliche Intelligenz (KI) zählt heutzutage zu den entscheidendsten Schlüsseltechnologien. KI ermöglicht die Simulation von menschlicher Intelligenz, dazu gehört neben dem Lernen der Erfassung von Informationen die Schlussfolgerung, also wie wird mit Informationen umgegangen, um Rückschlüsse zu ziehen, sowie die Selbstkorrektur als abschließender Prozesspunkt.  <br>
                     <br><b> Beispiele für den KI-Einsatz in Unternehmen:</b>
@@ -20,7 +20,7 @@
                     <br>In der Fertigung: Der Einsatz von Robotern kann den Workflow vieler Prozesse verschnellern.
                 </p>
 
-            <h4>Abkürzungen</h4>
+            <h4 class="right">Abkürzungen</h4>
             <div class="cssgrid">
 
                     <div class="fett tabellentext">
@@ -40,7 +40,7 @@
         </div>
 
         <div>
-            <h4>Verwendete Icons</h4>
+            <h4 class="right">Verwendete Icons</h4>
             <div class="cssGridIcon">
           <div class="icon-container">
             <div class="icon">
@@ -100,7 +100,10 @@ h5{
   width: 80%;
   margin:0 auto;
 }
-
+.right{
+  text-align:left;
+  margin-left: 140px;
+}
 .cssgrid{
   display:grid;
   width: 80%;
