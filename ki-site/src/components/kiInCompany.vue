@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
 
-        <h2>Einfluss des Einsatzes der Künstlichen Intelligenz auf die Geschäftsfähigkeit</h2>
+        <h2 class="allgemein">Einfluss des Einsatzes der Künstlichen Intelligenz auf die Geschäftsfähigkeit</h2>
         <h3> Bestimmt anhand der Messung der Relevanz von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="zweispaltig-text">
@@ -107,6 +107,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #8BB8C1!important;
+}
+
 .flex-item {
     width: 30%;
 }

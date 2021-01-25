@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Investitionen in Künstliche Intelligenz</h2>
+      <h2 class="allgemein">Investitionen in Künstliche Intelligenz</h2>
       <h3> Präsentiert anhand der verzeichneten Ausgaben für KI je Branches
       </h3>
       <div class="flex-container zweispaltig">
@@ -271,6 +271,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #88B279!important;
+}
+
 .container{
     width: 100%;
     display:flex;

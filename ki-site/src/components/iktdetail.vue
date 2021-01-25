@@ -1,6 +1,6 @@
 <template>
     <div class="site-container site-container-larger">
-      <h2>Funktionsbereiche, die Verfahren der Künstlichen Intelligenz einsetzen</h2>
+      <h2 class="allgemein">Funktionsbereiche, die Verfahren der Künstlichen Intelligenz einsetzen</h2>
 
         <div class="slide" id="slide1">
           <div class="slide-container">
@@ -465,6 +465,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #C18BBF!important;
+}
+
 .values{
   opacity: 0;
   visibility: hidden;

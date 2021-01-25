@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Auswirkungen des Einsatzes von Künstlicher Intelligenz auf Personal und Investitionen</h2>
+      <h2 class="allgemein">Auswirkungen des Einsatzes von Künstlicher Intelligenz auf Personal und Investitionen</h2>
       <h3>Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
       <div class="flex-container zweispaltig">
         <p class="zweispaltig-text">
@@ -1224,6 +1224,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #8BB8C1!important;
+}
+
 img {
   width: 100px;
 }

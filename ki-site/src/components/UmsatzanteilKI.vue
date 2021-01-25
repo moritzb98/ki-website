@@ -136,7 +136,7 @@ export default {
   margin: 0 auto
 }
 
-  h2:after {
+  .allgemein:after {
     background-color: #88B279!important;
 }
 

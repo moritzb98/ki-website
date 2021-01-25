@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-        <h2>Zunehmende Unverzichtbarkeit der Künstlichen Intelligenz</h2>
+        <h2 class="allgemein">Zunehmende Unverzichtbarkeit der Künstlichen Intelligenz</h2>
         <h3> Präsentiert anhand des Zeitraums des erstmaligen Einsatzes von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="margin-bott zweispaltig-text">
@@ -183,6 +183,9 @@ subtitle: {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #8BB8C1!important;
+}
 
 .container{
     width: 100%;

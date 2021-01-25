@@ -1,7 +1,7 @@
 <template>
     <div class="site-container">
         <div class="site-container-width">
-            <h2 class="title-allg"> Der für Künstliche Intelligenz erbrachte Arbeitsaufwand </h2>
+            <h2 class="title-allg allgemein"> Der für Künstliche Intelligenz erbrachte Arbeitsaufwand </h2>
             <h3> Gemessen anhand des Vergleichs der Unternehmen mit KI Einsatz und den hauptsächlich zu KI tätigen Personen
              </h3>
             <div class="flex-container">
@@ -127,6 +127,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #88B279!important;
+}
 .flex-item-30 {
     width: 30%;
     margin-top: 80px;
