@@ -199,7 +199,6 @@ h5{
 
 .icon-container {
   text-align:center;
-  max-width: 100px;
   background: #41567E;
   margin: 0 auto;
 ;
@@ -211,8 +210,13 @@ h5{
   width: 80px;
   height: 80px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
-  
+}
+
+.icon img{
+  margin: auto;
 }
 
 .glossar-content {
