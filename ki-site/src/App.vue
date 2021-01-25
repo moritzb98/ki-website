@@ -17,7 +17,7 @@
       <nav id="nav">
           <ul id="myMenu">
             <li data-menuanchor="Home" class="active"><a href="#Home"><svg fill="white" height="20px" viewBox="0 0 512 512" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg></a></li>
-            <li data-menuanchor="Einfuehrung"><a href="#Einfuehrung">01</a></li>
+            <li data-menuanchor="Einfuehrung" class="active"><a href="#Einfuehrung"><img width="20px" height="20px" margin-top="7px" src="./assets/info.svg"></a></li>
             <div class="section2">
               <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">02</a>
                 <ul class="nav2 firstnav">
@@ -369,6 +369,7 @@ button:hover{
 
 #nav .active a{
   color:  #f3931f;
+  fill: #f3931f;
 }
 
 #nav .active a svg {
@@ -379,21 +380,21 @@ button:hover{
   width: 8px;
   height: 8px;
   /* Farbe navi 04 */
-  background: #90ee90;
+  background: #C18BBF;
 }
 
 .fp-viewing-AllgemeineBetrachtung #nav .firstnav li:nth-child(1) .dot, .fp-viewing-AllgemeineBetrachtungB #nav .firstnav li:nth-child(2) .dot, .fp-viewing-BedeutungVonKI #nav .firstnav li:nth-child(3) .dot{
   width: 8px;
   height: 8px;
   /* Farbe navi 02 */
-  background: #ff0000;
+  background: #88B279;
 }
 
 .fp-viewing-UmsatzanteilKI #nav .secondnav li:nth-child(1) .dot, .fp-viewing-ErstmaligerEinsatzVonKI #nav .secondnav li:nth-child(2) .dot, .fp-viewing-BeschäftigteUndUmsatz #nav .secondnav li:nth-child(3) .dot{
   width: 8px;
   height: 8px;
   /* Farbe navi 03 */
-  background: #0000ff;
+  background: #8BB8C1;
 }
 
 .fp-viewing-AllgemeineBetrachtungB #nav li:nth-child(3) a{
@@ -420,16 +421,16 @@ button:hover{
 
 #nav .section2 .active a{
   /* Farbe navi 02 */
-  color: red !important;
+  color: #88B279 !important;
 }
 
 #nav .section3 .active a{
   /* Farbe navi 03 */
-  color: blue !important;
+  color: #8BB8C1 !important;
 }
 
 #nav .section4 .active a{
   /* Farbe navi 04 */
-  color: green !important;
+  color: #C18BBF !important;
 }
 </style>

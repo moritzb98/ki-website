@@ -1,6 +1,6 @@
 <template>
     <div class="site-container">
-      <h2>Bedeutung der Künstlichen Intelligenz</h2>
+      <h2 class="allgemein">Bedeutung der Künstlichen Intelligenz</h2>
       <h3>
        Dargestellt in Form des Umsatzanteils von Produkten oder Dienstleistungen mit KI-Einsatz
       </h3>
@@ -134,6 +134,10 @@ export default {
   max-width: 1500px;
   height: 700px;
   margin: 0 auto
+}
+
+  h2:after {
+    background-color: #88B279!important;
 }
 
 .flex-item-60 {
