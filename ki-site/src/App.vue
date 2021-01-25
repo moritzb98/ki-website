@@ -27,7 +27,7 @@
             </svg>
             </a></li>
             <div class="section2">
-              <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">02</a>
+              <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">01</a>
                 <ul class="nav2 firstnav">
                   <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung"><div class="dot"></div></a></li>
                   <li class="no-connection" data-menuanchor="AllgemeineBetrachtungB"><a href="#AllgemeineBetrachtungB"><div class="dot"></div></a></li>
@@ -36,7 +36,7 @@
               </li>
             </div>
             <div class="section3">
-              <li class="no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">03</a>
+              <li class="no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">02</a>
                   <ul class="nav2 secondnav">
                   <li class="no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI"><div class="dot"></div></a></li>
                   <li class="no-connection" data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI"><div class="dot"></div></a></li>
@@ -45,7 +45,7 @@
               </li>
             </div>
             <div class="section4">
-              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">04</a>
+              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">03</a>
                 <ul class="nav2 thirdnav">
                   <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
                   <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
