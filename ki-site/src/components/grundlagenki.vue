@@ -41,7 +41,7 @@
 
         <div>
             <h4>Verwendete Icons</h4>
-            <div class="flex-container">
+            <div class="cssGridIcon">
           <div class="icon-container">
             <div class="icon">
               <img src="../assets/BRAIN SIMULATION.svg">
@@ -150,10 +150,18 @@ table{
 }
 
 .icontext{
-  text-align: center;
+  text-align: center!important;
   font-size: 15px;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.cssGridIcon{
+  display:grid;
+  width: 80%;
+  margin:0 auto;
+   grid-template-rows: 1fr 1fr; 
+  /*grid-template-columns: 10% 90%; */
 }
 
 
