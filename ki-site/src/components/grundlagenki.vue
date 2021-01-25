@@ -11,9 +11,9 @@
         <div>
 
             <h4> Definitionen </h4>
-              <h5> Künstliche Intelligenz </h5>
+              <h5><b> Künstliche Intelligenz </b></h5>
                 <p> Künstliche Intelligenz (KI) zählt heutzutage zu den entscheidendsten Schlüsseltechnologien. KI ermöglicht die Simulation von menschlicher Intelligenz, dazu gehört neben dem Lernen der Erfassung von Informationen die Schlussfolgerung, also wie wird mit Informationen umgegangen, um Rückschlüsse zu ziehen, sowie die Selbstkorrektur als abschließender Prozesspunkt.  <br>
-                    <br> Beispiele für den KI-Einsatz in Unternehmen:
+                    <br><b> Beispiele für den KI-Einsatz in Unternehmen:</b>
                     <br>Im Gesundheitswesen: Für Patienten ist es möglich, Fragen an einen Chatbot zu stellen. Dieser hat Zugriff auf Patientendaten und kann auf große Datenmengen zugreifen, damit Patienten auch von zu Hause aus beraten werden können.
                     <br>Im Finanzwesen: Auch finanzielle Beratung kann via Chatbots von Kunden eingeholt werden.
                     <br>In der Bildung: Benotungen können automatisiert von einer KI übernommen werden, damit den Lehrkräften mehr Zeit für die Betreuung der Schüler bleibt.
@@ -22,7 +22,7 @@
 
             <h4>Abkürzungen</h4>
             <div class="cssgrid">
-                
+
                     <div class="fett tabellentext">
                         IKT
                     </div>
@@ -35,7 +35,7 @@
                     <div class="tabellentext">
                         Forschung und Entwicklung
                     </div>
-                
+
             </div>
         </div>
 
@@ -106,9 +106,9 @@ h5{
   width: 80%;
   margin:0 auto;
   justify-content: space-between;
-  text-align: left; 
-   grid-template-rows: 1fr 1fr; 
-  grid-template-columns: 10% 90%; 
+  text-align: left;
+   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 10% 90%;
 }
 
 .fett{
@@ -160,7 +160,7 @@ table{
   display:grid;
   width: 80%;
   margin:0 auto;
-   grid-template-rows: 1fr 1fr; 
+   grid-template-rows: 1fr 1fr;
   /*grid-template-columns: 10% 90%; */
 }
 
