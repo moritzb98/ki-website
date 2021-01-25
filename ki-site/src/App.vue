@@ -3,7 +3,7 @@
   <div id="blurID" class="blurContainer">
   <div class="containertextblur">
     <p class="textblur"> Die IKT bildet eine besonders interessante Branche, da KI nutzende Unternhemen hier häufig Dienstleister für andere Branchen sind. Nachfolgend wird gezeigt wo Künstliche Intelligenz in der IKT aufzufinden ist.</p>
-    <button v-on:click="blureffektaus"> Los geht's!</button>
+    <button v-on:click="blureffektaus">Los geht's!</button>
   </div>
   </div>
     <div id="blurdiv">
@@ -292,7 +292,7 @@ button{
   text-align: center;
   width: auto;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 16px;
   background-color: #88B279; 
   border: none;
