@@ -702,7 +702,7 @@ video{
 }
 
 .cls-12, .cls-4 {
-  fill: #a5bcca;
+  fill: white;
 }
 
 .cls-4 {
