@@ -14,10 +14,10 @@
               <h5><b> Künstliche Intelligenz </b></h5>
                 <p> Künstliche Intelligenz (KI) zählt heutzutage zu den entscheidendsten Schlüsseltechnologien. KI ermöglicht die Simulation von menschlicher Intelligenz, dazu gehört neben dem Lernen der Erfassung von Informationen die Schlussfolgerung, also wie wird mit Informationen umgegangen, um Rückschlüsse zu ziehen, sowie die Selbstkorrektur als abschließender Prozesspunkt.  <br>
                     <br><b> Beispiele für den KI-Einsatz in Unternehmen:</b>
-                    <br>Im Gesundheitswesen: Für Patienten ist es möglich, Fragen an einen Chatbot zu stellen. Dieser hat Zugriff auf Patientendaten und kann auf große Datenmengen zugreifen, damit Patienten auch von zu Hause aus beraten werden können.
-                    <br>Im Finanzwesen: Auch finanzielle Beratung kann via Chatbots von Kunden eingeholt werden.
-                    <br>In der Bildung: Benotungen können automatisiert von einer KI übernommen werden, damit den Lehrkräften mehr Zeit für die Betreuung der Schüler bleibt.
-                    <br>In der Fertigung: Der Einsatz von Robotern kann den Workflow vieler Prozesse verschnellern.
+                    <br><b>Im Gesundheitswesen:</b> Für Patienten ist es möglich, Fragen an einen Chatbot zu stellen. Dieser hat Zugriff auf Patientendaten und kann auf große Datenmengen zugreifen, damit Patienten auch von zu Hause aus beraten werden können.
+                    <br><b>Im Finanzwesen:</b> Auch finanzielle Beratung kann via Chatbots von Kunden eingeholt werden.
+                    <br><b>In der Bildung:</b> Benotungen können automatisiert von einer KI übernommen werden, damit den Lehrkräften mehr Zeit für die Betreuung der Schüler bleibt.
+                    <br><b>In der Fertigung:</b> Der Einsatz von Robotern kann den Workflow vieler Prozesse verschnellern.
                 </p>
 
             <h4 class="right">Abkürzungen</h4>
@@ -159,7 +159,7 @@ h3{
 img{
   width: 75px;
   height:auto;
-  
+
 }
 
 p {
@@ -183,11 +183,11 @@ h5{
 .cssgrid{
   display:grid;
   width: 80%;
-  margin:0 auto;
+  margin: auto;
   justify-content: space-between;
-  text-align: left; 
-   grid-template-rows: 1fr 1fr; 
-  grid-template-columns: 10% 90%; 
+  text-align: left;
+   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 10% 90%;
   grid-row-gap: 5px;
 
 }
@@ -251,8 +251,8 @@ table{
   display:grid;
   width: 80%;
   margin:0 auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  grid-template-columns: 25% 25% 25% 25%; 
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
   justify-content:center;
   text-align: center;
 }
