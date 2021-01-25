@@ -876,6 +876,7 @@ svg{
 .flex-oben{
   justify-content: space-between;
   width: 900px;
+  margin-top: 50px;
 }
 
 .flex-unten{
@@ -1002,5 +1003,9 @@ svg{
 
 .gesamt{
   transition: all 0.5s;
+}
+
+#firma-svg{
+  height: 630px;
 }
 </style>
