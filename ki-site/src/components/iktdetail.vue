@@ -594,7 +594,7 @@ export default {
   width: 50px;
   height: auto;
   z-index:1;
-  position:absolute;top:600px;left:950px;
+  position:absolute;top:550px;left:1000px;
 }
 
 .icon-text{

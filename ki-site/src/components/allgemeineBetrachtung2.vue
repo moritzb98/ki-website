@@ -132,7 +132,7 @@ export default {
 }
 .flex-item-30 {
     width: 30%;
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 .flex-item-70 {
