@@ -5,10 +5,10 @@
         <h3> Bestimmt anhand der Messung der Relevanz von KI</h3>
         <div class="flex-container zweispaltig">
           <p class="zweispaltig-text">
-          Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem <b> Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. </b> Das bedeutet, dass <b> KI </b> für diese Unternehmen <b> deutliche Verbesserungen </b> mit sich <b> bringt, </b> indem KI Geschäftsprozesse oder Produktionsaktivitäten <b> schneller, genauer, flexibler, zuverlässiger oder kostengünstiger </b> macht oder die <b> Kapazitäten erhöht. </b>
+          Die Bedeutung von KI für die Geschäftsfähigkeit wird von einem <b> Großteil (77%) der Unternehmen als mindestens wichtig eingeschätzt. </b> Das bedeutet, dass <b> KI </b> für diese Unternehmen <b> deutliche Verbesserungen </b> mit sich <b> bringt, </b> indem KI Geschäftsprozesse oder Produktionsaktivitäten <b> schneller, genauer, flexibler, zuverlässiger oder kostengünstiger </b> macht oder die <b> Kapazitäten erhöht.</b><b> 12 % der KI einsetzenden Unternehmen</b> geben an,
           </p>
           <p class="zweispaltig-text">
-          <b> 12 % der KI einsetzenden Unternehmen</b> geben an, dass KI sogar <b> essenziell für ihre Geschäftstätigkeit ist, </b> d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp <b>ein Viertel </b> stuft KI dagegen als <b>weniger wichtig </b> ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.
+          dass KI sogar <b> essenziell für ihre Geschäftstätigkeit ist, </b> d.h. ohne KI könnten die entsprechenden Aktivitäten gar nicht ausgeführt werden. Knapp <b>ein Viertel </b> stuft KI dagegen als <b>weniger wichtig </b> ein, d.h. KI könnte in diesen Unternehmen auch leicht und ohne wesentliche Einbußen durch andere Methoden ersetzt werden.
           </p>
         </div>
         <div class="flex-container margin-top container-new">
@@ -44,7 +44,7 @@ export default {
                 text: ''
             },
             xAxis: {
-                categories: ['Sonstige Dienstleistungen', 'Großhandel', 'IKT', 'Sonst. Verarb. Gew.', 'Elektrot./Maschinenb.', 'Chemie/Ph., Gr.st.', 'Ver-/Entsorg., Bg.b.', 'Unter.nahe Dienstl.', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanzdienstleisut.', 'Gesamtwirtschaft'],
+                categories: ['Sonst. DL', 'Großhandel', 'IKT', 'Sonst. verarb. Gewerbe', 'Elektrotechn., Maschinenbau', 'Chemie/Pharma, Grundstoff ', 'Ver-/Entsorgung, Bergbau', 'Unternehmensnahe-DL', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanz-DL', 'Gesamtwirtschaft'],
                 labels:{
                     style:{
                         color: 'white',
