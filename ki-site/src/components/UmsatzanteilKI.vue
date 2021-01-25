@@ -117,7 +117,7 @@ export default {
                 this.chart1.series.push({
                     name: 'Umsatz aller Unternehmen',
                     data: [3.3, 3.0, 2.1, 1.3 , 0.9, 0.8, 0.7, 0.6 , 0.5, 0.5, 0.4, 1.1],
-                    color: '#41567E'
+                    color: '#8BB8C1'
                 })
                 this.created = true;
             }
@@ -137,7 +137,7 @@ export default {
 }
 
   .allgemein:after {
-    background-color: #88B279!important;
+    background-color: #8BB8C1!important;
 }
 
 .flex-item-60 {

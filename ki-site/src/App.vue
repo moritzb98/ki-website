@@ -294,7 +294,7 @@ button{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background-color: #41567E; 
+  background-color: #88B279; 
   border: none;
   color: white;
   padding: 10px 25px;
@@ -305,7 +305,7 @@ button{
 }
 
 button:hover{
-  background-color: #4a5a77;
+  background-color: #94bd85;
 }
 
 .containertextblur{
@@ -392,21 +392,21 @@ button:hover{
   width: 8px;
   height: 8px;
   /* Farbe navi 04 */
-  background: #C18BBF;
+  background: #88B279;
 }
 
 .fp-viewing-AllgemeineBetrachtung #nav .firstnav li:nth-child(1) .dot, .fp-viewing-AllgemeineBetrachtungB #nav .firstnav li:nth-child(2) .dot, .fp-viewing-BedeutungVonKI #nav .firstnav li:nth-child(3) .dot{
   width: 8px;
   height: 8px;
   /* Farbe navi 02 */
-  background: #88B279;
+  background: #8BB8C1;
 }
 
 .fp-viewing-UmsatzanteilKI #nav .secondnav li:nth-child(1) .dot, .fp-viewing-ErstmaligerEinsatzVonKI #nav .secondnav li:nth-child(2) .dot, .fp-viewing-BeschäftigteUndUmsatz #nav .secondnav li:nth-child(3) .dot{
   width: 8px;
   height: 8px;
   /* Farbe navi 03 */
-  background: #8BB8C1;
+  background: #C18BBF;
 }
 
 .fp-viewing-AllgemeineBetrachtungB #nav li:nth-child(3) a{
@@ -433,17 +433,17 @@ button:hover{
 
 #nav .section2 .active a{
   /* Farbe navi 02 */
-  color: #88B279 !important;
+  color: #8BB8C1 !important;
 }
 
 #nav .section3 .active a{
   /* Farbe navi 03 */
-  color: #8BB8C1 !important;
+  color: #C18BBF !important;
 }
 
 #nav .section4 .active a{
   /* Farbe navi 04 */
-  color: #C18BBF !important;
+  color: #88B279 !important;
 }
 
 .st0{fill:#FFFFFF;}

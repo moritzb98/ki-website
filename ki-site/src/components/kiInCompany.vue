@@ -91,7 +91,7 @@ export default {
             }, {
                 name: 'wichtig',
                 data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 65],
-                color: '#C18BBF'
+                color: '#8BB8C1'
             }, {
                 name: 'weniger wichtig',
                 data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 23],
@@ -108,7 +108,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .allgemein:after {
-    background-color: #8BB8C1!important;
+    background-color: #C18BBF!important;
 }
 
 .flex-item {
@@ -158,7 +158,7 @@ export default {
 }
 
 .counter-animate:before {
-    color: #e48d26;
+    color: #C18BBF;
     content: counter(count) '%';
     animation: counter 4s linear;
     animation-fill-mode: forwards;

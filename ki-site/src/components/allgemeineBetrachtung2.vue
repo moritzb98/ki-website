@@ -111,7 +111,7 @@ export default {
                 this.chartOptions.series.push({
                     name: 'Unternehmen mit KI-Einsatz',
                     data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 5.8],
-                    color: '#343e62'
+                    color: '#8BB8C1'
                 });
                 this.chartOptions.series.push({
                     name: 'Hauptsächlich zu KI tätige Personen',
@@ -128,7 +128,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .allgemein:after {
-    background-color: #88B279!important;
+    background-color: #8BB8C1!important;
 }
 .flex-item-30 {
     width: 30%;

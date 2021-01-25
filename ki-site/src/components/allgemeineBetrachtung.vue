@@ -272,7 +272,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .allgemein:after {
-    background-color: #88B279!important;
+    background-color: #8BB8C1!important;
 }
 
 .container{
