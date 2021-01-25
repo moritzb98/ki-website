@@ -216,10 +216,11 @@
                 <div class="flex-item-slide3">
                   <div v-on:click="toggle(0)" class="icons-con">
                       <div class="icons">
-                        <div class="opacitydiv opacityde opacity35"></div>
-                        <img class="gesamt" src="../assets/de-8.png">
+                        
                         <div class="opacitydiv opacityall opacity50"></div>
                         <img class="ikt" src="../assets/ikt-8.png">
+                        <div class="opacitydiv opacityde opacity35"></div>
+                        <img class="gesamt" src="../assets/de-8.png">
                       </div>
                       <div class="values">
                         <span>66%</span>
@@ -231,10 +232,11 @@
                 <div class="flex-item-slide3">
                   <div v-on:click="toggle(1)" class="icons-con">
                     <div class="icons">
-                      <div class="opacitydiv opacityde opacity40"></div>
-                      <img class="gesamt" src="../assets/de-8.png">
+                      
                       <div class="opacitydiv opacityall opacity50"></div>
                       <img class="ikt" src="../assets/ikt-8.png">
+                      <div class="opacitydiv opacityde opacity40"></div>
+                      <img class="gesamt" src="../assets/de-8.png">
                     </div>
                     <div class="values">
                       <span>54%</span>
@@ -246,10 +248,11 @@
                 <div class="flex-item-slide3">
                 <div v-on:click="toggle(2)" class="icons-con">
                   <div class="icons">
-                    <div class="opacitydiv opacityde opacity50"></div>
-                    <img class="gesamt" src="../assets/de-8.png">
+                    
                     <div class="opacitydiv opacityall opacity60"></div>
                     <img class="ikt" src="../assets/ikt-8.png">
+                    <div class="opacitydiv opacityde opacity50"></div>
+                    <img class="gesamt" src="../assets/de-8.png">
                   </div>
                   <div class="values">
                     <span>35%</span>
@@ -263,10 +266,11 @@
                 <div v-on:click="toggle(3)" class="flex-item-slide3">
                   <div class="icons-con">
                   <div class="icons">
-                    <div class="opacitydiv opacityde opacity65"></div>
-                    <img class="gesamt" src="../assets/de-8.png">
+                    
                     <div class="opacitydiv opacityall opacity65"></div>
                     <img class="ikt" src="../assets/ikt-8.png">
+                    <div class="opacitydiv opacityde opacity60"></div>
+                    <img class="gesamt" src="../assets/de-8.png">
                   </div>
                   <div class="values">
                     <span>9%</span>
@@ -278,10 +282,11 @@
                 <div class="flex-item-slide3">
                   <div v-on:click="toggle(4)" class="icons-con">
                   <div class="icons">
-                    <div class="opacitydiv opacityde opacity65"></div>
-                    <img class="gesamt" src="../assets/de-8.png">
-                    <div  class="opacitydiv opacityall opacity68"></div>
+                    
+                    <div  class="opacitydiv opacityall opacity65"></div>
                     <img class="ikt" src="../assets/ikt-8.png">
+                    <div class="opacitydiv opacityde opacity60"></div>
+                    <img class="gesamt" src="../assets/de-8.png">
                   </div>
                   <div class="values">
                     <span>11%</span>
@@ -402,14 +407,14 @@ export default {
     disableGesamt: function(){
       var el = document.getElementsByClassName('cls-19');
       for(var i = 0; i<el.length; i++){
-        el[i].classList.toggle('hide');
+        el[i].classList.toggle('hide-click');
       }
       document.getElementsByClassName('cls-27')[0].classList.toggle('disable');
     },
     disableIkt: function(){
       var el = document.getElementsByClassName('cls-18');
       for(var i = 0; i<el.length; i++){
-        el[i].classList.toggle('hide');
+        el[i].classList.toggle('hide-click');
       }
       document.getElementsByClassName('cls-26')[0].classList.toggle('disable');
     },
@@ -417,7 +422,7 @@ export default {
     disableGesamt3: function(){
       var el = document.getElementsByClassName('icon-text-gesamt');
       for(var i = 0; i<el.length; i++){
-        el[i].classList.toggle('hide');
+        el[i].classList.toggle('hide-click');
       }
       document.getElementsByClassName('cls-2-b')[0].classList.toggle('disable');
     },
@@ -425,7 +430,7 @@ export default {
     disableIkt3: function(){
       var el = document.getElementsByClassName('icon-text-ikt');
       for(var i = 0; i<el.length; i++){
-        el[i].classList.toggle('hide');
+        el[i].classList.toggle('hide-click');
       }
       document.getElementsByClassName('cls-1-b')[0].classList.toggle('disable');
     },
@@ -444,7 +449,7 @@ export default {
     disableGesamt2: function(){
       var el = document.getElementsByClassName('gesamt');
       for(var i = 0; i<el.length; i++){
-        el[i].classList.toggle('hide');
+        el[i].classList.toggle('hide-click');
       }
       document.getElementsByClassName('cls-2-a')[0].classList.toggle('disable');
     },
@@ -452,7 +457,7 @@ export default {
     disableIkt2: function(){
       var el = document.getElementsByClassName('ikt');
       for(var i = 0; i<el.length; i++){
-        el[i].classList.toggle('hide');
+        el[i].classList.toggle('hide-click');
       }
       document.getElementsByClassName('cls-1-a')[0].classList.toggle('disable');
     },
@@ -482,6 +487,7 @@ export default {
 
 .text{
   text-align: center;
+  margin-top: 0px;
 }
 
 .text-bold{
@@ -493,8 +499,7 @@ export default {
 }
 
 .icons-con:hover .icons{
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0.3;
 }
 
 .icons-con:hover .values{
@@ -508,8 +513,7 @@ export default {
 }
 
 .icons-hide{
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0.3;
 }
 
 .values-show{
@@ -701,7 +705,7 @@ video{
 }
 
 .cls-12, .cls-4 {
-  fill: #a5bcca;
+  fill: white;
 }
 
 .cls-4 {
@@ -825,7 +829,13 @@ video{
 
 svg{
   width: 800px;
-  margin-top: -40px;
+  margin-top: -80px; 
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-size{
@@ -837,6 +847,10 @@ svg{
 }
 
 .hide{
+  opacity: 0.3;
+}
+
+.hide-click{
   opacity: 0;
 }
 
@@ -871,7 +885,6 @@ svg{
 }
 
 .opacityall{
-  right: 0;
   top: 0;
 }
 
@@ -909,6 +922,11 @@ svg{
 
 .opacity20{
   height: 20%;
+}
+
+.opacityde{
+  right: 0;
+  top: 0;
 }
 
 .svg-button{
