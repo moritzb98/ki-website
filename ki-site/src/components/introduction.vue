@@ -109,7 +109,9 @@ img {
   width: 50px;
   height: auto;
   z-index:1;
-  position:absolute;top:680px;left:1280px;
+  position:absolute;
+  top: 680px;
+  right: 150px;
 }
 
 .zweispaltig{
