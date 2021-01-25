@@ -482,6 +482,7 @@ export default {
 
 .text{
   text-align: center;
+  margin-top: 0px;
 }
 
 .text-bold{
@@ -825,7 +826,13 @@ video{
 
 svg{
   width: 800px;
-  margin-top: -40px;
+  margin-top: -80px; 
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-size{
