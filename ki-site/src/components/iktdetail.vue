@@ -34,7 +34,9 @@
               <p>KI-Verfahren</p>
             </div>
           </div>
-            <img id="click-img2" class="bild" src="../assets/Firma.svg">
+            <div class="firma-container">
+              <img id="click-img2" class="bild" src="../assets/Firma.svg">
+            </div>
             <img class="klick" src="../assets/tap.svg">
           </div>
          </div>
@@ -72,6 +74,7 @@
                 </div>
               </div>
               <!-- SVG ALLE DATEN -->
+              <div class="firma-container">
               <svg id="firma-svg" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297 210">
               <title>Firma</title>
                 <g>
@@ -178,6 +181,7 @@
                 <text class="cls-28" transform="translate(133.69 186.1)">IKT</text>
                 <text class="cls-28" transform="translate(177.72 186.1)">Gesamtwi<tspan class="cls-23" x="26.96" y="0">r</tspan><tspan x="29.11" y="0">tschaft</tspan></text>
               </svg>
+              </div>
             </div>
          </div>
          <div class="slide" id="slide1">
@@ -591,10 +595,9 @@ export default {
 }
 
 .bild{
-  width: 800px;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index:0;
-  margin-top:-40px;
 }
 
 #click-img{
@@ -1006,6 +1009,14 @@ svg{
 }
 
 #firma-svg{
-  height: 630px;
+  position: unset;
+  height: 100%;
+  margin: auto;
+}
+
+.firma-container{
+  width: 800px;
+  height: 560px;
+  margin-top: -50px;
 }
 </style>
