@@ -13,7 +13,7 @@
           <div class="circle-container">
             <div class="icon">
               <div class="kreisOrange">
-                <img class="BildIcon" src="../assets/BRAIN SIMULATION.svg">
+                <img class="BildIcon" src="../assets/calendar.svg">
               </div>
               </div>
             </div>
@@ -31,7 +31,7 @@
           <div class="circle-container">
             <div class="icon">
             <div class="kreisOrange">
-              <img class="BildIcon" src="../assets/BIG DATA.svg">
+              <img class="BildIcon" src="../assets/data-collection.svg">
               </div>
             </div>
             </div>
@@ -47,7 +47,7 @@
           <div class="circle-container">
             <div class="icon">
             <div class="kreisOrange">
-             <img class="BildIcon" src="../assets/BRAIN MACHINE INTERFACE.svg">
+             <img class="BildIcon" src="../assets/group.svg">
            </div>
            </div>
            </div>
