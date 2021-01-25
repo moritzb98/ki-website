@@ -1137,10 +1137,10 @@ export default {
 
             }]
         }, {
-            name: 'Elektrot./Maschinen.b.',
+            name: 'Elektrotechn., Maschinenbau',
             color: '#6495ED',
             data: [{
-                name: "Elektrot./Maschinen.b.",
+                name: "Elektrotechn., Maschinenbau",
                 value: 718,
             }]
         }, {
@@ -1152,34 +1152,34 @@ export default {
 
             }]
         }, {
-            name: 'Finanzdienstleist.',
+            name: 'Finanz-DL',
             color: '#F08080',
             data: [{
-                name: "Finanzdienstleist.",
+                name: "Finanz-DL",
                 value: 286,
 
             }]
         }, {
-            name: 'Chemie/Ph.',
+            name: 'Chemie/Pharma, Grundstoff',
             color: '#76EEC6',
             data: [{
-                name: "Chemie/Ph.",
+                name: "Chemie/Pharma, Grundstoff",
                 value: 282,
 
             }]
             }, {
-            name: 'Ver-/Entsorgung.',
+            name: 'Ver-/Entsorgung, Bergbau',
             color: '#00CED1',
             data: [{
-                name: "Ver-/Entsorgung.",
+                name: "Ver-/Entsorgung, Bergbau",
                 value: 245,
 
             }]
             }, {
-            name: 'Sonst. Dienstleist.',
+            name: 'Sonst. DL',
             color: '#8A2BE2',
             data: [{
-                name: "Sonst. Dienstleist.",
+                name: "Sonst. DL",
                 value: 210,
 
             }]
@@ -1192,18 +1192,18 @@ export default {
 
             }]
               }, {
-            name: 'Sonst. Verarb. Gewerbe',
+            name: 'Sonst. verarb. Gewerbe',
             color: '#EE00EE',
             data: [{
-                name: "Sonst. Verarb. Gewerbe",
+                name: "Sonst. verarb. Gewerbe",
                 value: 130,
 
             }]
               }, {
-            name: 'Untern.nahe Dienstleist.',
+            name: 'Unternehmensnahe-DL',
             color: '#B3EE3A',
             data: [{
-                name: "Untern.nahe Dienstleist.",
+                name: "Unternehmensnahe-DL",
                 value: 93,
 
             }]

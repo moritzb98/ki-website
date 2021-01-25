@@ -161,7 +161,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'Elektrotechnik, Maschinenbau',
+                        name: 'Elektrotechn., Maschinenbau',
                         y: 0.68,
                         x: 0.17,
                         color: '#6495ED',
@@ -181,7 +181,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'Unternehmensnahe Dienstleistungen',
+                        name: 'Unternehmensnahe-DL',
                         y: 0.65,
                         x: 0.29,
                         color: '#B3EE3A',
@@ -191,7 +191,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'sonstiges verarbeitendes Gewerbe',
+                        name: 'Sonst. verarb. Gewerbe',
                         y: 0.26,
                         x: 0.04,
                         color: '#EE00EE',
@@ -201,7 +201,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'Finanzdiensleistungen',
+                        name: 'Finanz-DL',
                         y: 0.24,
                         x: 0.04,
                         color: '#F08080',
@@ -211,7 +211,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'sonstige Dienstleistungen',
+                        name: 'Sonst. DL',
                         y: 0.19,
                         x: 0.12,
                         color: '#8A2BE2',
@@ -221,7 +221,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'Verkehr- und Logistik',
+                        name: 'Verkehr, Logistik',
                         y: 0.16,
                         x: 0.06,
                         color: '#FFD700',
@@ -231,7 +231,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'Chemie/Pharma, Grundstoffe',
+                        name: 'Chemie/Pharma, Grundstoff',
                         y: 0.14,
                         x: 0.03,
                         color: '#76EEC6',
@@ -241,7 +241,7 @@ export default {
                             }
                         }
                     }, {
-                        name: 'Ver- und Entsorgung, Bergbau',
+                        name: 'Ver-/Entsorgung, Bergbau',
                         y: 0.07,
                         x: 0.01,
                         color: '#00CED1',
