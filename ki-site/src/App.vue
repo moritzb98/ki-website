@@ -16,7 +16,12 @@
       
       <nav id="nav">
           <ul id="myMenu">
-            <li data-menuanchor="Home" class="active"><a href="#Home"><svg fill="white" height="20px" viewBox="0 0 512 512" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg></a></li>
+          <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <li  v-bind="attrs" v-on="on" tooltip="test" data-menuanchor="Home" class="active home"><a href="#Home"><svg fill="white" height="20px" viewBox="0 0 512 512" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg></a></li>
+            </template>
+            <span>Tooltip</span>
+            </v-tooltip>
             <li data-menuanchor="Einfuehrung" class="active"><a href="#Einfuehrung"><svg class="info" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>
               <g>
                 <path class="st0" d="M437,75C388.7,26.6,324.4,0,256,0S123.3,26.6,75,75C26.6,123.3,0,187.6,0,256s26.6,132.7,75,181
@@ -27,7 +32,7 @@
             </svg>
             </a></li>
             <div class="section2">
-              <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">01</a>
+              <li class="allgemein no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung">01</a>
                 <ul class="nav2 firstnav">
                   <li class="no-connection" data-menuanchor="AllgemeineBetrachtung"><a href="#AllgemeineBetrachtung"><div class="dot"></div></a></li>
                   <li class="no-connection" data-menuanchor="AllgemeineBetrachtungB"><a href="#AllgemeineBetrachtungB"><div class="dot"></div></a></li>
@@ -36,7 +41,7 @@
               </li>
             </div>
             <div class="section3">
-              <li class="no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">02</a>
+              <li class="KiDetail no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI">02</a>
                   <ul class="nav2 secondnav">
                   <li class="no-connection" data-menuanchor="UmsatzanteilKI"><a href="#UmsatzanteilKI"><div class="dot"></div></a></li>
                   <li class="no-connection" data-menuanchor="ErstmaligerEinsatzVonKI"><a href="#ErstmaligerEinsatzVonKI"><div class="dot"></div></a></li>
@@ -45,7 +50,7 @@
               </li>
             </div>
             <div class="section4">
-              <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">03</a>
+              <li class="IKTDetail no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich">03</a>
                 <ul class="nav2 thirdnav">
                   <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich"><div class="dot"></div></a></li>
                   <li class="no-connection" data-menuanchor="Funktionsbereich"><a href="#Funktionsbereich/1"><div class="dot"></div></a></li>
@@ -252,6 +257,23 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import './main.css';
 
+.home:hover{
+
+}
+
+.allgemein:hover{
+  
+}
+
+.KiDetail:hover{
+  
+}
+
+.IKTDetail:hover{
+  
+}
+
+
 #nav {
   position: fixed;
   z-index: 200;
@@ -449,4 +471,6 @@ button:hover{
 .st0{fill:#FFFFFF;}
 
 .info{width: 18px; margin-bottom: -3px;}
+
+ 
 </style>
