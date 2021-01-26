@@ -178,7 +178,7 @@ export default {
 }
 
 .container-new{
-    width: 80%;
+    width: 1200px;
     margin: auto;
     margin-top: 40px;
 }

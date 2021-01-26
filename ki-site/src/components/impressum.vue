@@ -109,7 +109,7 @@
             retina_detect: true
           }"
         />
-      <h1 class="site-header">Impressum</h1>
+      <h2 class="site-header">Impressum</h2>
         <div class="flex-container impressum-site-container">
           <div class="impressum-flex-item">
             <h3>Projekinformationen</h3>
