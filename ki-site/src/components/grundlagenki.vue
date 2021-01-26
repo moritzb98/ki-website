@@ -41,10 +41,38 @@
                     <div class="tabellentext">
                         Dienstleistung
                     </div>
+            </div>
 
+            <h4 class="right">Inhaltsabschnitte der Webseite</h4>
+            <div class="cssgrid">
 
+                    <div class="kreis0">                        
+                    </div>
+                    <div class="tabellentext">
+                        Allgemeines
+                    </div>
+
+                    <div class="kreis1">                        
+                    </div>
+                    <div class="tabellentext">
+                      Allgemeine Betrachtung KI Nutzung in der deutschen Wirtschaft
+                    </div>
+
+                    <div class="kreis2">      
+                    </div>
+                    <div class="tabellentext">
+                        Betrachtung der KI einsetzenden Unternehmen
+                    </div>
+
+                    <div class="kreis3">     
+                    </div>
+                    <div class="tabellentext">
+                        KI Nutzung in der IKT Branche
+                    </div>
             </div>
         </div>
+
+        
 
         <div calss="mittig">
             <h4>Verwendete Icons</h4>
@@ -109,7 +137,7 @@
             <div class="icon">
              <img src="../assets/group.svg">
            </div>
-            <p class="icontext">Teilnehmende <br> Unternehmen</p>
+            <p class="icontext">Teilnehmende Unternehmen</p>
           </div>
 
           <div class="icon-container">
@@ -157,6 +185,34 @@ h3{
     font-size: 2.5em;
 }
 
+.kreis0 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #f3931f
+}
+
+.kreis1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #8BB8C1
+}
+
+.kreis2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #C18BBF
+}
+
+.kreis3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #88B279
+}
+
 .mittig{
   text-align:center;
   justify-content:center;
@@ -175,7 +231,8 @@ p {
 }
 h4{
   font-size: 30px;
-  margin-bottom:40px;
+  margin-bottom:20px;
+  margin-top:40px;
 }
 h5{
   font-size: 18px;
@@ -193,9 +250,10 @@ h5{
   margin: auto;
   justify-content: space-between;
   text-align: left;
-   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 10% 90%;
-  grid-row-gap: 5px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 7% 93%;
+  grid-row-gap: 20px;
+  column-gap: 3px;
 
 }
 
@@ -205,6 +263,9 @@ h5{
 
 .tabellentext{
     text-align: left;
+   align-items: center;
+   justify-content:center;
+   margin: auto 0;
 }
 
 .icon-container {
