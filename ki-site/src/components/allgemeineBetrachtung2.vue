@@ -41,13 +41,13 @@ export default {
                 // Hintergrundfarbe
                 backgroundColor: "none",
                 width:800,
-                height:600
+                height:570
             },
             title: {
                 text: ''
             },
             xAxis: {
-                categories: ['IKT', 'Finanz-DL', 'Unternehmensnahe-DL', 'Elektrotechn., Maschinenbau', 'Fahrzeugbau', 'Chemie/Pharma, Grundstoff', 'Ver-/Entsorgung, Bergbau', 'Sonst. verarb. Gewerbe', 'Sonst. DL', 'Verkehr, Logistik', 'Großhandel', 'Gesamtwirtschaft'],
+                categories: ['IKT', 'Finanz-DL', 'Unternehmensnahe-DL', 'Elektrotechn., Maschinenbau', 'Fahrzeugbau', 'Chemie/Pharma, Grundstoff', 'Ver-/Entsorgung, Bergbau', 'Sonst. verarb. Gewerbe', 'Sonst. DL', 'Verkehr, Logistik', 'Großhandel','', 'Gesamtwirtschaft'],
                 title: {
                     text: null
                 },
@@ -110,12 +110,12 @@ export default {
             if(!this.created){
                 this.chartOptions.series.push({
                     name: 'Unternehmen mit KI-Einsatz',
-                    data: [{y:17.8, color: '#8BB8C1'} , {y:12.2, color: '#8BB8C1'}, {y:11.1, color: '#8BB8C1'}, {y:6.8, color: '#8BB8C1'}, {y:5.1, color: '#8BB8C1'}, {y:4.6, color: '#8BB8C1'}, {y:3.6,color: '#8BB8C1'}, {y:3.3, color: '#8BB8C1'}, {y:2.5, color: '#8BB8C1'}, {y:1.5, color: '#8BB8C1'}, {y:1.0, color:'#8BB8C1'},{y:5.8, color: '#3F44D5'}],
+                    data: [{y:17.8, color: '#8BB8C1'} , {y:12.2, color: '#8BB8C1'}, {y:11.1, color: '#8BB8C1'}, {y:6.8, color: '#8BB8C1'}, {y:5.1, color: '#8BB8C1'}, {y:4.6, color: '#8BB8C1'}, {y:3.6,color: '#8BB8C1'}, {y:3.3, color: '#8BB8C1'}, {y:2.5, color: '#8BB8C1'}, {y:1.5, color: '#8BB8C1'}, {y:1.0, color:'#8BB8C1'},{y:0}, {y:5.8, color: '#8BB8C1'}],
                     color: '#8BB8C1'
                 });
                 this.chartOptions.series.push({
                     name: 'Hauptsächlich zu KI tätige Personen',
-                    data: [{y:1.51, color: '#C18BBF'}, {y:0.28,color: '#C18BBF'}, {y:0.88, color: '#C18BBF'}, {y:0.35, color: '#C18BBF'}, {y:0.10, color: '#C18BBF'}, {y:0.08, color: '#C18BBF'}, {y:0.08, color: '#C18BBF'}, {y:0.12,color: '#C18BBF'}, {y:0.10, color: '#C18BBF'}, {y:0.05, color: '#C18BBF'}, {y:0.05, color: '#C18BBF'}, {y:0.31, color: '#D673A1'} ],
+                    data: [{y:1.51, color: '#C18BBF'}, {y:0.28,color: '#C18BBF'}, {y:0.88, color: '#C18BBF'}, {y:0.35, color: '#C18BBF'}, {y:0.10, color: '#C18BBF'}, {y:0.08, color: '#C18BBF'}, {y:0.08, color: '#C18BBF'}, {y:0.12,color: '#C18BBF'}, {y:0.10, color: '#C18BBF'}, {y:0.05, color: '#C18BBF'}, {y:0.05, color: '#C18BBF'}, {y:0} ,{y:0.31, color: '#C18BBF'} ],
                     color: '#C18BBF'
                 })
                 this.created = true;

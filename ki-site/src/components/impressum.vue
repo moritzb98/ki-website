@@ -174,7 +174,7 @@ export default {
   position: absolute;
   z-index: 500;
   width: 100%;
-  height: 60%;
+  height: 55%;
   align-items: bottom;
   position: absolute;
   bottom: 0;

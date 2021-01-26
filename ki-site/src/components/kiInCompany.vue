@@ -44,7 +44,7 @@ export default {
                 text: ''
             },
             xAxis: {
-                categories: ['Sonst. DL', 'Großhandel', 'IKT', 'Sonst. verarb. Gewerbe', 'Elektrotechn., Maschinenbau', 'Chemie/Pharma, Grundstoff ', 'Ver-/Entsorgung, Bergbau', 'Unternehmensnahe-DL', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanz-DL', 'Gesamtwirtschaft'],
+                categories: ['Sonst. DL', 'Großhandel', 'IKT', 'Sonst. verarb. Gewerbe', 'Elektrotechn., Maschinenbau', 'Chemie/Pharma, Grundstoff ', 'Ver-/Entsorgung, Bergbau', 'Unternehmensnahe-DL', 'Verkehr, Logistik', 'Fahrzeugbau', 'Finanz-DL', '', 'Gesamtwirtschaft'],
                 labels:{
                     style:{
                         color: 'white',
@@ -86,15 +86,15 @@ export default {
             },
             series: [{
                 name: 'essenziell',
-                data: [20, 17, 17, 13, 12, 11, 10, 10, 10, 4, 0, 12],
+                data: [20, 17, 17, 13, 12, 11, 10, 10, 10, 4, 0, 0, 12],
                 color: '#F3931F'
             }, {
                 name: 'wichtig',
-                data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 65],
+                data: [56, 64, 60, 60, 72, 74, 72, 66, 73, 71, 68, 0, 65],
                 color: '#8BB8C1'
             }, {
                 name: 'weniger wichtig',
-                data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 23],
+                data: [24, 19, 23, 27, 16, 15, 17, 23, 17, 24, 32, 0, 23],
                 color: '#343e62'
             }]
 

@@ -64,6 +64,7 @@ export default {
                 'Verkehr, Logistik',
                 'Sonst. DL',
                 'Großhandel',
+                '',
                 'Gesamtwirtschaft'
               ],
 
@@ -116,7 +117,7 @@ export default {
             if(!this.created){
                 this.chart1.series.push({
                     name: 'Umsatz aller Unternehmen',
-                    data: [{y:3.3, color:'#8BB8C1'}, {y:3.0, color:'#8BB8C1'}, {y:2.1, color:'#8BB8C1'}, {y:1.3, color:'#8BB8C1'} , {y:0.9, color:'#8BB8C1'}, {y:0.8, color:'#8BB8C1'}, {y:0.7, color:'#8BB8C1'}, {y:0.6, color:'#8BB8C1'} , {y:0.5, color:'#8BB8C1'}, {y:0.5, color:'#8BB8C1'}, {y:0.4, color:'#8BB8C1'}, {y:1.1, color:'#3F44D5'}],
+                    data: [{y:3.3, color:'#8BB8C1'}, {y:3.0, color:'#8BB8C1'}, {y:2.1, color:'#8BB8C1'}, {y:1.3, color:'#8BB8C1'} , {y:0.9, color:'#8BB8C1'}, {y:0.8, color:'#8BB8C1'}, {y:0.7, color:'#8BB8C1'}, {y:0.6, color:'#8BB8C1'} , {y:0.5, color:'#8BB8C1'}, {y:0.5, color:'#8BB8C1'}, {y:0.4, color:'#8BB8C1'}, {y:0}, {y:1.1, color:'#8BB8C1'}],
                     
                 })
                 this.created = true;

@@ -174,13 +174,18 @@
                 <text class="cls-18" transform="translate(208.68 147.59)">4%</text>
                 <text class="cls-19" transform="translate(242.52 147.59)">3%</text>
                 <text class="cls-20" transform="translate(209.65 129.65)">Einkauf/Logistik</text>
-                <g>
-                  <path v-on:click="disableIkt" class="cls-26 button" d="M151.39,180a3.52,3.52,0,0,0-3.52,3.52v.94a3.51,3.51,0,0,0,3.52,3.51h8.44v-8Z"/>
-                  <path v-on:click="disableGesamt" class="cls-27 button" d="M169.12,180h-8.44v8h8.44a3.51,3.51,0,0,0,3.52-3.51v-.94A3.52,3.52,0,0,0,169.12,180Z"/>
-                </g>
-                <text class="cls-28" transform="translate(133.69 186.1)">IKT</text>
-                <text class="cls-28" transform="translate(177.72 186.1)">Gesamtwi<tspan class="cls-23" x="26.96" y="0">r</tspan><tspan x="29.11" y="0">tschaft</tspan></text>
               </svg>
+              <div class="svg-button">
+                  <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.83 48.37">
+                    <title>Button</title>
+                    <g>
+                      <path v-on:click="disableIkt" class="cls-26" d="M33.55,18.37A3.51,3.51,0,0,0,30,21.88v.94a3.52,3.52,0,0,0,3.51,3.52H42v-8Z"/>
+                      <path v-on:click="disableGesamt" class="cls-27" d="M51.29,18.37H42.85v8h8.44a3.53,3.53,0,0,0,3.52-3.52v-.94A3.52,3.52,0,0,0,51.29,18.37Z"/>
+                    </g>
+                    <text class="cls-28" transform="translate(15.86 24.47)">IKT</text>
+                    <text class="cls-28" transform="translate(59.89 24.47)">Gesamtwi<tspan class="cls-4" x="26.96" y="0">r</tspan><tspan x="29.11" y="0">tschaft</tspan></text>
+                  </svg>
+                </div>
               </div>
             </div>
          </div>
@@ -351,32 +356,35 @@
                       <img src="../assets/machine-learning.svg">
                     </div>
                     <p class="icon-text-name">Maschinelles Lernen</p>
-                    <p class="icon-text icon-text-gesamt">59%</p>
                     <p class="icon-text icon-text-ikt">55%</p>
+                    <p class="icon-text icon-text-gesamt">59%</p>
+                    
                   </div>
                   <div class="flex-item-slide-container">
                     <div class="flex-item-slide kreisGruen">
                       <img src="../assets/sound-card.svg">
                     </div>
                     <p class="icon-text-name">Bild- und Tonerkennung</p>
-                    <p class="icon-text icon-text-gesamt">47%</p>
                     <p class="icon-text icon-text-ikt">49%</p>
+                    <p class="icon-text icon-text-gesamt">47%</p>
+                    
                   </div>
                   <div class="flex-item-slide-container">
                     <div class="flex-item-slide kreisGruen">
                       <img src="../assets/brain.svg">
                     </div>
                     <p class="icon-text-name">Wissensbasierte Systeme</p>
-                    <p class="icon-text icon-text-gesamt">55%</p>
                     <p class="icon-text icon-text-ikt">46%</p>
+                    <p class="icon-text icon-text-gesamt">55%</p>
                   </div>
                   <div class="flex-item-slide-container">
                     <div class="flex-item-slide kreisGruen">
                       <img src="../assets/alexa.svg">
                     </div>
                     <p class="icon-text-name">Sprach- oder Textverstehen</p>
-                    <p class="icon-text icon-text-gesamt">23%</p>
                     <p class="icon-text icon-text-ikt">30%</p>
+                    <p class="icon-text icon-text-gesamt">23%</p>
+
                   </div>
                 </div>
                 <div class="svg-button">
@@ -803,8 +811,10 @@ video{
   fill: #41567e;
 }
 
+
 .cls-20, .cls-28 {
   font-size: 6px;
+
 }
 
 .cls-20 {
@@ -838,6 +848,7 @@ video{
 .cls-27, .cls-26{
   opacity: 1;
   transition: all 0.5s;
+  cursor:pointer;
 }
 
 
@@ -869,7 +880,7 @@ svg{
 }
 
 .disable{
-  fill: #e4eaea !important;
+  fill: #969696 !important;
 }
 
 .anwendungsbereiche .flex-container{

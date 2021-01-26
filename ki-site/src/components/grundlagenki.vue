@@ -35,6 +35,13 @@
                     <div class="tabellentext">
                         Forschung und Entwicklung
                     </div>
+                    <div class="fett tabellentext">
+                        DL
+                    </div>
+                    <div class="tabellentext">
+                        Dienstleistung
+                    </div>
+
 
             </div>
         </div>
@@ -60,7 +67,7 @@
             <div class="icon">
              <img src="../assets/data-collection.svg">
            </div>
-            <p class="icontext">Form der <br> Datener-<br>hebung</p>
+            <p class="icontext">Form der <br> Datenerhebung</p>
           </div>
 
           <div class="icon-container">
@@ -102,28 +109,28 @@
             <div class="icon">
              <img src="../assets/group.svg">
            </div>
-            <p class="icontext">Teilnehmende Unternehmen</p>
+            <p class="icontext">Teilnehmende <br> Unternehmen</p>
           </div>
 
           <div class="icon-container">
             <div class="icon">
              <img src="../assets/human.svg">
            </div>
-            <p class="icontext">Unterneh- <br> mensbereiche</p>
+            <p class="icontext">Unternehmensbereiche</p>
           </div>
 
           <div class="icon-container">
             <div class="icon">
              <img src="../assets/brain.svg">
            </div>
-            <p class="icontext">Wissens-<br>basierte Unter-<br>nehmen</p>
+            <p class="icontext">Wissensbasierte <br> Unternehmen</p>
           </div>
 
           <div class="icon-container">
             <div class="icon">
              <img src="../assets/calendar.svg">
            </div>
-            <p class="icontext">Zeitraum der <br> Datener-<br>hebung</p>
+            <p class="icontext">Zeitraum der <br> Datenerhebung</p>
           </div>
 
         </div>
