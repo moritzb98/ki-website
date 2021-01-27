@@ -7,9 +7,9 @@
       <div class="flex-container-center">
         <div class="flex-item-40">
             <p class="text">
-          Lediglich <b> 1,1 % des gesamten Umsatzes </b> der deutschen Wirtschaft erzielten 2019 die <b> Produkte und Dienstleistungen </b>  mit KI-Anwendung der Unternehmen. Damit wird deutlich, welchen <b> geringen Anteil KI Nutzung </b> in deutschen Unternehmen aktuell noch einnimmt. Die <b>IKT Branche </b> nimmt hierbei mit 3,3% den <b> größten Umsatzanteil ein. </b>
+          Lediglich <b> 1,1 % des gesamten Umsatzes </b> der deutschen Wirtschaft erzielten 2019 die <b> Produkte und Dienstleistungen </b>  mit KI-Anwendung der Unternehmen. Damit wird deutlich, welchen <b> geringen Anteil KI Nutzung </b> in deutschen Unternehmen aktuell noch einnimmt. Die <b>IKT Branche </b> nimmt mit 3,3% den <b> größten Umsatzanteil ein. </b>
                 <br>
-                Hierbei ist es wichtig zu beachten, dass hierbei <b> nur die Produkte und Dienstleistungen </b> betrachtet werden, die <b> direkt </b> in der <b> Anwendung oder Nutzung </b> des Produkts <b> KI-Verfahren verwenden. </b>
+                Hierbei ist es wichtig zu beachten, dass hier <b> nur die Produkte und Dienstleistungen </b> betrachtet werden, die <b> direkt </b> in der <b> Anwendung oder Nutzung </b> des Produkts <b> KI-Verfahren verwenden. </b>
                 <br>
             </p>
         </div>
@@ -118,7 +118,7 @@ export default {
                 this.chart1.series.push({
                     name: 'Umsatz aller Unternehmen',
                     data: [{y:3.3, color:'#8BB8C1'}, {y:3.0, color:'#8BB8C1'}, {y:2.1, color:'#8BB8C1'}, {y:1.3, color:'#8BB8C1'} , {y:0.9, color:'#8BB8C1'}, {y:0.8, color:'#8BB8C1'}, {y:0.7, color:'#8BB8C1'}, {y:0.6, color:'#8BB8C1'} , {y:0.5, color:'#8BB8C1'}, {y:0.5, color:'#8BB8C1'}, {y:0.4, color:'#8BB8C1'}, {y:0}, {y:1.1, color:'#8BB8C1'}],
-                    
+                    color:'#8BB8C1',
                 })
                 this.created = true;
             }
@@ -194,7 +194,7 @@ export default {
 
 .buttons button:hover {
   color: white;
-  background-color: rgb(158, 159, 163);
+  background-color: rgb(#8BB8C1);
   outline: none;
 }
 
