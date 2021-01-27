@@ -4,7 +4,7 @@
       <h3>Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
       <div class="flex-container zweispaltig">
         <p class="zweispaltig-text">
-        Der <b> Fahrzeugbau </b> beschäftigt im Durchschnitt <b> 30,8% hauptsächlich zu KI tätige Mitarbeiter </b> und gab einen Betrag von <b>7056 tsd. € für Investitionen in KI </b> aus.Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen,
+        Der <b> Fahrzeugbau </b> beschäftigt im Durchschnitt <b> 30,8% hauptsächlich zu KI tätige Mitarbeiter </b> und gab einen Betrag von <b>7.056 tsd. € für Investitionen in KI </b> aus. Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen,
         </p>
         <p class="zweispaltig-text">
          6,1% der Beschäftigten befassen sich intensiver mit KI, die <b> Summe </b> der <b> für KI ausgegebenen Investitionen </b>beträgt allerdings nur <b> 93 tsd. €. </b>
@@ -118,7 +118,7 @@ export default {
 
             }]
         }, {
-            
+
             name: 'Elektrotechn.,<br> Maschinenbau',
             color: '#6495ED',
             data: [{
@@ -211,7 +211,7 @@ export default {
 }
 
 img {
-    margin-top:10px; 
+    margin-top:10px;
   width: 100%;
   height: auto;
 }
