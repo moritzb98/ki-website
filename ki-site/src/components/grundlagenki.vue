@@ -49,7 +49,7 @@
                     <div class="kreis0">                        
                     </div>
                     <div class="tabellentext">
-                        Allgemeines
+                        Studieninformationen
                     </div>
 
                     <div class="kreis1">                        
