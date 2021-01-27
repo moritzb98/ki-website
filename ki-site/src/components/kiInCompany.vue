@@ -14,7 +14,7 @@
         <div class="flex-container margin-top container-new">
             <div class="flex-item text-container">
                 <div id="counter" class="counter"></div>
-                <p class="text-animate">der <b> Unternehmen, die KI einsetzten </b>, in der deutschen Gesamtwirtschaft bewerten <b> Künstliche Intelligenz als essentiell oder wichtig </b> für ihre Geschäftsfähigkeit.</p>
+                <p class="text-animate">der <b> KI einsetzenden Unternehmen </b> in der deutschen Gesamtwirtschaft bewerten <b> Künstliche Intelligenz als essentiell oder wichtig </b> für ihre Geschäftsfähigkeit.</p>
             </div>
             <div class="flex-item chartdiv">
                 <highcharts :options="chartOptions"></highcharts>
