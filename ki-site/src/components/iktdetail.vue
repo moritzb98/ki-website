@@ -232,8 +232,8 @@
                         <img class="gesamt" src="../assets/de-8.png">
                       </div>
                       <div class="values">
-                        <span>66%</span>
-                        <span>60%</span>
+                        <span class="value-ikt">66%</span>
+                        <span class="value-gesamt">60%</span>
                       </div>
                   </div>
                   <p class="text">Produkte und Dienstleistungen</p>
@@ -248,8 +248,8 @@
                       <img class="gesamt" src="../assets/de-8.png">
                     </div>
                     <div class="values">
-                      <span>54%</span>
-                      <span>56%</span>
+                      <span class="value-ikt">54%</span>
+                      <span class="value-gesamt">56%</span>
                     </div>
                   </div>
                   <p class="text">Automatisierung von Prozessen</p>
@@ -264,8 +264,8 @@
                     <img class="gesamt" src="../assets/de-8.png">
                   </div>
                   <div class="values">
-                    <span>35%</span>
-                    <span>34%</span>
+                    <span class="value-ikt">35%</span>
+                    <span class="value-gesamt">34%</span>
                   </div>
                   </div>
                 <p class="text">KI-Anwendung für Datenanalyse</p>
@@ -282,8 +282,8 @@
                     <img class="gesamt" src="../assets/de-8.png">
                   </div>
                   <div class="values">
-                    <span>9%</span>
-                    <span>22%</span>
+                    <span class="value-ikt">9%</span>
+                    <span class="value-gesamt">22%</span>
                   </div>
                   </div>
                   <p class="text">Kundenkommunikation/-interaktion</p>
@@ -298,8 +298,8 @@
                     <img class="gesamt" src="../assets/de-8.png">
                   </div>
                   <div class="values">
-                    <span>11%</span>
-                    <span>11%</span>
+                    <span class="value-ikt">11%</span>
+                    <span class="value-gesamt">11%</span>
                   </div>
                   </div>
                   <p class="text">andere Anwendungsgebiete</p>
@@ -460,16 +460,20 @@ export default {
 
     disableGesamt2: function(){
       var el = document.getElementsByClassName('gesamt');
+      let values = document.getElementsByClassName("value-gesamt");
       for(var i = 0; i<el.length; i++){
         el[i].classList.toggle('hide-click');
+        values[i].classList.toggle('values-hide');
       }
       document.getElementsByClassName('cls-2-a')[0].classList.toggle('disable');
     },
 
     disableIkt2: function(){
       var el = document.getElementsByClassName('ikt');
+      let values = document.getElementsByClassName("value-ikt");
       for(var i = 0; i<el.length; i++){
         el[i].classList.toggle('hide-click');
+        values[i].classList.toggle('values-hide');
       }
       document.getElementsByClassName('cls-1-a')[0].classList.toggle('disable');
     },
@@ -1029,5 +1033,13 @@ svg{
   width: 800px;
   height: 560px;
   margin-top: -50px;
+}
+
+.value-gesamt{
+  transition: all 0.5s;
+}
+
+.values-hide{
+  opacity: 0;
 }
 </style>
