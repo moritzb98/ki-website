@@ -55,13 +55,13 @@
                     <div class="kreis1">                        
                     </div>
                     <div class="tabellentext">
-                      Allgemeine Betrachtung KI Nutzung in der deutschen Wirtschaft
+                      Allgemeine Betrachtung KI Nutzung 
                     </div>
 
                     <div class="kreis2">      
                     </div>
                     <div class="tabellentext">
-                        Betrachtung der KI einsetzenden Unternehmen
+                        KI einsetzende Unternehmen
                     </div>
 
                     <div class="kreis3">     
