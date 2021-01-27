@@ -7,7 +7,7 @@
       <div class="flex-container-center">
         <div class="flex-item-40">
             <p class="text">
-          Lediglich <b> 1,1 % des gesamten Umsatzes </b> der deutschen Wirtschaft erzielten 2019 die <b> Produkte und Dienstleistungen </b>  mit KI-Anwendung der Unternehmen. Damit wird deutlich, welchen <b> geringen Anteil KI Nutzung </b> in deutschen Unternehmen aktuell noch einnimmt. Die <b>IKT Branche </b> nimmt mit 3,3% den <b> größten Umsatzanteil ein. </b>
+          Lediglich <b> 1,1 % des gesamten Umsatzes </b> der deutschen Wirtschaft erzielten 2019 die <b> Produkte und Dienstleistungen </b>  mit KI-Anwendung der Unternehmen. Damit wird deutlich, welchen <b> geringen Anteil die KI-Nutzung </b> in deutschen Unternehmen aktuell noch einnimmt. Die <b>IKT Branche </b> nimmt mit 3,3% den <b> größten Umsatzanteil ein. </b>
                 <br>
                 Hierbei ist es wichtig zu beachten, dass hier <b> nur die Produkte und Dienstleistungen </b> betrachtet werden, die <b> direkt </b> in der <b> Anwendung oder Nutzung </b> des Produkts <b> KI-Verfahren verwenden. </b>
                 <br>
