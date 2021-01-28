@@ -151,6 +151,11 @@ export default {
 <style scoped>
 .site-header {
   margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+h3{
+  margin-bottom: 15px;
 }
 
 .impressum-site-container {
