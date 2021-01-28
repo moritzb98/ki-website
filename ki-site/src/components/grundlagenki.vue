@@ -4,24 +4,24 @@
     <h2>Glossar</h2>
       <h4 class="right">Grundlagen zur Künstlichen Intelligenz</h4>
 
-          <p>Dieses Glossar beinhaltet sämtliche Definitionen und Hintergrundinformationen zu den Themengebieten Künstliche Intelligenz. Diese Grundlagen sollten verstanden werden, damit die auf dieser Website dargestellten Grafiken nachvollziehbar sind.
+          <p class="glossar-text">Dieses Glossar beinhaltet sämtliche Definitionen und Hintergrundinformationen zu den Themengebieten Künstliche Intelligenz. Diese Grundlagen sollten verstanden werden, damit die auf dieser Website dargestellten Grafiken nachvollziehbar sind.
           Es ist jederzeit möglich, zurück zu dieser Seite zu springen, damit Infos nachgelesen werden können.
           </p>
         <br>
         <div>
-
+      
             <h4 class="right"> Definitionen </h4>
-              <h5><b> Künstliche Intelligenz </b></h5>
-                <p> Künstliche Intelligenz (KI) zählt heutzutage zu den entscheidendsten Schlüsseltechnologien. KI ermöglicht die Simulation von menschlicher Intelligenz, dazu gehört neben dem Lernen der Erfassung von Informationen die Schlussfolgerung, also wie wird mit Informationen umgegangen, um Rückschlüsse zu ziehen, sowie die Selbstkorrektur als abschließender Prozesspunkt.  <br>
+              <h5 class="glossar-text"><b> Künstliche Intelligenz </b></h5>
+                <p class="glossar-text"> Künstliche Intelligenz (KI) zählt heutzutage zu den entscheidendsten Schlüsseltechnologien. KI ermöglicht die Simulation von menschlicher Intelligenz, dazu gehört neben dem Lernen der Erfassung von Informationen die Schlussfolgerung, also wie wird mit Informationen umgegangen, um Rückschlüsse zu ziehen, sowie die Selbstkorrektur als abschließender Prozesspunkt.  <br>
                     <br><b> Beispiele für den KI-Einsatz in Unternehmen:</b>
                     <br><b>Im Gesundheitswesen:</b> Für Patienten ist es möglich, Fragen an einen Chatbot zu stellen. Dieser hat Zugriff auf Patientendaten und kann auf große Datenmengen zugreifen, damit Patienten auch von zu Hause aus beraten werden können.
                     <br><b>Im Finanzwesen:</b> Auch finanzielle Beratung kann via Chatbots von Kunden eingeholt werden.
                     <br><b>In der Bildung:</b> Benotungen können automatisiert von einer KI übernommen werden, damit den Lehrkräften mehr Zeit für die Betreuung der Schüler bleibt.
                     <br><b>In der Fertigung:</b> Der Einsatz von Robotern kann den Workflow vieler Prozesse verschnellern.
                 </p>
-
+            <br>
             <h4 class="right">Abkürzungen</h4>
-            <div class="cssgrid">
+            <div class="cssgrid glossar-text">
 
                     <div class="fett tabellentext">
                         IKT
@@ -42,9 +42,9 @@
                         Dienstleistung
                     </div>
             </div>
-
+            <br>
             <h4 class="right">Inhaltsabschnitte der Webseite</h4>
-            <div class="cssgrid">
+            <div class="cssgrid glossar-text">
 
                     <div class="kreis0">                        
                     </div>
@@ -325,5 +325,9 @@ table{
   text-align: center;
 }
 
-
+.glossar-text{
+      width: 80%;
+    margin: 0;
+    margin-left: 140px;
+}
 </style>
