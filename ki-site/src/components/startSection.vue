@@ -161,6 +161,7 @@ export default {
   font-weight: 100;
   font-size: 1.7em;
   margin-bottom: 30px;
+  font-family: 'Roboto', sans-serifç;
 }
 
 .textblock{

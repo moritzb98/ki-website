@@ -468,4 +468,3 @@ button:hover{
 .info{width: 18px; margin-bottom: -3px;}
 
 </style>
-
