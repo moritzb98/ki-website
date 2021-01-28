@@ -1,11 +1,26 @@
 <template>
     <div class="site-container">
-      <h2>Allgemeine Betrachtung</h2>
-      <h3>Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) </h3>
-        <p>Verglich von Verteilung der KI-Ausgaben der deutschen Wirtschaft 2019 nach Branchengruppen (in Mrd. €) und Anteil der Ausgaben für KI in % des Umsatzes aller Unternehmen.</p>
+      <h2 class="allgemein">Auswirkungen des Einsatzes von Künstlicher Intelligenz auf Personal und Investitionen</h2>
+      <h3>Gegenüberstellung der zu KI Beschäftigten und der erbrachten Investitionen in KI</h3>
+      <div class="flex-container zweispaltig">
+        <p class="zweispaltig-text">
+        Der <b> Fahrzeugbau </b> beschäftigt im Durchschnitt <b> 30,8% hauptsächlich zu KI tätige Mitarbeiter </b> und gab einen Betrag von <b>7.056 tsd. € für Investitionen in KI </b> aus. Konträr dazu verhält sich die Branche der unternehmensnahen Dienstleistungen,
+        </p>
+        <p class="zweispaltig-text">
+         6,1% der Beschäftigten befassen sich intensiver mit KI, die <b> Summe </b> der <b> für KI ausgegebenen Investitionen </b>beträgt allerdings nur <b> 93 tsd. €. </b>
+        </p>
+      </div>
         <div class="container-bubble">
             <div>
-                <highcharts :options="chartOptions"></highcharts>
+                <div class="flex-container flex-container-small">
+                    <div id="chartdiv">
+                        <img src="../assets/ikt-maennchen-neu.svg">
+                    </div>
+                <div>
+                    <highcharts :options="chartOptions"></highcharts>
+                </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -19,17 +34,17 @@ import {Chart} from 'highcharts-vue'
 export default {
   name: 'KIAusgabenUndBeschaeftigte',
     components: {
-        highcharts: Chart 
+        highcharts: Chart
     },
   data() {
     return {
-      chartOptions: { 
+      chartOptions: {
           chart: {
             type: 'packedbubble',
             height: '500px',
             styledMode: false,
             // Hintergrundfarbe
-            backgroundColor: "none", 
+            backgroundColor: "none",
         },
         credits: {
             enabled: false
@@ -37,6 +52,10 @@ export default {
         title: {
             text: ''
         },
+        subtitle: {
+    text: 'Ausgaben für KI in dt. Unternehmen 2019, in tausend Euro',
+    verticalAlign: 'bottom',
+  },
         tooltip: {
             useHTML: true,
             pointFormat: '<b>{point.name}:</b> {point.value}000€'
@@ -62,103 +81,120 @@ export default {
                     style: {
                         color: 'white',
                         textOutline: 'none',
-                        fontWeight: 'normal'
+                        fontWeight: 'normal',
+                        textOverflow: 'hidden'
                     }
                 }
             }
         },
-                legend: {
+            legend: {
                 reversed: true,
+                align: 'right',
+                verticalAlign: 'top',
+                layout: 'vertical',
+                x: 0,
+                y: 100,
                 itemStyle: {
-                    color: '#eef1f6',
+                    color: '#CBC8C8',
                 },
                 itemHoverStyle: {
-                    color: '#ea5321'
+                    color: '#ffffff'
                 }
             },
         series: [{
             name: 'IKT',
+            color: '#EE3B3B',
             data: [{
                 name: 'IKT',
                 value: 382,
-                color: '#323E65'
+
             }]
         }, {
             name: 'Fahrzeugbau',
+            color: '#EE7600',
             data: [{
                 name: "Fahrzeugbau",
                 value: 7056,
-                color: '#608DBF'
+
             }]
         }, {
-            name: 'Elektrot./Maschinen.b.',
+
+            name: 'Elektrotechn.,<br> Maschinenbau',
+            color: '#6495ED',
             data: [{
-                name: "Elektrot./Maschinen.b.",
+                name: "Elektrotechn., Ma...",
                 value: 718,
-                color: '#003E82'
             }]
         }, {
             name: 'Verkehr, Logistik',
+            color: '#FFD700',
             data: [{
                 name: "Verkehr, Logistik",
                 value: 321,
-                color: '#CCAF8F'
+
             }]
         }, {
-            name: 'Finanzdienstleist.',
+            name: 'Finanz-DL',
+            color: '#F08080',
             data: [{
-                name: "Finanzdienstleist.",
+                name: "Finanz-DL",
                 value: 286,
-                color: '#D3EAEF'
+
             }]
         }, {
-            name: 'Chemie/Ph.',
+            name: 'Chemie/Pharma, Grundstoff',
+            color: '#76EEC6',
             data: [{
-                name: "Chemie/Ph.",
+                name: "Chemie/Ph...",
                 value: 282,
-                color: '#C4935C'
+
             }]
             }, {
-            name: 'Ver-/Entsorgung.',
+            name: 'Ver-/Entsorgung, Bergbau',
+            color: '#00CED1',
             data: [{
-                name: "Ver-/Entsorgung.",
+                name: "Ver-/Entsorgung, Bergbau",
                 value: 245,
-                color: '#B35F00'
+
             }]
             }, {
-            name: 'Sonst. Dienstleist.',
+            name: 'Sonst. DL',
+            color: '#8A2BE2',
             data: [{
-                name: "Sonst. Dienstleist.",
+                name: "Sonst. DL",
                 value: 210,
-                color: '#CFD9E6'
+
             }]
             }, {
             name: 'Großhandel',
+            color: '#FFC1C1',
             data: [{
                 name: "Großhandel",
                 value: 171,
-                color: '#F7932D'
+
             }]
               }, {
-            name: 'Sonst. Verarb. Gewerbe',
+            name: 'Sonst. verarb. Gewerbe',
+            color: '#EE00EE',
             data: [{
-                name: "Sonst. Verarb. Gewerbe",
+                name: "Sonst. verarb. Gewerbe",
                 value: 130,
-                color: '#66A2B9'
+
             }]
               }, {
-            name: 'Untern.nahe Dienstleist.',
+            name: 'Unternehmensnahe-DL',
+            color: '#B3EE3A',
             data: [{
-                name: "Untern.nahe Dienstleist.",
+                name: "Unternehmensnahe-DL",
                 value: 93,
-                color: '#7EB3BB'
+
             }]
               }, {
             name: 'Gesamtwirtschaft',
+            color: '#3F44D5',
             data: [{
-                name: "Gesamtwirtschaft",
+                name: "Gesamtwirts...",
                 value: 276,
-                color: '#806E59'
             }]
 
         }]
@@ -170,8 +206,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #C18BBF!important;
+}
+
 img {
-  width: 100px;
+    margin-top:10px;
+  width: 100%;
+  height: auto;
 }
 .icon-container {
   text-align:center;
@@ -198,8 +240,31 @@ img {
     width: 260px;
     height: 260px;
 }
+.zweispaltig{
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+  }
 
+  .zweispaltig-text{
+    margin: 10px;
+    width: 100%;
+  }
 .img {
     width: 100%;
 }
+
+#chartdiv{
+    margin: auto;
+    width:500px;
+}
+
+#chartdiv svg{
+    height: 400px;
+}
+
+.flex-container-small{
+    width: 90%;
+}
+
 </style>

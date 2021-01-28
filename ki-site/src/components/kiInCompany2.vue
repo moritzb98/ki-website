@@ -1,10 +1,17 @@
 <template>
     <div class="site-container">
-        <h2>Erstmaliger Einsatz von KI</h2>
-        <div class="flex-container">
-
+        <h2 class="allgemein">Zunehmende Unverzichtbarkeit der Künstlichen Intelligenz</h2>
+        <h3> Präsentiert anhand des Zeitraums des erstmaligen Einsatzes von KI</h3>
+        <div class="flex-container zweispaltig">
+          <p class="margin-bott zweispaltig-text">
+          Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der <b> erstmalige Einsatz der Technologie </b>stattgefunden hat. In Branchen wie den <b> sonstigen Dienstleistungen </b> setzen bereits <b> vor 2010 43% aller Unternehmen </b>KI ein. Im Vergleich dazu verzeichnete die <b> IKT </b>
+          </p>
+          <p class="margin-bott zweispaltig-text">
+          <b> Branche, </b> die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur <b> einen Wert von 9%. </b> Heute gehören sie, wie eben angedeutet, zu den stärker auf KI fokussierten Branchen. <b> 37% aller Unternehmen dieser Branche </b> setzten <b> 2018/2019 diese Technologie ein. </b>
+          </p>
+        </div>
+        <div class="flex-container top">
             <highcharts :options="chartOptions"></highcharts>
-
         </div>
     </div>
 </template>
@@ -23,9 +30,9 @@ export default {
       chartOptions: {
         chart: {
           backgroundColor: null,
-          width: 1250,
-          height: 550,
-          
+          width: 1050,
+          height: 450,
+          animation: true,
         },
         // Wasserzeichen entfernen
         credits: {
@@ -35,18 +42,23 @@ export default {
             // Überschrift
             text: ''
         },
+subtitle: {
+  text: ''
+},
+
         yAxis: {
           title: {
             text: 'in % aller KI einsetzenden Unternehmen',
             style:{
                 color: 'white',
-            } 
+            }
           },
           labels:{
             style:{
                 color: 'white',
-            } 
-          }
+            }
+          },
+          gridLineColor: '#313131'
         },
 
         xAxis: {
@@ -54,66 +66,96 @@ export default {
           labels:{
             style:{
                 color: 'white',
-            } 
+            }
           }
         },
 
         legend: {
-          
+
           itemHoverStyle: {
-              color: '#ea5321'
+              color: '#ffffff'
           },
           itemStyle: {
-            color: 'white'
+            color: '#CBC8C8'
           }
+        },
+        tooltip: {
+            shared: true,
         },
 
       plotOptions: {
           series: {
               label: {
-                  connectorAllowed: false
+                  connectorAllowed: false,
+              },
+              animation: {
+                  duration: 5000
               },
               pointPlacement: 'on',
           },
       },
 
       series: [{
-          name: 'Finanzdienstleistungen',
-          data: [6, 19, 38, 37],
-      }, {
-          name: 'Chemie',
-          data: [11, 14, 51, 23]
-      }, {
-          name: 'Elektrotechnik',
-          data: [17, 15, 41, 27]
-      }, {
-          name: 'IKT',
-          data: [9, 26, 39, 27]
-      }, {
-          name: 'Großhandel',
-          data: [8, 30, 41, 22]
-      }, {
-          name: 'Verkehr, Logistik',
-          data: [20, 19, 16, 45]
-      }, {
-          name: 'Ver-/Entsorgung',
-          data: [12, 31, 31, 26]
-      }, {
-          name: 'sonstige verarbeitendes Gewerbe',
-          data: [35, 9, 35, 21]
-      }, {
-          name: 'Unternehmensnahe Dienstleistungen',
-          data: [24, 20, 29, 27]
-      }, {
-          name: 'sonstige Dienstleistungen',
-          data: [43, 11, 14, 32]
-      }, {
-          name: 'Fahrzeugbau',
-          data: [17, 39, 26, 18]
-      }, {
-          name: 'Gesamtwirtschaft',
-          data: [20, 20, 33, 27]
-      }],
+              name: 'Finanz-DL',
+              data: [6, 19, 38, 37],
+              visible: false,
+              color: '#F08080',
+          }, {
+              name: 'Chemie/Pharma, Grundstoff',
+              data: [11, 14, 51, 23],
+              visible: false,
+              color: '#76EEC6',
+          }, {
+              name: 'Elektrotechn., Maschinenbau',
+              data: [17, 15, 41, 27],
+              visible: false,
+              color: '#6495ED',
+          }, {
+              name: 'IKT',
+              data: [9, 26, 39, 27],
+              visible: true,
+              color: '#EE3B3B',
+          }, {
+              name: 'Großhandel',
+              data: [8, 30, 41, 22],
+              visible: false,
+              color: '#FFC1C1',
+          }, {
+              name: 'Verkehr, Logistik',
+              data: [20, 19, 16, 45],
+              visible: false,
+              color: '#3F44D5',
+          }, {
+              name: 'Ver-/Entsorgung, Bergbau',
+              data: [12, 31, 31, 26],
+              visible: false,
+              color: '#FFD700',
+          }, {
+              name: 'Sonst. verarb. Gewerbe',
+              data: [35, 9, 35, 21],
+              visible: false,
+              color: '#EE00EE',
+          }, {
+              name: 'Unternehmensnahe-DL',
+              data: [24, 20, 29, 27],
+              visible: false,
+              color: '#3F44D5',
+          }, {
+              name: 'Sonst. DL',
+              data: [43, 11, 14, 32],
+              visible: false,
+              color: '#B3EE3A',
+          }, {
+              name: 'Fahrzeugbau',
+              data: [17, 39, 26, 18],
+              visible: false,
+              color: '#EE7600',
+          }, {
+              name: 'Gesamtwirtschaft',
+              data: [20, 20, 33, 27],
+              visible: true,
+              color: '#3F44D5',
+          }],
 
       responsive: {
           rules: [{
@@ -128,19 +170,22 @@ export default {
                   }
               }
           }]
-      }
-      }
+        }
+      },
+      created: false,
     }
   },
 
   methods: {
-    
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .allgemein:after {
+    background-color: #C18BBF!important;
+}
 
 .container{
     width: 100%;
@@ -148,21 +193,18 @@ export default {
     display:flex;
 }
 
+.margin-bott{
+  margin-bottom: 20px;
+}
+
 .flex-container{
   width: 100%;
+  height:auto;
+  margin: 0 auto;
 }
- .highcharts-root{
- width: 100% !important;
- }
-
- .highcharts-container {
-   margin: 0 auto !important;
- }
-
-#fullpage > div.section.fp-section.fp-table.active.fp-completely > div > div > div > div{
-width: 100%;
+.top{
+margin-top: 20px;
 }
-
 .flex-item-80 {
     width: 90%;
     position: relative;
@@ -175,7 +217,16 @@ width: 100%;
     height: 30px;
     margin: auto;
   }
+  .zweispaltig{
+      width: 1200px;
+      text-align: left;
+      margin: 0 auto;
+    }
 
+    .zweispaltig-text{
+      margin: 10px;
+      width: 100%;
+    }
   .flex-item-20 {
       width: 10%;
       display: flex;
