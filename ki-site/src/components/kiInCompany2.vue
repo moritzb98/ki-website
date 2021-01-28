@@ -7,7 +7,7 @@
           Nachdem sich bereits herauskristallisiert hat, von welcher Bedeutung der Einsatz von KI in vielen deutschen Unternehmen ist, stellt diese Grafik nun dar wann der <b> erstmalige Einsatz der Technologie </b>stattgefunden hat. In Branchen wie den <b> sonstigen Dienstleistungen </b> setzen bereits <b> vor 2010 43% aller Unternehmen </b>KI ein. Im Vergleich dazu verzeichnete die <b> IKT </b>
           </p>
           <p class="margin-bott zweispaltig-text">
-          <b> Branche </b>, die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur <b> einen Wert von 9%. </b> Heute gehören sie, wie eben angedeutet zu den stärker auf KI fokussierten Branchen. <b> 37% aller Unternehmen dieser Branche </b> setzten <b> 2018/2019 diese Technologie ein. </b>
+          <b> Branche, </b> die heute verstärkt KI einsetzt und viele Ausgaben in diesem Bereich verzeichnet, in dieser Zeitspanne nur <b> einen Wert von 9%. </b> Heute gehören sie, wie eben angedeutet, zu den stärker auf KI fokussierten Branchen. <b> 37% aller Unternehmen dieser Branche </b> setzten <b> 2018/2019 diese Technologie ein. </b>
           </p>
         </div>
         <div class="flex-container top">
